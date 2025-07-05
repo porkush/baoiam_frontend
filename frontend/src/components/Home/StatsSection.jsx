@@ -34,26 +34,26 @@ export default function StatsSection() {
 
       {/* Accreditation Section */}
       <div className="w-full max-w-6xl text-center">
-        <h2 className="lg:text-2xl md:text-xl font-semibold mb-6">
+        <h2 className="lg:text-[28px] md:text-[28px] font-semibold mb-6">
           We are accredited by
         </h2>
-        <div className=" h-[100px] flex justify-center items-center gap-[100px] flex-wrap">
-          <img
-            src={img1}
-            alt="MSME"
-            className="h-[100px] w-auto object-contain"
-          />
-          <img
-            src={img2}
-            alt="DPIIT Startup India"
-            className="h-[100px] w-auto object-contain"
-          />
-          <img
-            src={img3}
-            alt="ISO 9001"
-            className="h-[100px] w-auto object-contain"
-          />
-        </div>
+        <div className="h-[100px] flex justify-center items-center gap-[50px] flex-wrap">
+  <img
+    src={img2}
+    alt="DPIIT Startup India"
+    className="h-[120px] w-[250px] object-contain" 
+  />
+  <img
+    src={img1}
+    alt="MSME"
+    className="h-[120px] w-[189px] object-contain" 
+  />
+  <img
+    src={img3}
+    alt="ISO 9001"
+    className="h-[120px] w-[162px] object-contain ml-5" 
+  />
+</div>
       </div>
     </section>
   );

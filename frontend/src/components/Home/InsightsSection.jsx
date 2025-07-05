@@ -16,7 +16,7 @@ export default function InsightsSection() {
           <h2 className="text-3xl md:text-5xl font-bold mb-2">
             Our <span className="text-orange-500">Insights</span>
           </h2>
-          <p className="text-black md:text-2xl max-w-3xl mx-auto">
+          <p className="text-black md:text-[26px] mt-5 max-w-4xl mx-auto">
             We teach real-world skills, connect you with mentors, and prepare you
             to crush the industry.
           </p>

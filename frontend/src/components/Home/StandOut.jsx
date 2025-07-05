@@ -27,7 +27,7 @@ export default function ComparisonTable() {
           <h2 className="text-3xl md:text-5xl font-bold mb-2">
             Here's Why <span className="text-orange-500">Baoiam Stands Out!</span>
           </h2>
-          <p className="text-black md:text-xl max-w-2xl mx-auto mt-5">
+          <p className="text-black md:text-[24px] max-w-3xl mx-auto mt-5 ">
             Our commitment to quality, dedication and achievement oriented mindset sets us apart
           </p>
         </div>
@@ -95,3 +95,5 @@ export default function ComparisonTable() {
     </section>
   );
 }
+
+

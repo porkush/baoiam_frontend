@@ -10,7 +10,7 @@ const Navbar = () => {
     >
       {/* Left */}
       <div className="flex items-center">
-        <img src={lightLogo} alt="Baoiam" className="h-[70px] w-[130px]" />
+        <img src={lightLogo} alt="Baoiam" className="h-[70px] w-[100px] ml-5" />
       </div>
 
       {/* Center */}
@@ -18,7 +18,20 @@ const Navbar = () => {
         <ul className="hidden md:flex space-x-10 text-black text-[18px] w-[816px] ">
           <li className="hover:text-orange-500">PAP</li>
           <li className="hover:text-orange-500">Kickstarter courses</li>
-          <li className="hover:text-orange-500">Pride</li>
+          <li className="relative inline-block">
+            <span
+              className="
+    font-poppins font-normal text-[18px] leading-none
+    bg-clip-text text-transparent
+    bg-gradient-to-r
+    from-[#F1EAF9] via-[#8A38F5] to-[#110028] to-75%
+    bg-[length:400%_auto]
+    animate-gradient-scroll
+  "
+            >
+              Pride
+            </span>
+          </li>
           <li className="hover:text-orange-500">Refer & Earn</li>
           <li className="hover:text-orange-500">Success Stories</li>
           <li className="hover:text-orange-500">Company</li>
