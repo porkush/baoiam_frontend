@@ -2,6 +2,13 @@ import React from "react";
 import StatsSection from "./StatsSection";
 import { MdArrowForward } from "react-icons/md";
 import { motion } from "framer-motion";
+import img1 from '../../assets/Home/HeroSection/1.png';
+import img2 from '../../assets/Home/HeroSection/2.png';
+import img3 from '../../assets/Home/HeroSection/3.png';
+import img4 from '../../assets/Home/HeroSection/4.png';
+import img5 from '../../assets/Home/HeroSection/5.png';
+import img6 from '../../assets/Home/HeroSection/6.png';
+
 
 export default function HeroSection() {
   return (
@@ -73,27 +80,27 @@ export default function HeroSection() {
             }}
           >
             <img
-              src="src/assets/Home/HeroSection/1.png"
+              src={img1}
               className="h-[250px] w-[200px] object-cover rounded-lg"
             />
             <img
-              src="src/assets/Home/HeroSection/2.png"
+              src={img2}
               className="h-[250px] w-[200px] object-cover rounded-lg"
             />
             <img
-              src="src/assets/Home/HeroSection/3.png"
+              src={img3}
               className="h-[250px] w-[200px] object-cover rounded-lg"
             />
             <img
-              src="src/assets/Home/HeroSection/4.png"
+              src={img4}
               className="h-[250px] w-[200px] object-cover rounded-lg"
             />
             <img
-              src="src/assets/Home/HeroSection/5.png"
+              src={img5}
               className="h-[250px] w-[200px] object-cover rounded-lg"
             />
             <img
-              src="src/assets/Home/HeroSection/6.png"
+              src={img6}
               className="h-[250px] w-[200px] object-cover rounded-lg"
             />
           </motion.div>
@@ -116,27 +123,27 @@ export default function HeroSection() {
             }}
           >
              <img
-              src="src/assets/Home/HeroSection/4.png"
+              src={img4}
               className="h-[250px] w-[200px] object-cover rounded-lg"
             />
             <img
-              src="src/assets/Home/HeroSection/5.png"
+              src={img5}
               className="h-[250px] w-[200px] object-cover rounded-lg"
             />
             <img
-              src="src/assets/Home/HeroSection/6.png"
+              src={img6}
               className="h-[250px] w-[200px] object-cover rounded-lg"
             />
             <img
-              src="src/assets/Home/HeroSection/1.png"
+              src={img1}
               className="h-[250px] w-[200px] object-cover rounded-lg"
             />
             <img
-              src="src/assets/Home/HeroSection/2.png"
+              src={img2}
               className="h-[250px] w-[200px] object-cover rounded-lg"
             />
             <img
-              src="src/assets/Home/HeroSection/3.png"
+              src={img3}
               className="h-[250px] w-[200px] object-cover rounded-lg"
             />
            
