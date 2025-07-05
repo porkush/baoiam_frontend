@@ -1,12 +1,13 @@
 import React from "react";
 import { IoMoon, IoSunny } from 'react-icons/io5';
+import lightLogo from "../../assets/Home/Navbar/logoLight.png"
 
 const Navbar = () => {
   return (
     <nav className="sticky mx-auto mt-[20px] max-w-[1430px] h-[80px] bg-[#FFFAF7] rounded-[50px] shadow-md flex items-center justify-between pr-[40px] pl-[40px] font-['Poppins']">
       {/* Left */}
       <div className="flex items-center">
-        <img src="src/assets/Home/Navbar/logoLight.png" alt="Baoiam" className="h-[52px] w-auto" />
+        <img src={lightLogo} alt="Baoiam" className="h-[52px] w-auto" />
       </div>
 
       {/* Center */}

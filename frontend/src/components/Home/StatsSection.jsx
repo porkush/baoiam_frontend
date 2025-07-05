@@ -1,5 +1,8 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
+import img1 from "../../assets/Home/StatsSection/1.jpg"
+import img2 from "../../assets/Home/StatsSection/2.jpg"
+import img3 from "../../assets/Home/StatsSection/3.jpg"
 
 export default function StatsSection() {
   return (
@@ -36,17 +39,17 @@ export default function StatsSection() {
         </h2>
         <div className=" h-[100px] flex justify-center items-center gap-[100px] flex-wrap">
           <img
-            src="src/assets/Home/StatsSection/1.jpg"
+            src={img1}
             alt="MSME"
             className="h-[100px] w-auto object-contain"
           />
           <img
-            src="src/assets/Home/StatsSection/2.jpg"
+            src={img2}
             alt="DPIIT Startup India"
             className="h-[100px] w-auto object-contain"
           />
           <img
-            src="src/assets/Home/StatsSection/3.jpg"
+            src={img3}
             alt="ISO 9001"
             className="h-[100px] w-auto object-contain"
           />
