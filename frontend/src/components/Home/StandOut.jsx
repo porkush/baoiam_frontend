@@ -1,3 +1,4 @@
+
 import React from "react";
 import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
@@ -24,7 +25,7 @@ export default function ComparisonTable() {
         {/* Section Heading */}
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-5xl font-bold mb-2">
-            Here’s Why <span className="text-orange-500">Baoiam Stands Out!</span>
+            Here's Why <span className="text-orange-500">Baoiam Stands Out!</span>
           </h2>
           <p className="text-black md:text-xl max-w-2xl mx-auto mt-5">
             Our commitment to quality, dedication and achievement oriented mindset sets us apart
@@ -33,53 +34,59 @@ export default function ComparisonTable() {
 
         {/* Main Table Container */}
         <div className="bg-white rounded-[20px] shadow-lg p-5 md:p-8">
-          <div className="flex flex-col md:flex-row">
-            {/* Features Column (Half width) */}
+          <div className="flex flex-col md:flex-row gap-6">
+            {/* Features Column */}
             <div className="md:w-1/2 flex flex-col">
               <div className="bg-[#B2B2B2] rounded-lg text-center py-5 font-medium text-3xl text-[#1D2026]">
                 Features
               </div>
-              <div className="flex flex-col bg-gray-50">
+              <div className="flex flex-col bg-gray-50 rounded-lg border border-gray-50">
                 {features.map((item, idx) => (
-                  <div key={idx} className="py-4 px-3 text-center md:text-left text-black font-medium text-xl">
+                  <div 
+                    key={idx} 
+                    className="py-4 px-3 text-black font-medium text-xl border-b border-gray-50 last:border-b-0 h-[60px] flex items-center"
+                  >
                     {item}
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Right Side (Others + Us each half of remaining) */}
-            <div className="md:w-1/2 ml-5 flex flex-row">
-              {/* Others Column */}
-              <div className="w-1/2 flex flex-col ml-6">
-                <div className="bg-[#B2B2B2] rounded-lg text-center py-5 font-medium  text-3xl text-[#1D2026]">
-                  Others
-                </div>
-                <div className="flex flex-col  bg-gray-50">
-                  {others.map((val, idx) => (
-                    <div key={idx} className="py-4 flex justify-center">
-                      {val ? (
-                        <FaCheckCircle className="text-green-500 text-xl" />
-                      ) : (
-                        <FaTimesCircle className="text-red-500 text-xl" />
-                      )}
-                    </div>
-                  ))}
-                </div>
+            {/* Others Column */}
+            <div className="md:w-1/4 flex flex-col">
+              <div className="bg-[#B2B2B2] rounded-lg text-center py-5 font-medium text-3xl text-[#1D2026]">
+                Others
               </div>
-
-              {/* Us Column */}
-              <div className="w-1/2  flex flex-col ml-8">
-                <div className="bg-[#B2B2B2] rounded-lg text-center py-5 font-medium  text-3xl text-[#1D2026]"> 
-                  Us
-                </div>
-                <div className="flex flex-col bg-gray-50">
-                  {us.map((val, idx) => (
-                    <div key={idx} className="py-4 flex justify-center">
+              <div className="flex flex-col bg-gray-50 rounded-lg border border-gray-50">
+                {others.map((val, idx) => (
+                  <div 
+                    key={idx} 
+                    className="py-4 flex justify-center items-center border-b border-gray-50 last:border-b-0 h-[60px]"
+                  >
+                    {val ? (
                       <FaCheckCircle className="text-green-500 text-xl" />
-                    </div>
-                  ))}
-                </div>
+                    ) : (
+                      <FaTimesCircle className="text-red-500 text-xl" />
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Us Column */}
+            <div className="md:w-1/4 flex flex-col">
+              <div className="bg-[#B2B2B2] rounded-lg text-center py-5 font-medium text-3xl text-[#1D2026]">
+                Us
+              </div>
+              <div className="flex flex-col bg-gray-50 rounded-lg border border-gray-50">
+                {us.map((val, idx) => (
+                  <div 
+                    key={idx} 
+                    className="py-4 flex justify-center items-center border-b border-gray-50 last:border-b-0 h-[60px]"
+                  >
+                    <FaCheckCircle className="text-green-500 text-xl" />
+                  </div>
+                ))}
               </div>
             </div>
           </div>
