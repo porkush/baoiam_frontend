@@ -1,6 +1,6 @@
 import React from "react";
 import StatsSection from "./StatsSection";
-import { MdArrowForward } from "react-icons/md";
+// import { MdArrowForward } from "react-icons/md";
 import { motion } from "framer-motion";
 import img1 from '../../assets/Home/HeroSection/1.png';
 import img2 from '../../assets/Home/HeroSection/2.png';
@@ -56,8 +56,8 @@ export default function HeroSection() {
 
           <div className="mt-4 flex">
             <button className="bg-[#FF6501] border rounded-lg text-white flex items-center gap-2 pt-[5px] pr-[20px] pb-[5px] pl-[20px] mr-4 font-medium">
-              Apply Now
-              <MdArrowForward className="w-5 h-5" />
+              Apply Now →
+              {/* <MdArrowForward className="w-5 h-5" /> */}
             </button>
 
             <button className="bg-black text-white border rounded-lg pt-[5px] pr-[20px] pb-[5px] pl-[20px] ">

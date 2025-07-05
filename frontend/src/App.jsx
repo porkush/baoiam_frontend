@@ -6,6 +6,7 @@ import Navbar from './components/Home/Navbar';
 import Footer from './components/Footer/Footer';
 import HeroSection from './components/Home/HeroSection';
 import StatsSection from './components/Home/StatsSection';
+import FeaturedCourses from './components/Home/FeaturedCourses';
 
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
       <Navbar/>
       <HeroSection/>
       <StatsSection/>
+      <FeaturedCourses/>
+      
       {/* <Footer/> */}
     </div>
   );

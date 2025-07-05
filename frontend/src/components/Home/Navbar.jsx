@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="sticky mx-auto mt-[20px] max-w-[1430px] h-[80px] bg-[#FFFAF7] rounded-[50px] shadow-md flex items-center justify-between pr-[40px] pl-[40px] font-['Poppins']">
       {/* Left */}
       <div className="flex items-center">
-        <img src={lightLogo} alt="Baoiam" className="h-[52px] w-auto" />
+        <img src={lightLogo} alt="Baoiam" className="h-[70px] w-[130px]" />
       </div>
 
       {/* Center */}
