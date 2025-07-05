@@ -7,6 +7,8 @@ import Footer from './components/Footer/Footer';
 import HeroSection from './components/Home/HeroSection';
 import StatsSection from './components/Home/StatsSection';
 import FeaturedCourses from './components/Home/FeaturedCourses';
+import InsightsSection from './components/Home/InsightsSection';
+import StandOut from './components/Home/StandOut';
 
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
       <HeroSection/>
       <StatsSection/>
       <FeaturedCourses/>
+      <InsightsSection/>
+      <StandOut/>
       
       {/* <Footer/> */}
     </div>
