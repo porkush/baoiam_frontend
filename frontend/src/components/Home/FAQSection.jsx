@@ -27,23 +27,25 @@ const faqData = [
   {
     question: "What are the fees for the program?",
     answer: `The pricing ranges from ₹2,999 to ₹4,999 depending on the course structure. Special offers, scholarships, and token-based payment models like "Pay After Placement" are also available for selected batches.`,
-  },
-  {
-    question: "What is included in the program?",
-    answer: `✅ Live Masterclasses\n✅ Real-World Projects & Internships\n✅ 1-on-1 Mentorship\n✅ Resume & Portfolio Building\n✅ Career Guidance\n✅ Access to our Premium Resource Hub\n✅ Placement Preparation & Support`,
-  },
-  {
-    question: "Is this program online or offline?",
-    answer: `The program is 100% online and accessible from anywhere in India. All sessions are conducted via Zoom or Google Meet.`,
-  },
-  {
-    question: "How do I apply?",
-    answer: `Simply fill out the registration form available on our website or connect with our student counselors via WhatsApp or call.`,
-  },
-  {
-    question: "Will I get internship opportunities?",
-    answer: `Yes. We ensure all eligible students get virtual or hybrid internship opportunities with real companies, projects, and mentorship.`,
-  },
+  }
+  // ,
+  // {
+  //   question: "What is included in the program?",
+  //   answer: `✅ Live Masterclasses\n✅ Real-World Projects & Internships\n✅ 1-on-1 Mentorship\n✅ Resume & Portfolio Building\n✅ Career Guidance\n✅ Access to our Premium Resource Hub\n✅ Placement Preparation & Support`,
+  // }
+  // ,
+  // {
+  //   question: "Is this program online or offline?",
+  //   answer: `The program is 100% online and accessible from anywhere in India. All sessions are conducted via Zoom or Google Meet.`,
+  // },
+  // {
+  //   question: "How do I apply?",
+  //   answer: `Simply fill out the registration form available on our website or connect with our student counselors via WhatsApp or call.`,
+  // },
+  // {
+  //   question: "Will I get internship opportunities?",
+  //   answer: `Yes. We ensure all eligible students get virtual or hybrid internship opportunities with real companies, projects, and mentorship.`,
+  // },
 ];
 
 export default function FAQSection() {
