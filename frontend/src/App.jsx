@@ -9,6 +9,8 @@ import StatsSection from './components/Home/StatsSection';
 import FeaturedCourses from './components/Home/FeaturedCourses';
 import InsightsSection from './components/Home/InsightsSection';
 import StandOut from './components/Home/StandOut';
+import Testimonial from './components/Home/Testimonial';
+import FAQSection from './components/Home/FAQSection';
 
 
 function App() {
@@ -20,6 +22,9 @@ function App() {
       <FeaturedCourses/>
       <InsightsSection/>
       <StandOut/>
+      <Testimonial/>
+      <FAQSection/>
+      
       
       {/* <Footer/> */}
     </div>

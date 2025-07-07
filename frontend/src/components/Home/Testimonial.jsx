@@ -60,26 +60,46 @@ const Testimonial = () => {
     return () => clearInterval(interval);
   }, [currentIndex, testimonials.length]); // Added testimonials.length to dependencies
 
-  // Helper function to determine class names based on index
   const getCardClasses = (index) => {
-    let classes = "absolute transition-all duration-500 ease-in-out p-8 rounded-xl shadow-xl h-full flex flex-col justify-between";
-    const offset = index - currentIndex;
+  let classes = "absolute transition-all duration-500 ease-in-out p-8 rounded-xl shadow-xl h-full flex flex-col justify-between";
+  const offset = index - currentIndex;
 
-    if (offset === 0) {
-      // Center card
-      classes += " bg-pink-100 scale-100 opacity-100 z-20 w-2/3 left-1/2 -translate-x-1/2";
-    } else if (offset === -1 || (offset === testimonials.length - 1 && currentIndex === 0)) {
-      // Left side card (previous)
-      classes += " bg-green-100 scale-95 opacity-50 z-10 w-2/3 left-0 transform -translate-x-1/4";
-    } else if (offset === 1 || (offset === -(testimonials.length - 1) && currentIndex === testimonials.length - 1)) {
-      // Right side card (next)
-      classes += " bg-green-100 scale-95 opacity-50 z-10 w-2/3 right-0 transform translate-x-1/4";
-    } else {
-      // Hidden cards
-      classes += " hidden";
-    }
-    return classes;
-  };
+  if (offset === 0) {
+    // Center card
+    classes += " bg-pink-100 scale-100 opacity-100 z-20 w-2/3 left-1/2 -translate-x-1/2";
+  } else if (offset === -1 || (offset === testimonials.length - 1 && currentIndex === 0)) {
+    // Left side card
+    classes += " bg-green-100 scale-95 opacity-50 z-10 w-1/2 -left-1/4";
+  } else if (offset === 1 || (offset === -(testimonials.length - 1) && currentIndex === testimonials.length - 1)) {
+    // Right side card
+    classes += " bg-green-100 scale-95 opacity-50 z-10 w-1/2 -right-1/4";
+  } else {
+    // Hidden cards
+    classes += " hidden";
+  }
+  return classes;
+};
+
+  // // Helper function to determine class names based on index
+  // const getCardClasses = (index) => {
+  //   let classes = "absolute transition-all duration-500 ease-in-out p-8 rounded-xl shadow-xl h-full flex flex-col justify-between";
+  //   const offset = index - currentIndex;
+
+  //   if (offset === 0) {
+  //     // Center card
+  //     classes += " bg-pink-100 scale-100 opacity-100 z-20 w-2/3 left-1/2 -translate-x-1/2";
+  //   } else if (offset === -1 || (offset === testimonials.length - 1 && currentIndex === 0)) {
+  //     // Left side card (previous)
+  //     classes += " bg-green-100 scale-95 opacity-50 z-10 w-2/3 left-0 transform -translate-x-1/4";
+  //   } else if (offset === 1 || (offset === -(testimonials.length - 1) && currentIndex === testimonials.length - 1)) {
+  //     // Right side card (next)
+  //     classes += " bg-green-100 scale-95 opacity-50 z-10 w-2/3 right-0 transform translate-x-1/4";
+  //   } else {
+  //     // Hidden cards
+  //     classes += " hidden";
+  //   }
+  //   return classes;
+  // };
 
   return (
     <div className="relative max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
@@ -91,15 +111,12 @@ const Testimonial = () => {
       </div>
 
       {/* Carousel viewport with relative positioning for absolute children */}
-      <div className="relative h-[350px] max-w-4xl mx-auto">
+      <div className="relative h-[250px] max-w-3xl mx-auto">
         {testimonials.map((testimonial, index) => (
           <div
             key={testimonial.id} // Using testimonial.id for key, assuming unique IDs
             className={getCardClasses(index)}
           >
-            <p className="text-gray-700 italic text-lg mb-6">
-              "{testimonial.content}"
-            </p>
             <div className="flex items-center border-t border-gray-200 pt-4">
                 {/* Placeholder for author image */}
                 <img
@@ -112,6 +129,9 @@ const Testimonial = () => {
                 <p className="text-indigo-600 font-medium">{testimonial.role}</p>
               </div>
             </div>
+            <p className="text-gray-700 italic text-lg mb-6">
+              "{testimonial.content}"
+            </p>
           </div>
         ))}
       </div>
@@ -142,3 +162,13 @@ const Testimonial = () => {
 };
 
 export default Testimonial;
+
+
+
+
+
+
+
+
+
+
