@@ -9,7 +9,7 @@ const FeaturedCourses = () => {
       style={{
         width: "1240px",
         height: "520px",
-        margin: "70px 0 0 100px",
+        margin: "70px 0 0 120px",
         padding: "30px",
         border: "0.5px solid #ECEBF6",
         boxShadow: "0px 0px 8px 0px #00000026", // Added shadow to all sides

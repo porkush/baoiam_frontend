@@ -14,6 +14,7 @@ export default function HeroSection() {
     <section className="bg-white text-gray-800 px-6 pt-12 mt-6 md:flex md:items-center md:justify-between md:gap-12 font-['Poppins'] w-[1248px]">
       <div className="flex flex-col w-[634px] h-[488px]  ml-20">
         {/* Headline */}
+        
         <h3 className="w-[650px] h-[75px] text-[55px] font-semibold leading-[100%] font-poppins">
           <span className="text-black">Learn. Build. </span>
           <span className="text-orange-500">Get Hired.</span>
