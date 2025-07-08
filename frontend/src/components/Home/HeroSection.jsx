@@ -11,11 +11,11 @@ import img6 from "../../assets/Home/HeroSection/6.png";
 
 export default function HeroSection() {
   return (
-    <section className="bg-white text-gray-800 px-6 pt-12 mt-6 md:flex md:items-center md:justify-between md:gap-12 font-['Poppins'] w-[1248px]">
+    <section className="bg-white text-gray-800 px-6 pt-12  md:flex md:items-center md:justify-between md:gap-12 font-['Poppins'] w-[1248px]">
       <div className="flex flex-col w-[634px] h-[488px]  ml-20">
         {/* Headline */}
         
-        <h3 className="w-[650px] h-[75px] text-[55px] font-semibold leading-[100%] font-poppins">
+        <h3 className="w-[650px] h-[75px] text-[52px] font-semibold leading-[100%] font-poppins">
           <span className="text-black">Learn. Build. </span>
           <span className="text-orange-500">Get Hired.</span>
         </h3>
@@ -33,7 +33,7 @@ export default function HeroSection() {
           </h2>
 
           <ul className="flex flex-col w-[549px] h-[178px] gap-[10px]">
-            <li className="flex items-center w-[549px] h-[48px] px-[10px] py-[3px] rounded-[5px] bg-[#F8F8F8] gap-[16px] font-medium text-lg">
+            <li className="flex items-center w-[549px] h-[48px] px-[10px] py-[3px] rounded-[5px] bg-[#F8F8F8] gap-[16px] font-medium text-lg hover:bg-gray-300">
               <input
                 type="radio"
                 name="goal"
@@ -42,7 +42,7 @@ export default function HeroSection() {
               Launch my career with job-ready skills
             </li>
 
-            <li className="flex items-center w-[549px] h-[48px] px-[10px] py-[3px] rounded-[5px] bg-[#F8F8F8] gap-[16px] font-medium text-lg">
+            <li className="flex items-center w-[549px] h-[48px] px-[10px] py-[3px] rounded-[5px] bg-[#F8F8F8] gap-[16px] font-medium text-lg hover:bg-gray-300">
               <input
                 type="radio"
                 name="goal"
@@ -51,7 +51,7 @@ export default function HeroSection() {
               Upskill while in college
             </li>
 
-            <li className="flex items-center w-[549px] h-[48px] px-[10px] py-[3px] rounded-[5px] bg-[#F8F8F8] gap-[16px] font-medium text-lg">
+            <li className="flex items-center w-[549px] h-[48px] px-[10px] py-[3px] rounded-[5px] bg-[#F8F8F8] gap-[16px] font-medium text-lg hover:bg-gray-300">
               <input
                 type="radio"
                 name="goal"
@@ -60,7 +60,7 @@ export default function HeroSection() {
               Switch to high-demand career
             </li>
 
-            <li className="flex items-center w-[549px] h-[48px] px-[10px] py-[3px] rounded-[5px] bg-[#F8F8F8] gap-[16px] font-medium text-lg">
+            <li className="flex items-center w-[549px] h-[48px] px-[10px] py-[3px] rounded-[5px] bg-[#F8F8F8] gap-[16px] font-medium text-lg hover:bg-gray-300">
               <input
                 type="radio"
                 name="goal"
@@ -71,7 +71,7 @@ export default function HeroSection() {
           </ul>
 
           <div className="mt-4 flex">
-            <button className="bg-[#FF6501] border rounded-lg text-white flex items-center gap-2 pt-[5px] pr-[20px] pb-[6px] pl-[20px] mr-4 font-medium text-xl">
+            <button className="bg-[#FF6501] border rounded-lg text-white flex items-center gap-2 pt-[5px] pr-[20px] pb-[6px] pl-[20px] mr-4 font-medium text-xl hover:bg-[#ff6501]">
               Apply Now →{/* <MdArrowForward className="w-5 h-5" /> */}
             </button>
 

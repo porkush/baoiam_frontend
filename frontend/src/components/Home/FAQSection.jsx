@@ -70,12 +70,15 @@ export default function FAQSection() {
         <button className="mt-4 px-5 py-2 border rounded-md bg-gray-200 border-gray-300 hover:bg-gray-100 transition">
           See All FAQ’s
         </button>
-        <img
-          src={FAQ_Img}
-          alt="FAQ Illustration"
-          className="mt-18 max-w-xs md:max-w-sm w-[450px] h-[409px] 
-"
-        />
+       <div className="relative w-[409px] h-[409px] overflow-hidden mt-10">
+  <img
+    src={FAQ_Img}
+    alt="FAQ Illustration"
+    className="w-full h-full object-cover"
+  />
+  <div className="absolute bottom-0 left-0 w-full h-[35px] bg-gradient-to-t from-white to-transparent" />
+</div>
+
       </div>
 
       {/* Right side */}

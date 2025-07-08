@@ -22,13 +22,13 @@ const Prestige = () => {
      
     return (
 
-       <div className="bg-gray-100 py-10 px-4 sm:px-6 lg:px-8">
+       <section className="bg-gray-100 py-10 px-4 sm:px-6 lg:px-8 font-['Poppins']">
       {/* Header */}
-      <div className="max-w-7xl mx-auto text-center mb-16">
-        <h1 className="text-4xl font-bold text-gray-900 mb-6">
+      <div className="max-w-7xl mx-auto text-center mb-12">
+        <h1 className="text-[48px] font-semibold text-gray-900 mb-3">
         Our <span className="text-orange-500">Prestige</span> Network
         </h1>
-        <p className="text-xl text-black max-w-3xl mx-auto">
+        <p className="text-[24px] text-black max-w-3xl mx-auto">
           Alliances with bold startups and global leaders, spanning top-tier industries and purpose-driven ventures.
         </p>
       </div>
@@ -79,7 +79,7 @@ const Prestige = () => {
               </div>
             </div>
           </div>
-       </div>
+       </section>
     );
 };
 

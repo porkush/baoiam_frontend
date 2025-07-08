@@ -11,7 +11,7 @@ const Contact = () => {
             <img 
               src={logo} 
               alt="Baoiam Logo" 
-              className="h-60 w-auto mt-4  object-contain" 
+              className="mt-4  object-contain w-[188px] h-[125px]" 
             />
             <p className="text-sm text-justify font-normal font-poppins pb-6  min-w-[200px]">
               BAOIAM is India’s leading and affordable EdTech platform dedicated to empowering students through skill-based learning and guaranteed career support. The platform offers industry-relevant certification programs in fields such as Data Analytics, Digital Marketing with AI, Software Testing, Communication Skills, and more. By combining expert-led live training, internships, and placement support, BAOIAM ensures a holistic learning experience. Its mission is to bridge the gap between education and employability, making career success accessible to everyone.

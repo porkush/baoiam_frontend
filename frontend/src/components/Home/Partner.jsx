@@ -24,15 +24,14 @@ const Partner = () => {
      
     return (
 
-       <div className="bg-gray-100 py-10 px-4 sm:px-6 lg:px-8">
+       <section className="bg-gray-100 py-10 px-4 sm:px-6 lg:px-8 font-['Poppins']">
       {/* Header */}
-      <div className="max-w-7xl mx-auto text-center mb-16">
-        <h1 className="text-4xl font-bold text-gray-900 mb-6">
+      <div className="max-w-7xl mx-auto text-center mb-14">
+        <h1 className="text-[48px] font-semibold text-gray-900 mb-4">
           Built with <span className="text-orange-500">Leading</span> Universities
         </h1>
-        <p className="text-xl text-black max-w-xl mx-auto">
-          We partner with top institutions and industry leaders to deliver credit-class learning
-          with cutting-edge resources, empowering students for tomorrow.
+        <p className="text-[24px] text-black md:w-[764px] mx-auto">
+         We partner with top institutions to deliver world-class learning and exclusive access to cutting-edge resources empowering students for tomorrow.
         </p>
       </div>
 
@@ -49,7 +48,7 @@ const Partner = () => {
                 }}
                 className="flex  flex-shrink-0 animate-marquee no-scrollbar">
                     {universities.map((image, index) => {
-                       return <img className="h-[60] w-[180] p-10" 
+                       return <img className="h-[60] w-[180] pl-10 pr-10" 
                              src={image}  
                             alt={`University logo ${index}`}
                             key={index}
@@ -67,7 +66,7 @@ const Partner = () => {
                 }}
                 className="flex  flex-shrink-0 animate-marquee no-scrollbar">
                     {universities.map((image, index) => {
-                       return <img className="h-[60] w-[180] p-10" 
+                       return <img className="h-[60] w-[180] pl-10 pr-10" 
                              src={image}  
                             alt={`University logo ${index}`}
                             key={index}
@@ -79,7 +78,7 @@ const Partner = () => {
             </div>
         </div>
         </div>
-        </div>
+        </section>
     );
 };
 
