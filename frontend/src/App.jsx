@@ -11,6 +11,11 @@ import InsightsSection from './components/Home/InsightsSection';
 import StandOut from './components/Home/StandOut';
 import Testimonial from './components/Home/Testimonial';
 import FAQSection from './components/Home/FAQSection';
+import Prestige from './components/Home/Prestige';
+
+import Contact from './components/Footer/Contact';
+import Partner from './components/Home/Partner';
+import TeamSection from './components/Home/TeamSection';
 
 
 function App() {
@@ -22,11 +27,13 @@ function App() {
       <FeaturedCourses/>
       <InsightsSection/>
       <StandOut/>
+      <Partner/>
+      <TeamSection/>
+      <Prestige/>
       <Testimonial/>
       <FAQSection/>
-      
-      
-      {/* <Footer/> */}
+      <Contact/>
+      <Footer/>
     </div>
   );
 }

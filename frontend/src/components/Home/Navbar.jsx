@@ -32,7 +32,8 @@ const Navbar = () => {
               Pride
             </span>
           </li>
-          <li className="hover:text-orange-500">Refer & Earn</li>
+          <li className="hover:text-orange-500">
+            Refer & Earn</li>
           <li className="hover:text-orange-500">Success Stories</li>
           <li className="hover:text-orange-500">Company</li>
         </ul>
