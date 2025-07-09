@@ -5,35 +5,35 @@ const Testimonial = () => {
   const testimonials = [
   {
     id: 1,
-    content: "BAOJAM's training and expert mentorship helped me secure a 9.02 LPA package as a Risk Consultant. The practical approach made all the difference.",
+    content: "BAOIAM's training and expert mentorship helped me secure a 9.02 LPA package as a Risk Consultant. The practical approach made all the difference.",
     author: "Apurva Kulpe",
     role: "Risk Consultant - 9.02 LPA",
     image: "https://thumbs.dreamstime.com/b/college-student-3915511.jpg"
   },
   {
     id: 2,
-    content: "Thanks to BAOJAM's structured curriculum and interview prep, I landed a 5 LPA role as a Software Developer straight out of training.",
+    content: "Thanks to BAOIAM's structured curriculum and interview prep, I landed a 5 LPA role as a Software Developer straight out of training.",
     author: "Vishnu Vardhan",
     role: "Software Developer - 5 LPA",
     image: "https://thumbs.dreamstime.com/b/college-student-3915511.jpg"
   },
   {
     id: 3,
-    content: "The hands-on projects and personalized guidance at BAOJAM helped me get placed as a Quality Engineer at 18 LPA. Truly a game-changer for my career.",
+    content: "The hands-on projects and personalized guidance at BAOIAM helped me get placed as a Quality Engineer at 18 LPA. Truly a game-changer for my career.",
     author: "Akhil Padi",
     role: "Quality Engineer - 18 LPA",
     image: "https://thumbs.dreamstime.com/b/college-student-3915511.jpg"
   },
   {
     id: 4,
-    content: "BAOJAM's industry-focused learning and placement support helped me land a 22 LPA software engineer role at Byju's. Highly recommend it!",
+    content: "BAOIAM's industry-focused learning and placement support helped me land a 22 LPA software engineer role at Byju's. Highly recommend it!",
     author: "Vaibhav Verma",
     role: "Software Engineer at Byju's - 22 LPA",
     image: "https://thumbs.dreamstime.com/b/college-student-3915511.jpg"
   },
   {
     id: 5,
-    content: "With BAOJAM's expert mentors and real-world projects, I cracked Microsoft at 52 LPA. Their guidance was the key to my success.",
+    content: "With BAOIAM's expert mentors and real-world projects, I cracked Microsoft at 52 LPA. Their guidance was the key to my success.",
     author: "Amit Pandey",
     role: "Microsoft - 52 LPA",
     image: "https://thumbs.dreamstime.com/b/college-student-3915511.jpg"

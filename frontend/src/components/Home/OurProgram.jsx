@@ -61,11 +61,11 @@ const OurProgram = () => {
             </h3>
 
             <p className="font-semibold text-[#333333] mb-1">
-              <span className="underline underline-offset-1 decoration-gray-[#333333] text-[22px]">
+              <span className="underline underline-offset-1 decoration-gray-[#333333] text-[24px]">
                 Zero to Job–Ready in 90 Days at just ₹999.
               </span>
             </p>
-            <p className="text-orange-500 font-medium my-4 text-[20px]">
+            <p className="text-orange-500 font-medium my-4 text-[22px]">
               Affordable. Practical. Result-driven.
             </p>
             <ul className="mb-6 text-[#333333] text-[18px] list-disc list-inside p-3 font-medium">
@@ -94,19 +94,19 @@ const OurProgram = () => {
             </h3>
 
             <p className="font-semibold text-[#333333] mb-1">
-              <span className="underline underline-offset-1 decoration-gray-[#333333] text-[22px]">
-                Zero to Job–Ready in 90 Days at just ₹999.
+              <span className="underline underline-offset-1 decoration-gray-[#333333] text-[24px]">
+                ₹4999 Upskill & Placement Program.
               </span>
             </p>
-            <p className="text-orange-500 font-medium my-4 text-[20px]">
-              Affordable. Practical. Result-driven.
+            <p className="text-orange-500 font-medium my-4 text-[22px]">
+             Learn. Intern. Get Hired.
             </p>
             <ul className="mb-6 text-[#333333] text-[18px] list-disc list-inside p-3 font-medium">
-              <li>Live classes + projects</li>
-              <li>Resume & interview preparation</li>
-              <li>Mentorship + peer support</li>
-              <li>Duration – 3 Months</li>
-              <li>Upto 7 LPA Package</li>
+              <li>12-month structured learning</li>
+              <li>Live projects + Internships</li>
+              <li>Placement support</li>
+              <li>1:1 mentorship</li>
+              <li>Upto 20 LPA Package</li>
             </ul>
           </div>
 

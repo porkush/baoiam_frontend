@@ -21,8 +21,8 @@ const Prestige = () => {
 
      
     return (
-
-       <section className="bg-gray-100 py-10 px-4 sm:px-6 lg:px-8 font-['Poppins']">
+      
+       <section className="bg-gray-100 py-10 mt-7 px-4 sm:px-6 lg:px-8 font-['Poppins']">
       {/* Header */}
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h1 className="text-[48px] font-semibold text-gray-900 mb-3">

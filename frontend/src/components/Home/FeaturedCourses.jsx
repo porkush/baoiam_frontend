@@ -6,7 +6,7 @@ const FeaturedCourses = () => {
   return (
 
     <section 
-  className="bg-white rounded-[20px] font-['Poppins'] mx-auto my-[70px] max-w-[calc(100%-40px)] lg:max-w-[1240px]"
+  className="bg-white rounded-[20px] font-['Poppins'] mx-auto max-w-[calc(100%-40px)] lg:max-w-[1240px]"
   style={{
     padding: "30px",
     border: "0.5px solid #ECEBF6",

@@ -66,7 +66,7 @@ const Partner = () => {
                 }}
                 className="flex  flex-shrink-0 animate-marquee no-scrollbar">
                     {universities.map((image, index) => {
-                       return <img className="h-[60] w-[180] pl-10 pr-10" 
+                       return <img className=" pl-10 pr-10" 
                              src={image}  
                             alt={`University logo ${index}`}
                             key={index}

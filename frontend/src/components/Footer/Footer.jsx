@@ -277,7 +277,7 @@ const Footer = () => {
       <img
         src={logo}
         alt="Baoiam Logo"
-        className="h-[70px] w-[91px] mb-1"
+        className="h-[72px] w-[100px] mb-1"
       />
       <p className="text-base text-justify mb-4">
         Follow us for the latest updates, career insights, and program
@@ -336,7 +336,7 @@ const Footer = () => {
   </div>
 
   {/* Bottom Footer */}
-  <div className="py-6 flex flex-col md:flex-row justify-between items-center text-sm gap-4">
+  <div className="py-6 flex flex-col md:flex-row justify-between items-center text-sm gap-4 pb-12">
     <p>
       © 2021 - Designed by <span className="text-gray-200">Baoiam.</span>{" "}
       All rights reserved.

@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav
       className="sticky top-[20px] z-50
- mx-auto mt-[20px] max-w-[1430px] h-[80px] bg-[#FFFAF7] rounded-[50px] shadow-md flex items-center justify-between pr-[40px] pl-[40px] font-['Poppins']"
+ mx-auto mt-[20px] max-w-[1340px] h-[80px] bg-[#FFFAF7] rounded-[50px] shadow-md flex items-center justify-between pr-[40px] pl-[40px] font-['Poppins']"
     >
       {/* Left */}
       <div className="flex items-center">

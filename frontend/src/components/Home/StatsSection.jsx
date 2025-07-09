@@ -33,27 +33,30 @@ export default function StatsSection() {
 
   {/* Accreditation Section */}
   <div className="w-full max-w-6xl text-center px-2">
-    <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-semibold mb-4 md:mb-6">
+    <h2 className="text-[22px] md:text-[30px] lg:text-[37px] font-semibold mb-4 md:mb-6">
       We are accredited by
     </h2>
     <div className="h-auto py-4 flex flex-wrap justify-center items-center gap-6 md:gap-10 lg:gap-[70px]">
       <img
         src={img2}
         alt="DPIIT Startup India"
-        className="h-[60px] md:h-[80px] lg:h-[130px] w-auto max-w-[180px] md:max-w-[220px] lg:max-w-[250px] object-contain"
+        className="h-[60px] md:h-[80px] lg:h-[130px] w-auto max-w-[180px] md:max-w-[220px] lg:max-w-[260px] object-contain"
       />
       <img
         src={img1}
         alt="MSME"
-        className="h-[60px] md:h-[80px] lg:h-[130px] w-auto max-w-[140px] md:max-w-[160px] lg:max-w-[189px] object-contain"
+        className="h-[60px] md:h-[80px] lg:h-[130px] w-auto max-w-[140px] md:max-w-[220px] lg:max-w-[260px] object-contain"
       />
       <img
         src={img3}
         alt="ISO 9001"
-        className="h-[60px] md:h-[80px] lg:h-[130px] w-auto max-w-[120px] md:max-w-[140px] lg:max-w-[162px] object-contain"
+        className="h-[60px] md:h-[80px] lg:h-[130px] w-auto max-w-[120px] md:max-w-[220px] lg:max-w-[260px] object-contain"
       />
     </div>
   </div>
+  {/* Divider at the end */}
+  <hr className="w-full  border-t-[2px] border-gray-100 mt-8" />
+      
 </section>
 //     <section className="w-full flex flex-col items-center bg-white pt-5 font-['Poppins']">
 //       {/* Top Black Bar */}

@@ -83,7 +83,7 @@ const Contact = () => {
           <img
             src={logo}
             alt="Baoiam Logo"
-            className="mt-4 mb-6 object-contain w-[188px] h-[125px]"
+            className="mt-1 mb-6 object-contain w-[188px] h-[125px]"
           />
 
           <p className="text-sm text-justify font-normal font-poppins pb-6 min-w-[200px] mb-4">
