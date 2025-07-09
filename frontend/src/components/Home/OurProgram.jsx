@@ -51,9 +51,10 @@ const OurProgram = () => {
         {/* Right: Content */}
         <div className="flex flex-col justify-between p-6 md:p-8 w-full md:w-1/2 ml-5">
           <div>
-            <h3 className="text-2xl md:text-[42px] font-bold text-gray-900 mb-2">
-              Udaan <span className="text-orange-500">– 90</span>
+            <h3 className="text-2xl md:text-[42px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#1D2026] via-[#e45c02] to-[#FF6501] mb-2">
+              Udaan – 90
             </h3>
+
             <p className="font-semibold text-[#333333] mb-1">
               <span className="underline underline-offset-1 decoration-gray-[#333333] text-[22px]">
                 Zero to Job–Ready in 90 Days at just ₹999.
@@ -80,12 +81,13 @@ const OurProgram = () => {
       {/*Grid 2 */}
 
       <div className="max-w-[973px] mx-auto bg-[#FFF0E6] rounded-2xl shadow-md border border-orange-100 overflow-hidden flex flex-col md:flex-row font-['Poppins'] mt-10">
-             {/* Left: Content */}
+        {/* Left: Content */}
         <div className="flex flex-col justify-between p-6 md:p-8 w-full md:w-1/2 ml-5">
           <div>
-            <h3 className="text-2xl md:text-[42px] font-bold text-gray-900 mb-2">
-              Udaan <span className="text-orange-500">– 90</span>
+            <h3 className="text-2xl md:text-[42px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#1D2026] via-[#c55713] to-[#FF6501] mb-2">
+              Success Fusion
             </h3>
+
             <p className="font-semibold text-[#333333] mb-1">
               <span className="underline underline-offset-1 decoration-gray-[#333333] text-[22px]">
                 Zero to Job–Ready in 90 Days at just ₹999.
@@ -108,7 +110,7 @@ const OurProgram = () => {
           </button>
         </div>
 
-           {/* Left: Image with stats bar */}
+        {/* Left: Image with stats bar */}
         <div className="relative md:w-1/2 w-full flex justify-center items-center mb-15 mt-3 mr-7">
           <img
             src="https://i.pinimg.com/736x/8e/f0/bb/8ef0bb37468f953b3ff0325782d894e1.jpg"

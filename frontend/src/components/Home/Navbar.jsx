@@ -24,16 +24,15 @@ const Navbar = () => {
     font-poppins font-normal text-[18px] leading-none
     bg-clip-text text-transparent
     bg-gradient-to-r
-    from-[#F1EAF9] via-[#8A38F5] to-[#110028] to-75%
+    from-[#8A38F5] via-[#F1EAF9] to-[#110028] to-75%
     bg-[length:400%_auto]
-    animate-gradient-scroll
+    animate-gradient
   "
             >
               Pride
             </span>
           </li>
-          <li className="hover:text-orange-500">
-            Refer & Earn</li>
+          <li className="hover:text-orange-500">Refer & Earn</li>
           <li className="hover:text-orange-500">Success Stories</li>
           <li className="hover:text-orange-500">Company</li>
         </ul>
