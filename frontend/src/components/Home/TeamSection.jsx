@@ -362,7 +362,7 @@ const MembersPage = () => {
   const renderMemberCard = (member, index) => (
   <div
     key={`${member.name}-${index}`}
-    className={`flex-shrink-0 w-64 mx-4 flex flex-col items-center p-6 ${gradients[index % gradients.length]} rounded-lg`}
+    className={`flex-shrink-0 w-64 mx-4 flex flex-col items-center p-6 ${gradients[index % gradients.length]} `}
   >
     <div className="text-center w-full mb-6">
       <h1 className="font-bold text-xl text-gray-900">{member.name}</h1>
@@ -381,7 +381,7 @@ const MembersPage = () => {
 
     <div className={`w-58 h-74 overflow-hidden rounded-full ${solidColors[index % solidColors.length]}`}>
       <img
-        className="w-full h-full object-cover"
+        className="w-full h-full object-cover "
         src={member.image}
         alt={member.name}
       />
