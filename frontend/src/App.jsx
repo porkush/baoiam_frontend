@@ -16,6 +16,7 @@ import Prestige from './components/Home/Prestige';
 import Contact from './components/Footer/Contact';
 import Partner from './components/Home/Partner';
 import TeamSection from './components/Home/TeamSection';
+import OurProgram from './components/Home/OurProgram';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Navbar/>
       <HeroSection/>
       <StatsSection/>
+      <OurProgram/>
       <FeaturedCourses/>
       <InsightsSection/>
       <StandOut/>
