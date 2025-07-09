@@ -3,42 +3,43 @@ import {FaArrowLeft ,FaArrowRight } from "react-icons/fa";
 
 const Testimonial = () => {
   const testimonials = [
-    {
-      id: 1,
-      content: "BAOJAM helped me land my first job within 2 months of joining. The live projects and mentorship gave me the confidence to crack my interviews.",
-      author: "Ritika Sharma",
-      role: "BAOJAM Alumni",
-      image: "https://thumbs.dreamstime.com/b/college-student-3915511.jpg" // Placeholder for an image
-    },
-    {
-      id: 2,
-      content: "The comprehensive curriculum and hands-on projects at BAOJAM were instrumental in my career transition. Highly recommended!",
-      author: "John Doe",
-      role: "BAOJAM Graduate",
-      image: "https://thumbs.dreamstime.com/b/college-student-3915511.jpg" // Placeholder for an image
-    },
-    {
-      id: 3,
-      content: "Thanks to BAOJAM, I gained practical skills and a strong network. Their support made all the difference in my job search.",
-      author: "Jane Smith",
-      role: "BAOJAM Success Story",
-      image: "https://thumbs.dreamstime.com/b/college-student-3915511.jpg" // Placeholder for an image
-    },
-    {
-      id: 4,
-      content: "I secured my first tech job with ease after completing BAOJAM's program. The mentors are truly invested in your success.",
-      author: "Michael Brown",
-      role: "BAOJAM Alumni",
-      image: "https://thumbs.dreamstime.com/b/college-student-3915511.jpg" // Placeholder for an image
-    },
-    {
-      id: 5,
-      content: "BAOJAM provided an excellent learning environment. The real-world projects were crucial for building my portfolio.",
-      author: "White",
-      role: "BAOJAM Certified",
-      image: "https://thumbs.dreamstime.com/b/college-student-3915511.jpg" // Placeholder for an image
-    },
-  ];
+  {
+    id: 1,
+    content: "BAOJAM's training and expert mentorship helped me secure a 9.02 LPA package as a Risk Consultant. The practical approach made all the difference.",
+    author: "Apurva Kulpe",
+    role: "Risk Consultant - 9.02 LPA",
+    image: "https://thumbs.dreamstime.com/b/college-student-3915511.jpg"
+  },
+  {
+    id: 2,
+    content: "Thanks to BAOJAM's structured curriculum and interview prep, I landed a 5 LPA role as a Software Developer straight out of training.",
+    author: "Vishnu Vardhan",
+    role: "Software Developer - 5 LPA",
+    image: "https://thumbs.dreamstime.com/b/college-student-3915511.jpg"
+  },
+  {
+    id: 3,
+    content: "The hands-on projects and personalized guidance at BAOJAM helped me get placed as a Quality Engineer at 18 LPA. Truly a game-changer for my career.",
+    author: "Akhil Padi",
+    role: "Quality Engineer - 18 LPA",
+    image: "https://thumbs.dreamstime.com/b/college-student-3915511.jpg"
+  },
+  {
+    id: 4,
+    content: "BAOJAM's industry-focused learning and placement support helped me land a 22 LPA software engineer role at Byju's. Highly recommend it!",
+    author: "Vaibhav Verma",
+    role: "Software Engineer at Byju's - 22 LPA",
+    image: "https://thumbs.dreamstime.com/b/college-student-3915511.jpg"
+  },
+  {
+    id: 5,
+    content: "With BAOJAM's expert mentors and real-world projects, I cracked Microsoft at 52 LPA. Their guidance was the key to my success.",
+    author: "Amit Pandey",
+    role: "Microsoft - 52 LPA",
+    image: "https://thumbs.dreamstime.com/b/college-student-3915511.jpg"
+  }
+];
+
 
   const [currentIndex, setCurrentIndex] = useState(0);
 

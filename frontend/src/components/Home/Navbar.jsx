@@ -2,6 +2,7 @@ import React from "react";
 import { IoMoon, IoSunny } from "react-icons/io5";
 import { FaChevronDown } from "react-icons/fa";
 import lightLogo from "../../assets/Home/Navbar/logoLight.png";
+import giftbox from "../../assets/Home/Navbar/gift.gif";
 
 const Navbar = () => {
   return (
@@ -35,8 +36,6 @@ const Navbar = () => {
               </li>
             </ul>
           </li>
-
-          
           <li className="relative inline-block">
             <span
               className="
@@ -51,7 +50,10 @@ const Navbar = () => {
               Pride
             </span>
           </li>
-          <li className="hover:text-orange-500">Refer & Earn</li>
+          <li className="flex items-center gap-2 hover:text-orange-500">
+            <img src={giftbox} alt="Referral Animation" className="w-5 h-6" />
+            <span>Refer & Earn</span>
+          </li>{" "}
           <li className="hover:text-orange-500">Success Stories</li>
           <li className="relative group cursor-pointer">
             <span className="flex items-center hover:text-orange-500">
