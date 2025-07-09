@@ -1,7 +1,7 @@
 // import React from 'react';
 // import udaanImg from '../assets/udaan90.png';
 // import fusionImg from '../assets/successfusion.png';
-import Head from "../../assets/Home/OurProgram/Head.png";
+import Head from "../../assets/Home/OurProgram/head.png";
 
 const OurProgram = () => {
   return (

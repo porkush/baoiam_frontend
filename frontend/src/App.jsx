@@ -17,6 +17,7 @@ import Contact from './components/Footer/Contact';
 import Partner from './components/Home/Partner';
 import TeamSection from './components/Home/TeamSection';
 import OurProgram from './components/Home/OurProgram';
+import DataScienceBanner from './components/Home/DataScienceBanner';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       <StatsSection/>
       <OurProgram/>
       <FeaturedCourses/>
+      <DataScienceBanner/>
       <InsightsSection/>
       <StandOut/>
       <Partner/>

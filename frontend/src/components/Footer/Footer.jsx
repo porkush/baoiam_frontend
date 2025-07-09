@@ -182,92 +182,181 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="text-gray-500 px-28 pt-5 bg-[#1D2026] font-['Poppins']">
-      {/* Top Footer */}
-      <div className="flex flex-wrap justify-between gap-8 ">
-        {/* Logo + Social */}
-        <div className="max-w-sm">
-          <img
-            src={logo}
-            alt="Baoiam Logo"
-            className="h-[70px] w-[91px] mb-1"
-          />
-          <p className="text-base text-justify mb-4">
-            Follow us for the latest updates, career insights, and program
-            launches.
-          </p>
-          <div className="flex space-x-3">
-            {[FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube].map(
-              (Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`p-3 text-white transition-colors ${
-                    Icon === FaLinkedinIn
-                      ? "bg-orange-500 hover:bg-orange-600"
-                      : "bg-[#363B4766] hover:bg-orange-500"
-                  }`}
-                >
-                  <Icon size={18} />
-                </a>
-              )
-            )}
-          </div>
-        </div>
+    // <footer className="text-gray-500 px-28 pt-5 bg-[#1D2026] font-['Poppins']">
+    //   {/* Top Footer */}
+    //   <div className="flex flex-wrap justify-between gap-8 ">
+    //     {/* Logo + Social */}
+    //     <div className="max-w-sm">
+    //       <img
+    //         src={logo}
+    //         alt="Baoiam Logo"
+    //         className="h-[70px] w-[91px] mb-1"
+    //       />
+    //       <p className="text-base text-justify mb-4">
+    //         Follow us for the latest updates, career insights, and program
+    //         launches.
+    //       </p>
+    //       <div className="flex space-x-3">
+    //         {[FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube].map(
+    //           (Icon, i) => (
+    //             <a
+    //               key={i}
+    //               href="#"
+    //               target="_blank"
+    //               rel="noopener noreferrer"
+    //               className={`p-3 text-white transition-colors ${
+    //                 Icon === FaLinkedinIn
+    //                   ? "bg-orange-500 hover:bg-orange-600"
+    //                   : "bg-[#363B4766] hover:bg-orange-500"
+    //               }`}
+    //             >
+    //               <Icon size={18} />
+    //             </a>
+    //           )
+    //         )}
+    //       </div>
+    //     </div>
 
-        {/* Dynamic Sections */}
-        {footerData.map((section, index) => (
-          <FooterLinksSection
-            key={index}
-            heading={section.heading}
-            items={section.items}
-          />
-        ))}
+    //     {/* Dynamic Sections */}
+    //     {footerData.map((section, index) => (
+    //       <FooterLinksSection
+    //         key={index}
+    //         heading={section.heading}
+    //         items={section.items}
+    //       />
+    //     ))}
 
-        {/* App Download */}
-        <div className="text-sm">
-          <h5 className="text-white mb-6">DOWNLOAD OUR APP</h5>
+    //     {/* App Download */}
+    //     <div className="text-sm">
+    //       <h5 className="text-white mb-6">DOWNLOAD OUR APP</h5>
           
-          <a href="https://play.google.com/store" target="_blank">
-            <img src={applelogo} alt="App Store" className="h-14 w-40" />
-          </a>
-          <a href="https://play.google.com/store" target="_blank">
-            <img
-              src={googlelogo}
-              alt="Google Play"
-              className="h-12 w-40 mt-4"
-            />
-          </a>
-        </div>
-      </div>
+    //       <a href="https://play.google.com/store" target="_blank">
+    //         <img src={applelogo} alt="App Store" className="h-[58px] w-40" />
+    //       </a>
+    //       <a href="https://play.google.com/store" target="_blank">
+    //         <img
+    //           src={googlelogo}
+    //           alt="Google Play"
+    //           className="h-[58px] w-40 mt-4"
+    //         />
+    //       </a>
+    //     </div>
+    //   </div>
 
-      {/* Divider */}
-      <div className="-mx-28 mt-18">
-        <hr className="w-full border-t border-gray-700" />
-      </div>
+    //   {/* Divider */}
+    //   <div className="-mx-28 mt-18">
+    //     <hr className="w-full border-t border-gray-700" />
+    //   </div>
 
-      {/* Bottom Footer */}
-      <div className="py-6 flex flex-col md:flex-row justify-between items-center text-sm gap-4">
-        <p>
-          © 2021 - Designed by <span className="text-gray-200">Baoiam.</span>{" "}
-          All rights reserved.
-        </p>
+    //   {/* Bottom Footer */}
+    //   <div className="py-6 flex flex-col md:flex-row justify-between items-center text-sm gap-4">
+    //     <p>
+    //       © 2021 - Designed by <span className="text-gray-200">Baoiam.</span>{" "}
+    //       All rights reserved.
+    //     </p>
 
-        <div>
-          <select
-            name="language"
-            className="bg-[#1D2026]  py-2 border-[#363B47] border-[1px] flex justify-between w-[140px] p-2 text-gray-500"
-          >
-            <option>English</option>
-            <option>Hindi</option>
-            <option>Marathi</option>
-            <option>Bengali</option>
-          </select>
-        </div>
+    //     <div>
+    //       <select
+    //         name="language"
+    //         className="bg-[#1D2026]  py-2 border-[#363B47] border-[1px] flex justify-between w-[140px] p-2 text-gray-500"
+    //       >
+    //         <option>English</option>
+    //         <option>Hindi</option>
+    //         <option>Marathi</option>
+    //         <option>Bengali</option>
+    //       </select>
+    //     </div>
+    //   </div>
+    // </footer>
+  
+  <footer className="text-gray-500 px-4 md:px-28 pt-5 bg-[#1D2026] font-['Poppins']">
+  {/* Top Footer */}
+  <div className="flex flex-wrap justify-between gap-8">
+    {/* Logo + Social */}
+    <div className="max-w-sm">
+      <img
+        src={logo}
+        alt="Baoiam Logo"
+        className="h-[70px] w-[91px] mb-1"
+      />
+      <p className="text-base text-justify mb-4">
+        Follow us for the latest updates, career insights, and program
+        launches.
+      </p>
+      <div className="flex space-x-3">
+        {[FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube].map(
+          (Icon, i) => (
+            <a
+              key={i}
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`p-3 text-white transition-colors ${
+                Icon === FaLinkedinIn
+                  ? "bg-orange-500 hover:bg-orange-600"
+                  : "bg-[#363B4766] hover:bg-orange-500"
+              }`}
+            >
+              <Icon size={18} />
+            </a>
+          )
+        )}
       </div>
-    </footer>
+    </div>
+
+    {/* Dynamic Sections */}
+    {footerData.map((section, index) => (
+      <FooterLinksSection
+        key={index}
+        heading={section.heading}
+        items={section.items}
+      />
+    ))}
+
+    {/* App Download */}
+    <div className="text-sm">
+      <h5 className="text-white mb-6">DOWNLOAD OUR APP</h5>
+      
+      <a href="https://play.google.com/store" target="_blank">
+        <img src={applelogo} alt="App Store" className="h-[58px] w-40" />
+      </a>
+      <a href="https://play.google.com/store" target="_blank">
+        <img
+          src={googlelogo}
+          alt="Google Play"
+          className="h-[58px] w-40 mt-4"
+        />
+      </a>
+    </div>
+  </div>
+
+  {/* Divider */}
+  <div className="-mx-4 md:-mx-28 mt-18">
+    <hr className="w-full border-t border-gray-700" />
+  </div>
+
+  {/* Bottom Footer */}
+  <div className="py-6 flex flex-col md:flex-row justify-between items-center text-sm gap-4">
+    <p>
+      © 2021 - Designed by <span className="text-gray-200">Baoiam.</span>{" "}
+      All rights reserved.
+    </p>
+
+    <div>
+      <select
+        name="language"
+        className="bg-[#1D2026] py-2 border-[#363B47] border-[1px] flex justify-between w-[140px] p-2 text-gray-500"
+      >
+        <option>English</option>
+        <option>Hindi</option>
+        <option>Marathi</option>
+        <option>Bengali</option>
+      </select>
+    </div>
+  </div>
+</footer>
+
+  
   );
 };
 

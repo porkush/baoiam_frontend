@@ -24,7 +24,7 @@ const Navbar = () => {
     font-poppins font-normal text-[18px] leading-none
     bg-clip-text text-transparent
     bg-gradient-to-r
-    from-[#8A38F5] via-[#F1EAF9] to-[#110028] to-75%
+    from-[#110028] via-[#F1EAF9] to-[#8A38F5] to-75%
     bg-[length:400%_auto]
     animate-gradient
   "
