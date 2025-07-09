@@ -1,6 +1,6 @@
 // import React from 'react';
-// import udaanImg from '../assets/udaan90.png';
-// import fusionImg from '../assets/successfusion.png';
+import udaanImg from '../../assets/Home/OurProgram/Udaan.png';
+import fusionImg from '../../assets/Home/OurProgram/spf.png';
 import Head from "../../assets/Home/OurProgram/head.png";
 
 const OurProgram = () => {
@@ -28,7 +28,7 @@ const OurProgram = () => {
         {/* Left: Image with stats bar */}
         <div className="relative md:w-1/2 w-full flex justify-center items-center mb-15 mt-3 ml-7">
           <img
-            src="https://i.pinimg.com/736x/8e/f0/bb/8ef0bb37468f953b3ff0325782d894e1.jpg"
+            src={udaanImg}
             alt="Udaan 90"
             className="w-[360px] h-[360px] object-cover rounded-3xl" // ✅ Fully rounded image
           />
@@ -118,7 +118,7 @@ const OurProgram = () => {
         {/* Left: Image with stats bar */}
         <div className="relative md:w-1/2 w-full flex justify-center items-center mb-15 mt-3 mr-7">
           <img
-            src="https://i.pinimg.com/736x/8e/f0/bb/8ef0bb37468f953b3ff0325782d894e1.jpg"
+            src={fusionImg}
             alt="Udaan 90"
             className="w-[360px] h-[360px] object-cover rounded-3xl" // ✅ Fully rounded image
           />
