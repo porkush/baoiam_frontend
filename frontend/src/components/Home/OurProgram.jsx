@@ -5,13 +5,18 @@ import Head from "../../assets/Home/OurProgram/Head.png";
 
 const OurProgram = () => {
   return (
+
+
+
+   
+
     <section className="w-full  mx-auto p-16 font-['Poppins'] ">
       {/* Heading */}
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
           Our <span className="text-orange-500">Programs</span>
         </h2>
-        <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+        <p className="text-lg md:text-xl   mx-auto">
           Skill up, stand out, and soar into success with our expert led
           programs.
         </p>
@@ -51,7 +56,7 @@ const OurProgram = () => {
         {/* Right: Content */}
         <div className="flex flex-col justify-between p-6 md:p-8 w-full md:w-1/2 ml-5">
           <div>
-            <h3 className="text-2xl md:text-[42px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#1D2026] via-[#e45c02] to-[#FF6501] mb-2">
+            <h3 className="text-2xl md:text-[42px] font-medium text-transparent bg-clip-text bg-gradient-to-r from-[#1D2026] via-[#e45c02] to-[#FF6501] mb-2">
               Udaan – 90
             </h3>
 
@@ -84,7 +89,7 @@ const OurProgram = () => {
         {/* Left: Content */}
         <div className="flex flex-col justify-between p-6 md:p-8 w-full md:w-1/2 ml-5">
           <div>
-            <h3 className="text-2xl md:text-[42px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#1D2026] via-[#c55713] to-[#FF6501] mb-2">
+            <h3 className="text-2xl md:text-[42px] font-medium text-transparent bg-clip-text bg-gradient-to-r from-[#1D2026] via-[#c55713] to-[#FF6501] mb-2">
               Success Fusion
             </h3>
 

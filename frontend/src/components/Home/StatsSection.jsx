@@ -36,21 +36,21 @@ export default function StatsSection() {
     <h2 className="text-[22px] md:text-[26px] lg:text-[28px] font-semibold mb-4 md:mb-6">
       We are accredited by
     </h2>
-    <div className="h-auto py-4 flex flex-wrap justify-center items-center gap-4 md:gap-8 lg:gap-[50px]">
+    <div className="h-auto py-4 flex flex-wrap justify-center items-center gap-6 md:gap-10 lg:gap-[70px]">
       <img
         src={img2}
         alt="DPIIT Startup India"
-        className="h-[60px] md:h-[80px] lg:h-[120px] w-auto max-w-[180px] md:max-w-[220px] lg:max-w-[250px] object-contain"
+        className="h-[60px] md:h-[80px] lg:h-[130px] w-auto max-w-[180px] md:max-w-[220px] lg:max-w-[250px] object-contain"
       />
       <img
         src={img1}
         alt="MSME"
-        className="h-[60px] md:h-[80px] lg:h-[120px] w-auto max-w-[140px] md:max-w-[160px] lg:max-w-[189px] object-contain"
+        className="h-[60px] md:h-[80px] lg:h-[130px] w-auto max-w-[140px] md:max-w-[160px] lg:max-w-[189px] object-contain"
       />
       <img
         src={img3}
         alt="ISO 9001"
-        className="h-[60px] md:h-[80px] lg:h-[120px] w-auto max-w-[120px] md:max-w-[140px] lg:max-w-[162px] object-contain"
+        className="h-[60px] md:h-[80px] lg:h-[130px] w-auto max-w-[120px] md:max-w-[140px] lg:max-w-[162px] object-contain"
       />
     </div>
   </div>

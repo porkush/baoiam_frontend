@@ -125,8 +125,8 @@ import {
   FaYoutube,
   FaArrowRight,
 } from "react-icons/fa";
-import applelogo from "../../assets/Footer/Footer2/apple-1.png"; // Assuming you have a download image
-import googlelogo from "../../assets/Footer/Footer2/google-1.png"; // Assuming you have a download image
+import applelogo from "../../assets/Footer/Footer2/apple.png"; // Assuming you have a download image
+import googlelogo from "../../assets/Footer/Footer2/google.png"; // Assuming you have a download image
 
 // Reusable link section component
 const FooterLinksSection = ({ heading, items }) => {
@@ -182,9 +182,9 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="text-gray-500 px-28 pt-10 bg-[#1D2026] font-['Poppins']">
+    <footer className="text-gray-500 px-28 pt-5 bg-[#1D2026] font-['Poppins']">
       {/* Top Footer */}
-      <div className="flex flex-wrap justify-between gap-8">
+      <div className="flex flex-wrap justify-between gap-8 ">
         {/* Logo + Social */}
         <div className="max-w-sm">
           <img
@@ -207,7 +207,7 @@ const Footer = () => {
                   className={`p-3 text-white transition-colors ${
                     Icon === FaLinkedinIn
                       ? "bg-orange-500 hover:bg-orange-600"
-                      : "bg-gray-800 hover:bg-orange-500"
+                      : "bg-[#363B4766] hover:bg-orange-500"
                   }`}
                 >
                   <Icon size={18} />
@@ -229,21 +229,22 @@ const Footer = () => {
         {/* App Download */}
         <div className="text-sm">
           <h5 className="text-white mb-6">DOWNLOAD OUR APP</h5>
+          
+          <a href="https://play.google.com/store" target="_blank">
+            <img src={applelogo} alt="App Store" className="h-14 w-40" />
+          </a>
           <a href="https://play.google.com/store" target="_blank">
             <img
               src={googlelogo}
               alt="Google Play"
-              className="h-12 w-40 mb-4"
+              className="h-12 w-40 mt-4"
             />
-          </a>
-          <a href="https://play.google.com/store" target="_blank">
-            <img src={applelogo} alt="App Store" className="h-14 w-40" />
           </a>
         </div>
       </div>
 
       {/* Divider */}
-      <div className="-mx-28 mt-10">
+      <div className="-mx-28 mt-18">
         <hr className="w-full border-t border-gray-700" />
       </div>
 
