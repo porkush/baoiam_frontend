@@ -12,7 +12,7 @@ import img6 from "../../assets/Home/HeroSection/6.png";
 export default function HeroSection() {
   return (
 
-    <section className="bg-white text-gray-800 px-2 pt-16 sm:px-4 font-['Poppins'] w-full max-w-[1290px] mx-auto">
+    <section className="bg-white text-gray-800 px-2 pt-13 sm:px-4 font-['Poppins'] w-full max-w-[1290px] mx-auto">
   <div className="flex flex-col md:flex-row md:items-center md:justify-between md:gap-8">
     {/* Content Section */}
     <div className="flex flex-col w-full md:w-[650px] ">
