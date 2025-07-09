@@ -1,5 +1,6 @@
 import React from "react";
 import { IoMoon, IoSunny } from "react-icons/io5";
+import { FaChevronDown } from "react-icons/fa";
 import lightLogo from "../../assets/Home/Navbar/logoLight.png";
 
 const Navbar = () => {
@@ -14,10 +15,28 @@ const Navbar = () => {
       </div>
 
       {/* Center */}
-      <div className="flex justify-center items-center">
-        <ul className="hidden md:flex space-x-10 text-black text-[18px] w-[816px] ">
+      <div className="flex justify-center items-center ">
+        <ul className="hidden md:flex space-x-[33px] text-black text-[18px] ml-4">
           <li className="hover:text-orange-500">PAP</li>
-          <li className="hover:text-orange-500">Kickstarter courses</li>
+          <li className="relative group cursor-pointer">
+            <span className="flex items-center hover:text-orange-500">
+              Kickstarter courses
+              <FaChevronDown className="ml-2 text-black" size={14} />
+            </span>
+            <ul className="absolute hidden group-hover:block bg-[#1D2026] text-gray-400 mt-2 py-2 w-48 rounded shadow-lg z-10">
+              <li className="px-4 py-2 hover:bg-orange-500 hover:text-white">
+                Course 101
+              </li>
+              <li className="px-4 py-2 hover:bg-orange-500 hover:text-white">
+                Advanced AI
+              </li>
+              <li className="px-4 py-2 hover:bg-orange-500 hover:text-white">
+                Data Bootcamp
+              </li>
+            </ul>
+          </li>
+
+          
           <li className="relative inline-block">
             <span
               className="
@@ -34,7 +53,23 @@ const Navbar = () => {
           </li>
           <li className="hover:text-orange-500">Refer & Earn</li>
           <li className="hover:text-orange-500">Success Stories</li>
-          <li className="hover:text-orange-500">Company</li>
+          <li className="relative group cursor-pointer">
+            <span className="flex items-center hover:text-orange-500">
+              Company
+              <FaChevronDown className="ml-2 text-black" size={14} />
+            </span>
+            <ul className="absolute hidden group-hover:block bg-[#1D2026] text-gray-400 mt-2 py-2 w-48 rounded shadow-lg z-10">
+              <li className="px-4 py-2 hover:bg-orange-500 hover:text-white">
+                About Us
+              </li>
+              <li className="px-4 py-2 hover:bg-orange-500 hover:text-white">
+                Careers
+              </li>
+              <li className="px-4 py-2 hover:bg-orange-500 hover:text-white">
+                Press
+              </li>
+            </ul>
+          </li>
         </ul>
       </div>
 
@@ -44,7 +79,7 @@ const Navbar = () => {
           <IoMoon className="w-6 h-6 text-gray-800" />
         </button>
 
-        <button className="bg-orange-500 text-white px-7 py-1 rounded-full text-xl hover:text-orange-500 hover:bg-orange-50 border-2 border-orange-500">
+        <button className="bg-orange-500 text-white px-[20px] py-1 rounded-full text-[16px] hover:text-orange-500 hover:bg-orange-50 border-2 border-orange-500">
           Sign up
         </button>
         {/* <button className="border-2 px-7 py-1 text-xl rounded-full border-orange-500 text-orange-500">
