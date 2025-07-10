@@ -206,12 +206,14 @@ import Gautami from "../../assets/Home/TeamSection/3.png";
 import Dev from "../../assets/Home/TeamSection/4.png";
 import Siddhart from "../../assets/Home/TeamSection/5.jpg";
 import Sudhanshu from "../../assets/Home/TeamSection/6.png";
-import Virat from "../../assets/Home/TeamSection/15.png";
+import Virat from "../../assets/Home/TeamSection/7.png";
 import Virender from "../../assets/Home/TeamSection/8.png";
 import Toshika from "../../assets/Home/TeamSection/9.png";
 import Bonnya from "../../assets/Home/TeamSection/10.png";
 import Madhav from "../../assets/Home/TeamSection/11.png";
-import Ayush from "../../assets/Home/TeamSection/16.png";
+import Ayush from "../../assets/Home/TeamSection/12.png";
+import Nakshatra from "../../assets/Home/TeamSection/13.png";
+
 
 const TeamSection = () => {
   const gradients = [
@@ -227,6 +229,7 @@ const TeamSection = () => {
     "bg-gradient-to-b from-indigo-500/100 via-white/0 to-white/60",
     "bg-gradient-to-b from-sky-500/100 via-white/0 to-white/60",
     "bg-gradient-to-b from-fuchsia-500/100 via-white/0 to-white/60",
+    "bg-gradient-to-b from-neutral-500/100 via-white/0 to-white/60"
   ];
 
   const solidColors = [
@@ -242,6 +245,7 @@ const TeamSection = () => {
     "bg-indigo-400",
     "bg-sky-400",
     "bg-fuchsia-500",
+    "bg-neutral-400",
   ];
 
   const members = [
@@ -301,7 +305,7 @@ const TeamSection = () => {
     },
     {
       name: "Akshat Tiwari",
-      position: "Associate Project Manager",
+      position: "PM Intern",
       linkedin: "https://www.linkedin.com/in/akshat-profile",
       image: Akshat,
     },
@@ -317,6 +321,12 @@ const TeamSection = () => {
       linkedin: "https://www.linkedin.com/in/gautami-profile",
       image: Gautami,
     },
+    {
+      name: "Nakshatra Joshi",
+      position: "Backend Developer",
+      linkedin: "https://www.linkedin.com/in/nakshatra-joshi-97a773212?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      image: Nakshatra,
+    }
   ];
 
   // Render a member card

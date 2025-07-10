@@ -137,7 +137,7 @@ const Partner = () => {
               {universities.map((image, index) => {
                 return (
                   <img
-                    className="h-[100px] w-[300px]  object-contain "
+                    className="h-[100px] w-[220px]  object-contain "
                     src={image}
                     alt={`University logo ${index}`}
                     key={index}
@@ -165,7 +165,7 @@ const Partner = () => {
               {universities.map((image, index) => {
                 return (
                   <img
-                    className="h-[100px] w-[300px]   object-contain "
+                    className="h-[100px] w-[220px]   object-contain "
                     src={image}
                     alt={`University logo ${index}`}
                     key={index}
