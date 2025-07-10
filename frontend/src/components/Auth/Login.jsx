@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 font-['Poppins']">
+    <div className="flex items-center justify-center min-h-screen bg-gray-50 font-['Poppins']">
       <div className="bg-white rounded-3xl shadow-md w-[450px]  p-8">
         <h2 className="text-center text-xl text-gray-700 font-semibold">
           Welcome to{" "}
