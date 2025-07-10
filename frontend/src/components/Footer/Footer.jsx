@@ -291,11 +291,9 @@ const Footer = () => {
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              className={`p-3 text-white transition-colors ${
-                Icon === FaLinkedinIn
-                  ? "bg-orange-500 hover:bg-orange-600"
-                  : "bg-[#363B4766] hover:bg-orange-500"
-              }`}
+              className={`p-3 text-white transition-colors 
+                bg-[#363B4766] hover:bg-orange-500
+              `}
             >
               <Icon size={18} />
             </a>
