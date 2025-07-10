@@ -1,6 +1,54 @@
 import React from "react";
-import { courses } from "../../data/Courses";
 import { FaStar, FaUserGraduate, FaClock } from "react-icons/fa";
+
+
+
+
+const courses = [
+  {
+    id: 1,
+    title: "Data Science",
+    rating: 4.8,
+    description: "Build models and extract insights.",
+    students: "150.3K",
+    level: "Intermediate",
+    duration: "45 hours",
+    image: "/src/assets/data-science.jpg",
+  },
+  {
+    id: 2,
+    title: "Data Analysis",
+    rating: 4.7,
+    description: "Clean, visualize, and analyze data.",
+    students: "98.5K",
+    level: "Beginner",
+    duration: "35 hours",
+    image: "/src/assets/data-analysis.jpg",
+  }, 
+  {
+    id: 3,
+    title: "Digital Marketing",
+    rating: 4.9,
+    description: "Grow with SEO and social ads.",
+    students: "265.7K",
+    level: "Beginner",
+    duration: "40 hours",
+    image: "/src/assets/digital-marketing.jpg",
+  },
+  {
+    id: 4,
+    title: "Tech Bootcamp",
+    rating: 5.0,
+    description: "Full-stack development training.",
+    students: "73.4K",
+    level: "Advanced",
+    duration: "80 hours",
+    image: "/src/assets/tech-bootcamp.jpg",
+  }
+];
+
+
+
 
 const FeaturedCourses = () => {
   return (
