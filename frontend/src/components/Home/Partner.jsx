@@ -137,11 +137,17 @@ const Partner = () => {
               {universities.map((image, index) => {
                 return (
                   <img
-                    className="h-[60px] w-[120px] sm:h-[70px] sm:w-[140px] object-contain px-5"
+                    className="h-[100px] w-[300px]  object-contain "
                     src={image}
                     alt={`University logo ${index}`}
                     key={index}
                   />
+                  // <img
+                  //   className="h-[60px] w-[120px] sm:h-[70px] sm:w-[140px] object-contain px-5"
+                  //   src={image}
+                  //   alt={`University logo ${index}`}
+                  //   key={index}
+                  // />
                 );
               })}
             </motion.div>
@@ -159,11 +165,17 @@ const Partner = () => {
               {universities.map((image, index) => {
                 return (
                   <img
-                    className="h-[60px] w-[120px] sm:h-[70px] sm:w-[140px] object-contain px-5"
+                    className="h-[100px] w-[300px]   object-contain "
                     src={image}
                     alt={`University logo ${index}`}
                     key={index}
                   />
+                  // <img
+                  //   className="h-[60px] w-[120px] sm:h-[70px] sm:w-[140px] object-contain px-5"
+                  //   src={image}
+                  //   alt={`University logo ${index}`}
+                  //   key={index}
+                  // />
                 );
               })}
             </motion.div>

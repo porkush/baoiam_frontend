@@ -72,7 +72,7 @@ export default function HeroSection() {
           </li>
         </ul>
 
-        <div className="mt-4 flex flex-col sm:flex-row gap-2">
+        <div className="mt-4 flex flex-col sm:flex-row gap-8 ">
           <button className="bg-[#FF6501] border rounded-lg text-white flex items-center justify-center gap-2 py-2 px-3 md:py-2 md:px-4 font-medium text-lg md:text-xl hover:bg-[#ff6501]">
             Apply Now →
           </button>

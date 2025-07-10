@@ -148,14 +148,14 @@
 //     return (
 //         <div className="bg-white py-10 px-4 sm:px-6 lg:px-8">
 //             {/* Header */}
-//             <div className="max-w-7xl mx-auto text-center mb-16">
-//                 <h1 className="text-[48px] font-bold text-gray-900 mb-3">
-//                     Our <span className="text-orange-500">Team</span>
-//                 </h1>
-//                 <p className="text-[24px] text-black  mx-auto">
-//                     Experts who guide, Mentors who matter. We teach what you own.
-//                 </p>
-//             </div>
+            // <div className="max-w-7xl mx-auto text-center mb-16">
+            //     <h1 className="text-[48px] font-bold text-gray-900 mb-3">
+            //         Our <span className="text-orange-500">Team</span>
+            //     </h1>
+            //     <p className="text-[24px] text-black  mx-auto">
+            //         Experts who guide, Mentors who matter. We teach what you own.
+            //     </p>
+            // </div>
 
 //             {/* Marquee - Increased height to accommodate h-74 images */}
 //             <div className="relative w-full overflow-hidden h-[450px]">
@@ -359,16 +359,16 @@ const TeamSection = () => {
   );
 
   return (
-    <div className="bg-white py-10 pb-14 px-4 sm:px-6 lg:px-8">
+    <div className="bg-white py-10 pb-14 px-4 sm:px-6 lg:px-8 font-['Poppins']">
       {/* Header */}
-      <div className="max-w-7xl mx-auto text-center mb-16">
-        <h1 className="text-4xl font-bold text-gray-900 mb-6">
-          Our <span className="text-orange-500">Team</span>
-        </h1>
-        <p className="text-lg text-black max-w-3xl mx-auto">
-          Experts who guide, Mentors who matter. We teach what you own.
-        </p>
-      </div>
+       <div className="max-w-7xl mx-auto text-center mb-16">
+                <h1 className="text-[48px] font-bold text-gray-900 mb-3">
+                    Our <span className="text-orange-500">Team</span>
+                </h1>
+                <p className="text-[24px] text-black  mx-auto">
+                    Experts who guide, Mentors who matter. We teach what you own.
+                </p>
+            </div>
 
       {/* Marquee - Increased height to accommodate h-74 images */}
       <div className="relative w-full overflow-hidden h-[450px]">
