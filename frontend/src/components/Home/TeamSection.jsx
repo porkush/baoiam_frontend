@@ -305,13 +305,13 @@ const TeamSection = () => {
     },
     {
       name: "Akshat Tiwari",
-      position: "PM Intern",
+      position: "Product Manager",
       linkedin: "https://www.linkedin.com/in/akshat-profile",
       image: Akshat,
     },
     {
       name: "Dev Kumar",
-      position: "PM Intern",
+      position: "Product Manager",
       linkedin: "https://www.linkedin.com/in/dev-profile",
       image: Dev,
     },
