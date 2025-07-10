@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import {FaArrowLeft ,FaArrowRight } from "react-icons/fa";
+import m1 from "../../assets/Home/Testimonial/m1.jpg"
+import f1 from "../../assets/Home/Testimonial/f1.jpg"
+import f2 from "../../assets/Home/Testimonial/f2.jpg"
+import f3 from "../../assets/Home/Testimonial/f3.jpg"
+import f4 from "../../assets/Home/Testimonial/f4.jpg"
 
 const Testimonial = () => {
   const testimonials = [
@@ -8,35 +13,35 @@ const Testimonial = () => {
     content: "BAOIAM's training and expert mentorship helped me secure a 9.02 LPA package as a Risk Consultant. The practical approach made all the difference.",
     author: "Apurva Kulpe",
     role: "Risk Consultant - 9.02 LPA",
-    image: "https://thumbs.dreamstime.com/b/college-student-3915511.jpg"
+    image: f1
   },
   {
     id: 2,
     content: "Thanks to BAOIAM's structured curriculum and interview prep, I landed a 5 LPA role as a Software Developer straight out of training.",
     author: "Vishnu Vardhan",
     role: "Software Developer - 5 LPA",
-    image: "https://thumbs.dreamstime.com/b/college-student-3915511.jpg"
+    image: m1
   },
   {
     id: 3,
     content: "The hands-on projects and personalized guidance at BAOIAM helped me get placed as a Quality Engineer at 18 LPA. Truly a game-changer for my career.",
     author: "Akhil Padi",
     role: "Quality Engineer - 18 LPA",
-    image: "https://thumbs.dreamstime.com/b/college-student-3915511.jpg"
+    image: m1
   },
   {
     id: 4,
     content: "BAOIAM's industry-focused learning and placement support helped me land a 22 LPA software engineer role at Byju's. Highly recommend it!",
     author: "Vaibhav Verma",
     role: "Software Engineer at Byju's - 22 LPA",
-    image: "https://thumbs.dreamstime.com/b/college-student-3915511.jpg"
+    image: m1
   },
   {
     id: 5,
     content: "With BAOIAM's expert mentors and real-world projects, I cracked Microsoft at 52 LPA. Their guidance was the key to my success.",
     author: "Amit Pandey",
     role: "Microsoft - 52 LPA",
-    image: "https://thumbs.dreamstime.com/b/college-student-3915511.jpg"
+    image: m1
   }
 ];
 
@@ -82,26 +87,6 @@ const Testimonial = () => {
   return classes;
 };
 
-  // // Helper function to determine class names based on index
-  // const getCardClasses = (index) => {
-  //   let classes = "absolute transition-all duration-500 ease-in-out p-8 rounded-xl shadow-xl h-full flex flex-col justify-between";
-  //   const offset = index - currentIndex;
-
-  //   if (offset === 0) {
-  //     // Center card
-  //     classes += " bg-pink-100 scale-100 opacity-100 z-20 w-2/3 left-1/2 -translate-x-1/2";
-  //   } else if (offset === -1 || (offset === testimonials.length - 1 && currentIndex === 0)) {
-  //     // Left side card (previous)
-  //     classes += " bg-green-100 scale-95 opacity-50 z-10 w-2/3 left-0 transform -translate-x-1/4";
-  //   } else if (offset === 1 || (offset === -(testimonials.length - 1) && currentIndex === testimonials.length - 1)) {
-  //     // Right side card (next)
-  //     classes += " bg-green-100 scale-95 opacity-50 z-10 w-2/3 right-0 transform translate-x-1/4";
-  //   } else {
-  //     // Hidden cards
-  //     classes += " hidden";
-  //   }
-  //   return classes;
-  // };
 
   return (
     <div className="relative max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
