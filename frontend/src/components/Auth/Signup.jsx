@@ -7,7 +7,7 @@ const Signup = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-50 font-['Poppins']">
       <div className="bg-white rounded-3xl shadow-md w-[450px]  p-8">
-        <h2 className="text-center text-xl text-gray-700 font-semibold">
+        <h2 className="text-center text-[24px] ">
           Welcome to{" "}
           <span className="bg-gradient-to-b text-3xl from-[#8EC342] via-[#F7942B] to-[#1E1C4B] text-transparent bg-clip-text font-semibold">
             Baoiam
@@ -18,7 +18,7 @@ const Signup = () => {
         </h1>
 
         {/* Email or Mobile */}
-        <div className="mb-4">
+        <div className="mb-1">
           <label className="block text-base font-normal mb-3">
             E-mail or Mobile Number
           </label>
@@ -27,19 +27,20 @@ const Signup = () => {
             placeholder="Enter Mobile number"
             className="w-full px-4 py-2 border border-gray-400 rounded-full "
           />
+           <div className="flex justify-end mt-2">
+            <button className="text-xs px-3 py-2 bg-orange-100 text-orange-500 rounded-full hover:bg-orange-200 transition-all">
+              Send OTP
+            </button>
+          </div>
         </div>
 
         {/* OTP */}
 
         <div className="mb-8">
-          <div className="flex justify-between items-center mb-2">
             <label className="block text-base mb-2 font-normal">
               OTP Verification
             </label>
-            <button className="text-xs px-3 py-1 bg-orange-100 text-orange-500 rounded-full hover:bg-orange-200 transition-all">
-              Send OTP
-            </button>
-          </div>
+        
 
           <div className="relative ">
             <input
@@ -61,7 +62,7 @@ const Signup = () => {
               id="remember"
               className="w-5 h-5 accent-orange-500  mr-2 "
             />
-            <label htmlFor="remember">
+            <label htmlFor="remember" className="text-gray-700">
               I Agree to{" "}
               <a
                 href="/terms-and-conditions"
