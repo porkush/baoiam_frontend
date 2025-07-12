@@ -94,33 +94,28 @@
 
 // export default Navbar;
 
-
-
-
-
-
-
-
-
-
-
-import React from "react";
+import React, { useState } from "react";
 import { IoMoon } from "react-icons/io5";
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import lightLogo from "../../assets/Home/Navbar/logoLight.png";
 import giftbox from "../../assets/Home/Navbar/gift.gif";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <nav
       className="sticky top-[20px] z-50
  mx-auto mt-[20px] max-w-[1340px] h-[80px] bg-[#FFFAF7] rounded-[50px] shadow-md flex items-center justify-between pr-[40px] pl-[40px] font-['Poppins']"
     >
       {/* Left */}
-      <div className="flex items-center">
+      <div className="flex items-center ml-5 hover:border hover:rounded-lg hover:border-gray-300">
         <Link to="/">
-          <img src={lightLogo} alt="Baoiam" className="h-[70px] w-[100px] ml-5" />
+          <img
+            src={lightLogo}
+            alt="Baoiam"
+            className="h-[70px] w-[100px]  p-1 "
+          />
         </Link>
       </div>
 
@@ -129,9 +124,17 @@ const Navbar = () => {
         <ul className="hidden md:flex space-x-[33px] text-black text-[18px] ml-4">
           <li className="hover:text-orange-500">PAP</li>
           <li className="relative group cursor-pointer">
-            <span className="flex items-center hover:text-orange-500">
+            <span
+              className="flex items-center hover:text-orange-500 cursor-pointer"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
               Kickstarter courses
-              <FaChevronDown className="ml-2 text-black" size={14} />
+              {isHovered ? (
+                <FaChevronUp className="ml-2 text-black" size={14} />
+              ) : (
+                <FaChevronDown className="ml-2 text-black" size={14} />
+              )}
             </span>
             <ul className="absolute hidden group-hover:block bg-[#1D2026] text-gray-400 mt-2 py-2 w-48 rounded shadow-lg z-10">
               <li className="px-4 py-2 hover:bg-orange-500 hover:text-white">
@@ -165,9 +168,17 @@ const Navbar = () => {
           </li>
           <li className="hover:text-orange-500">Success Stories</li>
           <li className="relative group cursor-pointer">
-            <span className="flex items-center hover:text-orange-500">
+            <span
+              className="flex items-center hover:text-orange-500 cursor-pointer"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
               Company
-              <FaChevronDown className="ml-2 text-black" size={14} />
+              {isHovered ? (
+                <FaChevronUp className="ml-2 text-black" size={14} />
+              ) : (
+                <FaChevronDown className="ml-2 text-black" size={14} />
+              )}
             </span>
             <ul className="absolute hidden group-hover:block bg-[#1D2026] text-gray-400 mt-2 py-2 w-48 rounded shadow-lg z-10">
               <li className="px-4 py-2 hover:bg-orange-500 hover:text-white">
@@ -190,7 +201,6 @@ const Navbar = () => {
           <IoMoon className="w-6 h-6 text-gray-800" />
         </button>
 
-
         <Link
           to="/signup"
           className="bg-orange-500 text-white px-[20px] py-1 rounded-full text-[16px] hover:text-orange-500 hover:bg-orange-50 border-2 border-orange-500"
@@ -203,5 +213,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-

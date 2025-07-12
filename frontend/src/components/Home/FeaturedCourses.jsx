@@ -118,13 +118,12 @@ const FeaturedCourses = () => {
 
           {/* Start Learning Button */}
           <button
-            className="text-white hover:bg-[#FF6501CC] transition duration-300 mt-2 text-sm mx-auto"
+            className="text-white bg-[#FF6501CC] hover:bg-[#ff6701] transition duration-300 mt-2 text-sm mx-auto"
             style={{
               width: "129px",
               height: "25px",
               borderRadius: "5px",
               padding: "2px 15px",
-              backgroundColor: "#FF6501CC",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
@@ -140,13 +139,12 @@ const FeaturedCourses = () => {
     {/* Explore More Button */}
     <div className="mt-[30px] mb-[30px]">
       <button
-        className="text-white hover:bg-gray-800 transition duration-300 flex items-center justify-center text-[24px]"
+        className="text-white bg-black hover:bg-[#3c3b3f] transition duration-300 flex items-center justify-center text-[24px]"
         style={{
           width: "208px",
           height: "46px",
           borderRadius: "5px",
           padding: "5px 10px",
-          backgroundColor: "#000000",
           boxShadow: "0px 4px 6px 0px #0000001A",
           gap: "10px",
         }}
