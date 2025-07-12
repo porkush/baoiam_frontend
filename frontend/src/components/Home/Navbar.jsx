@@ -222,7 +222,7 @@ const Navbar = () => {
           <img
             src={lightLogo}
             alt="Baoiam"
-            className="h-[70px] w-[100px]  p-1 "
+            className="h-[70px] w-[115px]  p-1 "
           />
         </Link>
       </div>
@@ -257,6 +257,7 @@ const Navbar = () => {
             </ul>
           </li>
           <li className="relative inline-block">
+            <Link to='/pride'>
             <span
               className="
                 font-poppins font-normal text-[18px] leading-none
@@ -269,6 +270,7 @@ const Navbar = () => {
             >
               Pride
             </span>
+            </Link>
           </li>
           <li className="flex items-center gap-2 hover:text-orange-500">
             <img src={giftbox} alt="Referral Animation" className="w-5 h-6" />

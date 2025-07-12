@@ -1,0 +1,42 @@
+import React from "react";
+import bonnay from "../../assets/Pride/Herosection_P/bonnay.png";
+
+const HeroSection_P = () => {
+  return (
+    <section className="relative bg-white overflow-hidden py-12 md:py-16 lg:py-10 font-['Poppins']">
+      <div className=" px-4 sm:px-6 lg:px-8 flex flex-col md:ml-32  md:flex-row items-center  ">
+        {/* LEFT SIDE - Content */}
+        <div className="flex-1 order-2 md:order-1">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-semibold text-black leading-relaxed mb-4 md:mb-6">
+            Living With <span className="text-purple-600">Pride,</span> Leading
+            With <span className="text-orange-600">Purpose.</span>
+          </h1>
+
+          <p className="text-[#222222] text-base sm:text-lg md:text-[24px] mb-6 md:mb-16 md:mt-12 ">
+            Step into your power, learn with pride, and grow through expert-led
+            courses that celebrate identity, ambition, and purpose. Your future
+            begins with you.
+          </p>
+          <button className="bg-[#FF6501] hover:bg-orange-400 text-white font-semibold py-2 px-5 sm:py-3 sm:px-6 rounded-md transition duration-300 text-[20px] sm:text-base md:font-medium">
+            Enroll Now
+          </button>
+        </div>
+
+        {/* RIGHT SIDE - Image */}
+        <div className="flex-1 order-1 md:order-2 relative flex justify-center w-full">
+          {/* Orange blob background */}
+          <div className="absolute -z-10 w-64 h-64 sm:w-72 sm:h-72 md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px] bg-orange-500 rounded-[35%_65%_65%_35%/45%_45%_55%_55%] opacity-100"></div>
+
+          {/* Image */}
+          <img
+            src={bonnay}
+            alt="Hero"
+            className="relative w-56 sm:w-64 md:w-[400px] lg:w-[460px] rounded-lg object-cover"
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection_P;
