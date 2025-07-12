@@ -4,148 +4,169 @@ import human from "../../assets/Home/DataScienceBanner/human.png";
 
 const DataScienceBanner = () => {
   return (
-    // <div
-    //   className="w-[1200px] h-[350px] rounded-[20px] shadow-md flex flex-col md:flex-row justify-between mx-auto mt-10 mb-10 p-6 relative overflow-hidden font-['Poppins']"
-    //   style={{
-    //     background:
-    //       "linear-gradient(180deg, rgba(255, 101, 1, 0.06) 0%, rgba(255, 101, 1, 0.6) 100%)",
-    //   }}
-    // >
-    //   {/* Left Side - Content */}
-    //   <div className="flex flex-col w-full   mt-5">
-    //     {/* Top Row - Rocket and first two text paragraphs */}
-    //     <div className="flex items-start  gap-15">
-    //       {/* Rocket Image */}
-    //       <div>
-    //         <img
-    //           src={rocket}
-    //           alt="RocketImg"
-    //           className="w-[160px] h-[160px] object-contain"
-    //         />
-    //       </div>
+   import React from "react";
+import rocket from "../../assets/Home/DataScienceBanner/rocket.png";
+import human from "../../assets/Home/DataScienceBanner/human.png";
 
-    //       {/* First two paragraphs */}
-    //       <div className="text-left ">
-    //         <h1 className="text-xl md:text-[40px] font-semibold text-[#FF6501]">
-    //           Data Science{" "}
-    //           <span className="text-black text-2xl font-medium">Career</span>
-    //         </h1>
-    //         <p className="text-2xl font-medium mt-1">
-    //           Starts at{" "}
-    //           <span className="line-through text-xl font-medium">₹79,999</span>{" "}
-    //           <span className="text-[#FF6501] font-semibold text-[40px]">₹4,999</span>
-    //         </p>
-    //       </div>
-    //     </div>
+const DataScienceBanner = () => {
+  return (
+    <div
+      className="
+        w-full max-w-[1200px]
+        rounded-[20px] shadow-md
+        flex flex-col md:flex-row
+        justify-between items-center
+        mx-auto my-10 p-6
+        relative overflow-hidden
+        font-['Poppins']
+      "
+      style={{
+        background:
+          "linear-gradient(180deg, rgba(255, 101, 1, 0.06) 0%, rgba(255, 101, 1, 0.6) 100%)",
+      }}
+    >
+      {/* Left Content */}
+      <div className="flex flex-col flex-1 w-full md:w-1/2">
+        {/* Rocket and Headline */}
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-8">
+          <img
+            src={rocket}
+            alt="Rocket"
+            className="w-[120px] h-[120px] md:w-[160px] md:h-[160px] object-contain"
+          />
 
-    //     {/* Third paragraph */}
-    //     <div className="mt-6 ml-10 text-[28px] font-medium">
-    //       <p className=" text-gray-700 ">
-    //         <span className="text-orange-500">12 Months</span> |{" "}
-    //         <span className="text-black">Live classes</span> |{" "}
-    //         <span className="text-orange-500">Projects</span> |{" "}
-    //         <span className="text-black">Placement Support</span>
-    //       </p>
-    //     </div>
+          <div className="text-center md:text-left">
+            <h1 className="text-2xl md:text-[40px] font-semibold text-[#FF6501]">
+              Data Science{" "}
+              <span className="text-black text-xl md:text-2xl font-medium">
+                Career
+              </span>
+            </h1>
+            <p className="text-xl md:text-2xl font-medium mt-2">
+              Starts at{" "}
+              <span className="line-through text-lg md:text-xl font-medium">
+                ₹79,999
+              </span>{" "}
+              <span className="text-[#FF6501] font-semibold text-[32px] md:text-[40px]">
+                ₹4,999
+              </span>
+            </p>
+          </div>
+        </div>
 
-    //     {/* Buttons */}
-    //     <div className="mt-5 flex gap-6 ml-[180px]  text-[20px] font-medium ">
-    //       <button className="bg-black text-white text-center px-4 py-1 rounded-lg hover:bg-orange-500 ">
-    //         Enroll Now
-    //       </button>
-    //       <button className="bg-white px-4 py-1 rounded-lg hover:bg-gray-400 text-black">
-    //         Talk to our Counsellor
-    //       </button>
-    //     </div>
-    //   </div>
+        {/* Features */}
+        <div className="mt-4 md:mt-6 text-center md:text-left text-lg md:text-[28px] font-medium px-2 md:px-0">
+          <p className="text-gray-700">
+            <span className="text-orange-500">12 Months</span> |{" "}
+            <span className="text-black">Live classes</span> |{" "}
+            <span className="text-orange-500">Projects</span> |{" "}
+            <span className="text-black">Placement Support</span>
+          </p>
+        </div>
 
-    //   {/* Right Side - Image */}
-    //   <div className="absolute right-0 bottom-0">
-    //     <img
-    //       src={human}
-    //       alt="Data Analytics"
-    //       className="w-[300px] h-[350px] object-cover"
-    //     />
-    //   </div>
-    // </div>
+        {/* Buttons */}
+        <div className="mt-4 md:mt-5 flex flex-col md:flex-row gap-3 md:gap-6 items-center md:items-start text-base md:text-[20px] font-medium">
+          <button className="bg-black text-white px-5 py-2 rounded-lg hover:bg-orange-500 w-full md:w-auto">
+            Enroll Now
+          </button>
+          <button className="bg-white px-5 py-2 rounded-lg hover:bg-gray-400 text-black w-full md:w-auto">
+            Talk to our Counsellor
+          </button>
+        </div>
+      </div>
+
+      {/* Right Image */}
+      <div className="mt-6 md:mt-0 flex justify-center md:block md:relative md:bottom-0 md:right-0 w-full md:w-auto">
+        <img
+          src={human}
+          alt="Data Analytics"
+          className="w-[220px] h-[280px] md:w-[300px] md:h-[350px] object-cover"
+        />
+      </div>
+    </div>
+  );
+};
+
+export default DataScienceBanner;
+
  
 
 
 
 
 
-   <div
-  className="
-    sm:w-full md:w-[1200px]
-    sm:h-auto md:h-[350px]
-    rounded-[20px] shadow-md
-    flex flex-col md:flex-row justify-between
-    mx-auto mt-10 mb-10 p-6
-    relative overflow-hidden
-    font-['Poppins']
-  "
-  style={{
-    background:
-      "linear-gradient(180deg, rgba(255, 101, 1, 0.06) 0%, rgba(255, 101, 1, 0.6) 100%)",
-  }}
->
-  {/* Left Side - Content */}
-  <div className="flex flex-col w-full mt-5">
-    {/* Top Row - Rocket and first two text paragraphs */}
-    <div className="flex flex-col sm:flex-col md:flex-row items-start gap-6 md:gap-15">
-      {/* Rocket Image */}
-      <div className="flex-shrink-0">
-        <img
-          src={rocket}
-          alt="RocketImg"
-          className="w-[160px] h-[160px] object-contain mx-auto md:mx-0"
-        />
-      </div>
+//    <div
+//   className="
+//     sm:w-full md:w-[1200px]
+//     sm:h-auto md:h-[350px]
+//     rounded-[20px] shadow-md
+//     flex flex-col md:flex-row justify-between
+//     mx-auto mt-10 mb-10 p-6
+//     relative overflow-hidden
+//     font-['Poppins']
+//   "
+//   style={{
+//     background:
+//       "linear-gradient(180deg, rgba(255, 101, 1, 0.06) 0%, rgba(255, 101, 1, 0.6) 100%)",
+//   }}
+// >
+//   {/* Left Side - Content */}
+//   <div className="flex flex-col w-full mt-5">
+//     {/* Top Row - Rocket and first two text paragraphs */}
+//     <div className="flex flex-col sm:flex-col md:flex-row items-start gap-6 md:gap-15">
+//       {/* Rocket Image */}
+//       <div className="flex-shrink-0">
+//         <img
+//           src={rocket}
+//           alt="RocketImg"
+//           className="w-[160px] h-[160px] object-contain mx-auto md:mx-0"
+//         />
+//       </div>
 
-      {/* First two paragraphs */}
-      <div className="text-left mt-4 md:mt-0">
-        <h1 className="text-xl md:text-[40px] font-semibold text-[#FF6501]">
-          Data Science{" "}
-          <span className="text-black text-2xl font-medium">Career</span>
-        </h1>
-        <p className="text-2xl font-medium mt-1">
-          Starts at{" "}
-          <span className="line-through text-xl font-medium">₹79,999</span>{" "}
-          <span className="text-[#FF6501] font-semibold text-[40px]">₹4,999</span>
-        </p>
-      </div>
-    </div>
+//       {/* First two paragraphs */}
+//       <div className="text-left mt-4 md:mt-0">
+//         <h1 className="text-xl md:text-[40px] font-semibold text-[#FF6501]">
+//           Data Science{" "}
+//           <span className="text-black text-2xl font-medium">Career</span>
+//         </h1>
+//         <p className="text-2xl font-medium mt-1">
+//           Starts at{" "}
+//           <span className="line-through text-xl font-medium">₹79,999</span>{" "}
+//           <span className="text-[#FF6501] font-semibold text-[40px]">₹4,999</span>
+//         </p>
+//       </div>
+//     </div>
 
-    {/* Third paragraph */}
-    <div className="mt-6 ml-4 md:ml-10 text-[28px] font-medium">
-      <p className="text-gray-700">
-        <span className="text-orange-500">12 Months</span> |{" "}
-        <span className="text-black">Live classes</span> |{" "}
-        <span className="text-orange-500">Projects</span> |{" "}
-        <span className="text-black">Placement Support</span>
-      </p>
-    </div>
+//     {/* Third paragraph */}
+//     <div className="mt-6 ml-4 md:ml-10 text-[28px] font-medium">
+//       <p className="text-gray-700">
+//         <span className="text-orange-500">12 Months</span> |{" "}
+//         <span className="text-black">Live classes</span> |{" "}
+//         <span className="text-orange-500">Projects</span> |{" "}
+//         <span className="text-black">Placement Support</span>
+//       </p>
+//     </div>
 
-    {/* Buttons */}
-    <div className="mt-5 flex flex-col md:flex-row gap-4 md:gap-6 ml-10 md:ml-[180px] text-[20px] font-medium">
-      <button className="bg-black text-white text-center px-4 py-1 rounded-lg hover:bg-orange-500">
-        Enroll Now
-      </button>
-      <button className="bg-white px-4 py-1 rounded-lg hover:bg-gray-400 text-black">
-        Talk to our Counsellor
-      </button>
-    </div>
-  </div>
+//     {/* Buttons */}
+//     <div className="mt-5 flex flex-col md:flex-row gap-4 md:gap-6 ml-10 md:ml-[180px] text-[20px] font-medium">
+//       <button className="bg-black text-white text-center px-4 py-1 rounded-lg hover:bg-orange-500">
+//         Enroll Now
+//       </button>
+//       <button className="bg-white px-4 py-1 rounded-lg hover:bg-gray-400 text-black">
+//         Talk to our Counsellor
+//       </button>
+//     </div>
+//   </div>
 
-  {/* Right Side - Image */}
-  <div className="relative md:absolute md:right-0 md:bottom-0 mt-6 md:mt-0 flex justify-center md:block">
-    <img
-      src={human}
-      alt="Data Analytics"
-      className="w-[250px] md:w-[300px] h-[300px] md:h-[350px] object-cover"
-    />
-  </div>
-</div>
+//   {/* Right Side - Image */}
+//   <div className="relative md:absolute md:right-0 md:bottom-0 mt-6 md:mt-0 flex justify-center md:block">
+//     <img
+//       src={human}
+//       alt="Data Analytics"
+//       className="w-[250px] md:w-[300px] h-[300px] md:h-[350px] object-cover"
+//     />
+//   </div>
+// </div>
 
 
 );

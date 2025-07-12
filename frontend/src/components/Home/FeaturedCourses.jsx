@@ -154,6 +154,7 @@ const FeaturedCourses = () => {
     </div>
   </div>
 </section>
+
     // <section
     //   className="bg-white rounded-[20px]  font-['Poppins']"
     //   style={{
@@ -267,6 +268,7 @@ const FeaturedCourses = () => {
     //     </button>
     //   </div>
     // </section>
+
   );
 };
 
