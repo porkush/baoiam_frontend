@@ -4,12 +4,7 @@ import human from "../../assets/Home/DataScienceBanner/human.png";
 
 const DataScienceBanner = () => {
   return (
-   import React from "react";
-import rocket from "../../assets/Home/DataScienceBanner/rocket.png";
-import human from "../../assets/Home/DataScienceBanner/human.png";
 
-const DataScienceBanner = () => {
-  return (
     <div
       className="
         w-full max-w-[1200px]
@@ -84,10 +79,7 @@ const DataScienceBanner = () => {
         />
       </div>
     </div>
-  );
-};
-
-export default DataScienceBanner;
+ 
 
  
 
