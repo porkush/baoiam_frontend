@@ -6,15 +6,14 @@ import img4 from "../../assets/Home/InsightsSection/4.jpg"
 import img5 from "../../assets/Home/InsightsSection/5.jpg"
 import img6 from "../../assets/Home/InsightsSection/6.jpg"
 import img7 from "../../assets/Home/InsightsSection/7.jpg"
+import HeadingImage from "../Lines/HeadingImages";
 
 export default function InsightsSection() {
   return (
     <section className="mt-12 bg-gray-100 py-8 px-4 flex justify-center min-h-[1040px]">
   <div className="rounded-[30px] p-5 md:p-6 lg:p-8 max-w-[1180px] w-full h-auto lg:h-[745px]">
     <div className="text-center mb-8 lg:mb-12">
-      <h2 className="text-3xl md:text-5xl font-bold mb-2">
-        Our <span className="text-orange-500">Insights</span>
-      </h2>
+      <HeadingImage title="Our" highlight="Insights"/>
       <p className="text-black md:text-[26px] mt-5 max-w-4xl mx-auto">
         We teach real-world skills, connect you with mentors, and prepare you
         to crush the industry.

@@ -178,40 +178,41 @@ import f1 from "../../assets/Home/Testimonial/f1.jpg"
 import f2 from "../../assets/Home/Testimonial/f2.jpg"
 import f3 from "../../assets/Home/Testimonial/f3.jpg"
 import f4 from "../../assets/Home/Testimonial/f4.jpg"
+import HeadingImage from '../Lines/HeadingImages';
 
 const Testimonial = () => {
   const testimonials = [
     {
       id: 1,
-      content: "BAOIAM's training and expert mentorship helped me secure a 9.02 LPA package as a Risk Consultant. The practical approach made all the difference.",
+      content: "BAOIAM's training and expert mentorship helped me secure a 9.02 LPA package as a Risk Consultant.",
       author: "Apurva Kulpe",
       role: "Risk Consultant - 9.02 LPA",
       image: f1
     },
     {
       id: 2,
-      content: "Thanks to BAOIAM's structured curriculum and interview prep, I landed a 5 LPA role as a Software Developer straight out of training.",
+      content: "Thanks to BAOIAM's structured curriculum and interview prep, I landed a 5 LPA role as a Software Developer.",
       author: "Vishnu Vardhan",
       role: "Software Developer - 5 LPA",
       image: m1
     },
     {
       id: 3,
-      content: "The hands-on projects and personalized guidance at BAOIAM helped me get placed as a Quality Engineer at 18 LPA. Truly a game-changer for my career.",
+      content: "The hands-on projects and personalized guidance at BAOIAM helped me get placed as a Quality Engineer at 18 LPA. ",
       author: "Akhil Padi",
       role: "Quality Engineer - 18 LPA",
       image: m1
     },
     {
       id: 4,
-      content: "BAOIAM's industry-focused learning and placement support helped me land a 22 LPA software engineer role at Byju's. Highly recommend it!",
+      content: "BAOIAM's industry-focused learning and placement support helped me land a 22 LPA software engineer role at Byju's.",
       author: "Vaibhav Verma",
       role: "Software Engineer at Byju's - 22 LPA",
       image: m1
     },
     {
       id: 5,
-      content: "With BAOIAM's expert mentors and real-world projects, I cracked Microsoft at 52 LPA. Their guidance was the key to my success.",
+      content: "With BAOIAM's expert mentors and real-world projects, I cracked Microsoft at 52 LPA.",
       author: "Amit Pandey",
       role: "Microsoft - 52 LPA",
       image: m1
@@ -272,7 +273,8 @@ const Testimonial = () => {
   return (
     <div className="relative max-w-6xl mx-auto py-8 md:py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="text-center mb-8 md:mb-12">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-2">Testimonials</h2>
+        {/* <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-2">Testimonials</h2> */}
+        <HeadingImage title="Testimonials" HeadingImage=""/>
         <p className="text-lg sm:text-xl md:text-2xl">
           Experts who guide, Mentors who matter. We Teach what you own
         </p>

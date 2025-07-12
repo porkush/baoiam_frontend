@@ -213,6 +213,7 @@ import Bonnya from "../../assets/Home/TeamSection/10.png";
 import Madhav from "../../assets/Home/TeamSection/11.png";
 import Ayush from "../../assets/Home/TeamSection/12.png";
 import Nakshatra from "../../assets/Home/TeamSection/13.png";
+import HeadingImage from "../Lines/HeadingImages";
 
 
 const TeamSection = () => {
@@ -372,9 +373,8 @@ const TeamSection = () => {
     <div className="bg-white py-10 pb-14 px-4 sm:px-6 lg:px-8 font-['Poppins']">
       {/* Header */}
        <div className="max-w-7xl mx-auto text-center mb-16">
-                <h1 className="text-[48px] font-bold text-gray-900 mb-3">
-                    Our <span className="text-orange-500">Team</span>
-                </h1>
+               
+                <HeadingImage title="Our" highlight="Team"/>
                 <p className="text-[24px] text-black  mx-auto">
                     Experts who guide, Mentors who matter. We teach what you own.
                 </p>
