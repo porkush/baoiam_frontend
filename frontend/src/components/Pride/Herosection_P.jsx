@@ -3,7 +3,7 @@ import bonnay from "../../assets/Pride/Herosection_P/bonnay.png";
 
 const HeroSection_P = () => {
   return (
-    <section className="relative bg-white overflow-hidden py-12 md:py-16 lg:py-10 font-['Poppins']">
+    <section className="relative bg-white overflow-hidden pt-12 md:pt-16 lg:pt-10 font-['Poppins']">
       <div className=" px-4 sm:px-6 lg:px-8 flex flex-col md:ml-32  md:flex-row items-center  ">
         {/* LEFT SIDE - Content */}
         <div className="flex-1 order-2 md:order-1">

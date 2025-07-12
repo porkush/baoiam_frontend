@@ -27,7 +27,7 @@ const faqData = [
   {
     question: "What are the fees for the program?",
     answer: `The pricing ranges from ₹2,999 to ₹4,999 depending on the course structure. Special offers, scholarships, and token-based payment models like "Pay After Placement" are also available for selected batches.`,
-  }
+  },
   // ,
   // {
   //   question: "What is included in the program?",
@@ -70,15 +70,14 @@ export default function FAQSection() {
         <button className="mt-4 px-5 py-2 border rounded-md bg-gray-200 border-gray-300 hover:bg-gray-100 transition">
           See All FAQ’s
         </button>
-       <div className="relative w-[409px] h-[409px] overflow-hidden mt-10">
-  <img
-    src={FAQ_Img}
-    alt="FAQ Illustration"
-    className="w-full h-full object-cover"
-  />
-  <div className="absolute bottom-0 left-0 w-full h-[35px] bg-gradient-to-t from-white to-transparent" />
-</div>
-
+        <div className="relative w-[409px] h-[409px] overflow-hidden mt-10">
+          <img
+            src={FAQ_Img}
+            alt="FAQ Illustration"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute bottom-0 left-0 w-full h-[35px] bg-gradient-to-t from-white to-transparent" />
+        </div>
       </div>
 
       {/* Right side */}
@@ -87,7 +86,7 @@ export default function FAQSection() {
           {faqData.map((item, index) => (
             <div
               key={index}
-              className={` rounded-lg text-[18px] font-med overflow-hidden shadow-sm transition-all duration-300 ml-6 p-5 ${
+              className={` rounded-lg text-[18px] font-med overflow-hidden shadow-sm transition-all duration-300 ml-6 p-2 ${
                 openIndex === index ? "bg-white shadow" : "bg-white"
               }`}
             >
