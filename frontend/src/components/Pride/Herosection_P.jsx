@@ -8,8 +8,8 @@ const HeroSection_P = () => {
         {/* LEFT SIDE - Content */}
         <div className="flex-1 order-2 md:order-1">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-semibold text-black leading-relaxed mb-4 md:mb-6">
-            Living With <span className="text-purple-600">Pride,</span> Leading
-            With <span className="text-orange-600">Purpose.</span>
+            Living With <span className="text-[#8A38F5]">Pride,</span> Leading
+            With <span className="text-[#FF6501]">Purpose.</span>
           </h1>
 
           <p className="text-[#222222] text-base sm:text-lg md:text-[24px] mb-6 md:mb-16 md:mt-12 ">
@@ -17,7 +17,7 @@ const HeroSection_P = () => {
             courses that celebrate identity, ambition, and purpose. Your future
             begins with you.
           </p>
-          <button className="bg-[#FF6501] hover:bg-orange-400 text-white font-semibold py-2 px-5 sm:py-3 sm:px-6 rounded-md transition duration-300 text-[20px] sm:text-base md:font-medium">
+          <button className="bg-[#FF6501] hover:bg-orange-400 px-[20px] py-[5px] text-white font-semibold rounded-md transition duration-300 text-[20px] md:font-medium">
             Enroll Now
           </button>
         </div>
