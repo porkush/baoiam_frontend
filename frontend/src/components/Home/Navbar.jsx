@@ -214,10 +214,11 @@ const Navbar = () => {
 
 
 <nav
-  className="sticky top-[20px] z-50 mx-auto mt-[20px] max-w-[1340px] h-[80px] bg-[#FFFAF7] rounded-[50px] shadow-md flex items-center justify-between pr-[40px] pl-[40px] font-['Poppins'] overflow-x-auto"
+  className="sticky top-[20px] z-50
+mx-auto mt-[20px] max-w-[1340px] h-[80px] bg-[#FFFAF7] rounded-[50px] shadow-md flex items-center justify-between pr-[40px] pl-[40px] font-['Poppins']"
 >
   {/* Left */}
-  <div className="flex items-center ml-5 hover:border hover:rounded-lg hover:border-gray-300 min-w-fit">
+  <div className="flex items-center ml-5 hover:border hover:rounded-lg hover:border-gray-300">
     <Link to="/">
       <img
         src={lightLogo}
@@ -228,10 +229,11 @@ const Navbar = () => {
   </div>
 
   {/* Center */}
-  <div className="flex justify-center items-center min-w-fit">
+  <div className="flex justify-center items-center">
+    {/* Removed 'hidden md:flex' to make it visible on all screen sizes */}
     <ul className="flex space-x-[33px] text-black text-[18px] ml-4">
-      <li className="hover:text-orange-500 min-w-fit">PAP</li>
-      <li className="relative group cursor-pointer min-w-fit">
+      <li className="hover:text-orange-500">PAP</li>
+      <li className="relative group cursor-pointer">
         <span
           className="flex items-center hover:text-orange-500 cursor-pointer"
           onMouseEnter={() => setIsHovered(true)}
@@ -256,26 +258,26 @@ const Navbar = () => {
           </li>
         </ul>
       </li>
-      <li className="relative inline-block min-w-fit">
+      <li className="relative inline-block">
         <span
           className="
-            font-poppins font-normal text-[18px] leading-none
-            bg-clip-text text-transparent
-            bg-gradient-to-r
-            from-[#110028] via-[#F1EAF9] to-[#8A38F5] to-75%
-            bg-[length:400%_auto]
-            animate-gradient
-          "
+              font-poppins font-normal text-[18px] leading-none
+              bg-clip-text text-transparent
+              bg-gradient-to-r
+              from-[#110028] via-[#F1EAF9] to-[#8A38F5] to-75%
+              bg-[length:400%_auto]
+              animate-gradient
+            "
         >
           Pride
         </span>
       </li>
-      <li className="flex items-center gap-2 hover:text-orange-500 min-w-fit">
+      <li className="flex items-center gap-2 hover:text-orange-500">
         <img src={giftbox} alt="Referral Animation" className="w-5 h-6" />
         <span>Refer & Earn</span>
       </li>
-      <li className="hover:text-orange-500 min-w-fit">Success Stories</li>
-      <li className="relative group cursor-pointer min-w-fit">
+      <li className="hover:text-orange-500">Success Stories</li>
+      <li className="relative group cursor-pointer">
         <span
           className="flex items-center hover:text-orange-500 cursor-pointer"
           onMouseEnter={() => setIsHovered(true)}
@@ -304,7 +306,7 @@ const Navbar = () => {
   </div>
 
   {/* Right */}
-  <div className="flex items-center space-x-6 min-w-fit">
+  <div className="flex items-center space-x-6">
     <button>
       <IoMoon className="w-6 h-6 text-gray-800" />
     </button>
