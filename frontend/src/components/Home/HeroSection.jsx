@@ -173,14 +173,12 @@ export default function HeroSection() {
     //   </div>
     // </section>
 
-  
-
-    <section className="bg-white text-gray-800 px-4 pt-13 font-['Poppins'] w-full max-w-[1290px] mx-auto overflow-hidden">
-  <div className="flex flex-row items-center justify-between gap-8">
+  <section className="bg-white text-gray-800 px-2 pt-13 sm:px-4 font-['Poppins'] w-full max-w-[1290px] mx-auto">
+  <div className="flex flex-col md:flex-row items-center justify-between gap-8">
     {/* Content Section */}
-    <div className="flex flex-col w-[650px]">
+    <div className="flex flex-col w-full md:w-[650px]">
       {/* Headline */}
-      <h3 className="w-full text-[52px] font-semibold leading-[100%] font-poppins">
+      <h3 className="w-full text-[40px] md:text-[52px] font-semibold leading-[100%] font-poppins">
         <span className="text-black">Learn. Build. </span>
         <span className="text-orange-500">Get Hired.</span>
       </h3>
@@ -192,54 +190,36 @@ export default function HeroSection() {
       </p>
 
       {/* "What brings you to Baoiam" section */}
-      <div className="flex flex-col w-full gap-5 mt-[45px]">
+      <div className="flex flex-col w-full gap-5 mt-8">
         <h2 className="w-full text-[22px] font-semibold leading-[100%] text-[#222222]">
           What brings you to Baoiam today?
         </h2>
 
-        <ul className="flex flex-col w-full gap-[10px]">
-          <li className="flex items-center w-full px-[8px] py-2 rounded-[5px] bg-[#F8F8F8] gap-[12px] font-medium text-lg hover:bg-gray-300">
-            <input
-              type="radio"
-              name="goal"
-              className="accent-orange-500 w-4 h-4"
-            />
-            Launch my career with job-ready skills
-          </li>
-
-          <li className="flex items-center w-full px-[8px] py-2 rounded-[5px] bg-[#F8F8F8] gap-[12px] font-medium text-lg hover:bg-gray-300">
-            <input
-              type="radio"
-              name="goal"
-              className="accent-orange-500 w-4 h-4"
-            />
-            Upskill while in college
-          </li>
-
-          <li className="flex items-center w-full px-[8px] py-2 rounded-[5px] bg-[#F8F8F8] gap-[12px] font-medium text-lg hover:bg-gray-300">
-            <input
-              type="radio"
-              name="goal"
-              className="accent-orange-500 w-4 h-4"
-            />
-            Switch to high-demand career
-          </li>
-
-          <li className="flex items-center w-full px-[8px] py-2 rounded-[5px] bg-[#F8F8F8] gap-[12px] font-medium text-lg hover:bg-gray-300">
-            <input
-              type="radio"
-              name="goal"
-              className="accent-orange-500 w-4 h-4"
-            />
-            Explore AI-Powered courses
-          </li>
+        <ul className="flex flex-col w-full gap-3">
+          {[
+            "Launch my career with job-ready skills",
+            "Upskill while in college",
+            "Switch to high-demand career",
+            "Explore AI-Powered courses",
+          ].map((text, idx) => (
+            <li
+              key={idx}
+              className="flex items-center w-full px-2 py-2 rounded-[5px] bg-[#F8F8F8] gap-3 font-medium text-lg hover:bg-gray-300"
+            >
+              <input
+                type="radio"
+                name="goal"
+                className="accent-orange-500 w-4 h-4"
+              />
+              {text}
+            </li>
+          ))}
         </ul>
 
-        <div className="mt-4 flex flex-row gap-8">
+        <div className="mt-4 flex flex-col sm:flex-row gap-8">
           <button className="bg-[#FF6501] border rounded-lg text-white flex items-center justify-center gap-2 py-2 px-4 font-medium text-xl hover:bg-[#ff6701d5]">
             Apply Now →
           </button>
-
           <button className="bg-black text-white border rounded-lg py-2 px-4 text-xl hover:bg-[#3c3b3f]">
             Talk to our Counsellor
           </button>
@@ -247,8 +227,8 @@ export default function HeroSection() {
       </div>
     </div>
 
-    {/* Image Scrollers - Always visible now */}
-    <div className="flex justify-center gap-15 ml-10 mb-15">
+    {/* Image Scrollers */}
+    <div className="flex justify-center gap-8 ml-0 mb-8 mt-8 md:mt-0 w-full md:w-auto">
       {/* LEFT SCROLLER */}
       <div className="relative h-[450px] w-[240px] overflow-hidden">
         <motion.div
@@ -260,33 +240,14 @@ export default function HeroSection() {
             ease: "linear",
           }}
         >
-          <img
-            src={img1}
-            className="h-[240px] w-[200px] object-cover rounded-lg"
-          />
-          <img
-            src={img2}
-            className="h-[240px] w-[200px] object-cover rounded-lg"
-          />
-          <img
-            src={img3}
-            className="h-[240px] w-[200px] object-cover rounded-lg"
-          />
-          <img
-            src={img4}
-            className="h-[240px] w-[200px] object-cover rounded-lg"
-          />
-          <img
-            src={img5}
-            className="h-[240px] w-[200px] object-cover rounded-lg"
-          />
-          <img
-            src={img6}
-            className="h-[240px] w-[200px] object-cover rounded-lg"
-          />
+          {[img1, img2, img3, img4, img5, img6].map((src, idx) => (
+            <img
+              key={idx}
+              src={src}
+              className="h-[240px] w-[200px] object-cover rounded-lg"
+            />
+          ))}
         </motion.div>
-
-        {/* Overlays */}
         <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-white to-transparent pointer-events-none"></div>
         <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
       </div>
@@ -303,38 +264,20 @@ export default function HeroSection() {
             ease: "linear",
           }}
         >
-          <img
-            src={img4}
-            className="h-[240px] w-[200px] object-cover rounded-lg"
-          />
-          <img
-            src={img5}
-            className="h-[240px] w-[200px] object-cover rounded-lg"
-          />
-          <img
-            src={img6}
-            className="h-[240px] w-[200px] object-cover rounded-lg"
-          />
-          <img
-            src={img3}
-            className="h-[240px] w-[200px] object-cover rounded-lg"
-          />
-          <img
-            src={img1}
-            className="h-[240px] w-[200px] object-cover rounded-lg"
-          />
-          <img
-            src={img2}
-            className="h-[240px] w-[200px] object-cover rounded-lg"
-          />
+          {[img4, img5, img6, img3, img1, img2].map((src, idx) => (
+            <img
+              key={idx}
+              src={src}
+              className="h-[240px] w-[200px] object-cover rounded-lg"
+            />
+          ))}
         </motion.div>
-
-        {/* Overlays */}
         <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-white to-transparent pointer-events-none"></div>
         <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
       </div>
     </div>
   </div>
 </section>
+
   );
 }
