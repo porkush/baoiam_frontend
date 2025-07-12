@@ -7,12 +7,12 @@ const HeroSection_P = () => {
       <div className="px-4 sm:px-6 lg:px-8 flex flex-col md:ml-8 lg:ml-16 xl:ml-32 md:flex-row items-center">
         {/* LEFT SIDE - Content */}
         <div className="flex-1 order-2 md:order-1">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-semibold text-black leading-relaxed mb-4 md:mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-medium text-black leading-20 mb-4 md:mb-6">
             Living With <span className="text-[#8A38F5]">Pride,</span> Leading
             With <span className="text-[#FF6501]">Purpose.</span>
           </h1>
 
-          <p className="text-[#222222] text-base sm:text-lg md:text-[24px] mb-6 md:mb-16 md:mt-12 ">
+          <p className="text-[#222222] text-base sm:text-lg md:text-[24px] mb-6 md:mb-[74px] md:mt-11">
             Step into your power, learn with pride, and grow through expert-led
             courses that celebrate identity, ambition, and purpose. Your future
             begins with you.

@@ -174,9 +174,9 @@ export default function HeroSection() {
     // </section>
 
   <section className="bg-white text-gray-800 px-2 pt-13 sm:px-4 font-['Poppins'] w-full max-w-[1290px] mx-auto">
-  <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+  <div className="flex flex-col md:flex-row items-center justify-between gap-8 mt-4">
     {/* Content Section */}
-    <div className="flex flex-col w-full md:w-[650px]">
+    <div className="flex flex-col w-full md:w-[650px] ">
       {/* Headline */}
       <h3 className="w-full text-[40px] md:text-[52px] font-semibold leading-[100%] font-poppins">
         <span className="text-black">Learn. Build. </span>
