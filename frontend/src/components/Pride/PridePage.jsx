@@ -7,6 +7,7 @@ import BlogSection from "./BlogSection";
 import AmbassadorAdvice from "./AmbassadorAdvice";
 // import OurEvents from "./";
 import AboutBonnay from "./AboutBonnay";
+import OurFeaturedCourses from "./OurFeaturedCourses";
 
 const PridePage = () => {
   return (
@@ -15,6 +16,7 @@ const PridePage = () => {
       <StatsSection />
       {/* <OurEvents/> */}
       <AboutBonnay/>
+      <OurFeaturedCourses/>
       <AmbassadorAdvice/>
       <BlogSection/>
       <Contact/>
