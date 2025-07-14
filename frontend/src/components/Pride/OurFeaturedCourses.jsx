@@ -198,7 +198,7 @@ const OurFeaturedCourses = () => {
 
   return (
     <div className="w-full py-16 bg-white flex justify-center overflow-hidden font-['Poppins']">
-      <div className="w-[90%] max-w-6xl bg-white p-6 md:p-10">
+      <div className="w-[90%] max-w-6xl bg-white ">
         {/* Heading */}
         <div className="flex items-center justify-center w-full mb-3">
           <h2 className="text-3xl md:text-[48px] font-semibold mb-2">
