@@ -124,7 +124,7 @@ const Contact = () => {
           <div className="mt-5">
             <b className=" text-base font-poppins">Contact Us –</b>
             <p className="text-base pt-2 tracking-wide">
-              999-999-9999{" "}
+              08062181972{" "}
               <span className="text-xs">(9AM to 7PM on all days)</span>
             </p>
             <p className="text-base ">support@baoiam.com</p>
