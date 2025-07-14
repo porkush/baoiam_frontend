@@ -12,10 +12,8 @@ const HeroSection_P = () => {
             With <span className="text-[#FF6501]">Purpose.</span>
           </h1>
 
-          <p className="text-[#222222] text-base sm:text-lg md:text-[24px] mb-6 md:mb-[74px] md:mt-11">
-            Step into your power, learn with pride, and grow through expert-led
-            courses that celebrate identity, ambition, and purpose. Your future
-            begins with you.
+          <p className="text-[#222222] text-base sm:text-lg md:text-[24px] mb-6 md:mb-6 md:mt-8">
+            Unlock your potential with transformative, expert-led courses designed to fuel your ambition, celebrate your identity, and empower your journey. The path to success starts here—bold, inclusive, and unapologetically you.
           </p>
           <button className="bg-[#FF6501] hover:bg-orange-400 px-[20px] py-[5px] text-white font-semibold rounded-md transition duration-300 text-[20px] md:font-medium">
             Enroll Now
