@@ -1,9 +1,11 @@
-import React from "react";
-import { FaEye } from "react-icons/fa";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { useState } from "react";
 import Google from "../../assets/google.png";
 import { Link } from "react-router-dom";
 
 const Signup = () => {
+  const [showOtp, setShowOtp] = useState(false);
+
   return (
     <div className="flex  justify-center min-h-screen bg-gray-50 font-['Poppins']">
       <div className="bg-white rounded-3xl shadow-md w-[450px] mt-10 p-8">
@@ -16,7 +18,9 @@ const Signup = () => {
             Baoiam
           </span> */}
         </h2>
-        <h1 className="text-[32px]  text-center mt-1 mb-6 font-medium">Sign up</h1>
+        <h1 className="text-[32px]  text-center mt-1 mb-6 font-medium">
+          Sign up
+        </h1>
 
         {/* Email or Mobile */}
         <div className="mb-1">
@@ -40,15 +44,19 @@ const Signup = () => {
             </button>
           </div>
 
-          <div className="relative ">
+          <div className="relative">
             <input
-              type="text"
+              type={showOtp ? "text" : "password"}
               placeholder="Enter OTP"
-              className="w-full pr-10 pl-4 py-3 text-[14px] text-[#808080]  border border-gray-400 rounded-full"
+              className="w-full pr-10 pl-4 py-3 text-[14px] text-[#808080] border border-gray-400 rounded-full"
             />
-            <span className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400">
-              <FaEye />
-            </span>
+            <button
+              type="button"
+              onClick={() => setShowOtp(!showOtp)}
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-orange-500 focus:outline-none"
+            >
+              {showOtp ? <FaEyeSlash /> : <FaEye />}
+            </button>
           </div>
         </div>
 
