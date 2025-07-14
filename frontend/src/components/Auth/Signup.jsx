@@ -21,7 +21,7 @@ const Signup = () => {
         {/* Email or Mobile */}
         <div className="mb-1">
           <label className="block text-[16px]  font-normal mb-3">
-            E-mail or Mobile Number
+            Email ID or Mobile Number
           </label>
           <input
             type="text"
