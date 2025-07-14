@@ -5,14 +5,16 @@ import Footer from "../Footer/Footer";
 import Contact from "../Footer/Contact";
 import BlogSection from "./BlogSection";
 import AmbassadorAdvice from "./AmbassadorAdvice";
-import OurEvents from "./OurEvents";
+// import OurEvents from "./";
+import AboutBonnay from "./AboutBonnay";
 
 const PridePage = () => {
   return (
     <div>
       <HeroSection_P />
       <StatsSection />
-      <OurEvents/>
+      {/* <OurEvents/> */}
+      <AboutBonnay/>
       <AmbassadorAdvice/>
       <BlogSection/>
       <Contact/>
