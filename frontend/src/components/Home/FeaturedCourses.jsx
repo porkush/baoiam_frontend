@@ -2,6 +2,10 @@ import React from "react";
 import { FaStar, FaUserGraduate, FaClock } from "react-icons/fa";
 // import HeadingImage from "../Lines/HeadingImages";
 import Group from "../../assets/Home/Lines/Group.webp";
+import DS from "../../assets/Home/FeaturedCourses/DS_F.png"
+import DA from "../../assets/Home/FeaturedCourses/DA_F.png"
+import DM from "../../assets/Home/FeaturedCourses/DM.png"
+import SD from "../../assets/Home/FeaturedCourses/SD.png"
 import { FiBarChart } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
@@ -14,7 +18,7 @@ const courses = [
     students: "150.3K",
     level: "Intermediate",
     duration: "45 hours",
-    image: "/src/assets/data-science.jpg",
+    image: DS,
   },
   {
     id: 2,
@@ -24,7 +28,7 @@ const courses = [
     students: "98.5K",
     level: "Beginner",
     duration: "35 hours",
-    image: "/src/assets/data-analysis.jpg",
+    image: DA,
   },
   {
     id: 3,
@@ -34,7 +38,7 @@ const courses = [
     students: "265.7K",
     level: "Beginner",
     duration: "40 hours",
-    image: "/src/assets/digital-marketing.jpg",
+    image: DM,
   },
   {
     id: 4,
@@ -44,7 +48,7 @@ const courses = [
     students: "73.4K",
     level: "Advanced",
     duration: "80 hours",
-    image: "/src/assets/tech-bootcamp.jpg",
+    image: SD,
   },
 ];
 
@@ -88,7 +92,7 @@ const FeaturedCourses = () => {
             >
               {/* Course Header */}
               <div className="flex items-center gap-[5px]">
-                <h3 className="text-lg font-medium">{course.title}</h3>
+                <h3 className="text-[16px] font-medium">{course.title}</h3>
                 <div className="flex items-center text-black text-sm">
                   <FaStar className="mr-1 text-amber-500" /> {course.rating}
                 </div>
@@ -96,7 +100,7 @@ const FeaturedCourses = () => {
 
               {/* Course Image */}
               <img
-                src="https://www.plannthat.com/wp-content/uploads/2023/06/Pinterest-Techniques-to-Maximize-Reach-and-Boost-Your-Pins.png"
+                src={course.image}
                 alt={course.title}
                 className="h-[120px] w-full object-cover mb-[2px] rounded-sm"
               />
