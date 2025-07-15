@@ -6,7 +6,7 @@ import { IoStar, IoStarHalf, IoStarOutline } from "react-icons/io5";
 import Toshika_Mam from "../../assets/CoursesLayout/Experts/Toshika_Mam.png";
 import Sudhanshu_sir from "../../assets/CoursesLayout/Experts/Sudhanshu_sir.png";
 import Siddhart_sir from "../../assets/CoursesLayout/Experts/Siddhart_Sir.png";
-import img4 from "../../assets/CoursesLayout/Experts/img4.png";
+import Anudeep_Marlapali from "../../assets/CoursesLayout/Experts/Anudeep_Marlapali.png";
 
 
 const trainers = [
@@ -15,6 +15,7 @@ const trainers = [
     role: "HRMS Expert",
     experience: "5+ Years",
     rating: 4.5,
+    student: "5k",
     image: Toshika_Mam,
   },
   {
@@ -22,6 +23,7 @@ const trainers = [
     role: "Branding and Content Expert",
     experience: "3+ Years",
     rating: 4.5,
+    student: "5k",
     image: Sudhanshu_sir,
   },
   {
@@ -29,6 +31,7 @@ const trainers = [
     role: "Startup & Entrepreneurship Expert",
     experience: "7+ Years",
     rating: 4.6,
+    student: "7k",
     image: Siddhart_sir,
   },
   {
@@ -36,11 +39,12 @@ const trainers = [
     role: "Data Science & Software Development Expert",
     experience: "6+ Years",
     rating: 4.8,
-    image: img4,
+    student: "10k",
+    image: Anudeep_Marlapali,
   },
 ];
 
-const TrainerCard = ({ image, name, role, experience, rating }) => {
+const TrainerCard = ({ image, name, role, experience, rating, student }) => {
   const stars = Array(5)
     .fill(0)
     .map((_, i) => {
@@ -62,15 +66,14 @@ const TrainerCard = ({ image, name, role, experience, rating }) => {
         />
         <div className="ml-[160px] mb-3 text-left text-white">
           <h3 className="text-[25px] font-medium mb-1">{name}</h3>
-          <p className="text-[12px] font-medium  -mt-2">{role}</p>
+          <p className="text-[12px] font-medium -mt-2">{role}</p>
           <p className="text-sm font-medium font-poppins mt-2 mb-2">
-            <span className="font-medium text-[14px]">Experienced</span> –{" "}
-            {experience}
+            <span className="font-medium text-[14px]">Experienced</span> – {experience}
           </p>
           <div className="flex items-center gap-1 bg-white py-1 px-1 rounded-md">
             <div className="flex">{stars}</div>
-            <span className="text-[10px] mb-1 text-gray-600">
-              (15k+) By students
+            <span className="text-[10px] mb-1 text-gray-600 ml-1">
+              {student} By students
             </span>
           </div>
         </div>
@@ -78,6 +81,7 @@ const TrainerCard = ({ image, name, role, experience, rating }) => {
     </div>
   );
 };
+
 const Experts = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [transition, setTransition] = useState("transform 500ms ease-in-out");

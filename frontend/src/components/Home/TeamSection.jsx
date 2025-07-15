@@ -25,7 +25,6 @@ const TeamSection = () => {
 
   const solidColors = [
     "bg-[#1B1B1B]",
-    
   ];
 
   const members = [
