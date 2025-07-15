@@ -4,12 +4,14 @@ import Footer from "../Footer/Footer"
 import FAQ_C from './FAQ_C'
 import DiscountBanner from './DiscountBanner'
 import BoughtTogether from './BoughtTogether'
+import Experts from './Experts'
 
 const CoursePage = () => {
   return (
     <div>
       <HeroSection_C/>
       <BoughtTogether/>
+      <Experts/>
       <FAQ_C/>
       <DiscountBanner/>
       <Footer/>
