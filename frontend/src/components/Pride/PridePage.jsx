@@ -8,6 +8,7 @@ import AmbassadorAdvice from "./AmbassadorAdvice";
 // import OurEvents from "./";
 import AboutBonnay from "./AboutBonnay";
 import OurFeaturedCourses from "./OurFeaturedCourses";
+import PrideBanner from "./PrideBanner";
 
 const PridePage = () => {
   return (
@@ -17,6 +18,7 @@ const PridePage = () => {
       {/* <OurEvents/> */}
       <AboutBonnay/>
       <OurFeaturedCourses/>
+      <PrideBanner/>
       <AmbassadorAdvice/>
       <BlogSection/>
       <Contact/>
