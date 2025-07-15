@@ -161,10 +161,6 @@
 
 
 
-
-
-
-
 import React, { useState, useEffect } from 'react';
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import m1 from "../../assets/Home/Testimonial/m1.webp";
@@ -311,7 +307,3 @@ const Testimonial = () => {
 };
 
 export default Testimonial;
-
-
-
-

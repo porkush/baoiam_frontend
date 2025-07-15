@@ -2,12 +2,11 @@ import React from 'react'
 import HeroSection_C from './HeroSection_C'
 import Footer from "../Footer/Footer"
 import FAQ_C from './FAQ_C'
-import DiscountBanner from './DiscountBanner'
+import DiscountBanner from '../DataAnalysis/DiscountBanner'
 import BoughtTogether from './BoughtTogether'
 import Experts from './Experts'
 import FlexibleCourses from './FlexibleCourses'
-import Navbar_C from './Navbar_C'
-
+import Navbar_C from "../DataAnalysis/Navbar_C";
 const DataSciencePage = () => {
   return (
     <div>

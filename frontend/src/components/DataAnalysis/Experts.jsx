@@ -2,48 +2,41 @@ import React, { useRef, useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { IoStar, IoStarHalf, IoStarOutline } from "react-icons/io5";
 
-import img1 from "../../assets/CoursesLayout/Experts/img1.png";
-import img2 from "../../assets/CoursesLayout/Experts/img2.png";
-import img3 from "../../assets/CoursesLayout/Experts/img3.png";
+
+import Toshika_Mam from "../../assets/CoursesLayout/Experts/Toshika_Mam.png";
+import Sudhanshu_sir from "../../assets/CoursesLayout/Experts/Sudhanshu_sir.png";
+import Siddhart_sir from "../../assets/CoursesLayout/Experts/Siddhart_Sir.png";
 import img4 from "../../assets/CoursesLayout/Experts/img4.png";
-import img5 from "../../assets/CoursesLayout/Experts/img5.png";
+
 
 const trainers = [
   {
-    name: "Nishi Verma",
-    role: "Data Analyst Expert",
-    experience: "12+ Years",
+    name: "Toshika Bagga",
+    role: "HRMS Expert",
+    experience: "5+ Years",
     rating: 4.5,
-    image: img1,
+    image: Toshika_Mam,
   },
   {
-    name: "Himali Joshi",
-    role: "Communication Expert",
-    experience: "15+ Years",
-    rating: 4.2,
-    image: img2,
+    name: "Sudhanshu Mohan",
+    role: "Branding and Content Expert",
+    experience: "3+ Years",
+    rating: 4.5,
+    image: Sudhanshu_sir,
   },
   {
-    name: "Samay Ojha",
-    role: "Cloud Computing Expert",
-    experience: "08+ Years",
-    rating: 4.3,
-    image: img3,
-  },
-  {
-    name: "Gaurav Si",
-    role: "Data Analyst Expert",
-    experience: "08+ Years",
+    name: "Siddharth Tomar",
+    role: "Startup & Entrepreneurship Expert",
+    experience: "7+ Years",
     rating: 4.6,
+    image: Siddhart_sir,
+  },
+  {
+    name: "Anudeep Marlapalli",
+    role: "Data Science & Software Development Expert",
+    experience: "6+ Years",
+    rating: 4.8,
     image: img4,
-  },
-
-  {
-    name: "dex Mishra",
-    role: "Python Development Expert",
-    experience: "08+ Years",
-    rating: 4.6,
-    image: img5,
   },
 ];
 
@@ -60,15 +53,15 @@ const TrainerCard = ({ image, name, role, experience, rating }) => {
     });
 
   return (
-    <div className="h-[264px] w-[385px] relative overflow-visible flex items-center justify-center flex-shrink-0">
-      <div className="relative w-full h-[156px] bg-[#FF6501] rounded-[10px] flex items-end px-4 pt-10 pb-4">
+    <div className="h-[264px] w-[390px] relative overflow-visible flex items-center justify-center flex-shrink-0">
+      <div className="relative w-full h-[156px] bg-[#FF6501] rounded-[10px] flex items-end px-2 pt-10 pb-4">
         <img
           src={image}
           alt={name}
           className="absolute w-[171px] h-[206px] -top-[50px] left-0 object-contain"
         />
         <div className="ml-[160px] mb-3 text-left text-white">
-          <h3 className="text-[32px] font-medium mb-1">{name}</h3>
+          <h3 className="text-[25px] font-medium mb-1">{name}</h3>
           <p className="text-[12px] font-medium  -mt-2">{role}</p>
           <p className="text-sm font-medium font-poppins mt-2 mb-2">
             <span className="font-medium text-[14px]">Experienced</span> –{" "}
@@ -107,7 +100,7 @@ const Experts = () => {
 
   return (
   <div className="w-full lg:w-[1440px] border-b-2 border-gray-200 mx-auto flex flex-col items-center justify-center relative px-4 md:px-8 py-4 ">
-    <h2 className="text-2xl md:text-[32px] lg:text-[40px] mb-8 text-center lg:text-left font-['Poppins'] text-black">
+    <h2 className="text-2xl md:text-[32px] lg:text-[40px] mb-8 text-center font-medium lg:text-left font-['Poppins'] text-black">
       Taught by the best
     </h2>
 
