@@ -66,6 +66,7 @@ import HomePage from "./components/Home/HomePage";
 import PridePage from "./components/Pride/PridePage";
 import AuthModal from "./components/Auth/AuthModal";
 import { useEffect, useState } from "react";
+import CoursePage from "./components/CoursesLayout/CoursePage";
 
 function App() {
   const [isSignupOpen, setIsSignupOpen] = useState(false);
@@ -92,6 +93,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/pride" element={<PridePage />} />
+          <Route path="/coursesLayout" element={<CoursePage/>}/>
         </Routes>
       </div>
     </Router>
