@@ -5,6 +5,7 @@ import FAQ_C from './FAQ_C'
 import DiscountBanner from './DiscountBanner'
 import BoughtTogether from './BoughtTogether'
 import Experts from './Experts'
+import FlexibleCourses from './FlexibleCourses'
 
 const CoursePage = () => {
   return (
@@ -12,6 +13,7 @@ const CoursePage = () => {
       <HeroSection_C/>
       <BoughtTogether/>
       <Experts/>
+      <FlexibleCourses/>
       <FAQ_C/>
       <DiscountBanner/>
       <Footer/>

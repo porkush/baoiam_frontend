@@ -107,7 +107,7 @@ const Experts = () => {
 
   return (
   <div className="w-full lg:w-[1440px] border-b-2 border-gray-200 mx-auto flex flex-col items-center justify-center relative px-4 md:px-8 py-4 ">
-    <h2 className="text-2xl md:text-[32px] lg:text-[40px] mb-8 text-center lg:text-left font-['Poppins']">
+    <h2 className="text-2xl md:text-[32px] lg:text-[40px] mb-8 text-center lg:text-left font-['Poppins'] text-black">
       Taught by the best
     </h2>
 

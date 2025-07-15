@@ -68,7 +68,7 @@ const CourseCard = ({ course }) => (
 
 const BoughtTogether = () => {
   return (
-    <div className="w-full h-auto py-10 bg-white flex flex-col items-center justify-center px-4 md:px-6">
+    <div className="w-full h-auto py-4 bg-white flex flex-col items-center justify-center px-4 md:px-4">
       <h2 className="text-2xl md:text-[40px] font-medium mb-3 text-center md:text-left">
         Frequently Bought together
       </h2>
