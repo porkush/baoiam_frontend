@@ -17,7 +17,7 @@ export default function HeroSection_C() {
     <div className="bg-white font-['Poppins']">
       {/* Breadcrumbs */}
 
-      <div className="max-w-7xl mx-auto p-4 md:flex md:space-x-8 mt-10">
+      <div className="max-w-9/10 mx-auto p-4 md:flex md:space-x-8 mt-10">
         {/* Left Side */}
         <div className="flex-1">
           <nav className="flex items-center text-black sm:text-lg md:text-[24px]  mb-6">
@@ -35,8 +35,8 @@ export default function HeroSection_C() {
             Master Data Analysis
           </h1>
           <p className="text-black text-3xl md:text-[40px] mb-4 font-semibold">
-            From <span className="text-orange-500">Zero to Analytical</span>{" "}
-            Hero - In just <span className="text-orange-500">12 Months!</span>
+            From <span className="text-orange-500">Zero to Analytical  Hero</span>{" "} 
+            - <br/> In just <span className="text-orange-500">12 Months!</span>
           </p>
           <button className="inline-flex items-center bg-[#FF6501] text-white font-medium px-4 py-1 rounded-md hover:bg-orange-600 mb-6 text-[18px] mt-4">
             Download Brochure
@@ -63,7 +63,7 @@ export default function HeroSection_C() {
               <img
                 src={globe}
                 alt="Learners Icon"
-                className="w-[32px] h-[32px] object-cover rounded-full ml-2"
+                className="w-[32px] h-[32px] object-cover rounded-full ml-2 mr-1"
               />
               <p className="text-[18px] text-[#1B1B1B99]">Hindi, English</p>
             </div>
@@ -71,7 +71,7 @@ export default function HeroSection_C() {
               <img
                 src={laptop}
                 alt="Learners Icon"
-                className="w-[32px] h-[32px] object-cover rounded-full ml-2"
+                className="w-[32px] h-[32px] object-cover rounded-full ml-2 mr-1"
               />
               <p className="text-[18px] text-[#1B1B1B99]">
                 Last updated - June 2025
@@ -160,7 +160,7 @@ export default function HeroSection_C() {
         </div>
 
         {/* Right Side */}
-        <aside className="md:mt-0 md:w-2/5">
+        <aside className="md:mt-0 ">
           <div className=" rounded-lg p-6 border-[2px] border-[#99999966]">
             <div className="bg-[#FF6501] text-white text-[18px] rounded-lg px-4 py-2 mb-8">
               Rs 7 LPA median salary, 20,000 jobs available
