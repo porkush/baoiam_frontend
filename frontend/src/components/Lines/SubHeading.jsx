@@ -1,5 +1,5 @@
 import React from "react";
-import VectorImg from "../../assets/Home/Lines/Vector_11.png";
+import VectorImg from "../../assets/Home/Lines/Vector_11.webp";
 
 const SubHeadImg = ({ text }) => {
   return (

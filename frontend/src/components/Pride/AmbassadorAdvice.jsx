@@ -1,6 +1,6 @@
 import React from "react";
 // import ambassadorImage from "../../assets/Pride/AmbassadorSection/ambassador.png"; // replace with your actual path
-import ambassadorImage from "../../assets/Pride/AmbassadorAdvice/ambassador.png";
+import ambassadorImage from "../../assets/Pride/AmbassadorAdvice/ambassador.webp";
 
 
 const AmbassadorAdvice = () => {

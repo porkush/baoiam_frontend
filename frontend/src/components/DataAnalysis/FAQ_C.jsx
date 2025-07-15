@@ -8,50 +8,33 @@ const FAQ_C = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  const faqData = [
-    {
-      question: "What is the Data Analytics Course (DAC)?",
-      answer: `DAC is a career-oriented course designed to equip learners with practical skills in Data Analytics. It includes live instructor-led sessions, real-world projects, and placement assistance to prepare students for roles in data-driven industries. You’ll learn tools like Excel, SQL, Power BI, Python, and Tableau to analyze and visualize data effectively.`,
-    },
-    {
-      question: "Who is eligible to apply for SFP?",
-      answer: `Any student or recent graduate from Class 12th, diploma, or degree programs can apply. No prior experience is required — just the willingness to learn and grow.`,
-    },
-    {
-      question: "How long is the program duration?",
-      answer: `The program duration varies by plan:\n\nFull Program: 12 months (Live Classes + Internship + Placement Prep)\n\nShort Program (Udaan 90): 3 months (Quick Upskilling + Practical Exposure)`,
-    },
-    {
-      question: "Is this a certified program?",
-      answer: `Yes. All learners receive an industry-recognized certificate from BAOIAM after successful completion of the course and assessments.`,
-    },
-    {
-      question: "Do you offer placement assistance?",
-      answer: `Yes! We offer complete placement support including mock interviews, resume building, portfolio setup, and job referrals. Some students may also be eligible for Pay After Placement plans.`,
-    },
-    {
-      question: "What are the fees for the program?",
-      answer: `The pricing ranges from ₹2,999 to ₹4,999 depending on the course structure. Special offers, scholarships, and token-based payment models like "Pay After Placement" are also available for selected batches.`,
-    },
-    // ,
-    // {
-    //   question: "What is included in the program?",
-    //   answer: `✅ Live Masterclasses\n✅ Real-World Projects & Internships\n✅ 1-on-1 Mentorship\n✅ Resume & Portfolio Building\n✅ Career Guidance\n✅ Access to our Premium Resource Hub\n✅ Placement Preparation & Support`,
-    // }
-    // ,
-    // {
-    //   question: "Is this program online or offline?",
-    //   answer: `The program is 100% online and accessible from anywhere in India. All sessions are conducted via Zoom or Google Meet.`,
-    // },
-    // {
-    //   question: "How do I apply?",
-    //   answer: `Simply fill out the registration form available on our website or connect with our student counselors via WhatsApp or call.`,
-    // },
-    // {
-    //   question: "Will I get internship opportunities?",
-    //   answer: `Yes. We ensure all eligible students get virtual or hybrid internship opportunities with real companies, projects, and mentorship.`,
-    // },
-  ];
+ const faqData = [
+  {
+    question: "1. What will I actually learn in this course?",
+    answer: `You’ll learn how to take messy or confusing data and turn it into something useful. Imagine playing detective – spotting patterns in sales, customer feedback, or social media trends. We’ll guide you through practical steps like cleaning data (fixing mistakes or gaps), analyzing it using simple tools, and presenting your findings in clear, visual reports.`,
+  },
+  {
+    question: "2. I’m not great at math – is this still for me?",
+    answer: `Yes, 100%. You only need basic math like calculating averages or percentages. The tools we use will do all the heavy lifting. What matters more is curiosity and asking the right questions – not solving complex equations.`,
+  },
+  {
+    question: "3. What tools will we use? Do I need to buy anything?",
+    answer: `We’ll begin with tools like Excel (which you probably already have), then move on to free platforms like Google Sheets and SQL. If we introduce Python, we’ll teach it from scratch. You don’t need to buy any expensive software.`,
+  },
+  {
+    question: "4. Will there be real projects?",
+    answer: `Absolutely. You’ll work on real-world datasets and answer questions like:\n\n- Which products sell best at different times?\n- What trends show up in customer feedback?\n- How do I build a dashboard to track key numbers?\n\nThese projects are not only practical but also great for your resume or portfolio.`,
+  },
+  {
+    question: "5. How is this better than just watching YouTube tutorials?",
+    answer: `Great question. Instead of jumping around from video to video, you’ll follow a clear learning path. You’ll get hands-on projects, feedback when you need it, support if you get stuck, and a certificate that shows you’ve actually done the work.`,
+  },
+  {
+    question: "6. How will this help me in my career?",
+    answer: `Data skills are in demand everywhere. Whether you’re aiming for a promotion, switching careers, or just want to feel more confident working with numbers, this course gives you the practical skills to get there. Plus, the projects you complete can be shown to potential employers.`,
+  },
+];
+
   const leftFaqs = faqData.slice(0, 3);
   const rightFaqs = faqData.slice(3);
 

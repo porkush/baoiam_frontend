@@ -71,7 +71,7 @@
 
 // export default Contact;
 
-import logo from "../../assets/logoLight.png";
+import logo from "../../assets/Home/Navbar/logoLight.webp";
 import MobileMockup from "../../assets/Footer/Contact/Mobile_Mockups.png";
 
 const Contact = () => {

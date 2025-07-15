@@ -11,6 +11,7 @@ import { AiFillHome, AiOutlineRight } from "react-icons/ai";
 import { BsBookmark } from "react-icons/bs";
 import { FiSend } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import DA from "../../assets/CoursesLayout/CoursesPage/DA.png"
 
 export default function HeroSection_C() {
   return (
@@ -168,7 +169,7 @@ export default function HeroSection_C() {
 
             <div className="relative mb-4 rounded-xl overflow-hidden">
               <img
-                src="https://media.istockphoto.com/id/486325400/photo/teacher-asking-her-students-a-question.jpg?s=612x612&w=0&k=20&c=gA6YxA-uGplqjyZfTKBuOcAXEZz7S_KqgGgEGl8YztQ="
+                src={DA}
                 alt="Course Preview"
                 className="w-[527px] h-[320px] object-cover rounded-xl"
               />

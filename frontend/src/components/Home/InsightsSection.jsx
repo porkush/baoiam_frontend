@@ -1,11 +1,11 @@
 import React from "react";
-import img1 from "../../assets/Home/InsightsSection/1.jpg"
-import img2 from "../../assets/Home/InsightsSection/2.jpg"
-import img3 from "../../assets/Home/InsightsSection/3.jpg"
-import img4 from "../../assets/Home/InsightsSection/4.jpg"
-import img5 from "../../assets/Home/InsightsSection/5.jpg"
-import img6 from "../../assets/Home/InsightsSection/6.jpg"
-import img7 from "../../assets/Home/InsightsSection/7.jpg"
+import img1 from "../../assets/Home/InsightsSection/1.webp"
+import img2 from "../../assets/Home/InsightsSection/2.webp"
+import img3 from "../../assets/Home/InsightsSection/3.webp"
+import img4 from "../../assets/Home/InsightsSection/4.webp"
+import img5 from "../../assets/Home/InsightsSection/5.webp"
+import img6 from "../../assets/Home/InsightsSection/6.webp"
+import img7 from "../../assets/Home/InsightsSection/7.webp"
 import HeadingImage from "../Lines/HeadingImages";
 
 export default function InsightsSection() {

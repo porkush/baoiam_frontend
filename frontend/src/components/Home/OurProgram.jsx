@@ -1,7 +1,7 @@
 // import React from 'react';
-import udaanImg from '../../assets/Home/OurProgram/Ud.webp';
-import fusionImg from '../../assets/Home/OurProgram/spf.png';
-import Head from "../../assets/Home/OurProgram/head.png";
+import udaanImg from '../../assets/Home/OurProgram/Udaan.webp';
+import fusionImg from '../../assets/Home/OurProgram/spf.webp';
+import Head from "../../assets/Home/OurProgram/head.webp";
 import HeadingImage from '../Lines/HeadingImages';
 import SubHeadImg from '../Lines/SubHeading';
 

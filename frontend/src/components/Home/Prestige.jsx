@@ -1,14 +1,14 @@
 import React from 'react';
 import {motion} from 'framer-motion';
 import '../../index.css'; 
-import Accenture from "../../assets/Home/Prestige/accenture.png";
-import Cognizant from "../../assets/Home/Prestige/Cognizant.png";
-import Greyt from "../../assets/Home/Prestige/Greiyt.png";
-import TCS  from "../../assets/Home/Prestige/Tcs.png";
-import EY from "../../assets/Home/Prestige/Ey.png";
-import Mentorsity from "../../assets/Home/Prestige/Mentosity.png";
-import languify from "../../assets/Home/Prestige/Languify.png";
-import learnyst from "../../assets/Home/Prestige/Learnyst.png";
+import Accenture from "../../assets/Home/Prestige/accenture.webp";
+import Cognizant from "../../assets/Home/Prestige/Cognizant.webp";
+import Greyt from "../../assets/Home/Prestige/Greiyt.webp";
+import TCS  from "../../assets/Home/Prestige/Tcs.webp";
+import EY from "../../assets/Home/Prestige/Ey.webp";
+import Mentorsity from "../../assets/Home/Prestige/Mentosity.webp";
+import languify from "../../assets/Home/Prestige/Languify.webp";
+import learnyst from "../../assets/Home/Prestige/Learnyst.webp";
 
 
 

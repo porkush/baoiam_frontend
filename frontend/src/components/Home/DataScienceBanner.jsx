@@ -1,6 +1,6 @@
 import React from "react";
-import rocket from "../../assets/Home/DataScienceBanner/rocket.png";
-import human from "../../assets/Home/DataScienceBanner/human.png";
+import rocket from "../../assets/Home/DataScienceBanner/rocket.webp";
+import human from "../../assets/Home/DataScienceBanner/human.webp";
 import { Link } from "react-router-dom";
 
 const DataScienceBanner = () => {

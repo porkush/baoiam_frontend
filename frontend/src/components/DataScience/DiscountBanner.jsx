@@ -1,6 +1,6 @@
 import React from "react";
 import { FiSearch } from "react-icons/fi";
-import coinsBag from "../../assets/CoursesLayout/DiscountBanner/CoinBag.png";
+import coinsBag from "../../assets/CoursesLayout/CoursesPage/CoinBag.png";
 
 const DiscountBanner = () => {
   return (

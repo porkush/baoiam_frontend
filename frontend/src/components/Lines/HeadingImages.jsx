@@ -1,4 +1,4 @@
-import Group from "../../assets/Home/Lines/Group.png"
+import Group from "../../assets/Home/Lines/Group.webp"
 const HeadingImage = ({ title, highlight }) => {
   return (
     <div className="flex items-center justify-center w-full">

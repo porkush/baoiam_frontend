@@ -23,12 +23,12 @@ export default function HeroSection_C() {
         <div className="flex-1">
           <nav className="flex items-center text-black sm:text-lg md:text-[24px]  mb-6">
             <Link to="/">
-            <AiFillHome className="w-5 h-5" />
+              <AiFillHome className="w-5 h-5" />
             </Link>
             <AiOutlineRight className="w-4 h-4 mx-2" />
             <Link to="/">
-            <span>Home</span>
-             </Link>
+              <span>Home</span>
+            </Link>
             <AiOutlineRight className="w-4 h-4 mx-2" />
             <span>Master Data Science</span>
           </nav>
@@ -36,8 +36,8 @@ export default function HeroSection_C() {
             Master Data Science
           </h1>
           <p className="text-black text-3xl md:text-[40px] mb-4 font-semibold">
-            From <span className="text-orange-500">Zero to Data  Hero</span>{" "} 
-            - <br/> In just <span className="text-orange-500">12 Months!</span>
+            From <span className="text-orange-500">Zero to Data Hero</span> -{" "}
+            <br /> In just <span className="text-orange-500">12 Months!</span>
           </p>
           <button className="inline-flex items-center bg-[#FF6501] text-white font-medium px-4 py-1 rounded-md hover:bg-orange-600 mb-6 text-[18px] mt-4">
             Download Brochure
@@ -98,7 +98,7 @@ export default function HeroSection_C() {
                   <FaStar className="ml-2 text-yellow-400 text-xl" />
                 </p>
                 <p className="text-[14px] text-white font-medium">
-                 31782 Reviews
+                  31782 Reviews
                 </p>
               </div>
 
@@ -168,14 +168,20 @@ export default function HeroSection_C() {
               Rs 7 LPA median salary, 20,000 jobs available
             </div>
 
-            <div className="relative mb-4 rounded-xl overflow-hidden">
+            <div className="relative mb-4 rounded-xl overflow-hidden w-[527px] h-[320px]">
               <img
                 src={DS}
                 alt="Course Preview"
-                className="w-[527px] h-[320px] object-cover rounded-xl"
+                className="w-full h-full object-cover rounded-xl"
               />
-              <button className="absolute inset-0 flex items-center justify-center text-white text-6xl bg-opacity-40 hover:bg-opacity-50 transition rounded-xl">
-                <MdPlayCircle />
+
+              <button
+                className="absolute inset-0 flex items-center justify-center rounded-xl transition"
+                style={{
+                  background: "rgba(0, 0, 0, 0.3)",
+                }}
+              >
+                <MdPlayCircle className="text-white text-[80px] opacity-90 hover:opacity-100 transition-opacity duration-300" />
               </button>
             </div>
 

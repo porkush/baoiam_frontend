@@ -1,7 +1,7 @@
 import React from "react";
 import { FaStar, FaUserGraduate, FaClock } from "react-icons/fa";
 // import HeadingImage from "../Lines/HeadingImages";
-import Group from "../../assets/Home/Lines/Group.png";
+import Group from "../../assets/Home/Lines/Group.webp";
 import { FiBarChart } from "react-icons/fi";
 import { Link } from "react-router-dom";
 

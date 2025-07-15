@@ -2,12 +2,12 @@ import React from "react";
 import StatsSection from "./StatsSection";
 // import { MdArrowForward } from "react-icons/md";
 import { motion } from "framer-motion";
-import img1 from "../../assets/Home/HeroSection/1.png";
-import img2 from "../../assets/Home/HeroSection/2.png";
-import img3 from "../../assets/Home/HeroSection/3.png";
-import img4 from "../../assets/Home/HeroSection/4.png";
-import img5 from "../../assets/Home/HeroSection/5.png";
-import img6 from "../../assets/Home/HeroSection/6.png";
+import img1 from "../../assets/Home/HeroSection/1.webp";
+import img2 from "../../assets/Home/HeroSection/2.webp";
+import img3 from "../../assets/Home/HeroSection/3.webp";
+import img4 from "../../assets/Home/HeroSection/4.webp";
+import img5 from "../../assets/Home/HeroSection/5.webp";
+import img6 from "../../assets/Home/HeroSection/6.webp";
 
 export default function HeroSection() {
   return (

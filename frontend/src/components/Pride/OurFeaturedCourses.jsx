@@ -4,9 +4,9 @@ import React from "react";
 import { FaStar, FaUserGraduate } from "react-icons/fa";
 import { FiBarChart } from "react-icons/fi";
 import { MdAccessTime } from "react-icons/md";
-import img1 from "../../assets/Pride/OurFeaturedCourses/img1.png";
-import img2 from "../../assets/Pride/OurFeaturedCourses/img2.png";
-import Group from "../../assets/Home/Lines/Group.png";
+import img1 from "../../assets/Pride/OurFeaturedCourses/img1.webp";
+import img2 from "../../assets/Pride/OurFeaturedCourses/img2.webp";
+import Group from "../../assets/Home/Lines/Group.webp";
 
 const OurFeaturedCourses = () => {
   const courses = [

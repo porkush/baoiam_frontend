@@ -8,50 +8,33 @@ const FAQ_C = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  const faqData = [
-    {
-      question: "What is the Success Fusion Program (SFP)?",
-      answer: `SFP is a career-focused upskilling program by BAOIAM that combines live expert-led training, real-world projects, internships, and placement support — all designed to make students job-ready in high-demand domains like Data Analytics, Digital Marketing with AI, Software Testing, and more.`,
-    },
-    {
-      question: "Who is eligible to apply for SFP?",
-      answer: `Any student or recent graduate from Class 12th, diploma, or degree programs can apply. No prior experience is required — just the willingness to learn and grow.`,
-    },
-    {
-      question: "How long is the program duration?",
-      answer: `The program duration varies by plan:\n\nFull Program: 12 months (Live Classes + Internship + Placement Prep)\n\nShort Program (Udaan 90): 3 months (Quick Upskilling + Practical Exposure)`,
-    },
-    {
-      question: "Is this a certified program?",
-      answer: `Yes. All learners receive an industry-recognized certificate from BAOIAM after successful completion of the course and assessments.`,
-    },
-    {
-      question: "Do you offer placement assistance?",
-      answer: `Yes! We offer complete placement support including mock interviews, resume building, portfolio setup, and job referrals. Some students may also be eligible for Pay After Placement plans.`,
-    },
-    {
-      question: "What are the fees for the program?",
-      answer: `The pricing ranges from ₹2,999 to ₹4,999 depending on the course structure. Special offers, scholarships, and token-based payment models like "Pay After Placement" are also available for selected batches.`,
-    },
-    // ,
-    // {
-    //   question: "What is included in the program?",
-    //   answer: `✅ Live Masterclasses\n✅ Real-World Projects & Internships\n✅ 1-on-1 Mentorship\n✅ Resume & Portfolio Building\n✅ Career Guidance\n✅ Access to our Premium Resource Hub\n✅ Placement Preparation & Support`,
-    // }
-    // ,
-    // {
-    //   question: "Is this program online or offline?",
-    //   answer: `The program is 100% online and accessible from anywhere in India. All sessions are conducted via Zoom or Google Meet.`,
-    // },
-    // {
-    //   question: "How do I apply?",
-    //   answer: `Simply fill out the registration form available on our website or connect with our student counselors via WhatsApp or call.`,
-    // },
-    // {
-    //   question: "Will I get internship opportunities?",
-    //   answer: `Yes. We ensure all eligible students get virtual or hybrid internship opportunities with real companies, projects, and mentorship.`,
-    // },
-  ];
+ const faqData = [
+  {
+    question: "1. What is this Data Science course all about?",
+    answer: `This course takes you from the basics to advanced concepts of working with data. You’ll learn how to collect, clean, and analyze data, uncover patterns, and solve real-world problems using tools like Python, SQL, and machine learning—all in a practical, beginner-friendly way.`,
+  },
+  {
+    question: "2. Who should take this course?",
+    answer: `Anyone curious about data or looking to start a tech career. No prior experience in coding or data is needed—we start from scratch and guide you step by step.`,
+  },
+  {
+    question: "3. Will I get help finding a job after the course?",
+    answer: `Yes! We’ll support you with resume building, mock interviews, and help you connect with companies looking for data-savvy professionals.`,
+  },
+  {
+    question: "4. How long does it take to finish?",
+    answer: `Most learners complete it in 3 to 6 months, depending on how much time you can commit. It’s flexible enough to fit alongside work or studies.`,
+  },
+  {
+    question: "5. Do I get a certificate?",
+    answer: `Absolutely. On successful completion, you’ll receive a certificate that proves you have job-ready skills employers value.`,
+  },
+  {
+    question: "6. Will I work on real projects?",
+    answer: `Yes, you’ll work on real-world datasets and projects to gain hands-on experience. These projects will make your resume and portfolio stand out.`,
+  },
+];
+
   const leftFaqs = faqData.slice(0, 3);
   const rightFaqs = faqData.slice(3);
 

@@ -1,4 +1,4 @@
-import FAQ_Img from "../../assets/Home/FAQ/FAQ_Img.png";
+import FAQ_Img from "../../assets/Home/FAQ/FAQ_Img.webp";
 
 import React, { useState } from "react";
 import { FaPlus, FaTimes, FaArrowRight } from "react-icons/fa";

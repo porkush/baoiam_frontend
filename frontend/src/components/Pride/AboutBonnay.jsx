@@ -1,15 +1,15 @@
 import React from "react";
-import img1 from "../../assets/Pride/OurEvents/img1.png";
-import img2 from "../../assets/Pride/OurEvents/img2.png";
-import img3 from "../../assets/Pride/OurEvents/img3.png";
-import img4 from "../../assets/Pride/OurEvents/img4.png";
-import img5 from "../../assets/Pride/OurEvents/img5.png";
-import img6 from "../../assets/Pride/OurEvents/img6.png";
-import img7 from "../../assets/Pride/OurEvents/img7.png";
-import img8 from "../../assets/Pride/OurEvents/img8.png";
-import img9 from "../../assets/Pride/OurEvents/img9.png";
-import img10 from "../../assets/Pride/OurEvents/img10.png";
-import img11 from "../../assets/Pride/OurEvents/img11.png";
+import img1 from "../../assets/Pride/OurEvents/img1.webp";
+import img2 from "../../assets/Pride/OurEvents/img2.webp";
+import img3 from "../../assets/Pride/OurEvents/img3.webp";
+import img4 from "../../assets/Pride/OurEvents/img4.webp";
+import img5 from "../../assets/Pride/OurEvents/img5.webp";
+import img6 from "../../assets/Pride/OurEvents/img6.webp";
+import img7 from "../../assets/Pride/OurEvents/img7.webp";
+import img8 from "../../assets/Pride/OurEvents/img8.webp";
+import img9 from "../../assets/Pride/OurEvents/img9.webp";
+import img10 from "../../assets/Pride/OurEvents/img10.webp";
+import img11 from "../../assets/Pride/OurEvents/img11.webp";
 
 const images = [
   { src: img1, w: "200px", h: "200px" },

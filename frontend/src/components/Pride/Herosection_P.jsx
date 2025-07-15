@@ -1,5 +1,5 @@
 import React from "react";
-import bonnay from "../../assets/Pride/Herosection_P/bonnay.png";
+import bonnay from "../../assets/Pride/Herosection_P/bonnay.webp";
 
 const HeroSection_P = () => {
   return (

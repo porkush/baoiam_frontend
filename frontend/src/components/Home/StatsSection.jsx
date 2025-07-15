@@ -1,8 +1,8 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
-import img1 from "../../assets/Home/StatsSection/1.jpg"
-import img2 from "../../assets/Home/StatsSection/2.jpg"
-import img3 from "../../assets/Home/StatsSection/3.jpg"
+import img1 from "../../assets/Home/StatsSection/1.webp"
+import img2 from "../../assets/Home/StatsSection/2.webp"
+import img3 from "../../assets/Home/StatsSection/3.webp"
 
 export default function StatsSection() {
   return (

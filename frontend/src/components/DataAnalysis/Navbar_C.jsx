@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FiBookmark, FiShoppingCart, FiBell, FiMenu } from "react-icons/fi";
 import { MdSearch } from "react-icons/md";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
-import logo from "../../assets/Home/Navbar/logoLight.png";
+import logo from "../../assets/Home/Navbar/logoLight.webp";
 import Profile from "../../assets/CoursesLayout/CoursesPage/Profile.png";
 import { Link } from "react-router-dom";
 
