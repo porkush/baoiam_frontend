@@ -55,7 +55,7 @@ const courses = [
 const FeaturedCourses = () => {
   return (
     <section
-      className="bg-white rounded-[20px] font-['Poppins'] mx-auto max-w-[calc(100%-40px)] lg:max-w-[1240px]"
+      className="bg-white rounded-[20px] font-['Poppins'] mx-auto max-w-[calc(100%-40px)] lg:max-w-[1350px]"
       style={{
         padding: "30px",
         border: "0.5px solid #ECEBF6",
@@ -77,7 +77,7 @@ const FeaturedCourses = () => {
       {/* Grid Container */}
       <div className="flex flex-col items-center">
         {/* Courses Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-[1180px] mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-[1280px] mx-auto">
           {courses.map((course) => (
             <div
               key={course.id}
@@ -102,7 +102,7 @@ const FeaturedCourses = () => {
               <img
                 src={course.image}
                 alt={course.title}
-                className="h-[120px] w-full object-cover mb-[2px] rounded-sm"
+                className="h-[135px] w-full object-cover mb-[2px] rounded-sm"
               />
 
               {/* Course Description */}
