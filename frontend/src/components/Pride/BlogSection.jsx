@@ -2,6 +2,9 @@ import React from "react";
 import blog1 from "../../assets/Pride/BlogSection/blog1.png";
 import blog2 from "../../assets/Pride/BlogSection/blog2.png";
 import blog3 from "../../assets/Pride/BlogSection/blog3.png";
+import blog4 from "../../assets/Pride/BlogSection/blog4.png";
+import Group from "../../assets/Home/Lines/Group.webp";
+
 
 const BlogSection = () => {
   return (
@@ -9,9 +12,12 @@ const BlogSection = () => {
       {/* Heading */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
         <div>
-          <h2 className="text-3xl md:text-[48px] font-semibold mb-3">
-            Stories That Speak Volumes
-          </h2>
+          <div className="flex w-full mb-2">
+                  <h2 className="text-3xl md:text-4xl  font-semibold mb-2">
+                    Voices That<span className="text-orange-500"> Matter </span>
+                  </h2>
+                  <img src={Group} alt="" className="w-9 mb-4" />
+                </div>
           <p className="text-black max-w-2xl text-[24px]">
            Exploring the intersections of education, identity, and empathy.
           </p>
@@ -30,7 +36,7 @@ const BlogSection = () => {
 
           <div className="relative rounded-xl overflow-hidden bg-white shadow hover:shadow-lg transition w-full h-[300px] md:h-[586px] md:w-[817px]">
             <img
-              src={blog1}
+              src={blog4}
               alt="Featured Blog"
               className="w-full h-full object-cover"
             />
