@@ -46,9 +46,6 @@ const BlogSection = () => {
               <span className="bg-black text-white text-sm px-4 py-1 rounded-full z-10">
                 9 July, 2025
               </span>
-              <span className="-ml-4 bg-white text-black text-sm px-6 py-1 rounded-r-full z-0">
-                By Name
-              </span>
             </div>
 
             {/* Bottom Overlay Box */}

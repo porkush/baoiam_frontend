@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { IoMoon } from "react-icons/io5";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import lightLogo from "../../assets/Home/Navbar/logoLight.webp";
-import giftbox from "../../assets/Home/Navbar/gift.webp";
+import giftbox from "../../assets/Home/Navbar/gift.gif";
 import { NavLink, Link } from "react-router-dom";
 
 const Navbar = ({ onSignUpClick }) => {

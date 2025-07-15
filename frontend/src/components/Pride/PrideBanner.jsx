@@ -91,7 +91,7 @@ const PrideBanner = () => {
             md:w-[180px]
             lg:w-[205px]
             h-auto
-            lg:h-[300px]
+            lg:h-[290px]
             object-contain
             lg:absolute
             lg:-top-[72px]
