@@ -195,26 +195,26 @@ export default function HeroSection() {
           What brings you to Baoiam today?
         </h2>
 
-        <ul className="flex flex-col w-full gap-3">
-          {[
-            "Launch my career with job-ready skills",
-            "Upskill while in college",
-            "Switch to high-demand career",
-            "Explore AI-Powered courses",
-          ].map((text, idx) => (
-            <li
-              key={idx}
-              className="flex items-center w-full px-2 py-2 rounded-[5px] bg-[#F8F8F8] gap-3 font-medium text-lg hover:bg-gray-300"
-            >
-              <input
-                type="radio"
-                name="goal"
-                className="accent-orange-500 w-4 h-4"
-              />
-              {text}
-            </li>
-          ))}
-        </ul>
+         <ul className="flex flex-col gap-3">
+              {[
+                "Launch my career with job-ready skills",
+                "Upskill while in college",
+                "Switch to high-demand career",
+                "Explore AI-Powered courses",
+              ].map((text, idx) => (
+                <li
+                  key={idx}
+                  className="flex items-center w-full px-3 py-2 rounded-[5px] bg-[#F8F8F8] gap-3 font-medium text-base md:text-lg transition-all hover:bg-orange-50"
+                >
+                  <input
+                    type="radio"
+                    name="goal"
+                    className="accent-orange-500 w-4 h-4 transition-all hover:scale-110"
+                  />
+                  {text}
+                </li>
+              ))}
+            </ul>
 
         <div className="mt-4 flex flex-col sm:flex-row gap-8">
           <button className="bg-[#FF6501] border rounded-lg text-white flex items-center justify-center gap-2 py-2 px-4 font-medium text-xl hover:bg-[#ff6701d5]">
@@ -230,7 +230,7 @@ export default function HeroSection() {
     {/* Image Scrollers */}
     <div className="flex justify-center gap-8 ml-0 mb-8 mt-8 md:mt-0 w-full md:w-auto">
       {/* LEFT SCROLLER */}
-      <div className="relative h-[450px] w-[240px] overflow-hidden">
+      <div className="relative h-[460px] w-[240px] overflow-hidden">
         <motion.div
           className="flex flex-col items-center space-y-6 gap-[40px]"
           animate={{ y: ["0%", "-50%"] }}
@@ -244,7 +244,7 @@ export default function HeroSection() {
             <img
               key={idx}
               src={src}
-              className="h-[240px] w-[200px] object-cover rounded-lg"
+              className="h-[250px] w-[200px] object-cover rounded-lg"
             />
           ))}
         </motion.div>
@@ -253,7 +253,7 @@ export default function HeroSection() {
       </div>
 
       {/* RIGHT SCROLLER */}
-      <div className="relative h-[450px] w-[240px] overflow-hidden">
+      <div className="relative h-[460px] w-[240px] overflow-hidden">
         <motion.div
           className="flex flex-col items-center space-y-6 gap-[40px]"
           animate={{ y: ["0%", "-50%"] }}
@@ -268,7 +268,7 @@ export default function HeroSection() {
             <img
               key={idx}
               src={src}
-              className="h-[240px] w-[200px] object-cover rounded-lg"
+              className="h-[250px] w-[200px] object-cover rounded-lg"
             />
           ))}
         </motion.div>
@@ -281,3 +281,13 @@ export default function HeroSection() {
 
   );
 }
+
+
+
+
+
+
+
+
+
+

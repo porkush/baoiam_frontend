@@ -10,6 +10,7 @@ import laptop from "../../assets/CoursesLayout/CoursesPage/laptop.png";
 import { AiFillHome, AiOutlineRight } from "react-icons/ai";
 import { BsBookmark } from "react-icons/bs";
 import { FiSend } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 export default function HeroSection_C() {
   return (
@@ -20,9 +21,13 @@ export default function HeroSection_C() {
         {/* Left Side */}
         <div className="flex-1">
           <nav className="flex items-center text-black sm:text-lg md:text-[24px]  mb-6">
+            <Link to="/">
             <AiFillHome className="w-5 h-5" />
+            </Link>
             <AiOutlineRight className="w-4 h-4 mx-2" />
+            <Link to="/">
             <span>Home</span>
+             </Link>
             <AiOutlineRight className="w-4 h-4 mx-2" />
             <span>Master Data Analysis</span>
           </nav>

@@ -6,10 +6,12 @@ import DiscountBanner from './DiscountBanner'
 import BoughtTogether from './BoughtTogether'
 import Experts from './Experts'
 import FlexibleCourses from './FlexibleCourses'
+import Navbar_C from './Navbar_C'
 
 const CoursePage = () => {
   return (
     <div>
+      <Navbar_C/>
       <HeroSection_C/>
       <BoughtTogether/>
       <Experts/>
