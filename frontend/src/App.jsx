@@ -62,7 +62,10 @@ import HomePage from "./components/Home/HomePage";
 import PridePage from "./components/Pride/PridePage";
 import AuthModal from "./components/Auth/AuthModal";
 import { useEffect, useState } from "react";
-import CoursePage from "./components/CoursesLayout/CoursePage";
+import ScrollToTop from "./components/ScrollToTop";
+import DataAnalysisPage from "./components/DataAnalysis/DataAnalysisPage";
+import DataSciencePage from "./components/DataScience/DataSciencePage";
+
 
 function App() {
   const [isSignupOpen, setIsSignupOpen] = useState(false);
@@ -80,9 +83,11 @@ function App() {
 
   return (
     <Router>
+        <ScrollToTop />
       <div>
         <Routes>
-          <Route path="/DataScience" element={<CoursePage />} />
+          <Route path="/DataAnalysis" element={<DataAnalysisPage />} />
+          <Route path="/DataScience" element={<DataSciencePage />} />
           <Route path="*" element={
             <>
               <Navbar onSignUpClick={() => setIsSignupOpen(true)} />

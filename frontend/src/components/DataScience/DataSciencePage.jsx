@@ -8,7 +8,7 @@ import Experts from './Experts'
 import FlexibleCourses from './FlexibleCourses'
 import Navbar_C from './Navbar_C'
 
-const CoursePage = () => {
+const DataSciencePage = () => {
   return (
     <div>
       <Navbar_C/>
@@ -23,4 +23,4 @@ const CoursePage = () => {
   )
 }
 
-export default CoursePage;
+export default DataSciencePage;

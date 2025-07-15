@@ -3,6 +3,7 @@ import { FaStar, FaUserGraduate, FaClock } from "react-icons/fa";
 // import HeadingImage from "../Lines/HeadingImages";
 import Group from "../../assets/Home/Lines/Group.png";
 import { FiBarChart } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const courses = [
   {
@@ -89,7 +90,7 @@ const FeaturedCourses = () => {
               <div className="flex items-center gap-[5px]">
                 <h3 className="text-lg font-medium">{course.title}</h3>
                 <div className="flex items-center text-black text-sm">
-                  <FaStar className="mr-1 text-amber-500" /> {course.rating}.0
+                  <FaStar className="mr-1 text-amber-500" /> {course.rating}
                 </div>
               </div>
 
@@ -117,7 +118,7 @@ const FeaturedCourses = () => {
               <div className="flex justify-between items-center text-gray-500 text-xs mb-1">
                 <div className="flex items-center mr-2">
                   <FiBarChart className="text-orange-400 mr-1" />
-                  <span>Beginner</span>
+                  <span>{course.level}</span>
                 </div>
                 <div className="flex items-center">
                   <FaClock className="mx-2 text-green-600" />
@@ -126,21 +127,40 @@ const FeaturedCourses = () => {
               </div>
 
               {/* Start Learning Button */}
-              <button
-                className="text-white bg-[#FF6501CC] hover:bg-[#ff6701] transition duration-300 mt-2 text-sm mx-auto"
-                style={{
-                  width: "129px",
-                  height: "25px",
-                  borderRadius: "5px",
-                  padding: "2px 15px",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  gap: "14px",
-                }}
-              >
-                Start Learning
-              </button>
+              {course.id === 1 || course.id === 2 ? (
+                <Link
+                  to={course.id === 1 ? "/DataScience" : "/DataAnalysis"}
+                  className="text-white bg-[#FF6501CC] hover:bg-[#ff6701] transition duration-300 mt-2 text-sm mx-auto"
+                  style={{
+                    width: "129px",
+                    height: "25px",
+                    borderRadius: "5px",
+                    padding: "2px 15px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "14px",
+                  }}
+                >
+                  Start Learning
+                </Link>
+              ) : (
+                <button
+                  className="text-white bg-[#FF6501CC] hover:bg-[#ff6701] transition duration-300 mt-2 text-sm mx-auto"
+                  style={{
+                    width: "129px",
+                    height: "25px",
+                    borderRadius: "5px",
+                    padding: "2px 15px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "14px",
+                  }}
+                >
+                  Start Learning
+                </button>
+              )}
             </div>
           ))}
         </div>
