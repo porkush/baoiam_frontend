@@ -10,6 +10,7 @@ import img8 from "../../assets/Pride/OurEvents/img8.webp";
 import img9 from "../../assets/Pride/OurEvents/img9.webp";
 import img10 from "../../assets/Pride/OurEvents/img10.webp";
 import img11 from "../../assets/Pride/OurEvents/img11.webp";
+import HeadingImage from "../Lines/HeadingImages";
 
 const images = [
   { src: img1, w: "200px", h: "200px" },
@@ -104,9 +105,12 @@ const Photo = ({ index, extraClass = "" }) => {
 const OurEvent = () => (
   <div className="w-full bg-[#F8F8F8] py-10 font-['Poppins']">
     <div className="max-w-6xl mx-auto px-4">
-      <h2 className="text-center text-[32px] sm:text-[40px] lg:text-[48px] font-semibold mb-2">
+      {/* <h2 className="text-center text-[32px] sm:text-[40px] lg:text-[48px] font-semibold mb-2">
         About <span className="text-orange-500">Bonnya</span>
-      </h2>
+      </h2> */}
+      <div className="text-center mb-3">
+        <HeadingImage title="About" highlight="Bonnya"/>
+      </div>
       <p className="text-center text-[16px] sm:text-[20px] lg:text-[24px] text-black mb-10">
         Our goal is your proud and bright future
       </p>

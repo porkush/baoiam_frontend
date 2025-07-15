@@ -10,11 +10,10 @@ const BlogSection = () => {
       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
         <div>
           <h2 className="text-3xl md:text-[48px] font-semibold mb-3">
-            Blogs some heading
+            Stories That Speak Volumes
           </h2>
           <p className="text-black max-w-2xl text-[24px]">
-            Learn loud, live proud. We’re where identity and ambition grow
-            together.
+           Exploring the intersections of education, identity, and empathy.
           </p>
         </div>
       </div>

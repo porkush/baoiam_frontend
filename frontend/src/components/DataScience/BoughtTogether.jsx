@@ -67,10 +67,10 @@ const BoughtTogether = () => {
         Purchase everything you need all in one bundle.
       </h3>
       <div className="flex flex-col md:flex-row items-center md:justify-center gap-4">
-        {courses.slice(0, 3).map((course, index) => (
+        {courses.slice(0, 3).map((course, index, arr) => (
           <React.Fragment key={course.id}>
             <CourseCard course={course} />
-            {index < 2 && (
+            {index < arr.length - 1 && (
               <span className="text-4xl md:text-[40px] font-medium my-4 md:my-0 mx-0 md:mx-2 hidden md:block">
                 +
               </span>
@@ -81,7 +81,7 @@ const BoughtTogether = () => {
         <span className="text-4xl font-bold my-4 md:my-0 mx-0 md:mx-2 hidden md:block">
           =
         </span>
-
+        
         <div className="flex flex-col w-[260px] md:w-[231px] h-auto md:h-[122px] mt-4 md:mt-10 flex-shrink-0 items-center bg-white border border-gray-200 rounded-xl shadow-md p-4 md:p-2 ml-0 md:ml-4">
           <div className="flex items-center gap-1">
             <p className="text-[18px] md:text-[20px] mt-2 font-normal line-through text-black">

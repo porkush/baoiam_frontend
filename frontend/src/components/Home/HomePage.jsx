@@ -12,6 +12,7 @@ import TeamSection from './TeamSection';
 import OurProgram from './OurProgram';
 import DataScienceBanner from './DataScienceBanner';
 import Footer from '../Footer/Footer';
+import Webinars from './Webinars';
 
 export default function HomePage() {
   return (
@@ -19,6 +20,7 @@ export default function HomePage() {
       <HeroSection/>
       <StatsSection/>
       <OurProgram/>
+      <Webinars/>
       <FeaturedCourses/>
       <DataScienceBanner/>
       <InsightsSection/>

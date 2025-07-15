@@ -1,26 +1,23 @@
 import React from "react";
 // import ambassadorImage from "../../assets/Pride/AmbassadorSection/ambassador.png"; // replace with your actual path
 import ambassadorImage from "../../assets/Pride/AmbassadorAdvice/ambassador.webp";
-import HeadingImage from "../Lines/HeadingImages";
 
-
-const AmbassadorAdvice = () => {
+const Webinars = () => {
   return (
-    <section className="relative font-['Poppins'] overflow-hidden">
+    <section className="relative font-['Poppins'] overflow-hidden mb-16">
       {/* Top White Area */}
       <div className="bg-white text-center px-4 py-12 mb-28">
-        {/* <h2 className="text-3xl md:text-[48px] font-semibold text-orange-500 mb-4">
-          Get our Ambassador’s Advice
-        </h2> */}
-        <div className="text-center mb-4">
-        <HeadingImage title="" highlight="Get our Ambassador’s Advice"/>
-      </div>
+        <h2 className="text-3xl md:text-[48px] font-semibold mb-4">
+          <span className="text-black">Webinars That </span>
+          <span className="text-orange-500">Inspire <span className="text-black">and </span> Impact</span>
+        </h2>
+
         <p className="max-w-3xl mx-auto text-black md:text-[24px] mb-6">
-          More people are finally talking about gender identity in schools and colleges, which is an encouraging and strong step in the...
+          Join the webinar that makes learning unforgettable.
         </p>
         <div className="flex justify-center gap-4 flex-wrap">
           <button className="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-md md:text-xl  font-medium transition">
-            Enroll Now
+            Register for Webinar
           </button>
           <button className="bg-black hover:bg-gray-800 text-white px-5 py-2 rounded-md font-medium transition md:text-xl">
             Talk to our Counsellor
@@ -45,4 +42,4 @@ const AmbassadorAdvice = () => {
   );
 };
 
-export default AmbassadorAdvice;
+export default Webinars;
