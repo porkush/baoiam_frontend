@@ -18,75 +18,51 @@ import Ayush from "../../assets/Home/TeamSection/12.webp";
 import Nakshatra from "../../assets/Home/TeamSection/13.webp";
 import HeadingImage from "../Lines/HeadingImages";
 
-
 const TeamSection = () => {
   const gradients = [
-    "bg-gradient-to-b from-black/40 via-white/0 to-white/80",
-    "bg-gradient-to-b from-pink-500/90 via-white/0 to-white/60",
-    "bg-gradient-to-b from-[#B09378] via-white/0 to-white/60",
-    "bg-gradient-to-b from-rose-500/50 via-white/0 to-white/60",
-    "bg-gradient-to-b from-neutral-500/100 via-white/0 to-white/60",
-    "bg-gradient-to-b from-fuchsia-500/100 via-white/0 to-white/60",
-    "bg-gradient-to-b from-zinc-500/100 via-white/0 to-white/60",
-    "bg-gradient-to-b from-slate-500/100 via-white/0 to-white/60",
-    "bg-gradient-to-b from-indigo-300/100 via-white/0 to-white/60",
-    "bg-gradient-to-b from-indigo-500/100 via-white/0 to-white/60",
-    "bg-gradient-to-b from-sky-500/100 via-white/0 to-white/60",
-    "bg-gradient-to-b from-fuchsia-500/100 via-white/0 to-white/60",
-    "bg-gradient-to-b from-neutral-500/100 via-white/0 to-white/60"
-  ];
+  "bg-[linear-gradient(180deg,#1C1C1C_0%,#FFFFFF00_40%)] bg-white",
+];
 
   const solidColors = [
-    "bg-black",
-    "bg-pink-500",
-    "bg-[#EAD2C8]",
-    "bg-rose-500",
-    "bg-neutral-400",
-    "bg-fuchsia-500",
-    "bg-zinc-400",
-    "bg-slate-400",
-    "bg-indigo-200",
-    "bg-indigo-400",
-    "bg-sky-400",
-    "bg-fuchsia-500",
-    "bg-neutral-400",
+    "bg-[#1B1B1B]",
+    
   ];
 
   const members = [
     {
       name: "Siddhart Tomar",
       position: "Founder & CEO",
-      linkedin: "https://www.linkedin.com/in/Siddhart_tomar-profile",
+      linkedin: " https://www.linkedin.com/in/siddharth-tomar-6b7b981b9",
       image: Siddhart,
     },
     {
       name: "Virender Singh",
       position: "Ops Head",
-      linkedin: "https://www.linkedin.com/in/Virender-profile",
+      linkedin: "linkedin.com/in/virender-singh-139854211",
       image: Virender,
     },
     {
       name: "Virat Locham",
       position: "Sales Head",
-      linkedin: "https://www.linkedin.com/in/virat-profile",
+      linkedin: "linkedin.com/in/virat-locham-0020b1144",
       image: Virat,
     },
     {
       name: "Toshika Bagga",
       position: "HR Manager",
-      linkedin: "https://www.linkedin.com/in/Toshika-profile",
+      linkedin: " https://www.linkedin.com/in/toshika-bagga-901aaa215",
       image: Toshika,
     },
     {
       name: "Sudhanshu Mohan",
       position: "Chief Strategy Officer",
-      linkedin: "https://www.linkedin.com/in/Sudhanshu-profile",
+      linkedin: " https://www.linkedin.com/in/sudhanshu-mohan-aab37522a",
       image: Sudhanshu,
     },
     {
       name: "Bonnya Kar",
       position: "Community Partner",
-      linkedin: "https://www.linkedin.com/in/Bonnya-profile",
+      linkedin: "linkedin.com/in/bonnya-kar🏳‍🌈🏳‍⚧-333274276",
       image: Bonnya,
     },
     {
@@ -98,79 +74,81 @@ const TeamSection = () => {
     {
       name: "Ayush Gaur",
       position: "Software Developer",
-      linkedin: "https://www.linkedin.com/in/ayush-profile",
+      linkedin: "linkedin.com/in/ayush-gaur-dev",
       image: Ayush,
     },
     {
       name: "Akash Raut",
       position: "HR Executive",
-      linkedin: "https://www.linkedin.com/in/akash-profile",
+      linkedin: "linkedin.com/in/akash-raut-a58688170",
       image: Akash,
     },
     {
       name: "Akshat Tiwari",
       position: "Product Manager",
-      linkedin: "https://www.linkedin.com/in/akshat-profile",
+      linkedin: "https://www.linkedin.com/in/akshat-tiwari-092560213",
       image: Akshat,
     },
     {
       name: "Dev Kumar",
       position: "Product Manager",
-      linkedin: "https://www.linkedin.com/in/dev-profile",
+      linkedin: "https://www.linkedin.com/in/dev-kumar-974b90313/",
       image: Dev,
     },
     {
       name: "Gautami Potdar",
       position: "UI/UX Designer",
-      linkedin: "https://www.linkedin.com/in/gautami-profile",
+      linkedin: "https://www.linkedin.com/in/gautami-potdar",
       image: Gautami,
     },
     {
       name: "Nakshatra Joshi",
       position: "Backend Developer",
-      linkedin: "https://www.linkedin.com/in/nakshatra-joshi-97a773212?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      linkedin: "https://www.linkedin.com/in/nakshatra-joshi-97a773212",
       image: Nakshatra,
     }
   ];
 
   // Render a member card
-  const renderMemberCard = (member, index) => (
-    <div
-      key={`${member.name}-${index}`}
-      className={`flex-shrink-0 w-64 mx-4 flex flex-col items-center p-6 ${
-        gradients[index % gradients.length]
-      } rounded-lg`}
-    >
-      {/* Text Content - Moved to top */}
-      <div className="text-center w-full mb-6">
-        <h1 className="font-bold text-xl text-gray-900">{member.name}</h1>
-        <p className="text-gray-700 mt-1">{member.position}</p>
-        {member.linkedin && (
-          <a
-            href={member.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-2 inline-block text-blue-600 hover:text-blue-800"
-          >
-            <FaLinkedin size={24} />
-          </a>
-        )}
-      </div>
-
-      {/* Image Container - Moved to bottom */}
-      <div
-        className={`w-[230px] h-[280px] overflow-hidden rounded-full ${
-          solidColors[index % solidColors.length]
-        } flex items-start justify-center pt-4`}
-      >
-        <img
-          className="w-[230px] h-[300px] mt-3 overflow-hidden object-cover rounded-full"
-          src={member.image}
-          alt={member.name}
-        />
-      </div>
+  // Render a member card
+const renderMemberCard = (member, index) => (
+  <div
+    key={`${member.name}-${index}`}
+    className={`flex-shrink-0 w-64 mx-4 flex flex-col items-center p-6 ${
+      gradients[index % gradients.length]
+    } rounded-lg`}
+  >
+    {/* Text Content - Moved to top */}
+    <div className="text-center w-full mb-6">
+      <h1 className="font-bold text-xl text-[#000000]">{member.name}</h1>
+      <p className="text-[#000000] mt-1">{member.position}</p>
+      {member.linkedin && (
+        <a
+          href={member.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-2 inline-block text-blue-600 hover:text-blue-800"
+        >
+          <FaLinkedin size={24} />
+        </a>
+      )}
     </div>
-  );
+
+    {/* Image Container - Moved to bottom */}
+    <div
+      className={`w-[230px] h-[280px] overflow-hidden rounded-full ${
+        solidColors[index % solidColors.length]
+      } flex items-start justify-center pt-4`}
+    >
+      <img
+        className="w-[230px] h-[300px] mt-3 overflow-hidden object-cover rounded-full"
+        src={member.image}
+        alt={member.name}
+      />
+    </div>
+  </div>
+);
+
 
   return (
     <div className="bg-white py-10 pb-14 px-4 sm:px-6 lg:px-8 font-['Poppins']">
