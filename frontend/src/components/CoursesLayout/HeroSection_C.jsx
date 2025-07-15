@@ -222,6 +222,8 @@ export default function HeroSection_C() {
           </div>
         </aside>
       </div>
+
+      <hr className="w-full  border-t-[2px] border-gray-100 mt-12 mb-6" />
     </div>
   );
 }
