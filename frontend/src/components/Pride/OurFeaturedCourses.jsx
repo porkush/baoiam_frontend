@@ -123,7 +123,7 @@ const OurFeaturedCourses = () => {
                 </div>
 
                 <button
-                  className="text-white bg-[#FF6501CC] px-6 py-1 hover:bg-[#ff6701] transition duration-300 mt-2 text-[18px] mx-auto"
+                  className="text-white bg-[#FF6501E5] px-6 py-1 hover:bg-[#FF650133] hover:text-orange-500 transition duration-300 mt-2 text-[18px] mx-auto"
                   style={{
                     borderRadius: "5px",
                     display: "flex",
@@ -140,7 +140,7 @@ const OurFeaturedCourses = () => {
 
           <div className="mt-[30px] mb-[20px]">
             <button
-              className="text-white bg-black hover:bg-[#3c3b3f] transition duration-300 flex items-center justify-center text-[20px]"
+              className="text-white bg-black hover:bg-[#7B7B7B] transition duration-300 flex items-center justify-center text-[20px]"
               style={{
                 width: "208px",
                 height: "46px",

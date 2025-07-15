@@ -62,7 +62,7 @@ const DataScienceBanner = () => {
         {/* Buttons */}
         <div className="mt-4 md:mt-5 flex flex-col md:flex-row gap-3 md:gap-6 items-center md:items-start text-base md:text-[20px] font-medium">
           <Link to="/DataScience">
-            <button className="bg-black text-white px-5 py-2 rounded-lg hover:bg-orange-500 w-full md:w-auto">
+            <button className="bg-black text-white px-5 py-2 rounded-lg hover:bg-[#7B7B7B] w-full md:w-auto">
               Enroll Now
             </button>
           </Link>

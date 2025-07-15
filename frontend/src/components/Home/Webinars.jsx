@@ -16,10 +16,10 @@ const Webinars = () => {
           Join the webinar that makes learning unforgettable.
         </p>
         <div className="flex justify-center gap-4 flex-wrap">
-          <button className="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-md md:text-xl  font-medium transition">
+          <button className="bg-[#FF6501] hover:bg-[#FF6501CC] text-white px-5 py-2 rounded-md md:text-xl  font-medium transition">
             Register for Webinar
           </button>
-          <button className="bg-black hover:bg-gray-800 text-white px-5 py-2 rounded-md font-medium transition md:text-xl">
+          <button className="bg-black hover:bg-[#7B7B7B] text-white px-5 py-2 rounded-md font-medium transition md:text-xl">
             Talk to our Counsellor
           </button>
         </div>

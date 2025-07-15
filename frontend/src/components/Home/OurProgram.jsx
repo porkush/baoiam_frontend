@@ -71,7 +71,7 @@ const OurProgram = () => {
             </ul>
           </div>
 
-          <button className="self-center w-[153px] h-[40px] bg-black hover:bg-[#ff6701d5] text-white px-[40px] py-[5px] rounded-lg text-[20px] ">
+          <button className="self-center w-[153px] h-[40px] bg-black hover:bg-[#7B7B7B] text-white px-[40px] py-[5px] rounded-lg text-[20px] ">
             Explore
           </button>
         </div>
@@ -102,7 +102,7 @@ const OurProgram = () => {
             </ul>
           </div>
 
-          <button className="self-center w-[153px] h-[40px] bg-black hover:bg-[#ff6701d5] text-white px-[40px] py-[5px] rounded-lg text-[20px] ">
+          <button className="self-center w-[153px] h-[40px] bg-black hover:bg-[#7B7B7B] text-white px-[40px] py-[5px] rounded-lg text-[20px] ">
             Explore
           </button>
         </div>

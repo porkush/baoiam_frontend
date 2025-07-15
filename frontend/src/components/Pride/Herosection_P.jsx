@@ -16,7 +16,7 @@ const HeroSection_P = () => {
          Unlock your potential with transformative, expert-led courses designed to fuel your ambition, celebrate your identity, and empower your journey.
          </p>
 
-          <button className="bg-[#FF6501] hover:bg-orange-400 px-[20px] py-[5px] text-white font-semibold rounded-md transition duration-300 text-[20px] md:font-medium">
+          <button className="bg-[#FF6501] hover:bg-[#FF8434] px-[20px] py-[5px] text-white font-semibold rounded-md transition duration-300 text-[20px] md:font-medium">
             Enroll Now
           </button>
         </div>

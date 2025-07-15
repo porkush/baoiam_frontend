@@ -2,10 +2,10 @@ import React from "react";
 import { FaStar, FaUserGraduate, FaClock } from "react-icons/fa";
 // import HeadingImage from "../Lines/HeadingImages";
 import Group from "../../assets/Home/Lines/Group.webp";
-import DS from "../../assets/Home/FeaturedCourses/DS_F.png"
-import DA from "../../assets/Home/FeaturedCourses/DA_F.png"
-import DM from "../../assets/Home/FeaturedCourses/DM.png"
-import SD from "../../assets/Home/FeaturedCourses/SD.png"
+import DS from "../../assets/Home/FeaturedCourses/DS_F.png";
+import DA from "../../assets/Home/FeaturedCourses/DA_F.png";
+import DM from "../../assets/Home/FeaturedCourses/DM.png";
+import SD from "../../assets/Home/FeaturedCourses/SD.png";
 import { FiBarChart } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
@@ -134,7 +134,7 @@ const FeaturedCourses = () => {
               {course.id === 1 || course.id === 2 ? (
                 <Link
                   to={course.id === 1 ? "/DataScience" : "/DataAnalysis"}
-                  className="text-white bg-[#FF6501CC] hover:bg-[#ff6701] transition duration-300 mt-2 text-sm mx-auto"
+                  className="text-white bg-[#FF6501E5] hover:bg-[#FF650133] hover:text-orange-500 transition duration-300 mt-2 text-sm mx-auto"
                   style={{
                     width: "129px",
                     height: "25px",
@@ -150,7 +150,7 @@ const FeaturedCourses = () => {
                 </Link>
               ) : (
                 <button
-                  className="text-white bg-[#FF6501CC] hover:bg-[#ff6701] transition duration-300 mt-2 text-sm mx-auto"
+                  className="text-white bg-[#FF6501E5] hover:bg-[#FF650133] hover:text-orange-500 transition duration-300 mt-2 text-sm mx-auto"
                   style={{
                     width: "129px",
                     height: "25px",
@@ -172,7 +172,7 @@ const FeaturedCourses = () => {
         {/* Explore More Button */}
         <div className="mt-[30px] mb-[30px]">
           <button
-            className="text-white bg-black hover:bg-[#3c3b3f] transition duration-300 flex items-center justify-center text-[24px]"
+            className="text-white bg-black hover:bg-[#7B7B7B] transition duration-300 flex items-center justify-center text-[24px]"
             style={{
               width: "208px",
               height: "46px",

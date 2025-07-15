@@ -72,7 +72,7 @@ const PrideBanner = () => {
           justify-center
           lg:justify-start
         ">
-          <button className="bg-black text-white px-6 py-2 rounded-md font-semibold">
+          <button className="bg-black hover:bg-[#7B7B7B] text-white px-6 py-2 rounded-md font-semibold">
             Enroll Now
           </button>
           <button className="bg-white text-black border border-gray-300 px-6 py-2 rounded-md font-semibold">
