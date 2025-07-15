@@ -10,8 +10,8 @@ const FAQ_C = () => {
 
   const faqData = [
     {
-      question: "What is the Success Fusion Program (SFP)?",
-      answer: `SFP is a career-focused upskilling program by BAOIAM that combines live expert-led training, real-world projects, internships, and placement support — all designed to make students job-ready in high-demand domains like Data Analytics, Digital Marketing with AI, Software Testing, and more.`,
+      question: "What is the Data Analytics Course (DAC)?",
+      answer: `DAC is a career-oriented course designed to equip learners with practical skills in Data Analytics. It includes live instructor-led sessions, real-world projects, and placement assistance to prepare students for roles in data-driven industries. You’ll learn tools like Excel, SQL, Power BI, Python, and Tableau to analyze and visualize data effectively.`,
     },
     {
       question: "Who is eligible to apply for SFP?",

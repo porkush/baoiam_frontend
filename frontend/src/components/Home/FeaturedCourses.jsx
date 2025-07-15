@@ -38,7 +38,7 @@ const courses = [
   },
   {
     id: 4,
-    title: "Tech Bootcamp",
+    title: "Software Developement",
     rating: 5.0,
     description: "Full-stack development training.",
     students: "73.4K",
