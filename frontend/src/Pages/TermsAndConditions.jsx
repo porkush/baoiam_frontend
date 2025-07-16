@@ -6,27 +6,21 @@ const TermsAndConditions = ({ onClose }) => {
     <div className="bg-gray-100 py-10 px-4 relative">
       <div className="w-full max-w-[1200px] mx-auto bg-white border border-gray-200 shadow-md rounded-md p-6 relative">
         {/* CLOSE BUTTON */}
-        <button
-          onClick={onClose}
-          className="absolute top-4 right-4 text-gray-500 hover:text-red-500 text-2xl"
-          aria-label="Close"
-        >
-          <IoClose />
-        </button>
-        <h2 className="text-3xl font-bold text-center mb-10">
+        
+        <h2 className="text-3xl font-bold text-center mb-10 text-orange-500">
           Terms and Conditions – Baoiam Innovations Pvt. Ltd.
         </h2>
 
-        <p className="text-[20px] font-semibold mb-2 xl:ml-20">
-          Effective Date: <span className="text-gray-600"> 15 July 2025</span>
+        {/* <p className="text-[20px] font-semibold mb-2 xl:ml-20">
+          Effective Date: <span className="text-black"> 15 July 2025</span>
         </p>
         <p className="text-[20px] font-semibold mb-10 xl:ml-20">
           Company Name:{" "}
-          <span className="text-gray-600">
+          <span className="text-black">
             {" "}
-            Baoiam Innovations Pvt. Ltd. (“Baoiam”, “we”, “our”, or “us”)
+            Baoiam Innovations Pvt. Ltd.
           </span>
-        </p>
+        </p> */}
         <hr></hr>
 
         <div className="space-y-6 text-base overflow-y-auto no-scrollbar pr-4 mx-auto max-w-[1000px] mt-10">

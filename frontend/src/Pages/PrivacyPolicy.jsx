@@ -6,16 +6,9 @@ const PrivacyPolicy = ({ onClose }) => {
     <div className=" bg-gray-100 py-10 px-4 relative">
       <div className="w-full max-w-[1200px] mx-auto bg-white border border-gray-200 shadow-md rounded-md p-6 relative">
 
-        {/* CLOSE BUTTON */}
-        <button
-          onClick={onClose}
-          className="absolute top-4 right-4 text-gray-500 hover:text-red-500 text-2xl"
-          aria-label="Close"
-        >
-          <IoClose />
-        </button>
+        
 
-        <h2 className="text-2xl md:text-3xl font-bold mt-2 text-center mb-10">
+        <h2 className="text-2xl md:text-3xl font-bold mt-2 text-center mb-10 text-orange-500">
           Privacy Policy – Baoiam Innovations Pvt. Ltd.
         </h2>
         <hr></hr> 
