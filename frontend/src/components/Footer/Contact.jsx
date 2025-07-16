@@ -74,7 +74,7 @@ const Contact = () => {
                     <img
                       src={ThankYou}
                       alt="Thank You"
-                      className="w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] object-contain"
+                      className="w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] object-contain rounded-lg"
                       style={{ background: 'transparent' }}
                     />
                   </div>
