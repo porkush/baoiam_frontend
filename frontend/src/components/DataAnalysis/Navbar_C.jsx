@@ -19,16 +19,16 @@ export default function Navbar_C() {
             <img
               src={logo}
               alt="Logo"
-              className="w-[80px] h-[50px] object-contain lg:ml-6 cursor-pointer"
+              className="w-[80px] h-[50px] object-contain lg:ml-6 lg:mr-6 cursor-pointer"
             />
           </Link>
 
           {/* Hide Explore + Search on mobile */}
-          <div className="hidden lg:flex items-center gap-6">
+          <div className="hidden lg:flex items-center gap-12">
             {/* Explore */}
             <div className="relative group cursor-pointer text-base font-medium">
               <span
-                className="flex items-center hover:text-orange-500 mx-8 text-[#1B1B1B]"
+                className="flex items-center hover:text-orange-500 mx-8 text-[#1B1B1B] text-[16px]"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
               >

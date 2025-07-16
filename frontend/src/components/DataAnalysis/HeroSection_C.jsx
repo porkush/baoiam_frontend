@@ -4,7 +4,7 @@ import { FaStar } from "react-icons/fa";
 import { HiOutlineDownload } from "react-icons/hi";
 import { MdPlayCircle } from "react-icons/md";
 import avatar from "../../assets/CoursesLayout/CoursesPage/avatar.png";
-import Expert from "../../assets/CoursesLayout/CoursesPage/Expert.png";
+import Expert from "../../assets/CoursesLayout/CoursesPage/DS_Expert.png";
 import globe from "../../assets/CoursesLayout/CoursesPage/globe.png";
 import laptop from "../../assets/CoursesLayout/CoursesPage/laptop.png";
 import { AiFillHome, AiOutlineRight } from "react-icons/ai";
