@@ -9,6 +9,7 @@ import img4 from "../../assets/Home/HeroSection/4.webp";
 import img5 from "../../assets/Home/HeroSection/5.webp";
 import img6 from "../../assets/Home/HeroSection/6.webp";
 import ContactForm from "../../Pages/ContactForm";
+import { Link } from "react-router-dom";
 
 export default function HeroSection() {
   const [showModal, setShowModal] = useState(false);
@@ -58,9 +59,11 @@ export default function HeroSection() {
             </ul>
 
             <div className="mt-4 flex flex-col sm:flex-row gap-8">
-              <button className="bg-[#FF6501] border rounded-lg text-white flex items-center justify-center gap-2 py-2 px-4 font-medium text-xl hover:bg-[#FF9F60]">
-                Apply Now →
-              </button>
+              <Link to="/DataScience">
+                <button className="bg-[#FF6501] border rounded-lg text-white flex items-center justify-center gap-2 py-2 px-4 font-medium text-xl hover:bg-[#FF9F60]">
+                  Apply Now →
+                </button>
+              </Link>
               <div>
                 {/* The Button */}
                 <button

@@ -96,9 +96,10 @@ const ContactForm = ({onClose}) => {
                 required
               >
                 <option value="" disabled hidden>Select Category</option>
-                <option value="category1_option1">Data Science</option>
-                <option value="category1_option2">Web Development</option>
-                <option value="category1_option3">Design</option>
+                <option value="category2_option1">Success Fusion Program</option>
+                <option value="category2_option2">Udaan 90</option>
+                <option value="category2_option3">Tech Bootcamp</option>
+                <option value="category2_option3">Pride Fusion</option>
               </select>
               <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-600">
                 <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
@@ -120,10 +121,11 @@ const ContactForm = ({onClose}) => {
                 onChange={(e) => setCategory2(e.target.value)}
                 required
               >
-                <option value="" disabled hidden>Please select a sub-category</option>
-                <option value="category2_option1">Beginner</option>
-                <option value="category2_option2">Intermediate</option>
-                <option value="category2_option3">Advanced</option>
+                <option value="" disabled hidden>Select a sub-category</option>
+                <option value="category2_option1">Success Fusion Program</option>
+                <option value="category2_option2">Udaan 90</option>
+                <option value="category2_option3">Tech Bootcamp</option>
+                <option value="category2_option3">Pride Fusion</option>
               </select>
               <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-600">
                 <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">

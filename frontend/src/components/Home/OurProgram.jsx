@@ -1,17 +1,19 @@
 // import React from 'react';
-import udaanImg from '../../assets/Home/OurProgram/Udaan.webp';
-import fusionImg from '../../assets/Home/OurProgram/spf.webp';
+import udaanImg from "../../assets/Home/OurProgram/Udaan.webp";
+import fusionImg from "../../assets/Home/OurProgram/spf.webp";
 import Head from "../../assets/Home/OurProgram/head.webp";
-import HeadingImage from '../Lines/HeadingImages';
-import SubHeadImg from '../Lines/SubHeading';
+import HeadingImage from "../Lines/HeadingImages";
+import SubHeadImg from "../Lines/SubHeading";
+import ContactForm from "../../Pages/ContactForm";
+import { useState } from "react";
 
 const OurProgram = () => {
-
+  const [showModal, setShowModal] = useState(false);
   return (
     <section className="w-full  mx-auto p-16 font-['Poppins'] ">
       {/* Heading */}
       <div className="text-center mb-12">
-        <HeadingImage title="Our" highlight="Programs"/>
+        <HeadingImage title="Our" highlight="Programs" />
         <p className="text-lg md:text-xl   mx-auto">
           Skill up, stand out, and soar into success with our expert led
           programs.
@@ -52,7 +54,7 @@ const OurProgram = () => {
         {/* Right: Content */}
         <div className="flex flex-col justify-between p-6 md:p-8 w-full md:w-1/2 ml-5">
           <div>
-            <SubHeadImg text="Udaan - 90"/>
+            <SubHeadImg text="Udaan - 90" />
 
             <p className="font-semibold text-[#333333] mb-1">
               <span className="underline underline-offset-1 decoration-gray-[#333333] text-[24px]">
@@ -71,9 +73,38 @@ const OurProgram = () => {
             </ul>
           </div>
 
-          <button className="self-center w-[153px] h-[40px] bg-black hover:bg-[#7B7B7B] text-white px-[40px] py-[5px] rounded-lg text-[20px] ">
-            Explore
-          </button>
+     
+           <div>
+            {/* The Button */}
+              <button className="self-center w-[153px] h-[40px] bg-black hover:bg-[#7B7B7B] text-white px-[40px] py-[5px] rounded-lg text-[20px]  lg:ml-10"
+         onClick={() => setShowModal(true)}>
+              Explore
+            </button>
+
+            {/* The Modal */}
+
+            {showModal && (
+              <div
+                className="fixed inset-0 z-50 flex items-center justify-center bg-opacity-50"
+                onClick={() => setShowModal(false)}
+              >
+                <div
+                  className="relative max-w-xl w-full  "
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {/* Cross Button */}
+                  <button
+                    onClick={() => setShowModal(false)}
+                    className="absolute top-20 right-6 text-2xl text-gray-600 hover:text-black"
+                  >
+                    &times;
+                  </button>
+
+                  <ContactForm onClose={() => setShowModal(false)} />
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </div>
 
@@ -83,7 +114,7 @@ const OurProgram = () => {
         {/* Left: Content */}
         <div className="flex flex-col justify-between p-6 md:p-8 w-full md:w-1/2 ml-5">
           <div>
-            <SubHeadImg text="Success Fusion"/>
+            <SubHeadImg text="Success Fusion" />
 
             <p className="font-semibold text-[#333333] mb-1">
               <span className="underline underline-offset-1 decoration-gray-[#333333] text-[24px]">
@@ -91,7 +122,7 @@ const OurProgram = () => {
               </span>
             </p>
             <p className="text-orange-500 font-medium my-4 text-[22px]">
-             Learn. Intern. Get Hired.
+              Learn. Intern. Get Hired.
             </p>
             <ul className="mb-6 text-[#333333] text-[18px] list-disc list-inside p-3 font-medium">
               <li>12-month structured learning</li>
@@ -102,9 +133,35 @@ const OurProgram = () => {
             </ul>
           </div>
 
-          <button className="self-center w-[153px] h-[40px] bg-black hover:bg-[#7B7B7B] text-white px-[40px] py-[5px] rounded-lg text-[20px] ">
-            Explore
-          </button>
+          <div>
+            <button className="self-center w-[153px] h-[40px] bg-black hover:bg-[#7B7B7B] text-white px-[40px] py-[5px] rounded-lg text-[20px] "onClick={() => setShowModal(true)}>
+              Explore
+            </button>
+
+            {/* The Modal */}
+
+            {showModal && (
+              <div
+                className="fixed inset-0 z-50 flex items-center justify-center bg-opacity-50"
+                onClick={() => setShowModal(false)}
+              >
+                <div
+                  className="relative max-w-xl w-full  "
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {/* Cross Button */}
+                  <button
+                    onClick={() => setShowModal(false)}
+                    className="absolute top-20 right-6 text-2xl text-gray-600 hover:text-black"
+                  >
+                    &times;
+                  </button>
+
+                  <ContactForm onClose={() => setShowModal(false)} />
+                </div>
+              </div>
+            )}
+          </div>
         </div>
 
         {/* Left: Image with stats bar */}

@@ -47,8 +47,8 @@ const OurEvent = () => (
       </h2> */}
       <div className="flex items-center justify-center w-full mb-4">
         <h2 className="text-3xl md:text-[48px]  font-medium mb-2">
-          A face of <span className="text-orange-500">hope</span>{" "}
-          <span className="text-black">, a voice of </span>
+          A face of <span className="text-orange-500">hope,</span>{" "}
+          <span className="text-black"> a voice of </span>
           <span className="text-orange-500">equality</span>
         </h2>
         <img src={Group} alt="" className="w-9 mb-4" />

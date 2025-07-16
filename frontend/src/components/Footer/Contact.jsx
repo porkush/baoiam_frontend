@@ -55,7 +55,7 @@ const Contact = () => {
                 onClick={openModal}
                 className="bg-orange-500 text-white px-4 py-1 rounded-none sm:rounded-r-lg hover:bg-orange-600 transition-colors duration-300 whitespace-nowrap border border-orange-500 w-full sm:w-auto"
               >
-                Get Callback
+                Get a Callback
               </button>
 
               {/* Modal Overlay with fade effect */}
