@@ -1,5 +1,5 @@
 import React from "react";
-import certificateImage from "../../assets/CoursesLayout/CoursesPage/certificate.png";
+import certificateImage from "../../assets/CoursesLayout/CoursesPage/certificate.jpg";
 
 export default function CertificateSection() {
   return (

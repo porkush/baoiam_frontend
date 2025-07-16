@@ -2,14 +2,15 @@ import React from 'react'
 import HeroSection_C from './HeroSection_C'
 import Footer from "../Footer/Footer"
 import DiscountBanner from '../DataAnalysis/DiscountBanner'
-import BoughtTogether from '../DataScience/BoughtTogether'
-import Experts from '../DataScience/Experts'
+
 import CertificateSection from '../DataScience/CertificateSection'
 import FlexibleCourses from '../DataScience/FlexibleCourses'
 
 import FAQ from './FAQ'
 import LearningJourney from './LearningJourney'
 import Navbar_C from '../DataAnalysis/Navbar_C'
+import Experts from '../DataAnalysis/Experts'
+import BoughtTogether from './BoughtTogether'
 
 const DM_Page = () => {
   return (

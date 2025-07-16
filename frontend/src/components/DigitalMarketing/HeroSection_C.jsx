@@ -38,7 +38,7 @@ export default function HeroSection_C() {
           </h1>
           <p className="w-full md:w-[650px] text-black text-[18px] md:text-[28px] mb-4 font-semibold text-center md:text-left">
             Build <span className="text-orange-500">AI-Powered</span> Brand &
-            <span className="text-orange-500">{" "}Grow Digitally</span>
+            <span className="text-orange-500"> Grow Digitally</span>
           </p>
 
           <button className="inline-flex items-center bg-[#FF6501] text-white font-medium px-4 py-1 rounded-md hover:bg-orange-600 mb-6 text-[18px] mt-4">
@@ -125,17 +125,19 @@ export default function HeroSection_C() {
             </h2>
             <div className="flex flex-wrap gap-2 cursor-default ">
               {[
-                "Python",
-                "NumPy",
-                "SQL",
-                "Linear Algebra",
-                "Pandas",
-                "Pivot",
-                "Git/Github",
-                "Probability & Statistics",
-                "Baye's Theorem",
-                "Distribution",
-                "50+",
+                "SEO (Search Engine Optimization)",
+                "Technical SEO",
+                "Google Ads",
+                "Bing Ads",
+                "SEM (Search Engine Marketing)",
+                "PPC Campaigns",
+                "Data Analysis",
+                "Excel/Google Sheets",
+                "Funnel Creation",
+                "Canva",
+                "Adobe Photoshop",
+                "Figma",
+                "Video Editing (CapCut)",
               ].map((item, idx) => (
                 <span
                   key={idx}
@@ -154,16 +156,17 @@ export default function HeroSection_C() {
             </h2>
             <ul className="list-disc list-inside text-[17px] font-poppins text-black space-y-1 ml-3">
               <li>
-                Basic Computer & Internet Skills – Familiarity with browsing, email, etc.
+                Basic Computer & Internet Skills – Familiarity with browsing,
+                email, etc.
               </li>
               <li>
-                Creative Mindset – Interest in content, branding, or social media.
+                Creative Mindset – Interest in content, branding, or social
+                media.
               </li>
+              <li>Curiosity About AI Tools – No tech background required!</li>
               <li>
-                Curiosity About AI Tools – No tech background required!
-              </li>
-              <li>
-                No Marketing Experience Needed – Perfect for freshers & students.
+                No Marketing Experience Needed – Perfect for freshers &
+                students.
               </li>
             </ul>
           </section>

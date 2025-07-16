@@ -37,7 +37,8 @@ export default function HeroSection_C() {
             Master Software Development
           </h1>
           <p className="w-full md:w-[650px] text-black text-[18px] md:text-[28px] mb-4 font-semibold text-center md:text-left">
-            Code.   <span className="text-orange-500">{" "}Create.</span> Launch <span className="text-orange-500">Your Career.</span>
+            Code. <span className="text-orange-500"> Create.</span> Launch{" "}
+            <span className="text-orange-500">Your Career.</span>
           </p>
 
           <button className="inline-flex items-center bg-[#FF6501] text-white font-medium px-4 py-1 rounded-md hover:bg-orange-600 mb-6 text-[18px] mt-4">
@@ -124,17 +125,16 @@ export default function HeroSection_C() {
             </h2>
             <div className="flex flex-wrap gap-2 cursor-default ">
               {[
-                "Python",
-                "NumPy",
+                "Data Structures & Algorithms",
+                "Object-Oriented Programming (OOP)",
+                "Git/GitHub",
+                "Problem Solving",
+                "HTML/CSS/JavaScript",
+                "React.js",
+                "Node.js",
                 "SQL",
-                "Linear Algebra",
-                "Pandas",
-                "Pivot",
-                "Git/Github",
-                "Probability & Statistics",
-                "Baye's Theorem",
-                "Distribution",
-                "50+",
+                "RESTful APIs",
+                "Debugging & Testing",
               ].map((item, idx) => (
                 <span
                   key={idx}
@@ -153,7 +153,8 @@ export default function HeroSection_C() {
             </h2>
             <ul className="list-disc list-inside text-[17px] font-poppins text-black space-y-1 ml-3">
               <li>
-                Basic Programming Concepts – Any language (C, C++, Python, or Java).
+                Basic Programming Concepts – Any language (C, C++, Python, or
+                Java).
               </li>
               <li>
                 Logical Thinking & Problem Solving – DSA is taught from scratch.
@@ -162,7 +163,8 @@ export default function HeroSection_C() {
                 Commitment to Learn & Build – 6–12 months of focused effort.
               </li>
               <li>
-              No CS Degree or Prior Projects Needed – Just dedication and passion.
+                No CS Degree or Prior Projects Needed – Just
+                dedication and passion.
               </li>
             </ul>
           </section>
