@@ -119,8 +119,8 @@ const renderMemberCard = (member, index) => (
   >
     {/* Text Content - Moved to top */}
     <div className="text-center w-full mb-6">
-      <h1 className="font-bold text-xl text-[#000000]">{member.name}</h1>
-      <p className="text-[#000000] mt-1">{member.position}</p>
+      <h1 className="font-bold text-xl text-gray-200">{member.name}</h1>
+      <p className="text-gray-200 mt-1">{member.position}</p>
       {member.linkedin && (
         <a
           href={member.linkedin}
