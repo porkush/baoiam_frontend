@@ -1,39 +1,45 @@
 import { useState } from "react";
 import { FaPlus, FaTimes, FaArrowRight } from "react-icons/fa";
 
-const FAQ_C = () => {
+const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleIndex = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
- const faqData = [
-  {
-    question: "1. What is this Data Science course all about?",
-    answer: `This course takes you from the basics to advanced concepts of working with data. You’ll learn how to collect, clean, and analyze data, uncover patterns, and solve real-world problems using tools like Python, SQL, and machine learning—all in a practical, beginner-friendly way.`,
-  },
-  {
-    question: "2. Who should take this course?",
-    answer: `Anyone curious about data or looking to start a tech career. No prior experience in coding or data is needed—we start from scratch and guide you step by step.`,
-  },
-  {
-    question: "3. Will I get help finding a job after the course?",
-    answer: `Yes! We’ll support you with resume building, mock interviews, and help you connect with companies looking for data-savvy professionals.`,
-  },
-  {
-    question: "4. How long does it take to finish?",
-    answer: `Most learners complete it in 3 to 6 months, depending on how much time you can commit. It’s flexible enough to fit alongside work or studies.`,
-  },
-  {
-    question: "5. Do I get a certificate?",
-    answer: `Absolutely. On successful completion, you’ll receive a certificate that proves you have job-ready skills employers value.`,
-  },
-  {
-    question: "6. Will I work on real projects?",
-    answer: `Yes, you’ll work on real-world datasets and projects to gain hands-on experience. These projects will make your resume and portfolio stand out.`,
-  },
-];
+  const faqData = [
+    {
+      question: "1. What is the Software Development Course (SDC)?",
+      answer:
+        "A Software Development course, in simple words, teaches you how to design and build applications using programming languages like Java, Python, and frameworks like React or Node.js. You’ll gain hands-on experience in writing clean code, debugging, and deploying software solutions. This course is ideal for beginners and professionals looking to upskill and start a career in software development."
+    },
+    {
+      question: "2. Is this a certified course?",
+      answer:
+        "Yes, after successful completion, you’ll receive a certification that demonstrates your proficiency in software development and is recognized by leading tech companies."
+    },
+    {
+      question: "3. Does this course require prior coding experience?",
+      answer:
+        "No prior coding knowledge is required. The course starts with the fundamentals of programming and gradually covers advanced concepts, making it suitable for absolute beginners."
+    },
+    {
+      question: "4. Does this course have real-time projects too?",
+      answer:
+        "Yes, you’ll work on real-world projects like developing websites, building mobile apps, and creating APIs. These projects will help you build a strong portfolio to showcase your skills to potential employers."
+    },
+    {
+      question: "5. Does this course provide placement assistance?",
+      answer:
+        "Yes, placement support is included with guidance on resume building, technical interviews, and connecting you with hiring partners in the software industry."
+    },
+    {
+      question: "6. How long is the course duration?",
+      answer:
+        "The course duration typically ranges from 6 to 9 months, depending on the track and intensity you choose."
+    }
+  ];
 
   const leftFaqs = faqData.slice(0, 3);
   const rightFaqs = faqData.slice(3);
@@ -41,7 +47,7 @@ const FAQ_C = () => {
   const renderFAQItem = (item, index) => (
     <div
       key={index}
-      className={`rounded-lg text-[18px] font-med overflow-hidden shadow-sm transition-all duration-300 p-2 mb-4 ${
+      className={`rounded-lg text-[18px] font-medium overflow-hidden shadow-sm transition-all duration-300 p-2 mb-4 ${
         openIndex === index ? "bg-white shadow" : "bg-white"
       }`}
       style={{ minHeight: openIndex === index ? "auto" : "80px" }}
@@ -72,22 +78,13 @@ const FAQ_C = () => {
               <FaArrowRight className="text-[16px]" />
             </button>
           </div>
-          {item.button && (
-            <a
-              href={item.button.link}
-              className="inline-flex items-center text-blue-600 hover:underline text-sm font-medium mt-3"
-            >
-              {item.button.text}
-              <span className="ml-2">→</span>
-            </a>
-          )}
         </div>
       )}
     </div>
   );
 
   return (
-    <div className="w-full lg:mb-16 p-8 font-['Poppins'] ">
+    <div className="w-full lg:mb-16 p-8 font-['Poppins']">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3 text-center">
           Frequently Asked Questions
@@ -119,4 +116,4 @@ const FAQ_C = () => {
   );
 };
 
-export default FAQ_C;
+export default FAQ;

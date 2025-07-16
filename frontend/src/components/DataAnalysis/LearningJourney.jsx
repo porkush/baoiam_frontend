@@ -1,48 +1,47 @@
-
-
 import React, { useState } from "react";
 
 const modules = [
   {
-    title: "Module 1: Introduction to Data Science",
-    items: ["Overview of Data Science", "Importance of Data Science"],
+    title: "Module 1: Foundation & Skill Building (Month 1–2)",
+    items: ["Introduction to Data & Data Analytics", "Types of Data & Analytical Thinking", , "Microsoft Excel / Google Sheets for Data Cleaning", , "Basic Statistics for Data Analysis", , "Data Types, Descriptive Stats, Sampling, Distributions", , "Data Visualisation Basics: Charts, Graphs & Dashboards", , "Introduction to Python (Basics + Libraries: NumPy, Pandas)", , "Exploratory Data Analysis (EDA)"],
   },
   {
-    title: "Module 2: Data Collection and Preprocessing",
-    items: ["Overview of Data Science", "Importance of Data Science"],
+    title: "Module 2: Real-World Projects + Mentorship (Month 3–4)",
+    items: [
+  "Sales & Revenue Data Analysis",
+  "Market Research & Customer Insights",
+  "Financial Performance Dashboards",
+  "Survey Data Cleaning & Visualization",
+  "Web Analytics & Social Media Metrics",
+  "Internship/Industry Simulation Projects"
+],
   },
   {
-    title: "Module 3: Exploratory Data Analysis (EDA)",
-    items: ["Overview of Data Science", "Importance of Data Science"],
+    title: "Module 3: Resume, Portfolio & Mock Interviews (Month 5)",
+    items: [
+  "Portfolio Building on GitHub",
+  "Resume Writing for Data Analyst Roles",
+  "LinkedIn & GitHub Optimization",
+  "Mock Interview Sessions (1:1 + Group)",
+  "Interview Prep: SQL, Excel, Python Questions",
+  "Career Strategy & Confidence Building"
+],
   },
   {
-    title: "Module 4: Machine Learning Basics",
-    items: ["Overview of Data Science", "Importance of Data Science"],
+    title: "Module 4: Placement & Career Support (Month 6)",
+    items: [
+  "Live Job Referrals & Interview Opportunities",
+  "Job Applications with Guidance",
+  "Access to Hiring Partners & Platforms",
+  "Weekly Check-ins & Progress Tracking",
+  "Certificate of Completion from Baoiam"
+],
   },
   {
-    title: "Module 5: Advanced Machine Learning",
-    items: ["Overview of Data Science", "Importance of Data Science"],
-  },
-  {
-    title: "Module 6: Data Visualization",
-    items: ["Overview of Data Science", "Importance of Data Science"],
-  },
-
-  {
-    title: "Module 7: Predictive Analytics",
-    items: ["Overview of Data Science", "Importance of Data Science"],
-  },
-  {
-    title: "Module 8: Real-World Applications of Data Science",
-    items: ["Overview of Data Science", "Importance of Data Science"],
-  },
-  {
-    title: "Module 9: Ethical and Legal Considerations in Data Science",
-    items: ["Overview of Data Science", "Importance of Data Science"],
-  },
-  {
-    title: "Module 10: Capstone Project",
-    items: ["Overview of Data Science", "Importance of Data Science"],
+    title: "Certificate",
+    items: [
+  "Project Showcase Certificate (on completion of real-world projects)",
+],
   },
 ];
 

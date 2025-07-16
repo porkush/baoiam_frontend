@@ -1,50 +1,62 @@
-
-
 import React, { useState } from "react";
 
 const modules = [
   {
-    title: "Module 1: Introduction to Data Science",
-    items: ["Overview of Data Science", "Importance of Data Science"],
+    title: "Module 1: Digital Marketing Foundations (Month 1–2)",
+    items: [
+      "Marketing Funnel (AIDA), Buyer Personas",
+      "Branding, Storytelling & Copywriting",
+      "SEO (On-page, Off-page, Technical)",
+      "Google Search Console, Ahrefs Basics",
+      "Introduction to Generative AI in Marketing",
+      "Competitor Analysis & Keyword Research (with AI tools)"
+    ],
   },
   {
-    title: "Module 2: Data Collection and Preprocessing",
-    items: ["Overview of Data Science", "Importance of Data Science"],
+    title: "Module 2: AI Tools + Paid Marketing & Automation (Month 3–4)",
+    items: [
+      "Google Ads (Search + Display + Video)",
+      "Facebook/Instagram Ads + Pixel Setup",
+      "AI for Ad Copywriting, Creatives & Targeting (ChatGPT, Canva AI, Copy.ai, Jasper)",
+      "Email Marketing Tools (Mailchimp, Sendinblue)",
+      "WhatsApp Marketing (API, AI Chatbots, Auto Replies)",
+      "Retargeting Campaigns",
+      "Lead Funnel Creation with Zapier + Google Forms + Notion"
+    ],
   },
   {
-    title: "Module 3: Exploratory Data Analysis (EDA)",
-    items: ["Overview of Data Science", "Importance of Data Science"],
+    title: "Module 3: Capstone Projects + Analytics (Month 5)",
+    items: [
+      "Google Ads Campaign for a Mock Brand",
+      "Instagram Reels Growth Strategy with AI Analytics",
+      "Email Campaign Automation",
+      "Create and Run WhatsApp Lead Generation Bot",
+      "SEO Audit for a Website",
+      "Personal Brand Strategy + Blog Setup",
+      "Meta Business Suite, Canva, ChatGPT",
+      "Google Analytics, Google Tag Manager",
+      "Notion, Trello for planning & workflow"
+    ],
   },
   {
-    title: "Module 4: Machine Learning Basics",
-    items: ["Overview of Data Science", "Importance of Data Science"],
+    title: "Module 4: Placement Prep + Resume + Profile Building (Month 6)",
+    items: [
+      "Building Digital Marketing Resume + LinkedIn Optimization",
+      "Personal Portfolio Website (Google Sites/WordPress)",
+      "Mock Interviews (Marketing + HR)",
+      "Practice Assignments",
+      "Weekly Placement Support (jobs, referrals, live sessions)"
+    ],
   },
   {
-    title: "Module 5: Advanced Machine Learning",
-    items: ["Overview of Data Science", "Importance of Data Science"],
-  },
-  {
-    title: "Module 6: Data Visualization",
-    items: ["Overview of Data Science", "Importance of Data Science"],
-  },
-
-  {
-    title: "Module 7: Predictive Analytics",
-    items: ["Overview of Data Science", "Importance of Data Science"],
-  },
-  {
-    title: "Module 8: Real-World Applications of Data Science",
-    items: ["Overview of Data Science", "Importance of Data Science"],
-  },
-  {
-    title: "Module 9: Ethical and Legal Considerations in Data Science",
-    items: ["Overview of Data Science", "Importance of Data Science"],
-  },
-  {
-    title: "Module 10: Capstone Project",
-    items: ["Overview of Data Science", "Importance of Data Science"],
+    title: "Certificate",
+    items: [
+      "Certificate of Completion from Baoiam"
+    ],
   },
 ];
+
+
 
 const LearningJourney = () => {
   const [openIndex, setOpenIndex] = useState(null);

@@ -8,7 +8,7 @@ const PrivacyPolicy = ({ onClose }) => {
 
         
 
-        <h2 className="text-2xl md:text-3xl font-bold mt-2 text-center mb-10 text-orange-500">
+        <h2 className="text-2xl md:text-3xl font-bold mt-2 text-center mb-10 text-black">
           Privacy Policy – Baoiam Innovations Pvt. Ltd.
         </h2>
         <hr></hr> 
@@ -18,7 +18,7 @@ const PrivacyPolicy = ({ onClose }) => {
       
      <div className="space-y-6 text-base no-scrollbar pr-4 mx-auto max-w-[1000px] mt-10">
           <section>
-            <h3 className="font-semibold text-xl">1. Introduction</h3>
+            <h3 className="font-bold text-xl">Introduction</h3>
             <p>
               Baoiam respects your privacy and is committed to protecting your personal data.
               This policy explains how we collect, use, store, and disclose information when you:
@@ -34,12 +34,12 @@ const PrivacyPolicy = ({ onClose }) => {
           </section>
 
           <section>
-            <h3 className="font-semibold text-xl">2. What We Collect</h3>
+            <h3 className="font-bold text-xl"> What We Collect</h3>
             <p className="font-semibold">Non-Personal Data:</p>
             <ul className="list-disc list-outside pl-6 mt-1">
               <li>Device info, browser type, IP address, usage analytics</li>
             </ul>
-            <p className="font-semibold mt-3">Personal Data:</p>
+            <p className="font-bold mt-3">Personal Data:</p>
             <ul className="list-disc list-outside pl-6 mt-1">
               <li>Name, email, phone number, educational/professional details</li>
               <li>Course preferences, payment info (via secure partners)</li>
@@ -48,7 +48,7 @@ const PrivacyPolicy = ({ onClose }) => {
           </section>
 
           <section>
-            <h3 className="font-semibold text-xl">3. How We Use It</h3>
+            <h3 className="font-bold text-xl">How We Use It</h3>
             <ul className="list-disc list-outside pl-6 mt-1">
               <li>Process registrations, payments, and course access</li>
               <li>Send program updates, support messages, offers</li>
@@ -58,7 +58,7 @@ const PrivacyPolicy = ({ onClose }) => {
           </section>
 
           <section>
-            <h3 className="font-semibold text-xl">4. Cookies & Tracking</h3>
+            <h3 className="font-bold text-xl">Cookies & Tracking</h3>
             <p>We use cookies and similar tech to:</p>
             <ul className="list-disc list-outside pl-6 mt-1">
               <li>Remember preferences and sessions</li>
@@ -68,7 +68,7 @@ const PrivacyPolicy = ({ onClose }) => {
           </section>
 
           <section>
-            <h3 className="font-semibold text-xl">5. Data Sharing</h3>
+            <h3 className="font-bold text-xl">Data Sharing</h3>
             <p>We may share personal data with:</p>
             <ul className="list-disc list-outside pl-6 mt-1">
               <li>Payment processors (Stripe, Razorpay)</li>
@@ -81,7 +81,7 @@ const PrivacyPolicy = ({ onClose }) => {
           </section>
 
           <section>
-            <h3 className="font-semibold text-xl">6. Security Measures</h3>
+            <h3 className="font-bold text-xl">Security Measures</h3>
             <p>
               We use SSL, secure databases, and access restrictions.
               Users should follow strong password practices.
@@ -89,7 +89,7 @@ const PrivacyPolicy = ({ onClose }) => {
           </section>
 
           <section>
-            <h3 className="font-semibold text-xl">7. Your Rights</h3>
+            <h3 className="font-bold text-xl">Your Rights</h3>
             <ul className="list-disc list-outside pl-6 mt-1">
               <li>Access, correct, or delete your data</li>
               <li>Opt out of marketing communications</li>
@@ -103,7 +103,7 @@ const PrivacyPolicy = ({ onClose }) => {
           </section>
 
           <section>
-            <h3 className="font-semibold text-xl">8. Legal Compliance</h3>
+            <h3 className="font-bold text-xl">Legal Compliance</h3>
             <p>
               We may share data to comply with legal obligations.
               In the event of acquisition or merger, data may be transferred with prior notice.
@@ -111,14 +111,14 @@ const PrivacyPolicy = ({ onClose }) => {
           </section>
 
           <section>
-            <h3 className="font-semibold text-xl">9. Policy Updates</h3>
+            <h3 className="font-bold text-xl">Policy Updates</h3>
             <p>
               This policy may be updated periodically. Major changes will be communicated via email or platform notifications.
             </p>
           </section>
 
           <section>
-            <h3 className="font-semibold text-xl">10. Contact Us</h3>
+            <h3 className="font-bold text-xl">Contact Us</h3>
             <p>For questions:</p>
             <ul className="mt-2">
               <li>

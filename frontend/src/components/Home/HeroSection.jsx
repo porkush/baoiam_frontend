@@ -60,7 +60,7 @@ export default function HeroSection() {
 
             <div className="mt-4 flex flex-col sm:flex-row gap-8">
               <Link to="/DataScience">
-                <button className="bg-[#FF6501] border rounded-lg text-white flex items-center justify-center gap-2 py-2 px-4 font-medium text-xl hover:bg-[#FF9F60]">
+                <button className="bg-[#FF6501]  rounded-lg text-white flex items-center justify-center gap-2 py-2 px-4 font-medium text-xl hover:bg-[#FF650133] hover:text-orange-500">
                   Apply Now →
                 </button>
               </Link>

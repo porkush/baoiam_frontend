@@ -13,7 +13,7 @@ const BlogSection = () => {
       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
         <div>
           <div className="flex w-full mb-2">
-                  <h2 className="text-3xl md:text-4xl  font-semibold mb-2">
+                  <h2 className="text-3xl md:text-[48px]  font-semibold mb-2">
                     Voices That<span className="text-orange-500"> Matter </span>
                   </h2>
                   <img src={Group} alt="" className="w-9 mb-4" />

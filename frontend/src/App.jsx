@@ -69,6 +69,8 @@ import Contact from "./components/Footer/Contact";
 import ContactForm from "./Pages/ContactForm";
 import TermsAndConditions from "./Pages/TermsAndConditions";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
+import DM_Page from "./components/DigitalMarketing/DM_Page";
+import SD_Page from "./components/SoftwareDevelopment/SD_Page";
 
 
 function App() {
@@ -91,6 +93,8 @@ function App() {
       <div>
         <Routes>
           <Route path="/DataAnalysis" element={<DataAnalysisPage />} />
+          <Route path="/DigitalMarketing" element={<DM_Page />} />
+          <Route path="/SoftwareDevelopment" element={<SD_Page />} />
           <Route path="/DataScience" element={<DataSciencePage />} />
           <Route path="*" element={
             <>

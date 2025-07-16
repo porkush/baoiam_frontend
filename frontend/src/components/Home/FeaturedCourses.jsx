@@ -131,9 +131,20 @@ const FeaturedCourses = () => {
               </div>
 
               {/* Start Learning Button */}
-              {course.id === 1 || course.id === 2 ? (
+              {course.id === 1 ||
+              course.id === 2 ||
+              course.id === 3 ||
+              course.id === 4 ? (
                 <Link
-                  to={course.id === 1 ? "/DataScience" : "/DataAnalysis"}
+                  to={
+                    course.id === 1
+                      ? "/DataScience"
+                      : course.id === 2
+                      ? "/DataAnalysis"
+                      : course.id === 3
+                      ? "/DigitalMarketing"
+                      : "/SoftwareDevelopment"
+                  }
                   className="text-white bg-[#FF6501E5] hover:bg-[#FF650133] hover:text-orange-500 transition duration-300 mt-2 text-sm mx-auto"
                   style={{
                     width: "129px",

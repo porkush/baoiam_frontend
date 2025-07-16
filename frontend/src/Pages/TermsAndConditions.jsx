@@ -7,9 +7,8 @@ const TermsAndConditions = ({ onClose }) => {
       <div className="w-full max-w-[1200px] mx-auto bg-white border border-gray-200 shadow-md rounded-md p-6 relative">
         {/* CLOSE BUTTON */}
         
-        <h2 className="text-3xl font-bold text-center mb-10 text-orange-500">
-          Terms and Conditions – <span className="text-black">Baoiam Innovations Pvt. Ltd.</span>
-        </h2>
+        <h2 className="text-3xl font-bold text-center mb-10 text-black">
+          Terms and Conditions – Baoiam Innovations Pvt. Ltd.        </h2>
 
         {/* <p className="text-[20px] font-semibold mb-2 xl:ml-20">
           Effective Date: <span className="text-black"> 15 July 2025</span>
@@ -25,8 +24,8 @@ const TermsAndConditions = ({ onClose }) => {
 
         <div className="space-y-6 text-base overflow-y-auto no-scrollbar pr-4 mx-auto max-w-[1000px] mt-10">
           <section>
-            <h3 className="font-semibold text-[18px]">
-              1. Acceptance of Terms
+            <h3 className="font-bold text-[18px]">
+              Acceptance of Terms
             </h3>
             <p className="text-[16px]">
               By accessing or using Baoiam’s services, website, or enrolling in
@@ -36,14 +35,14 @@ const TermsAndConditions = ({ onClose }) => {
           </section>
 
           <section>
-            <h3 className="font-semibold text-[18px]">2. Eligibility</h3>
+            <h3 className="font-bold text-[18px]">Eligibility</h3>
             <p className="text-[16px]">
               You must be 18 years or older to register for any course...
             </p>
           </section>
 
           <section>
-            <h3 className="font-semibold text-[18px]">3. User Obligations</h3>
+            <h3 className="font-bold text-[18px]">User Obligations</h3>
             <ul className="list-disc text-[16px] list-inside pl-2 mt-1">
               <li>Maintain confidentiality of login credentials</li>
               <li>Not share or redistribute course materials</li>
@@ -55,7 +54,7 @@ const TermsAndConditions = ({ onClose }) => {
           </section>
 
           <section>
-            <h3 className="font-semibold text-[18px]">4. Enrollment & Fees</h3>
+            <h3 className="font-bold text-[18px]">Enrollment & Fees</h3>
             <ul className="list-disc list-inside text-[16px] pl-2 mt-1">
               <li>
                 Course fees must be paid as per the selected plan (e.g., upfront
@@ -74,7 +73,7 @@ const TermsAndConditions = ({ onClose }) => {
           </section>
 
           <section>
-            <h3 className="font-semibold text-[18px]">5. Refund Policy</h3>
+            <h3 className="font-bold text-[18px]">Refund Policy</h3>
             <ul className="list-disc list-inside text-[16px] pl-2 mt-1">
               <li>
                 No refund after 2 days of course start unless otherwise
@@ -85,8 +84,8 @@ const TermsAndConditions = ({ onClose }) => {
           </section>
 
           <section>
-            <h3 className="font-semibold text-[18px]">
-              6. Intellectual Property
+            <h3 className="font-bold text-[18px]">
+              Intellectual Property
             </h3>
             <p className="text-[16px]">
               All content, course materials, visuals, and software on Baoiam’s
@@ -95,7 +94,7 @@ const TermsAndConditions = ({ onClose }) => {
           </section>
 
           <section>
-            <h3 className="font-semibold text-[18px]">7. Code of Conduct</h3>
+            <h3 className="font-bold text-[18px]">Code of Conduct</h3>
             <ul className="list-disc list-inside text-[16px] pl-2 mt-1">
               Users must
               <li>
@@ -124,8 +123,8 @@ const TermsAndConditions = ({ onClose }) => {
           </section>
 
           <section>
-            <h3 className="font-semibold text-[18px]">
-              9. Limitation of Liability
+            <h3 className="font-bold text-[18px]">
+              Limitation of Liability
             </h3>
             <p className="text-[16px]">
               Baoiam is not liable for any indirect damages, loss of
@@ -136,7 +135,7 @@ const TermsAndConditions = ({ onClose }) => {
           </section>
 
           <section>
-            <h3 className="font-semibold text-[18px]">10. Code of Conduct</h3>
+            <h3 className="font-bold text-[18px]">Code of Conduct</h3>
             <p className="text-[16px]">
               Baoiam may link to or integrate tools such as Zoom, Google Meet,
               or third-party payment gateways. Use of these services is subject
@@ -145,7 +144,7 @@ const TermsAndConditions = ({ onClose }) => {
           </section>
 
           <section>
-            <h3 className="font-semibold text-[18px]">11. Termination</h3>
+            <h3 className="font-bold text-[18px]">Termination</h3>
             <p className="text-[16px]">
               Baoiam reserves the right to suspend or terminate your account for
               breach of terms, misuse, or inactivity without prior notice.
@@ -153,7 +152,7 @@ const TermsAndConditions = ({ onClose }) => {
           </section>
 
           <section>
-            <h3 className="font-semibold text-[18px]">12. Changes to Terms</h3>
+            <h3 className="font-bold text-[18px]">Changes to Terms</h3>
             <p className="text-[16px]">
               We may revise these terms from time to time. Continued use of the
               services constitutes acceptance of the latest version.
@@ -161,7 +160,7 @@ const TermsAndConditions = ({ onClose }) => {
           </section>
 
           <section>
-            <h3 className="font-semibold text-[18px]">13. Governing Law</h3>
+            <h3 className="font-bold text-[18px]">Governing Law</h3>
             <p className="text-[16px]">
               These terms shall be governed by and interpreted in accordance
               with the laws of India. Disputes, if any, shall be subject to the
@@ -170,7 +169,7 @@ const TermsAndConditions = ({ onClose }) => {
           </section>
 
           <section>
-            <h3 className="font-semibold text-[18px]">14. Contact Us</h3>
+            <h3 className="font-bold text-[18px]">Contact Us</h3>
             <p className="text-[16px]">For any questions or concerns:</p>
             <ul className="list-none mt-2 space-y-1 text-[16px]">
               <li>

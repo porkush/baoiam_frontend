@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaPlus, FaTimes, FaArrowRight } from "react-icons/fa";
 
-const FAQ_C = () => {
+const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleIndex = (index) => {
@@ -10,28 +10,29 @@ const FAQ_C = () => {
 
  const faqData = [
   {
-    question: "1. What is this Data Science course all about?",
-    answer: `This course takes you from the basics to advanced concepts of working with data. You’ll learn how to collect, clean, and analyze data, uncover patterns, and solve real-world problems using tools like Python, SQL, and machine learning—all in a practical, beginner-friendly way.`,
+    question: "1. What is the Digital Marketing Course (DMC)?",
+    answer: "A Digital Marketing course, in simple terms, is a journey that teaches you how to grow brands online using tools like SEO, social media, content creation, and paid advertising. You’ll learn how to connect with the right audience, build engaging campaigns, and analyze data to make smarter decisions.",
   },
   {
-    question: "2. Who should take this course?",
-    answer: `Anyone curious about data or looking to start a tech career. No prior experience in coding or data is needed—we start from scratch and guide you step by step.`,
+    question: "2. Is this a certified course?",
+    answer: "Yes, this course provides a professional certification upon successful completion. It is designed to add value to your resume and demonstrate your expertise in digital marketing tools and techniques, making you job-ready."
+,
   },
   {
-    question: "3. Will I get help finding a job after the course?",
-    answer: `Yes! We’ll support you with resume building, mock interviews, and help you connect with companies looking for data-savvy professionals.`,
+    question: "3. Does this course require prior marketing knowledge?",
+    answer: "No, you don’t need any prior marketing experience. The course starts from the basics and builds up to advanced strategies, making it beginner-friendly and ideal for professionals from non-marketing backgrounds.",
   },
   {
-    question: "4. How long does it take to finish?",
-    answer: `Most learners complete it in 3 to 6 months, depending on how much time you can commit. It’s flexible enough to fit alongside work or studies.`,
+    question: "4. Does this course have real-time projects too?",
+    answer:" Yes, you’ll work on live projects such as creating SEO-optimized websites, running ad campaigns, and building a full-fledged digital marketing strategy. These practical assignments will help you apply your learning effectively.",
   },
   {
-    question: "5. Do I get a certificate?",
-    answer: `Absolutely. On successful completion, you’ll receive a certificate that proves you have job-ready skills employers value.`,
+    question: "5. Does this course provide placement assistance?",
+    answer: "Absolutely! The course includes dedicated placement support, resume building, and interview preparation to help you secure roles in digital marketing agencies or in-house marketing teams.",
   },
   {
-    question: "6. Will I work on real projects?",
-    answer: `Yes, you’ll work on real-world datasets and projects to gain hands-on experience. These projects will make your resume and portfolio stand out.`,
+    question: "6. How long is the course duration?",
+    answer: "The course can typically be completed in 4-6 months, depending on the pace you choose.",
   },
 ];
 
@@ -119,4 +120,4 @@ const FAQ_C = () => {
   );
 };
 
-export default FAQ_C;
+export default FAQ;

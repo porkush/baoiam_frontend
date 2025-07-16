@@ -1,50 +1,72 @@
-
-
 import React, { useState } from "react";
 
 const modules = [
   {
-    title: "Module 1: Introduction to Data Science",
-    items: ["Overview of Data Science", "Importance of Data Science"],
+    title: "Module 1: Foundation & Skill Building (Month 1–3)",
+    items: [
+      "HTML5, CSS3, Responsive Design",
+      "JavaScript (ES6+), DOM Manipulation",
+      "Version Control: Git & GitHub",
+      "Bootstrap, Tailwind CSS",
+      "Programming Logic & Flowcharts",
+      "Introduction to Data Structures & Algorithms (DSA)",
+      "Problem Solving with JavaScript",
+      "Coding Assignments",
+      "Mini Projects (Portfolio Website, Calculator, etc.)",
+      "Code Reviews & Mentorship"
+    ],
   },
   {
-    title: "Module 2: Data Collection and Preprocessing",
-    items: ["Overview of Data Science", "Importance of Data Science"],
+    title: "Module 2: Advanced Development & Real-World Projects (Month 4–6)",
+    items: [
+      "Node.js, Express.js",
+      "RESTful APIs",
+      "MongoDB, Mongoose",
+      "Authentication (JWT, OAuth)",
+      "Deployment (Render, Vercel, Netlify)",
+      "Blog Application",
+      "E-commerce Clone",
+      "Job Portal or LMS",
+      "Portfolio Integration (GitHub + Live Link)",
+      "Git Workflows (Branches, PRs)",
+      "Team Collaboration via GitHub",
+      "Daily Standups, Sprints"
+    ],
   },
   {
-    title: "Module 3: Exploratory Data Analysis (EDA)",
-    items: ["Overview of Data Science", "Importance of Data Science"],
+    title: "Module 3: Internship + Mentorship (Month 7–9)",
+    items: [
+      "Work on Real Industry Use Cases",
+      "Team-Based Product Development",
+      "Code Reviews from Mentors",
+      "Weekly Mentorship Calls",
+      "Task Tracking via Notion or Jira",
+      "SaaS Dashboard",
+      "Live Product Bug Fixes",
+      "Contribution to Open Source"
+    ],
   },
   {
-    title: "Module 4: Machine Learning Basics",
-    items: ["Overview of Data Science", "Importance of Data Science"],
+    title: "Module 4: Career Launchpad & Placement (Month 10–12)",
+    items: [
+      "Resume Building (ATS-Optimized)",
+      "LinkedIn + GitHub Optimization",
+      "Mock Interviews (Tech + HR)",
+      "DSA Practice: Arrays, Strings, Trees, etc.",
+      "1:1 Counseling & Roadmap",
+      "Weekly Job Updates",
+      "Referral Opportunities",
+      "Soft Skills & Interview Etiquette"
+    ],
   },
   {
-    title: "Module 5: Advanced Machine Learning",
-    items: ["Overview of Data Science", "Importance of Data Science"],
-  },
-  {
-    title: "Module 6: Data Visualization",
-    items: ["Overview of Data Science", "Importance of Data Science"],
-  },
-
-  {
-    title: "Module 7: Predictive Analytics",
-    items: ["Overview of Data Science", "Importance of Data Science"],
-  },
-  {
-    title: "Module 8: Real-World Applications of Data Science",
-    items: ["Overview of Data Science", "Importance of Data Science"],
-  },
-  {
-    title: "Module 9: Ethical and Legal Considerations in Data Science",
-    items: ["Overview of Data Science", "Importance of Data Science"],
-  },
-  {
-    title: "Module 10: Capstone Project",
-    items: ["Overview of Data Science", "Importance of Data Science"],
+    title: "Certificate",
+    items: [
+      "Certificate of Completion from Baoiam"
+    ],
   },
 ];
+
 
 const LearningJourney = () => {
   const [openIndex, setOpenIndex] = useState(null);

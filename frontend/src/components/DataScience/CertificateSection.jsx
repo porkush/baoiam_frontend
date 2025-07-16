@@ -3,13 +3,13 @@ import certificateImage from "../../assets/CoursesLayout/CoursesPage/certificate
 
 export default function CertificateSection() {
   return (
-    <div className="w-full max-w-[1440px] mx-auto px-4 md:px-8 py-10 border-b-2 border-gray-200 font-poppins">
+    <div className="w-full max-w-[1440px] mx-auto px-4 md:px-8 py-10 border-b-2 border-gray-200 font-['Poppins'] ">
       {/* Heading */}
       <div className="text-center mb-6">
-        <h2 className="text-[40px] font-poppins md:text-4xl font-medium text-black">
-          Earn <span className="text-orange-500">Certificates</span> That Speak for <span className="text-orange-500">Your Skills</span> 
+        <h2 className="text-[40px] font-poppins md:text-4xl font-semibold text-black">
+           <span className="text-orange-500">Earn Certificates</span> That Speak for Your<span className="text-orange-500"> Skills</span> 
         </h2>
-        <p className="mt-2 text-black mb-9 font-medium font-poppins text-[16px] md:text-base">
+        <p className="mt-3 text-black mb-9 font-medium font-poppins text-[18px]">
           Showcase your achievement with an industry-recognized certificate from Baoiam.
         </p>
       </div>

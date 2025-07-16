@@ -99,13 +99,12 @@ const CourseCard = ({ title, subtitle, lessons, time, rating, image }) => {
 const FlexibleCourses = () => {
   return (
       <div className="bg-white py-10 text-center">
-      <h1 className="text-[40px] font-medium mb-2">
-        Advance your career with{" "}
-        <span className="text-orange-500">flexible courses</span>
+        <h1 className="text-[40px] font-semibold mb-2 font-['Poppins']">
+        Courses That {" "}
+        <span className="text-orange-500">Transform Careers</span>
       </h1>
       <h3 className="text-base md:text-[18px] font-medium mb-8 md:mb-10 max-w-2xl mx-auto">
-        Courses That Transform Careers — Handpicked programs designed to take
-        you from beginner to job-ready, on your schedule.
+        Handpicked programs designed to take you from beginner to job-ready, on your schedule.
       </h3>
       <div className="flex flex-wrap justify-center gap-8 px-4">
         {courses.map((course, index) => (
