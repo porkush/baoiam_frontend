@@ -79,48 +79,47 @@ const Footer = () => {
             launches.
           </p>
           <div className="flex space-x-3">
-  <a
-    href="#"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="p-3 text-white transition-colors bg-[#363B4766] hover:bg-orange-500"
-  >
-    <FaFacebookF size={18} />
-  </a>
-  <a
-    href="https://www.instagram.com/baoiamofficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-    target="_blank"
-    rel="noopener noreferrer"
-    className="p-3 text-white transition-colors bg-[#363B4766] hover:bg-orange-500"
-  >
-    <FaInstagram size={18} />
-  </a>
-  <a
-    href="https://www.linkedin.com/company/baoiam-innovations-pvt-ltd/posts/?feedView=all"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="p-3 text-white transition-colors bg-[#363B4766] hover:bg-orange-500"
-  >
-    <FaLinkedinIn size={18} />
-  </a>
-  <a
-    href="#"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="p-3 text-white transition-colors bg-[#363B4766] hover:bg-orange-500"
-  >
-    <FaTwitter size={18} />
-  </a>
-  <a
-    href="#"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="p-3 text-white transition-colors bg-[#363B4766] hover:bg-orange-500"
-  >
-    <FaYoutube size={18} />
-  </a>
-</div>
-
+            <a
+              href="https://www.facebook.com/p/%F0%9D%98%BD%F0%9D%98%BC%F0%9D%99%8A-%F0%9D%99%84%F0%9D%98%BC%F0%9D%99%88-%F0%9D%98%89%F0%9D%98%A6-%F0%9D%98%88-%F0%9D%98%96%F0%9D%98%AF%F0%9D%98%A6-%F0%9D%98%90%F0%9D%98%AF-%F0%9D%98%88-%F0%9D%98%94%F0%9D%98%AA%F0%9D%98%AD%F0%9D%98%AD%F0%9D%98%AA%F0%9D%98%B0%F0%9D%98%AF-100064896061625/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 text-white transition-colors bg-[#363B4766] hover:bg-orange-500"
+            >
+              <FaFacebookF size={18} />
+            </a>
+            <a
+              href="https://www.instagram.com/baoiamofficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 text-white transition-colors bg-[#363B4766] hover:bg-orange-500"
+            >
+              <FaInstagram size={18} />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/baoiam-innovations-pvt-ltd/posts/?feedView=all"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 text-white transition-colors bg-[#363B4766] hover:bg-orange-500"
+            >
+              <FaLinkedinIn size={18} />
+            </a>
+            <a
+              href="https://x.com/baoiam1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 text-white transition-colors bg-[#363B4766] hover:bg-orange-500"
+            >
+              <FaTwitter size={18} />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCuUUMNDJ3DT-Ud_k5tkMVyA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 text-white transition-colors bg-[#363B4766] hover:bg-orange-500"
+            >
+              <FaYoutube size={18} />
+            </a>
+          </div>
         </div>
 
         {/* Dynamic Sections */}
