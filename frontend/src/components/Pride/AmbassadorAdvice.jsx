@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 // import ambassadorImage from "../../assets/Pride/AmbassadorSection/ambassador.png"; // replace with your actual path
 import ambassadorImage from "../../assets/Pride/AmbassadorAdvice/ambassador.webp";
 import HeadingImage from "../Lines/HeadingImages";
 import Group from "../../assets/Home/Lines/Group.webp";
+import ContactForm from "../../Pages/ContactForm";
 
 
 const AmbassadorAdvice = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <section className="relative font-['Poppins'] overflow-hidden">
       {/* Top White Area */}
@@ -27,9 +29,39 @@ const AmbassadorAdvice = () => {
           <button className="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-md md:text-xl  font-medium transition">
             Enroll Now
           </button>
-          <button className="bg-black hover:bg-gray-800 text-white px-5 py-2 rounded-md font-medium transition md:text-xl">
-            Talk to our Counsellor
-          </button>
+          <div className="text-left">
+            {/* The Button */}
+            <button
+              className="bg-black text-white border rounded-lg py-2 px-4 text-xl hover:bg-[#7B7B7B]"
+              onClick={() => setShowModal(true)}
+            >
+              Talk to our Counsellor
+            </button>
+
+            {/* The Modal */}
+
+            {showModal && (
+              <div
+                className="fixed inset-0 z-50 flex items-center justify-center bg-opacity-50"
+                onClick={() => setShowModal(false)}
+              >
+                <div
+                  className="relative max-w-xl w-full  "
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {/* Cross Button */}
+                  <button
+                    onClick={() => setShowModal(false)}
+                    className="absolute top-20 right-6 text-2xl text-gray-600 hover:text-black"
+                  >
+                    &times;
+                  </button>
+
+                  <ContactForm onClose={() => setShowModal(false)} />
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </div>
 

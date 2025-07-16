@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import rocket from "../../assets/Home/DataScienceBanner/rocket.webp";
 import human from "../../assets/Home/DataScienceBanner/human.webp";
 import { Link } from "react-router-dom";
+import ContactForm from "../../Pages/ContactForm";
 
 const DataScienceBanner = () => {
+    const [showModal, setShowModal] = useState(false);
+  
   return (
     <div
       className="
@@ -60,15 +63,45 @@ const DataScienceBanner = () => {
         </div>
 
         {/* Buttons */}
-        <div className="mt-4 md:mt-5 flex flex-col md:flex-row gap-3 md:gap-6 items-center md:items-start text-base md:text-[20px] font-medium">
+        <div className="mt-4 md:mt-5 xl:ml-20 flex flex-col md:flex-row gap-3 md:gap-6 items-center md:items-start text-base md:text-[20px] font-medium">
           <Link to="/DataScience">
             <button className="bg-black text-white px-5 py-2 rounded-lg hover:bg-[#7B7B7B] w-full md:w-auto">
               Enroll Now
             </button>
           </Link>
-          <button className="bg-white px-5 py-2 rounded-lg hover:bg-gray-400 text-black w-full md:w-auto">
-            Talk to our Counsellor
-          </button>
+          <div>
+            {/* The Button */}
+            <button
+              className=" text-black bg-white rounded-lg py-2 px-4 text-xl hover:bg-[#7B7B7B]"
+              onClick={() => setShowModal(true)}
+            >
+              Talk to our Counsellor
+            </button>
+
+            {/* The Modal */}
+
+            {showModal && (
+              <div
+                className="fixed inset-0 z-50 flex items-center justify-center bg-opacity-50"
+                onClick={() => setShowModal(false)}
+              >
+                <div
+                  className="relative max-w-xl w-full  "
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {/* Cross Button */}
+                  <button
+                    onClick={() => setShowModal(false)}
+                    className="absolute top-20 right-6 text-2xl text-gray-600 hover:text-black"
+                  >
+                    &times;
+                  </button>
+
+                  <ContactForm onClose={() => setShowModal(false)} />
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </div>
 

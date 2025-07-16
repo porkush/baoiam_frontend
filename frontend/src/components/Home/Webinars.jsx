@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 // import ambassadorImage from "../../assets/Pride/AmbassadorSection/ambassador.png"; // replace with your actual path
 import ambassadorImage from "../../assets/Pride/AmbassadorAdvice/ambassador.webp";
+import ContactForm from "../../Pages/ContactForm";
 
 const Webinars = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <section className="relative font-['Poppins'] overflow-hidden mb-16">
       {/* Top White Area */}
-      <div className="bg-white text-center px-4 py-12 mb-28">
-        <h2 className="text-3xl md:text-[48px] font-semibold mb-4">
+      <div className="bg-white \ px-4 py-12 mb-28">
+        <h2 className="text-3xl md:text-[48px] font-semibold mb-4 text-center">
           <span className="text-black">Webinars That </span>
-          <span className="text-orange-500">Inspire <span className="text-black">and </span> Impact</span>
+          <span className="text-orange-500">
+            Inspire <span className="text-black">and </span> Impact
+          </span>
         </h2>
 
         <p className="max-w-3xl mx-auto text-black md:text-[24px] mb-6">
@@ -19,9 +23,39 @@ const Webinars = () => {
           <button className="bg-[#FF6501] hover:bg-[#FF6501CC] text-white px-5 py-2 rounded-md md:text-xl  font-medium transition">
             Register for Webinar
           </button>
-          <button className="bg-black hover:bg-[#7B7B7B] text-white px-5 py-2 rounded-md font-medium transition md:text-xl">
-            Talk to our Counsellor
-          </button>
+          <div>
+            {/* The Button */}
+            <button
+              className="bg-black text-white border rounded-lg py-2 px-4 text-xl hover:bg-[#7B7B7B]"
+              onClick={() => setShowModal(true)}
+            >
+              Talk to our Counsellor
+            </button>
+
+            {/* The Modal */}
+
+            {showModal && (
+              <div
+                className="fixed inset-0 z-50 flex items-center justify-center bg-opacity-50"
+                onClick={() => setShowModal(false)}
+              >
+                <div
+                  className="relative max-w-xl w-full  "
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {/* Cross Button */}
+                  <button
+                    onClick={() => setShowModal(false)}
+                    className="absolute top-20 right-6 text-2xl text-gray-600 hover:text-black"
+                  >
+                    &times;
+                  </button>
+
+                  <ContactForm onClose={() => setShowModal(false)} />
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </div>
 

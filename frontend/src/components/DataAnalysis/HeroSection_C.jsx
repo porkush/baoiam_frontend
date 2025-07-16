@@ -220,7 +220,7 @@ export default function HeroSection_C() {
                   <button className="w-[127px] text-xl bg-orange-500 text-white py-1 rounded-lg font-medium hover:bg-orange-600 transition">
                     Buy Now
                   </button>
-                  <button className="w-[127px] text-xl bg-black text-white py-1 rounded-lg font-medium hover:bg-gray-900 transition">
+                  <button className="w-[137px] text-xl bg-black text-white py-1 rounded-lg font-medium hover:bg-gray-900 transition">
                     Add to Cart
                   </button>
                   <div className="flex items-center gap-4 ml-2 text-black">
