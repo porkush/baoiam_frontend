@@ -40,7 +40,7 @@ const Footer = () => {
         { label: "Udaan 90", href: "#" },
         { label: "Success Fusion Program", href: "#" },
         { label: "Pay after Placement", href: "#" },
-        { label: "Pride Fusion", href: "#" },
+        { label: "Pride Fusion", href: "/pride" },
       ],
     },
     {

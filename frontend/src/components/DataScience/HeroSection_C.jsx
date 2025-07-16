@@ -220,7 +220,7 @@ export default function HeroSection_C() {
               {/* Features */}
               <ul className="list-disc list-inside text-black text-lg font-poppins space-y-1 p-4">
                 <li>Lifetime course access</li>
-                <li>Cancel within 7 days for a full refund</li>
+                <li>Cancel within 2 days for a full refund</li>
                 <li>Hands-on projects & expert mentorship</li>
                 <li>Career coaching + interview preparation</li>
                 <li>Certificate of completion</li>

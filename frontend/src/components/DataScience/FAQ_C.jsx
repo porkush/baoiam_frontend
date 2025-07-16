@@ -48,7 +48,7 @@ const FAQ_C = () => {
     >
       <button
         onClick={() => toggleIndex(index)}
-        className="w-full flex justify-between items-center px-5 py-4 text-left text-gray-900 font-medium focus:outline-none transition"
+        className="w-full flex justify-between items-center px-5 py-4 text-left text-gray-900 font-medium focus:outline-none transition text-[20px]"
       >
         <span>{item.question}</span>
         {openIndex === index ? (
@@ -63,7 +63,7 @@ const FAQ_C = () => {
       </button>
       {openIndex === index && (
         <div className="px-5 pb-4 text-gray-700 text-sm border-t border-gray-300">
-          <p className="mb-3 mt-4 text-[16px]">{item.answer}</p>
+          <p className="mb-3 mt-4 text-[18px]">{item.answer}</p>
           <div className="bg-gray-100 mt-3 border-gray-200 p-4 rounded-lg flex items-center justify-between">
             <p className="text-[16px] font-medium">
               Enrollment Process for the Program
@@ -92,7 +92,7 @@ const FAQ_C = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3 text-center">
           Frequently Asked Questions
         </h2>
-        <p className="text-center mb-8 ">
+        <p className="text-center mb-8 text-[18px]">
           Still you have any questions? Contact our Team via
           <br />
           <a href="mailto:support@baoiam.com">support@baoiam.com</a>
