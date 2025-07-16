@@ -13,14 +13,6 @@ import { BsBookmark } from "react-icons/bs";
 import { FiSend } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
-
-
-
-
-
-
-
-
 export default function HeroSection_C() {
   return (
     <div className="bg-white font-['Poppins']">
@@ -45,8 +37,9 @@ export default function HeroSection_C() {
             Master Data Science
           </h1>
           <p className="w-full md:w-[600px] text-black text-[18px] md:text-[28px] mb-4 font-semibold text-center md:text-left">
-           From <span className="text-orange-500">Zero to Data Hero</span> – In just <span className="text-orange-500">12 Months!</span>
-           </p>
+            From <span className="text-orange-500">Zero to Data Hero</span> – In
+            just <span className="text-orange-500">12 Months!</span>
+          </p>
 
           <button className="inline-flex items-center bg-[#FF6501] text-white font-medium px-4 py-1 rounded-md hover:bg-orange-600 mb-6 text-[18px] mt-4">
             Download Brochure
@@ -142,7 +135,7 @@ export default function HeroSection_C() {
                 "Probability & Statistics",
                 "Baye's Theorem",
                 "Distribution",
-                "50+"
+                "50+",
               ].map((item, idx) => (
                 <span
                   key={idx}
@@ -160,90 +153,94 @@ export default function HeroSection_C() {
               Prerequisites for this course:
             </h2>
             <ul className="list-disc list-inside text-[18px] font-poppins text-black space-y-1 ml-3">
-              <li>Basic Mathematics - No Complex theorems, just simple logic!</li>
-              <li>Fundamentals of Programming - Any language(Python preferred).</li>
-              <li>A Curiosity Mindset - Willingness to explore and learn data-driven skills.</li>
-              <li>No prior Data Science Experience Needed - We'll start from the basis!</li>
+              <li>
+                Basic Mathematics - No Complex theorems, just simple logic!
+              </li>
+              <li>
+                Fundamentals of Programming - Any language(Python preferred).
+              </li>
+              <li>
+                A Curiosity Mindset - Willingness to explore and learn
+                data-driven skills.
+              </li>
+              <li>
+                No prior Data Science Experience Needed - We'll start from the
+                basis!
+              </li>
             </ul>
           </section>
         </div>
 
         {/* Right Side */}
-        <aside className="md:mt-0 ">
-          <div className=" rounded-lg p-4 border-[2px] border-[#99999966]">
-            <div className="bg-[#FF6501] text-white  rounded-lg px-4 py-2 mb-8">
-           <p className="text-[21px] font-medium  mx-2 ">
-             20,000+  Openings.  ₹7 LPA Median. You Could Be Next!
-            </p>
-          <p className="text-[16px] mx-2">
-          Start your journey to a high-paying job with Baoiam's expert-led training
-          </p>
-         </div>
+        <aside className="md:mt-0 w-full md:w-4/10">
+          <div className="rounded-lg p-4 border-[2px] border-[#99999966]">
+            <div className="bg-[#FF6501] text-white rounded-lg px-4 py-2 mb-8">
+              <p className="text-[21px] font-medium mx-2">
+                20,000+ Openings. ₹7 LPA Median. You Could Be Next!
+              </p>
+              <p className="text-[16px] mx-2">
+                Start your journey to a high-paying job with Baoiam's expert-led
+                training
+              </p>
+            </div>
 
-
-            <div className="relative mb-4 rounded-xl overflow-hidden w-[527px] h-[320px]">
+            {/* Video Preview with Play Button */}
+            <div className="relative mb-4 rounded-xl overflow-hidden">
               <img
                 src={DS}
                 alt="Course Preview"
-                className="w-full h-full object-cover rounded-xl"
+                className="w-full h-auto object-cover rounded-xl"
               />
-
-              <button
-                className="absolute inset-0 flex items-center justify-center rounded-xl transition"
-                style={{
-                  background: "rgba(0, 0, 0, 0.3)",
-                }}
-              >
+              <button className="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/40 transition">
                 <MdPlayCircle className="text-white text-[80px] opacity-90 hover:opacity-100 transition-opacity duration-300" />
               </button>
             </div>
 
-            <h3 className="text-[18px] text-black mb-6 mt-6 ">Get a First Look at the Course in Action.</h3>
-            <div className="max-w-xl mx-auto bg-white  overflow-hidden  border-gray-200">
-              
-              <div className="flex ">
-                <p className="flex-1  text-start font-medium text-[20px] text-orange-500 border-b-2 border-orange-500">
+            <h3 className="text-[18px] text-black mb-6 mt-6">
+              Get a First Look at the Course in Action.
+            </h3>
+
+            {/* Purchase Summary */}
+            <div className="max-w-xl mx-auto bg-white overflow-hidden border-gray-200">
+              <div className="flex">
+                <p className="flex-1 text-start font-medium text-[20px] text-orange-500 border-b-2 border-orange-500">
                   Purchase Summary
                 </p>
-               
               </div>
 
               {/* Pricing */}
-             
-                <div className="border-gray-300 font-poppins p-1 mt-2 text-[20px]">
-                    <p className="text-black mb-1">
-                      <span className="underline">Course Fee:</span> <span className="text-orange-600">₹4,999</span> (One-time payment)
-                   </p>
-                </div>
-
-                
-              
+              <div className="border-gray-300 font-poppins p-1 mt-2 text-[20px]">
+                <p className="text-black mb-1">
+                  <span className="underline">Course Fee:</span>{" "}
+                  <span className="text-orange-600">₹4,999</span> (One-time
+                  payment)
+                </p>
+              </div>
 
               {/* Features */}
               <ul className="list-disc list-inside text-black text-lg font-poppins space-y-1 p-4">
                 <li>Lifetime course access</li>
                 <li>Cancel within 7 days for a full refund</li>
                 <li>Hands-on projects & expert mentorship</li>
-                <li>Personalized career coaching & interview preparation</li>
+                <li>Career coaching + interview preparation</li>
                 <li>Certificate of completion</li>
               </ul>
 
               {/* Buttons */}
               <div className="flex justify-center p-2">
-  <div className="flex items-center gap-3">
-    <button className="w-[127px] text-xl bg-orange-500 text-white py-1 rounded-lg font-medium hover:bg-orange-600 transition">
-      Buy Now
-    </button>
-    <button className="w-[127px] text-xl bg-black text-white py-1 rounded-lg font-medium hover:bg-gray-900 transition">
-      Add to Cart
-    </button>
-    <div className="flex items-center gap-4  ml-2 text-black">
-      <BsBookmark className="w-[20px] h-[20px]" />
-      <FiSend className="w-[23px] h-[26px]" />
-    </div>
-  </div>
-</div>
-
+                <div className="flex items-center gap-3">
+                  <button className="w-[127px] text-xl bg-orange-500 text-white py-1 rounded-lg font-medium hover:bg-orange-600 transition">
+                    Buy Now
+                  </button>
+                  <button className="w-[127px] text-xl bg-black text-white py-1 rounded-lg font-medium hover:bg-gray-900 transition">
+                    Add to Cart
+                  </button>
+                  <div className="flex items-center gap-4 ml-2 text-black">
+                    <BsBookmark className="w-[20px] h-[20px]" />
+                    <FiSend className="w-[23px] h-[26px]" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </aside>
