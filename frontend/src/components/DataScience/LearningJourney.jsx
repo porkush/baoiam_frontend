@@ -120,16 +120,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 import React, { useState } from "react";
 
 const modules = [
@@ -175,6 +165,9 @@ const modules = [
     items: ["Overview of Data Science", "Importance of Data Science"],
   },
 ];
+
+
+
 
 const LearningJourney = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -247,5 +240,6 @@ const LearningJourney = () => {
   );
 };
 
-export default LearningJourney;
 
+
+export default LearningJourney;

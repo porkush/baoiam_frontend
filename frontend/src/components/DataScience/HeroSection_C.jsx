@@ -4,7 +4,7 @@ import { FaStar } from "react-icons/fa";
 import { HiOutlineDownload } from "react-icons/hi";
 import { MdPlayCircle } from "react-icons/md";
 import avatar from "../../assets/CoursesLayout/CoursesPage/avatar.png";
-import Expert from "../../assets/CoursesLayout/CoursesPage/Expert.png";
+import Expert from "../../assets/CoursesLayout/CoursesPage/DS_Expert.png";
 import DS from "../../assets/CoursesLayout/CoursesPage/DS.png";
 import globe from "../../assets/CoursesLayout/CoursesPage/globe.png";
 import laptop from "../../assets/CoursesLayout/CoursesPage/laptop.png";
@@ -18,10 +18,10 @@ export default function HeroSection_C() {
     <div className="bg-white font-['Poppins']">
       {/* Breadcrumbs */}
 
-      <div className="max-w-9/10 mx-auto p-4 md:flex md:space-x-8 mt-10">
+      <div className="max-w-10/11 mx-auto p-4 md:flex md:space-x-12 mt-10">
         {/* Left Side */}
         <div className="flex-1 text-[18px]">
-          <nav className="flex items-center text-black sm:text-lg md:text-[18px]  mb-10">
+          <nav className="flex items-center text-black sm:text-lg md:text-[18px]  mb-10 ml-4">
             <Link to="/">
               <AiFillHome className="w-5 h-5" />
             </Link>
@@ -36,7 +36,7 @@ export default function HeroSection_C() {
           <h1 className="text-3xl md:text-[40px] font-semibold mb-4">
             Master Data Science
           </h1>
-          <p className="w-full md:w-[600px] text-black text-[18px] md:text-[28px] mb-4 font-semibold text-center md:text-left">
+          <p className="w-full md:w-[650px] text-black text-[18px] md:text-[28px] mb-4 font-semibold text-center md:text-left">
             From <span className="text-orange-500">Zero to Data Hero</span> – In
             just <span className="text-orange-500">12 Months!</span>
           </p>
@@ -54,7 +54,7 @@ export default function HeroSection_C() {
             />
 
             <div className="text-center">
-              <p className="text-[18px] text-[#1B1B1B99]">
+              <p className="text-[16px] text-[#1B1B1B99]">
                 Data Science Expert
               </p>
             </div>
@@ -65,7 +65,7 @@ export default function HeroSection_C() {
                 alt="Learners Icon"
                 className="w-[28px] h-[28px] object-cover rounded-full ml-2 mr-1"
               />
-              <p className="text-[18px] text-[#1B1B1B99]">Hindi, English</p>
+              <p className="text-[16px] text-[#1B1B1B99]">Hindi, English</p>
             </div>
             <div className="flex items-center justify-center">
               <img
@@ -73,7 +73,7 @@ export default function HeroSection_C() {
                 alt="Learners Icon"
                 className="w-[28px] h-[28px] object-cover rounded-full ml-2 mr-1"
               />
-              <p className="text-[18px] text-[#1B1B1B99]">
+              <p className="text-[16px] text-[#1B1B1B99]">
                 Last updated - June 2025
               </p>
             </div>
@@ -152,7 +152,7 @@ export default function HeroSection_C() {
             <h2 className="text-[24px] font-semibold font-poppins mb-4 ">
               Prerequisites for this course:
             </h2>
-            <ul className="list-disc list-inside text-[18px] font-poppins text-black space-y-1 ml-3">
+            <ul className="list-disc list-inside text-[17px] font-poppins text-black space-y-1 ml-3">
               <li>
                 Basic Mathematics - No Complex theorems, just simple logic!
               </li>
@@ -172,13 +172,13 @@ export default function HeroSection_C() {
         </div>
 
         {/* Right Side */}
-        <aside className="md:mt-0 w-full md:w-4/10">
+        <aside className="md:mt-0 ">
           <div className="rounded-lg p-4 border-[2px] border-[#99999966]">
             <div className="bg-[#FF6501] text-white rounded-lg px-4 py-2 mb-8">
-              <p className="text-[21px] font-medium mx-2">
+              <p className="text-[16px] mx-2">
                 20,000+ Openings. ₹7 LPA Median. You Could Be Next!
               </p>
-              <p className="text-[16px] mx-2">
+              <p className="text-[11px] mx-2">
                 Start your journey to a high-paying job with Baoiam's expert-led
                 training
               </p>
