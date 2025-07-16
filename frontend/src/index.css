@@ -22,3 +22,18 @@
 .animate-gradient {
   animation: gradient 3s linear infinite;
 }
+
+
+
+
+
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}

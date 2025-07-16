@@ -65,6 +65,8 @@ import { useEffect, useState } from "react";
 import ScrollToTop from "./components/ScrollToTop";
 import DataAnalysisPage from "./components/DataAnalysis/DataAnalysisPage";
 import DataSciencePage from "./components/DataScience/DataSciencePage";
+import Contact from "./components/Footer/Contact";
+import ContactForm from "./Pages/ContactForm";
 
 
 function App() {
@@ -95,6 +97,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/pride" element={<PridePage />} />
+                <Route path="/pride2" element={<ContactForm/>} />
               </Routes>
             </>
           } />

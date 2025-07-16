@@ -73,8 +73,15 @@
 
 import logo from "../../assets/Home/Navbar/logoLight.webp";
 import MobileMockup from "../../assets/Footer/Contact/Mobile_Mockups.png";
+import ThankYou from "../../assets/Footer/Contact/ThankYou.png";
+import { useState } from "react";
 
 const Contact = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = () => setShowModal(true);
+  const closeModal = () => setShowModal(false);
+
   return (
     <div className="w-full bg-gray-100 text-black font-['Poppins']">
       <div className="flex flex-col md:flex-row md:flex-wrap md:pl-[30px] items-start ">
@@ -87,14 +94,14 @@ const Contact = () => {
           />
 
           <p className="text-sm text-justify font-normal font-poppins pb-6 min-w-[200px] mb-4">
-            BAOIAM is India’s leading affordable EdTech platform committed to
+            BAOIAM is India's leading affordable EdTech platform committed to
             empowering students through skill-based learning and guaranteed
             career support. We offer industry-relevant certification programs in
             Data Analytics, Digital Marketing with AI, Software Testing,
             Communication Skills, and more — combining expert-led live training,
             internships, and placement support. Our mission is to bridge the gap
             between education and employability, making career success
-            accessible to all.
+            accessible to all.
           </p>
 
           <p className="text-base mb-7 font-poppins">
@@ -116,9 +123,37 @@ const Contact = () => {
                 className="bg-white px-3 py-1 flex-grow focus:outline-none text-black text-sm"
               />
             </div>
-            <button className="bg-orange-500 text-white px-4 py-1 rounded-none sm:rounded-r-lg hover:bg-orange-600 transition-colors duration-300 whitespace-nowrap border border-orange-500 w-full sm:w-auto">
-              Get Callback
-            </button>
+            <div>
+              <button
+                onClick={openModal}
+                className="bg-orange-500 text-white px-4 py-1 rounded-none sm:rounded-r-lg hover:bg-orange-600 transition-colors duration-300 whitespace-nowrap border border-orange-500 w-full sm:w-auto"
+              >
+                Get Callback
+              </button>
+
+              {/* Modal Overlay with fade effect */}
+              {showModal && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center  bg-opacity-20">
+                  <div className="relative bg-transparent">
+                    {/* Close (X) Button */}
+                    <button
+                      onClick={closeModal}
+                      className="absolute top-1 right-1 text-white  bg-opacity-50 hover:bg-opacity-80 rounded-full w-8 h-8 flex items-center justify-center text-xl z-10"
+                    >
+                      &times;
+                    </button>
+
+                    {/* Thank You Image with transparent background */}
+                    <img
+                      src={ThankYou}
+                      alt="Thank You"
+                      className="w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] object-contain"
+                      style={{ background: 'transparent' }}
+                    />
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
 
           <div className="mt-5">
@@ -131,18 +166,12 @@ const Contact = () => {
           </div>
         </div>
 
-        
         {/* Image Column */}
         <div className="flex-1 w-full md:w-auto md:px-0 mt-8 md:mt-0">
           <img
             src={MobileMockup}
             alt="Mobile App Mockup"
-            className="
-      w-[220px]   // Smaller width on mobile
-      sm:w-[280px] // Slightly larger on small screens
-      md:w-full md:max-w-[400px] md:h-[650px]
-      h-auto object-contain mx-auto
-    "
+            className="w-[220px] sm:w-[280px] md:w-full md:max-w-[400px] md:h-[650px] h-auto object-contain mx-auto"
           />
         </div>
       </div>
