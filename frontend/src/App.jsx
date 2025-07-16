@@ -67,6 +67,8 @@ import DataAnalysisPage from "./components/DataAnalysis/DataAnalysisPage";
 import DataSciencePage from "./components/DataScience/DataSciencePage";
 import Contact from "./components/Footer/Contact";
 import ContactForm from "./Pages/ContactForm";
+import TermsAndConditions from "./Pages/TermsAndConditions";
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
 
 
 function App() {
@@ -97,7 +99,8 @@ function App() {
               <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/pride" element={<PridePage />} />
-                <Route path="/pride2" element={<ContactForm/>} />
+                <Route path="/terms&conditions" element={<TermsAndConditions/>} />
+                <Route path="/Privacy&Policy" element={<PrivacyPolicy/>} />
               </Routes>
             </>
           } />
