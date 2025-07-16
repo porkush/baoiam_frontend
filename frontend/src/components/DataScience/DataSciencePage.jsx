@@ -7,13 +7,17 @@ import BoughtTogether from './BoughtTogether'
 import Experts from './Experts'
 import FlexibleCourses from './FlexibleCourses'
 import Navbar_C from "../DataAnalysis/Navbar_C";
+import LearningJourney from './LearningJourney'
+import CertificateSection from './CertificateSection'
 const DataSciencePage = () => {
   return (
     <div>
       <Navbar_C/>
       <HeroSection_C/>
+      <LearningJourney/>
       <BoughtTogether/>
       <Experts/>
+      <CertificateSection/>
       <FlexibleCourses/>
       <FAQ_C/>
       <DiscountBanner/>

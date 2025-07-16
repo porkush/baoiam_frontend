@@ -13,6 +13,14 @@ import { BsBookmark } from "react-icons/bs";
 import { FiSend } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
+
+
+
+
+
+
+
+
 export default function HeroSection_C() {
   return (
     <div className="bg-white font-['Poppins']">
@@ -20,25 +28,26 @@ export default function HeroSection_C() {
 
       <div className="max-w-9/10 mx-auto p-4 md:flex md:space-x-8 mt-10">
         {/* Left Side */}
-        <div className="flex-1">
-          <nav className="flex items-center text-black sm:text-lg md:text-[24px]  mb-6">
+        <div className="flex-1 text-[18px]">
+          <nav className="flex items-center text-black sm:text-lg md:text-[18px]  mb-10">
             <Link to="/">
               <AiFillHome className="w-5 h-5" />
             </Link>
             <AiOutlineRight className="w-4 h-4 mx-2" />
-            <Link to="/">
+            {/* <Link to="/">
               <span>Home</span>
             </Link>
-            <AiOutlineRight className="w-4 h-4 mx-2" />
+            <AiOutlineRight className="w-4 h-4 mx-2" /> */}
+
             <span>Master Data Science</span>
           </nav>
-          <h1 className="text-3xl md:text-[40px] font-semibold mb-6">
+          <h1 className="text-3xl md:text-[40px] font-semibold mb-4">
             Master Data Science
           </h1>
-          <p className="text-black text-3xl md:text-[40px] mb-4 font-semibold">
-            From <span className="text-orange-500">Zero to Data Hero</span> -{" "}
-            <br /> In just <span className="text-orange-500">12 Months!</span>
-          </p>
+          <p className="w-full md:w-[600px] text-black text-[18px] md:text-[28px] mb-4 font-semibold text-center md:text-left">
+           From <span className="text-orange-500">Zero to Data Hero</span> – In just <span className="text-orange-500">12 Months!</span>
+           </p>
+
           <button className="inline-flex items-center bg-[#FF6501] text-white font-medium px-4 py-1 rounded-md hover:bg-orange-600 mb-6 text-[18px] mt-4">
             Download Brochure
           </button>
@@ -48,14 +57,11 @@ export default function HeroSection_C() {
             <img
               src={Expert}
               alt="Instructor"
-              className="rounded-full w-12 h-12 object-cover"
+              className="rounded-full w-[36px] h-[36px] object-cover"
             />
 
             <div className="text-center">
-              <p className="text-[18px] font-medium text-[#FF6501] flex items-center justify-center">
-                Anshum Sen
-              </p>
-              <p className="text-[12px] text-[#1B1B1B99]">
+              <p className="text-[18px] text-[#1B1B1B99]">
                 Data Science Expert
               </p>
             </div>
@@ -64,7 +70,7 @@ export default function HeroSection_C() {
               <img
                 src={globe}
                 alt="Learners Icon"
-                className="w-[32px] h-[32px] object-cover rounded-full ml-2 mr-1"
+                className="w-[28px] h-[28px] object-cover rounded-full ml-2 mr-1"
               />
               <p className="text-[18px] text-[#1B1B1B99]">Hindi, English</p>
             </div>
@@ -72,7 +78,7 @@ export default function HeroSection_C() {
               <img
                 src={laptop}
                 alt="Learners Icon"
-                className="w-[32px] h-[32px] object-cover rounded-full ml-2 mr-1"
+                className="w-[28px] h-[28px] object-cover rounded-full ml-2 mr-1"
               />
               <p className="text-[18px] text-[#1B1B1B99]">
                 Last updated - June 2025
@@ -120,11 +126,11 @@ export default function HeroSection_C() {
           </div>
 
           {/* What will you learn */}
-          <section className="mb-6">
-            <h2 className="text-[24px] font-semibold mb-2  text-black">
+          <section className="mb-8">
+            <h2 className="text-[24px] font-semibold mb-6  text-black">
               What will you learn?
             </h2>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 cursor-default ">
               {[
                 "Python",
                 "NumPy",
@@ -136,6 +142,7 @@ export default function HeroSection_C() {
                 "Probability & Statistics",
                 "Baye's Theorem",
                 "Distribution",
+                "50+"
               ].map((item, idx) => (
                 <span
                   key={idx}
@@ -149,24 +156,30 @@ export default function HeroSection_C() {
 
           {/* Prerequisites */}
           <section>
-            <h2 className="text-[24px] font-semibold mb-2">
+            <h2 className="text-[24px] font-semibold font-poppins mb-4 ">
               Prerequisites for this course:
             </h2>
-            <ul className="list-disc list-inside text-[18px] text-black space-y-1">
-              <li>Basic Mathematics (No Worry – No Complex Theorems!)</li>
-              <li>Basics of Programming.</li>
-              <li>Curiosity and interest towards Data skills.</li>
-              <li>No prior experience in data science is required.</li>
+            <ul className="list-disc list-inside text-[18px] font-poppins text-black space-y-1 ml-3">
+              <li>Basic Mathematics - No Complex theorems, just simple logic!</li>
+              <li>Fundamentals of Programming - Any language(Python preferred).</li>
+              <li>A Curiosity Mindset - Willingness to explore and learn data-driven skills.</li>
+              <li>No prior Data Science Experience Needed - We'll start from the basis!</li>
             </ul>
           </section>
         </div>
 
         {/* Right Side */}
         <aside className="md:mt-0 ">
-          <div className=" rounded-lg p-6 border-[2px] border-[#99999966]">
-            <div className="bg-[#FF6501] text-white text-[18px] rounded-lg px-4 py-2 mb-8">
-              Rs 7 LPA median salary, 20,000 jobs available
-            </div>
+          <div className=" rounded-lg p-4 border-[2px] border-[#99999966]">
+            <div className="bg-[#FF6501] text-white  rounded-lg px-4 py-2 mb-8">
+           <p className="text-[21px] font-medium  mx-2 ">
+             20,000+  Openings.  ₹7 LPA Median. You Could Be Next!
+            </p>
+          <p className="text-[16px] mx-2">
+          Start your journey to a high-paying job with Baoiam's expert-led training
+          </p>
+         </div>
+
 
             <div className="relative mb-4 rounded-xl overflow-hidden w-[527px] h-[320px]">
               <img
@@ -185,52 +198,52 @@ export default function HeroSection_C() {
               </button>
             </div>
 
-            <h3 className="text-[18px] text-black mb-2">Preview this Course</h3>
-            <div className="max-w-md mx-auto bg-white  overflow-hidden  border-gray-200">
-              {/* Tabs */}
+            <h3 className="text-[18px] text-black mb-6 mt-6 ">Get a First Look at the Course in Action.</h3>
+            <div className="max-w-xl mx-auto bg-white  overflow-hidden  border-gray-200">
+              
               <div className="flex ">
-                <button className="flex-1 py-3 text-center font-medium text-orange-500 border-b-2 border-orange-500">
-                  Individual
-                </button>
-                <button className="flex-1 py-3 text-center font-medium text-orange-500 border-b-2 border-gray-200">
-                  Team
-                </button>
+                <p className="flex-1  text-start font-medium text-[20px] text-orange-500 border-b-2 border-orange-500">
+                  Purchase Summary
+                </p>
+               
               </div>
 
               {/* Pricing */}
-              <div className="grid grid-cols-2 border-b-2 border-gray-300 text-[18px]">
-                <div className="border-r-2 border-gray-300 p-1 mt-2">
-                  <p className="text-black mb-1">Subscription (Monthly):</p>
-                  <p className="text-black">₹XXX/month</p>
+             
+                <div className="border-gray-300 font-poppins p-1 mt-2 text-[20px]">
+                    <p className="text-black mb-1">
+                      <span className="underline">Course Fee:</span> <span className="text-orange-600">₹4,999</span> (One-time payment)
+                   </p>
                 </div>
-                <div className="p-3">
-                  <p className="text-black mb-1">Subscription Bundle:</p>
-                  <p className="text-black">₹XXX/month</p>
-                </div>
-              </div>
+
+                
+              
 
               {/* Features */}
-              <ul className="list-disc list-inside text-black text-sm space-y-2 p-4">
-                <li>₹XXX (One-time payment)</li>
-                <li>Cancel anytime</li>
-                <li>Hands-on projects with expert feedback</li>
-                <li>Personalized career coaching & interview prep</li>
-                <li>Program certificate</li>
+              <ul className="list-disc list-inside text-black text-lg font-poppins space-y-1 p-4">
+                <li>Lifetime course access</li>
+                <li>Cancel within 7 days for a full refund</li>
+                <li>Hands-on projects & expert mentorship</li>
+                <li>Personalized career coaching & interview preparation</li>
+                <li>Certificate of completion</li>
               </ul>
 
               {/* Buttons */}
-              <div className="flex space-x-3 p-4">
-                <button className="flex-1 bg-orange-500 text-white py-2 rounded-lg font-medium hover:bg-orange-600 transition">
-                  Buy Now
-                </button>
-                <button className="flex-1 bg-black text-white py-2 rounded-lg font-medium hover:bg-gray-900 transition">
-                  Add to Cart
-                </button>
-                <div className="flex items-center gap-4 ml-3 text-black">
-                  <BsBookmark className="w-6 h-6" />
-                  <FiSend className="w-6 h-6" />
-                </div>
-              </div>
+              <div className="flex justify-center p-2">
+  <div className="flex items-center gap-3">
+    <button className="w-[127px] text-xl bg-orange-500 text-white py-1 rounded-lg font-medium hover:bg-orange-600 transition">
+      Buy Now
+    </button>
+    <button className="w-[127px] text-xl bg-black text-white py-1 rounded-lg font-medium hover:bg-gray-900 transition">
+      Add to Cart
+    </button>
+    <div className="flex items-center gap-4  ml-2 text-black">
+      <BsBookmark className="w-[20px] h-[20px]" />
+      <FiSend className="w-[23px] h-[26px]" />
+    </div>
+  </div>
+</div>
+
             </div>
           </div>
         </aside>
