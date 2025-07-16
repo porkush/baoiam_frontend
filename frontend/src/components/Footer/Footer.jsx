@@ -79,22 +79,48 @@ const Footer = () => {
             launches.
           </p>
           <div className="flex space-x-3">
-            {[FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube].map(
-              (Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`p-3 text-white transition-colors 
-                bg-[#363B4766] hover:bg-orange-500
-              `}
-                >
-                  <Icon size={18} />
-                </a>
-              )
-            )}
-          </div>
+  <a
+    href="#"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="p-3 text-white transition-colors bg-[#363B4766] hover:bg-orange-500"
+  >
+    <FaFacebookF size={18} />
+  </a>
+  <a
+    href="https://www.instagram.com/baoiamofficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+    target="_blank"
+    rel="noopener noreferrer"
+    className="p-3 text-white transition-colors bg-[#363B4766] hover:bg-orange-500"
+  >
+    <FaInstagram size={18} />
+  </a>
+  <a
+    href="https://www.linkedin.com/company/baoiam-innovations-pvt-ltd/posts/?feedView=all"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="p-3 text-white transition-colors bg-[#363B4766] hover:bg-orange-500"
+  >
+    <FaLinkedinIn size={18} />
+  </a>
+  <a
+    href="#"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="p-3 text-white transition-colors bg-[#363B4766] hover:bg-orange-500"
+  >
+    <FaTwitter size={18} />
+  </a>
+  <a
+    href="#"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="p-3 text-white transition-colors bg-[#363B4766] hover:bg-orange-500"
+  >
+    <FaYoutube size={18} />
+  </a>
+</div>
+
         </div>
 
         {/* Dynamic Sections */}
