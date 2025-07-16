@@ -37,8 +37,8 @@ export default function HeroSection_C() {
             Master Data Analysis
           </h1>
           <p className="w-full md:w-[650px] text-black text-[18px] md:text-[28px] mb-4 font-semibold text-center md:text-left">
-            From <span className="text-orange-500">Zero to Data Hero</span> – In
-            just <span className="text-orange-500">12 Months!</span>
+            Build Skills that <span className="text-orange-500">Turn Data</span> into
+            just <span className="text-orange-500">Decision.</span>
           </p>
 
           <button className="inline-flex items-center bg-[#FF6501] text-white font-medium px-4 py-1 rounded-md hover:bg-orange-600 mb-6 text-[18px] mt-4">
