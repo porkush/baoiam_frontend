@@ -8,7 +8,7 @@ const TermsAndConditions = ({ onClose }) => {
         {/* CLOSE BUTTON */}
         
         <h2 className="text-3xl font-bold text-center mb-10 text-orange-500">
-          Terms and Conditions – Baoiam Innovations Pvt. Ltd.
+          Terms and Conditions – <span className="text-black">Baoiam Innovations Pvt. Ltd.</span>
         </h2>
 
         {/* <p className="text-[20px] font-semibold mb-2 xl:ml-20">
