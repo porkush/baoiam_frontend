@@ -20,9 +20,39 @@ const Webinars = () => {
           Join the webinar that makes learning unforgettable.
         </p>
         <div className="flex justify-center gap-4 flex-wrap">
-          <button className="bg-[#FF6501] hover:bg-[#FF6501CC] text-white px-5 py-2 rounded-md md:text-xl  font-medium transition">
-            Register for Webinar
-          </button>
+          <div>
+            {/* The Button */}
+            <button
+              className="bg-[#FF6501] hover:bg-[#FF6501CC] text-white px-5 py-2 rounded-md md:text-xl  font-medium transition"
+              onClick={() => setShowModal(true)}
+            >
+              Register for Webinar
+            </button>
+
+            {/* The Modal */}
+
+            {showModal && (
+              <div
+                className="fixed inset-0 z-50 flex items-center justify-center bg-opacity-50"
+                onClick={() => setShowModal(false)}
+              >
+                <div
+                  className="relative max-w-xl w-full  "
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {/* Cross Button */}
+                  <button
+                    onClick={() => setShowModal(false)}
+                    className="absolute top-20 right-6 text-2xl text-gray-600 hover:text-black"
+                  >
+                    &times;
+                  </button>
+
+                  <ContactForm onClose={() => setShowModal(false)} />
+                </div>
+              </div>
+            )}
+          </div>
           <div>
             {/* The Button */}
             <button

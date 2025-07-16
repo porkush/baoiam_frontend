@@ -7,10 +7,10 @@ export default function CertificateSection() {
       {/* Heading */}
       <div className="text-center mb-6">
         <h2 className="text-[40px] font-poppins md:text-4xl font-medium text-black">
-          Get <span className="text-orange-500">Govt. Recognised</span> Certificate
+          Earn <span className="text-orange-500">Certificates</span> That Speak for <span className="text-orange-500">Your Skills</span> 
         </h2>
         <p className="mt-2 text-black mb-9 font-medium font-poppins text-[16px] md:text-base">
-          Our MSME recognised Certificate would increase your chances towards the steps of employment
+          Showcase your achievement with an industry-recognized certificate from Baoiam.
         </p>
       </div>
 
@@ -20,7 +20,7 @@ export default function CertificateSection() {
           <img
             src={certificateImage}
             alt="Certificate"
-            className="w-[636px] h-[450px] object-contain rounded-[10px]"
+            className="w-[1100px] h-[550px] object-contain rounded-[10px]"
           />
         </div>
       </div>
