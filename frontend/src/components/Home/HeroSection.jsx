@@ -45,7 +45,7 @@ export default function HeroSection() {
               ].map((text, idx) => (
                 <li
                   key={idx}
-                  className="flex items-center w-full px-3 py-2 rounded-[5px] bg-[#F8F8F8] gap-3 font-medium text-base md:text-lg transition-all hover:bg-orange-50"
+                  className="flex items-center w-full px-3 py-2 rounded-[5px] bg-[#F8F8F8] gap-3 font-medium text-base md:text-lg transition-all hover:bg-gray-200"
                 >
                   <input
                     type="radio"
