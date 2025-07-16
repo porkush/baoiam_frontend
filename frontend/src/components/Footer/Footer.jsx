@@ -15,7 +15,7 @@ const FooterLinksSection = ({ heading, items }) => {
   return (
     <div className="text-sm font-['Poppins']">
       <h5 className="text-white mb-6">{heading}</h5>
-      <ul className="space-y-2 text-gray-500">
+      <ul className="space-y-4 text-gray-500">
         {items.map((item, index) => (
           <li key={index}>
             <a
@@ -74,7 +74,7 @@ const Footer = () => {
         alt="Baoiam Logo"
         className="h-[72px] w-[100px] mb-1"
       />
-      <p className="text-base text-justify mb-4">
+      <p className="text-base  text-justify mb-4">
         Follow us for the latest updates, career insights, and program
         launches.
       </p>
