@@ -104,9 +104,10 @@ const Experts = () => {
 
   return (
   <div className="w-full lg:w-[1440px] border-b-2 border-gray-200 mx-auto flex flex-col items-center justify-center relative px-4 md:px-8 py-4 ">
-    <h2 className="text-2xl md:text-[32px] lg:text-[40px] mb-8 text-center font-medium lg:text-left font-['Poppins'] text-black">
-      Taught by the best
+    <h2 className="text-2xl md:text-[32px] lg:text-[40px] mb-3 text-center font-medium lg:text-left font-['Poppins'] text-black">
+      Taught by the <span className="text-orange-500">{" "}Best</span>
     </h2>
+    <p className="max-w-2xl text-center text-[16px] font-medium font-['Poppins'] text-black mb-8">Learn from Industry Titans Master skills from seasoned professionals who’ve worked at top tech companies.</p>
 
     <div className="relative w-full lg:w-[1400px] flex items-center justify-center overflow-hidden">
       {/* Left Arrow */}

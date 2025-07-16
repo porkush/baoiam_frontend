@@ -61,10 +61,10 @@ const BoughtTogether = () => {
   return (
     <div className="w-full h-auto py-4 bg-white flex flex-col items-center justify-center px-4 md:px-4">
       <h2 className="text-2xl md:text-[40px] font-medium mb-3 text-center md:text-left">
-        Frequently Bought together
+        Frequently{" "} <span className="text-orange-500">Bought together</span>
       </h2>
-      <h3 className="text-base md:text-[20px] font-medium mb-8 md:mb-10 text-center">
-        Purchase everything you need all in one bundle.
+      <h3 className="text-base max-w-2xl  md:text-[20px] font-medium mb-8 md:mb-10 text-center">
+        Learn from Industry Titans Master skills from seasoned professionals who’ve worked at top tech companies.
       </h3>
       <div className="flex flex-col md:flex-row items-center md:justify-center gap-4">
         {courses.slice(0, 3).map((course, index, arr) => (
