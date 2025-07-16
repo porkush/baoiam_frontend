@@ -1,13 +1,13 @@
-import React, { useRef, useState } from "react";
+
+
+import React, { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { IoStar, IoStarHalf, IoStarOutline } from "react-icons/io5";
-
 
 import Toshika_Mam from "../../assets/CoursesLayout/Experts/Toshika_Mam.png";
 import Sudhanshu_sir from "../../assets/CoursesLayout/Experts/Sudhanshu_sir.png";
 import Siddhart_sir from "../../assets/CoursesLayout/Experts/Siddhart_Sir.png";
 import Anudeep_Marlapali from "../../assets/CoursesLayout/Experts/Anudeep_Marlapali.png";
-
 
 const trainers = [
   {
@@ -35,7 +35,7 @@ const trainers = [
     image: Siddhart_sir,
   },
   {
-    name: "Anudeep Marlapalli",
+    name: "Anudeep Marlapali",
     role: "Data Science & Software Development Expert",
     experience: "6+ Years",
     rating: 4.8,
@@ -57,18 +57,19 @@ const TrainerCard = ({ image, name, role, experience, rating, student }) => {
     });
 
   return (
-    <div className="h-[264px] w-[390px] relative overflow-visible flex items-center justify-center flex-shrink-0">
+    <div className="h-[264px] w-[375px] relative overflow-visible flex items-center justify-center flex-shrink-0">
       <div className="relative w-full h-[156px] bg-[#FF6501] rounded-[10px] flex items-end px-2 pt-10 pb-4">
         <img
           src={image}
           alt={name}
-          className="absolute w-[171px] h-[206px] -top-[50px] left-0 object-contain"
+          className="absolute w-[165px] h-[206px] -top-[50px] left-0 object-contain"
         />
         <div className="ml-[160px] mb-3 text-left text-white">
-          <h3 className="text-[25px] font-medium mb-1">{name}</h3>
+          <h3 className="text-[23px] font-medium mb-1">{name}</h3>
           <p className="text-[12px] font-medium -mt-2">{role}</p>
           <p className="text-sm font-medium font-poppins mt-2 mb-2">
-            <span className="font-medium text-[14px]">Experienced</span> – {experience}
+            <span className="font-medium text-[14px]">Experienced</span> –{" "}
+            {experience}
           </p>
           <div className="flex items-center gap-1 bg-white py-1 px-1 rounded-md">
             <div className="flex">{stars}</div>
@@ -96,77 +97,64 @@ const Experts = () => {
     }
   };
 
-  // Calculate the transform value based on currentIndex
   const getTransformValue = () => {
-    // Each card is 385px wide with 24px gap (385 + 24 = 409)
-    return `translateX(-${currentIndex * 409}px)`;
+    // Each card is 390px wide + 24px gap = 414px
+    return `translateX(-${currentIndex * 414}px)`;
   };
 
+  // Calculate the exact width for 3 cards + 2 gaps
+  const threeCardsWidth = (390 * 3) + (24 * 2); // 1170 + 48 = 1218px
+
   return (
-  <div className="w-full lg:w-[1440px] border-b-2 border-gray-200 mx-auto flex flex-col items-center justify-center relative px-4 md:px-8 py-4 ">
-    <h2 className="text-2xl md:text-[32px] lg:text-[40px] mb-3 text-center font-medium lg:text-left font-['Poppins'] text-black">
-      Taught by the <span className="text-orange-500">{" "}Best</span>
-    </h2>
-    <p className="max-w-2xl text-center text-[16px] font-medium font-['Poppins'] text-black mb-8">Learn from Industry Titans Master skills from seasoned professionals who’ve worked at top tech companies.</p>
+    <div className="lg:w-[1370px] border-b-2 border-gray-200 mx-auto flex flex-col items-center justify-center relative px-4 md:px-8 py-4 ">
+      <h2 className="text-2xl md:text-[32px] lg:text-[40px] mb-3 text-center font-medium lg:text-left font-['Poppins'] text-black">
+        Taught by the <span className="text-orange-500"> Best</span>
+      </h2>
+      <p className="max-w-2xl text-center text-[16px] font-medium font-['Poppins'] text-black mb-8">
+        Learn from Industry Titans Master skills from seasoned professionals
+        who’ve worked at top tech companies.
+      </p>
 
-    <div className="relative w-full lg:w-[1400px] flex items-center justify-center overflow-hidden">
-      {/* Left Arrow */}
-      <button
-        onClick={() => handleScroll("left")}
-        className="hidden lg:flex absolute left-0 z-10 w-10 h-10 items-center justify-center rounded-full bg-white shadow disabled:opacity-30"
-        disabled={currentIndex === 0}
-      >
-        <FaArrowLeft />
-      </button>
+      {/* Main container for the carousel and arrows */}
+      {/* This container needs to be a flexbox to position arrows and card viewer */}
+      <div className="flex items-center justify-center w-full"> {/* Use w-full for full width, flex for alignment */}
 
-      {/* Cards Container */}
-      <div className="w-full lg:w-[1227px] flex flex-col lg:flex-row items-center lg:items-end overflow-hidden">
-        <div
-          className="flex flex-wrap lg:flex-nowrap gap-6 justify-center"
-          style={{
-            transform: window.innerWidth >= 1024 ? getTransformValue() : "none",
-            transition: transition,
-          }}
+        {/* Left Arrow */}
+        <button
+          onClick={() => handleScroll("left")}
+          className="hidden lg:flex w-10 h-10 items-center justify-center rounded-full bg-white shadow-md disabled:opacity-30 flex-shrink-0 mr-4"
+          disabled={currentIndex === 0}
         >
-          {trainers.map((trainer, index) => (
-            <TrainerCard key={index} {...trainer} />
-          ))}
+          <FaArrowLeft />
+        </button>
+
+        {/* Cards Container - this is the element that will show exactly 3 cards and hide overflow */}
+        {/* Set a fixed width for 3 cards + 2 gaps */}
+        <div className="overflow-hidden" style={{ width: `${threeCardsWidth}px` }}>
+          <div
+            className="flex flex-nowrap gap-6 justify-start"
+            style={{
+              transform: getTransformValue(),
+              transition: transition,
+            }}
+          >
+            {trainers.map((trainer, index) => (
+              <TrainerCard key={index} {...trainer} />
+            ))}
+          </div>
         </div>
+
+        {/* Right Arrow */}
+        <button
+          onClick={() => handleScroll("right")}
+          className="hidden lg:flex w-10 h-10 items-center justify-center rounded-full bg-white shadow-md disabled:opacity-30 flex-shrink-0 ml-4"
+          disabled={currentIndex >= trainers.length - 3}
+        >
+          <FaArrowRight />
+        </button>
       </div>
-
-      {/* Right Arrow */}
-      <button
-        onClick={() => handleScroll("right")}
-        className="hidden lg:flex absolute right-0 z-10 w-10 h-10 items-center justify-center rounded-full bg-white shadow disabled:opacity-30"
-        disabled={currentIndex >= trainers.length - 3}
-      >
-        <FaArrowRight />
-      </button>
     </div>
-  </div>
-);
-
+  );
 };
 
 export default Experts;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

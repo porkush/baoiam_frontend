@@ -1,3 +1,5 @@
+
+
 // import React, { useState } from "react";
 
 // const modules = [
@@ -43,6 +45,9 @@
 //     items: ["Overview of Data Science", "Importance of Data Science"],
 //   },
 // ];
+
+
+
 
 // const LearningJourney = () => {
 //   const [openIndex, setOpenIndex] = useState(null);
@@ -95,24 +100,40 @@
 
 //             {/* Sub-items */}
 //             {openIndex === index && module.items.length > 0 && (
-//               <div className="w-full h-[64px] px-[15px] py-[20px] flex items-center bg-white rounded font-poppins text-[16px] text-orange-500 font-medium">
-//                 <div className="flex flex-col gap-2">
-//                   {module.items.map((item, idx) => (
-//                     <span key={idx}>• {item}</span>
-//                   ))}
-//                 </div>
+//               <div className="flex flex-col gap-2 px-2 py-2 bg-white">
+//                 {module.items.map((item, idx) => (
+//                   <div
+//                     key={idx}
+//                     className="border border-gray-200 rounded px-4 py-2 text-orange-500 font-medium hover:bg-orange-50 transition"
+//                   >
+//                     • {item}
+//                   </div>
+//                 ))}
 //               </div>
 //             )}
 //           </div>
 //         ))}
 //       </div>
 
-//       <hr className="w-full  border-t-[2px] border-gray-100 mt-12 mb-6" />
+//       <hr className="w-full border-t-[2px] border-gray-100 mt-12 mb-6" />
 //     </div>
 //   );
 // };
 
+
+
 // export default LearningJourney;
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -166,9 +187,6 @@ const modules = [
   },
 ];
 
-
-
-
 const LearningJourney = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -180,17 +198,17 @@ const LearningJourney = () => {
     <div className="flex flex-col items-center justify-start bg-white pt-10 px-4">
       {/* Header */}
       <div className="text-center mb-8">
-        <h1 className="text-[40px] font-medium">
+        <h1 className="text-[32px] md:text-[36px] lg:text-[40px] font-medium"> {/* Responsive text size for h1 */}
           Your <span className="text-orange-500">Learning Journey</span>
         </h1>
-        <p className="text-[16px] mt-2 text-sm md:text-base max-w-[600px] font-medium">
+        <p className="text-[14px] md:text-[16px] mt-2 max-w-[600px] font-medium px-4"> {/* Responsive text size for p and added horizontal padding */}
           An immersive roadmap designed to help you master Data Science step by
           step.
         </p>
       </div>
 
       {/* Main Module Container */}
-      <div className="w-[723px] max-h-[790px] rounded-[10px] flex flex-col gap-[2px] bg-white shadow overflow-auto border border-gray-200">
+      <div className="w-full md:max-w-2xl lg:w-[723px] max-h-[790px] rounded-[10px] flex flex-col gap-[2px] bg-white shadow overflow-auto border border-gray-200">
         {modules.map((module, index) => (
           <div key={index}>
             {/* Module Title */}
@@ -198,7 +216,7 @@ const LearningJourney = () => {
               className="w-full h-[64px] px-[15px] py-[20px] flex items-center justify-between bg-[#E6E6E633] cursor-pointer rounded"
               onClick={() => toggleModule(index)}
             >
-              <span className="text-[16px] font-medium font-poppins text-black">
+              <span className="text-[14px] md:text-[16px] font-medium font-poppins text-black"> {/* Responsive text size for module title */}
                 {module.title}
               </span>
               <svg
@@ -239,7 +257,5 @@ const LearningJourney = () => {
     </div>
   );
 };
-
-
 
 export default LearningJourney;
