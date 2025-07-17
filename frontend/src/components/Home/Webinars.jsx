@@ -1,20 +1,25 @@
 import React, { useState, useRef, useEffect } from "react";
 import LandingPages from "../../assets/Home/Webinar/LandingPages.mp4";
 import ContactForm from "../../Pages/ContactForm";
+import { MdPlayCircle, MdVolumeUp, MdVolumeOff } from "react-icons/md";
 
 const Webinars = () => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(true);
-  const [isMuted, setIsMuted] = useState(false); // Autoplay with sound
+  const [isMuted, setIsMuted] = useState(true); // Start with sound OFF
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.muted = false; // Unmute by default
-      videoRef.current.play().catch((error) => {
-        // For browser autoplay restrictions
-        console.log("Autoplay failed:", error);
-      });
+    const video = videoRef.current;
+    if (video) {
+      video.muted = true; // Start muted
+      video.play()
+        .then(() => setIsPlaying(true))
+        .catch((err) => {
+          console.log("Autoplay failed, trying muted", err);
+          video.muted = true;
+          video.play();
+        });
     }
   }, []);
 
@@ -22,8 +27,6 @@ const Webinars = () => {
     if (!videoRef.current) return;
     if (videoRef.current.paused) {
       videoRef.current.play();
-      videoRef.current.muted = true; // Mute on manual play
-      setIsMuted(true);
       setIsPlaying(true);
     } else {
       videoRef.current.pause();
@@ -35,6 +38,10 @@ const Webinars = () => {
     if (!videoRef.current) return;
     videoRef.current.muted = !videoRef.current.muted;
     setIsMuted(videoRef.current.muted);
+  };
+
+  const handleVideoClick = () => {
+    toggleMute();
   };
 
   return (
@@ -68,7 +75,6 @@ const Webinars = () => {
           </button>
         </div>
 
-        {/* Modal */}
         {showModal && (
           <div
             className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
@@ -97,26 +103,58 @@ const Webinars = () => {
             <video
               ref={videoRef}
               src={LandingPages}
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover cursor-pointer"
               autoPlay
               muted={isMuted}
               loop
               playsInline
+              onClick={handleVideoClick}
             />
 
-            {/* Custom Controls */}
-            <div className="absolute bottom-4 left-4 flex gap-3 bg-black/60 px-4 py-2 rounded-md z-10">
+            {/* Large Unmute Button (Center) - Shows when muted */}
+            {isMuted && (
+              <button
+                onClick={() => {
+                  toggleMute();
+                }}
+                className="absolute inset-0 flex flex-col items-center justify-center bg-black/30 hover:bg-black/40 transition z-10"
+              >
+                <MdVolumeOff className="text-white text-[80px] opacity-90 hover:opacity-100 transition-opacity duration-300" />
+                <span className="text-white text-lg mt-2 font-medium">Click to unmute</span>
+              </button>
+            )}
+
+            {/* Small Controls (Bottom left) */}
+            <div className="absolute bottom-4 left-4 flex gap-3 bg-black/60 px-4 py-2 rounded-md z-20">
               <button
                 onClick={togglePlay}
-                className="text-white text-sm font-medium hover:text-orange-400"
+                className="text-white text-sm font-medium hover:text-orange-400 flex items-center gap-1"
               >
-                {isPlaying ? "Pause" : "Play (Muted)"}
+                {isPlaying ? (
+                  <>
+                    <span>Pause</span>
+                  </>
+                ) : (
+                  <>
+                    <span>Play</span>
+                  </>
+                )}
               </button>
               <button
                 onClick={toggleMute}
-                className="text-white text-sm font-medium hover:text-orange-400"
+                className="text-white text-sm font-medium hover:text-orange-400 flex items-center gap-1"
               >
-                {isMuted ? "Unmute" : "Mute"}
+                {isMuted ? (
+                  <>
+                    <MdVolumeOff size={18} />
+                    <span>Unmute</span>
+                  </>
+                ) : (
+                  <>
+                    <MdVolumeUp size={18} />
+                    <span>Mute</span>
+                  </>
+                )}
               </button>
             </div>
           </div>
