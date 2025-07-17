@@ -87,7 +87,7 @@ const FAQ_C = () => {
   );
 
   return (
-    <div className="w-full lg:mb-16 p-8">
+    <div className="w-full lg:mb-16 p-8 font-['Poppins'] ">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3 text-center">
           Frequently Asked Questions

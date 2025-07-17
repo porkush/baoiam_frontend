@@ -60,7 +60,7 @@ const CourseCard = ({ course }) => (
 const BoughtTogether = () => {
   return (
     <div className="w-full h-auto py-4 bg-white flex flex-col items-center justify-center px-4 md:px-4 font-['Poppins'] ">
-      <h2 className="text-2xl md:text-[40px] font-medium mb-3 text-center md:text-left">
+      <h2 className="text-2xl md:text-[40px] font-semibold mb-3 text-center md:text-left">
         Your{" "} <span className="text-orange-500">Digital Marketing</span>{" "}Growth Path
       </h2>
       <h3 className="text-base max-w-2xl  md:text-[20px] font-medium mb-8 md:mb-10 text-center">

@@ -98,7 +98,7 @@ const CourseCard = ({ title, subtitle, lessons, time, rating, image }) => {
 
 const FlexibleCourses = () => {
   return (
-      <div className="bg-white py-10 text-center">
+      <div className="bg-white py-10 text-center ">
         <h1 className="text-[40px] font-semibold mb-2 font-['Poppins']">
         Courses That {" "}
         <span className="text-orange-500">Transform Careers</span>
