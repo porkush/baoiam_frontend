@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import bonnay from "../../assets/Pride/Herosection_P/bonnay.webp";
-import ContactForm from "../../Pages/ContactForm";
+import { Link } from "react-router-dom";
 
 const HeroSection_P = () => {
-  const [showModal, setShowModal] = useState(false);
-
   return (
     <section className="relative bg-white overflow-hidden pt-12 md:pt-16 lg:pt-10 font-['Poppins']">
       <div className="px-4 sm:px-6 lg:px-8 flex flex-col md:ml-8 lg:ml-16 xl:ml-14 md:flex-row items-center">
@@ -21,38 +19,13 @@ const HeroSection_P = () => {
             your journey.
           </p>
 
-          <div>
-            <button
-              className="bg-[#FF6501] hover:bg-[#FF8434] px-[20px] py-[5px] text-white font-semibold rounded-md transition duration-300 text-[20px] md:font-medium"
-              onClick={() => setShowModal(true)}
-            >
+          <Link to="/DataScience">
+            <button className="bg-[#FF6501] hover:bg-[#FF8434] px-[20px] py-[5px] text-white font-semibold rounded-md transition duration-300 text-[20px] md:font-medium">
               Enroll Now
             </button>
+          </Link>
 
-            {/* The Modal */}
-
-            {showModal && (
-              <div
-                className="fixed inset-0 z-50 flex items-center justify-center bg-opacity-50"
-                onClick={() => setShowModal(false)}
-              >
-                <div
-                  className="relative max-w-xl w-full  "
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  {/* Cross Button */}
-                  <button
-                    onClick={() => setShowModal(false)}
-                    className="absolute top-20 right-6 text-2xl text-gray-600 hover:text-black"
-                  >
-                    &times;
-                  </button>
-
-                  <ContactForm onClose={() => setShowModal(false)} />
-                </div>
-              </div>
-            )}
-          </div>
+          {/* The Modal */}
         </div>
 
         {/* RIGHT SIDE - Image */}

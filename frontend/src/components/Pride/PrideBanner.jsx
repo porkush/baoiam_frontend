@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import bannerImage from "../../assets/Pride/PrideBanner/hand.png";
 import ContactForm from "../../Pages/ContactForm";
+import { Link } from "react-router-dom";
 
 const PrideBanner = () => {
     const [showModal, setShowModal] = useState(false);
@@ -80,9 +81,13 @@ const PrideBanner = () => {
           lg:justify-start
         "
         >
+
+
+          <Link to="/DataScience">
           <button className="bg-black hover:bg-[#7B7B7B] text-white px-6 py-2 rounded-md font-semibold">
             Enroll Now
           </button>
+          </Link>
 
           <div>
             {/* The Button */}
