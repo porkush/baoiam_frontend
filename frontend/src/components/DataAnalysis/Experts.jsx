@@ -36,7 +36,7 @@ const trainers = [
   },
   {
     name: "Anudeep Marlapali",
-    role: "Data Science & Software Development Expert",
+    role: "Data Science Expert",
     experience: "6+ Years",
     rating: 4.8,
     student: "10k",

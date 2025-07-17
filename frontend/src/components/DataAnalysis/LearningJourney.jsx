@@ -57,7 +57,7 @@ const LearningJourney = () => {
       {/* Header */}
       <div className="text-center mb-8">
         <h1 className="text-[32px] md:text-[36px] lg:text-[40px] font-semibold"> {/* Responsive text size for h1 */}
-          Your{" "}<span className="text-orange-500">Data Science{" "}</span>Growth Path
+          Your{" "}<span className="text-orange-500">Data Analysis{" "}</span>Growth Path
         </h1>
         <p className="text-[14px] md:text-[18px] mt-2 max-w-[900px] font-medium px-4 xl:ml-8"> {/* Responsive text size for p and added horizontal padding */}
           Follow an expertly curated roadmap to gain industry-ready skills — one step at a time.
