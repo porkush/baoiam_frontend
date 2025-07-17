@@ -1,7 +1,8 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import { MdAccessTime } from "react-icons/md";
-import img from "../../assets/CoursesLayout/CoursesPage/DataAnalysis.png";
+import img1 from "../../assets/CoursesLayout/DataScience/ds1.png";
+import img2 from "../../assets/CoursesLayout/DataScience/ds2.png";
 
 const courses = [
   {
@@ -11,7 +12,7 @@ const courses = [
     lesson: 15,
     description: "Data Science",
     duration: "15h 25min",
-    image: img,
+    image: img1,
   },
   {
     id: 2,
@@ -20,12 +21,12 @@ const courses = [
     lesson: 12,
     description: "Upskill in Data",
     duration: "12h 45min",
-    image: img,
+    image: img2,
   },
 ];
 
 const CourseCard = ({ course }) => (
-  <div className="bg-white font-['Poppins'] rounded-xl shadow-md p-4 w-[260px] flex-shrink-0 hover:shadow-lg transition-shadow duration-300">
+  <div className="bg-white font-['Poppins'] rounded-xl shadow-md p-4 w-[280px] flex-shrink-0 hover:shadow-lg transition-shadow duration-300">
     <img
       src={course.image}
       alt={course.title}

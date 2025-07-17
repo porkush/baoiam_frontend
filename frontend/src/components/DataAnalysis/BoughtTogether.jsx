@@ -1,7 +1,10 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import { MdAccessTime } from "react-icons/md";
-import img from "../../assets/CoursesLayout/CoursesPage/DataAnalysis.png";
+import img1 from "../../assets/CoursesLayout/DataAnalysis/da1.png";
+import img2 from "../../assets/CoursesLayout/DataAnalysis/da2.png";
+import img3 from "../../assets/CoursesLayout/DataAnalysis/da3.png";
+
 
 const courses = [
   {
@@ -11,7 +14,7 @@ const courses = [
     lesson: 5,
     description: "Master Python",
     duration: "6h 30min",
-    image: img,
+    image: img1,
   },
   {
     id: 2,
@@ -20,7 +23,7 @@ const courses = [
     lesson: 7,
     description: "Learn SQL",
     duration: "3h 45min",
-    image: img,
+    image: img2,
   },
   {
     id: 3,
@@ -29,12 +32,12 @@ const courses = [
     lesson: 12,
     description: "MS Excel guide",
     duration: "2h 59min",
-    image: img,
+    image: img3,
   },
 ];
 
 const CourseCard = ({ course }) => (
-  <div className="bg-white font-['Poppins'] rounded-xl shadow-md p-4 w-[260px] flex-shrink-0 hover:shadow-lg transition-shadow duration-300">
+  <div className="bg-white font-['Poppins'] rounded-xl shadow-md p-4 w-[285x] flex-shrink-0 hover:shadow-lg transition-shadow duration-300">
     <img
       src={course.image}
       alt={course.title}

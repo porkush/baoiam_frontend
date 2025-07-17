@@ -1,31 +1,42 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import { MdAccessTime } from "react-icons/md";
-import img from "../../assets/CoursesLayout/CoursesPage/DataAnalysis.png";
+import img1 from "../../assets/CoursesLayout/DigitalMarketing/dm1.png";
+import img2 from "../../assets/CoursesLayout/DigitalMarketing/dm2.png";
+import img3 from "../../assets/CoursesLayout/DigitalMarketing/dm3.png";
 
 const courses = [
   {
     id: 1,
-    title: "From Zero to Hero",
+    title: "Ad campaign",
     rating: 4.8,
     lesson: 15,
-    description: "Data Science",
+    description: "Digital Marketing",
     duration: "15h 25min",
-    image: img,
+    image: img1,
   },
   {
     id: 2,
-    title: "Master in Data Analysis",
+    title: "Video & Photo editing",
     rating: 4.5,
     lesson: 12,
-    description: "Upskill in Data",
+    description:  "Digital Marketing",
     duration: "12h 45min",
-    image: img,
+    image: img2,
+  },
+  {
+    id: 2,
+    title: "Graphic Designing",
+    rating: 4.5,
+    lesson: 12,
+    description:  "Digital Marketing",
+    duration: "10h 45min",
+    image: img3,
   },
 ];
 
 const CourseCard = ({ course }) => (
-  <div className="bg-white font-['Poppins'] rounded-xl shadow-md p-4 w-[260px] flex-shrink-0 hover:shadow-lg transition-shadow duration-300">
+  <div className="bg-white font-['Poppins'] rounded-xl shadow-md p-4 w-[295px] flex-shrink-0 hover:shadow-lg transition-shadow duration-300">
     <img
       src={course.image}
       alt={course.title}
