@@ -41,9 +41,16 @@ export default function HeroSection_C() {
             just <span className="text-orange-500">12 Months!</span>
           </p>
 
-          <button className="inline-flex items-center bg-[#FF6501] text-white font-medium px-4 py-1 rounded-md hover:bg-orange-600 mb-6 text-[18px] mt-4">
+          {/* <button className="inline-flex items-center bg-[#FF6501] text-white font-medium px-4 py-1 rounded-md hover:bg-orange-600 mb-6 text-[18px] mt-4">
             Download Brochure
-          </button>
+          </button> */}
+          <a
+             href="/Brochure/DS.pdf"
+            download="brochure.pdf"
+            className="inline-flex items-center bg-[#FF6501] text-white font-medium px-4 py-1 rounded-md hover:bg-orange-600 mb-6 text-[18px] mt-4"
+          >
+            Download Brochure
+          </a>
 
           {/* Instructor Info */}
           <div className="flex items-center space-x-4 mb-6 mt-4">
