@@ -27,3 +27,31 @@
 
 
 
+
+
+
+
+@keyframes bounceUpToCenter {
+  0% {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+  80% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-bounceUpToCenter {
+  animation: bounceUpToCenter 0.8s ease-out forwards;
+}
+
+
+
+
