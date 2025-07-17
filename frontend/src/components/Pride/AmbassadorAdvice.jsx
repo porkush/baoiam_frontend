@@ -1,13 +1,53 @@
-import React, { useState } from "react";
-// import ambassadorImage from "../../assets/Pride/AmbassadorSection/ambassador.png"; // replace with your actual path
-import ambassadorImage from "../../assets/Pride/AmbassadorAdvice/ambassador.webp";
+// import ambassadorImage from "../../assets/Pride/AmbassadorAdvice/ambassador.webp";
+import bonnay_video from "../../assets/Pride/AmbassadorAdvice/bonnay.mov";
 import HeadingImage from "../Lines/HeadingImages";
 import Group from "../../assets/Home/Lines/Group.webp";
 import ContactForm from "../../Pages/ContactForm";
+import { MdPlayCircle, MdVolumeUp, MdVolumeOff } from "react-icons/md";
+import React, { useState, useRef, useEffect } from "react";
 
 
 const AmbassadorAdvice = () => {
-  const [showModal, setShowModal] = useState(false);
+    const videoRef = useRef(null);
+    const [isPlaying, setIsPlaying] = useState(true);
+    const [isMuted, setIsMuted] = useState(true); // Start with sound OFF
+    const [showModal, setShowModal] = useState(false);
+  
+    useEffect(() => {
+      const video = videoRef.current;
+      if (video) {
+        video.muted = true; // Start muted
+        video
+          .play()
+          .then(() => setIsPlaying(true))
+          .catch((err) => {
+            console.log("Autoplay failed, trying muted", err);
+            video.muted = true;
+            video.play();
+          });
+      }
+    }, []);
+  
+    const togglePlay = () => {
+      if (!videoRef.current) return;
+      if (videoRef.current.paused) {
+        videoRef.current.play();
+        setIsPlaying(true);
+      } else {
+        videoRef.current.pause();
+        setIsPlaying(false);
+      }
+    };
+  
+    const toggleMute = () => {
+      if (!videoRef.current) return;
+      videoRef.current.muted = !videoRef.current.muted;
+      setIsMuted(videoRef.current.muted);
+    };
+  
+    const handleVideoClick = () => {
+      toggleMute();
+    };
   return (
     <section className="relative font-['Poppins'] overflow-hidden">
       {/* Top White Area */}
@@ -66,18 +106,71 @@ const AmbassadorAdvice = () => {
       </div>
 
       {/* Bottom Orange Background */}
-      <div className="bg-[#FF6501B2] h-[105px] md:h-[305px] relative">
-        {/* Image Overlapping Top and Bottom */}
-        <div className="absolute inset-x-0 -top-[75px] md:-top-[100px] flex justify-center">
-          <div className="relative w-[90%] max-w-4xl rounded-2xl overflow-hidden shadow-lg">
-            <img
-              src={ambassadorImage}
-              alt="Ambassador Advice"
-              className="w-full h-auto object-cover mb-12"
-            />
-          </div>
-        </div>
-      </div>
+       <div className="bg-[#FF6501B2] h-[105px] md:h-[305px] relative">
+              <div className="absolute inset-x-0 -top-[75px] md:-top-[100px] flex justify-center">
+                <div className="relative w-[90%] max-w-4xl rounded-2xl overflow-hidden shadow-lg">
+                  <video
+                    ref={videoRef}
+                    src={bonnay_video}
+                    className="w-full h-auto object-cover cursor-pointer"
+                    autoPlay
+                    muted={isMuted}
+                    loop
+                    playsInline
+                    onClick={handleVideoClick}
+                  />
+      
+                  {/* Large Unmute Button (Center) - Shows when muted */}
+                  {isMuted && (
+                    <button
+                      onClick={() => {
+                        toggleMute();
+                      }}
+                      className="absolute inset-0 flex flex-col items-center justify-center bg-black/30 hover:bg-black/40 transition z-10"
+                    >
+                      <MdVolumeOff className="text-white text-[80px] opacity-90 hover:opacity-100 transition-opacity duration-300" />
+                      <span className="text-white text-lg mt-2 font-medium">
+                        Click to unmute
+                      </span>
+                    </button>
+                  )}
+      
+                  {/* Small Controls (Bottom left) */}
+                  <div className="absolute bottom-4 left-4 flex gap-3 bg-black/60 px-4 py-2 rounded-md z-20">
+                    <button
+                      onClick={togglePlay}
+                      className="text-white text-sm font-medium hover:text-orange-400 flex items-center gap-1"
+                    >
+                      {isPlaying ? (
+                        <>
+                          <span>Pause</span>
+                        </>
+                      ) : (
+                        <>
+                          <span>Play</span>
+                        </>
+                      )}
+                    </button>
+                    <button
+                      onClick={toggleMute}
+                      className="text-white text-sm font-medium hover:text-orange-400 flex items-center gap-1"
+                    >
+                      {isMuted ? (
+                        <>
+                          <MdVolumeOff size={18} />
+                          <span>Unmute</span>
+                        </>
+                      ) : (
+                        <>
+                          <MdVolumeUp size={18} />
+                          <span>Mute</span>
+                        </>
+                      )}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
     </section>
   );
 };
