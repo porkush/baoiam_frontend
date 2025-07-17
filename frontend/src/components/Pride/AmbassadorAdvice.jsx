@@ -69,9 +69,9 @@ const AmbassadorAdvice = () => {
         </p>
         <div className="flex justify-center gap-4 flex-wrap">
           <Link to="/DataScience">
-          <button className="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-md md:text-xl  font-medium transition">
-            Enroll Now
-          </button>
+            <button className="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-md md:text-xl  font-medium transition">
+              Enroll Now
+            </button>
           </Link>
           <div className="text-left">
             {/* The Button */}
@@ -113,55 +113,15 @@ const AmbassadorAdvice = () => {
       <div className="bg-[#FF6501B2] h-[105px] md:h-[305px] relative">
         <div className="absolute inset-x-0 -top-[75px] md:-top-[100px] flex justify-center">
           <div className="relative w-[90%] max-w-4xl rounded-2xl overflow-hidden shadow-lg">
-            
-
-            {/* Large Unmute Button (Center) - Shows when muted */}
-            {isMuted && (
-              <button
-                onClick={() => {
-                  toggleMute();
-                }}
-                className="absolute inset-0 flex flex-col items-center justify-center bg-black/30 hover:bg-black/40 transition z-10"
-              >
-                <MdVolumeOff className="text-white text-[80px] opacity-90 hover:opacity-100 transition-opacity duration-300" />
-                <span className="text-white text-lg mt-2 font-medium">
-                  Click to unmute
-                </span>
-              </button>
-            )}
-
-            {/* Small Controls (Bottom left) */}
-            <div className="absolute bottom-4 left-4 flex gap-3 bg-black/60 px-4 py-2 rounded-md z-20">
-              <button
-                onClick={togglePlay}
-                className="text-white text-sm font-medium hover:text-orange-400 flex items-center gap-1"
-              >
-                {isPlaying ? (
-                  <>
-                    <span>Pause</span>
-                  </>
-                ) : (
-                  <>
-                    <span>Play</span>
-                  </>
-                )}
-              </button>
-              <button
-                onClick={toggleMute}
-                className="text-white text-sm font-medium hover:text-orange-400 flex items-center gap-1"
-              >
-                {isMuted ? (
-                  <>
-                    <MdVolumeOff size={18} />
-                    <span>Unmute</span>
-                  </>
-                ) : (
-                  <>
-                    <MdVolumeUp size={18} />
-                    <span>Mute</span>
-                  </>
-                )}
-              </button>
+            <div className="relative w-full h-0 pb-[56.25%]">
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/uJM97uM_SZE?autoplay=1&mute=1&loop=1&playlist=uJM97uM_SZE"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="autoplay; encrypted-media; loop; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
         </div>
