@@ -1,7 +1,10 @@
-import React from 'react';
-import bannerImage from '../../assets/Pride/PrideBanner/hand.png';
+import React, { useState } from "react";
+import bannerImage from "../../assets/Pride/PrideBanner/hand.png";
+import ContactForm from "../../Pages/ContactForm";
 
 const PrideBanner = () => {
+    const [showModal, setShowModal] = useState(false);
+  
   return (
     <div
       className="
@@ -28,7 +31,8 @@ const PrideBanner = () => {
         lg:py-[25px]
       "
       style={{
-        background: 'linear-gradient(180deg, rgba(255, 101, 1, 0.06) 0%, rgba(255, 101, 1, 0.6) 100%)',
+        background:
+          "linear-gradient(180deg, rgba(255, 101, 1, 0.06) 0%, rgba(255, 101, 1, 0.6) 100%)",
       }}
     >
       {/* Text Section */}
@@ -44,7 +48,8 @@ const PrideBanner = () => {
           lg:mb-0
         "
       >
-        <h2 className="
+        <h2
+          className="
           text-[24px]
           md:text-[32px]
           lg:text-[40px]
@@ -55,13 +60,15 @@ const PrideBanner = () => {
           text-[#FF6501]
           text-center
           lg:text-left
-        ">
-          Come join us to make your{' '}
-          <span className="text-[#4C00B0]">future rise</span>{' '}
-          and your <span className="text-[#4C00B0]">identity shine</span>.
+        "
+        >
+          Come join us to make your{" "}
+          <span className="text-[#4C00B0]">future rise</span> and your{" "}
+          <span className="text-[#4C00B0]">identity shine</span>.
         </h2>
 
-        <div className="
+        <div
+          className="
           flex
           flex-col
           sm:flex-row
@@ -71,13 +78,45 @@ const PrideBanner = () => {
           items-center
           justify-center
           lg:justify-start
-        ">
+        "
+        >
           <button className="bg-black hover:bg-[#7B7B7B] text-white px-6 py-2 rounded-md font-semibold">
             Enroll Now
           </button>
-          <button className="bg-white text-black border border-gray-300 px-6 py-2 rounded-md font-semibold">
-            Talk to our Counsellor
-          </button>
+
+          <div>
+            {/* The Button */}
+            <button
+              className="bg-white text-black border border-gray-300 px-6 py-2 rounded-md font-semibold"
+              onClick={() => setShowModal(true)}
+            >
+              Talk to our Counsellor
+            </button>
+
+            {/* The Modal */}
+
+            {showModal && (
+              <div
+                className="fixed inset-0 z-50 flex items-center justify-center bg-opacity-50"
+                onClick={() => setShowModal(false)}
+              >
+                <div
+                  className="relative max-w-xl w-full  "
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {/* Cross Button */}
+                  <button
+                    onClick={() => setShowModal(false)}
+                    className="absolute top-20 right-6 text-2xl text-gray-600 hover:text-black"
+                  >
+                    &times;
+                  </button>
+
+                  <ContactForm onClose={() => setShowModal(false)} />
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </div>
 

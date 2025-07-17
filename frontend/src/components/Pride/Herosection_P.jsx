@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import bonnay from "../../assets/Pride/Herosection_P/bonnay.webp";
+import ContactForm from "../../Pages/ContactForm";
 
 const HeroSection_P = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <section className="relative bg-white overflow-hidden pt-12 md:pt-16 lg:pt-10 font-['Poppins']">
       <div className="px-4 sm:px-6 lg:px-8 flex flex-col md:ml-8 lg:ml-16 xl:ml-14 md:flex-row items-center">
@@ -12,13 +15,44 @@ const HeroSection_P = () => {
             With <span className="text-[#FF6501]">Purpose.</span>
           </h1>
 
-         <p className="text-[#222222] w-[650px] text-base sm:text-lg md:text-[24px] mb-6 md:mb-6 md:mt-5 text-justify">
-         Unlock your potential with transformative, expert-led courses designed to fuel your ambition, celebrate your identity, and empower your journey.
-         </p>
+          <p className="text-[#222222] w-[650px] text-base sm:text-lg md:text-[24px] mb-6 md:mb-6 md:mt-5 text-justify">
+            Unlock your potential with transformative, expert-led courses
+            designed to fuel your ambition, celebrate your identity, and empower
+            your journey.
+          </p>
 
-          <button className="bg-[#FF6501] hover:bg-[#FF8434] px-[20px] py-[5px] text-white font-semibold rounded-md transition duration-300 text-[20px] md:font-medium">
-            Enroll Now
-          </button>
+          <div>
+            <button
+              className="bg-[#FF6501] hover:bg-[#FF8434] px-[20px] py-[5px] text-white font-semibold rounded-md transition duration-300 text-[20px] md:font-medium"
+              onClick={() => setShowModal(true)}
+            >
+              Enroll Now
+            </button>
+
+            {/* The Modal */}
+
+            {showModal && (
+              <div
+                className="fixed inset-0 z-50 flex items-center justify-center bg-opacity-50"
+                onClick={() => setShowModal(false)}
+              >
+                <div
+                  className="relative max-w-xl w-full  "
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {/* Cross Button */}
+                  <button
+                    onClick={() => setShowModal(false)}
+                    className="absolute top-20 right-6 text-2xl text-gray-600 hover:text-black"
+                  >
+                    &times;
+                  </button>
+
+                  <ContactForm onClose={() => setShowModal(false)} />
+                </div>
+              </div>
+            )}
+          </div>
         </div>
 
         {/* RIGHT SIDE - Image */}
@@ -37,7 +71,5 @@ const HeroSection_P = () => {
     </section>
   );
 };
-
-
 
 export default HeroSection_P;
