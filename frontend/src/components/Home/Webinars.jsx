@@ -13,7 +13,8 @@ const Webinars = () => {
     const video = videoRef.current;
     if (video) {
       video.muted = true; // Start muted
-      video.play()
+      video
+        .play()
         .then(() => setIsPlaying(true))
         .catch((err) => {
           console.log("Autoplay failed, trying muted", err);
@@ -60,40 +61,74 @@ const Webinars = () => {
         </p>
 
         <div className="flex justify-center gap-4 flex-wrap">
-          <button
-            className="bg-[#FF6501] hover:bg-[#FF6501CC] text-white px-5 py-2 rounded-md md:text-xl font-medium transition"
-            onClick={() => setShowModal(true)}
-          >
-            Register for Webinar
-          </button>
-
-          <button
-            className="bg-black text-white border rounded-lg py-2 px-4 text-xl hover:bg-[#7B7B7B]"
-            onClick={() => setShowModal(true)}
-          >
-            Talk to our Counsellor
-          </button>
-        </div>
-
-        {showModal && (
-          <div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
-            onClick={() => setShowModal(false)}
-          >
-            <div
-              className="relative max-w-xl w-full"
-              onClick={(e) => e.stopPropagation()}
+          <div>
+            {/* The Button */}
+            <button
+              className="bg-[#FF6501] hover:bg-[#FF6501CC] text-white px-5 py-2 rounded-md md:text-xl font-medium transition"
+              onClick={() => setShowModal(true)}
             >
-              <button
+              Register for Webinar
+            </button>
+
+            {/* The Modal */}
+
+            {showModal && (
+              <div
+                className="fixed inset-0 z-50 flex items-center justify-center bg-opacity-50"
                 onClick={() => setShowModal(false)}
-                className="absolute top-4 right-6 text-2xl text-gray-600 hover:text-black z-50"
               >
-                &times;
-              </button>
-              <ContactForm onClose={() => setShowModal(false)} />
-            </div>
+                <div
+                  className="relative max-w-xl w-full  "
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {/* Cross Button */}
+                  <button
+                    onClick={() => setShowModal(false)}
+                    className="absolute top-20 right-6 text-2xl text-gray-600 hover:text-black"
+                  >
+                    &times;
+                  </button>
+
+                  <ContactForm onClose={() => setShowModal(false)} />
+                </div>
+              </div>
+            )}
           </div>
-        )}
+
+          <div>
+            {/* The Button */}
+            <button
+              className="bg-black text-white border rounded-lg py-2 px-4 text-xl hover:bg-[#7B7B7B]"
+              onClick={() => setShowModal(true)}
+            >
+              Talk to our Counsellor
+            </button>
+
+            {/* The Modal */}
+
+            {showModal && (
+              <div
+                className="fixed inset-0 z-50 flex items-center justify-center bg-opacity-50"
+                onClick={() => setShowModal(false)}
+              >
+                <div
+                  className="relative max-w-xl w-full  "
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {/* Cross Button */}
+                  <button
+                    onClick={() => setShowModal(false)}
+                    className="absolute top-20 right-6 text-2xl text-gray-600 hover:text-black"
+                  >
+                    &times;
+                  </button>
+
+                  <ContactForm onClose={() => setShowModal(false)} />
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
       </div>
 
       {/* Bottom Orange Background */}
@@ -120,7 +155,9 @@ const Webinars = () => {
                 className="absolute inset-0 flex flex-col items-center justify-center bg-black/30 hover:bg-black/40 transition z-10"
               >
                 <MdVolumeOff className="text-white text-[80px] opacity-90 hover:opacity-100 transition-opacity duration-300" />
-                <span className="text-white text-lg mt-2 font-medium">Click to unmute</span>
+                <span className="text-white text-lg mt-2 font-medium">
+                  Click to unmute
+                </span>
               </button>
             )}
 
