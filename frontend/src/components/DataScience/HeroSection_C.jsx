@@ -5,13 +5,15 @@ import { HiOutlineDownload } from "react-icons/hi";
 import { MdPlayCircle } from "react-icons/md";
 import avatar from "../../assets/CoursesLayout/CoursesPage/avatar.png";
 import Expert from "../../assets/CoursesLayout/CoursesPage/DS_Expert.png";
-import DS from "../../assets/CoursesLayout/CoursesPage/DS.png";
+
+import DS from "../../assets/CoursesLayout/CoursesPage/Data_Science.png";
 import globe from "../../assets/CoursesLayout/CoursesPage/globe.png";
 import laptop from "../../assets/CoursesLayout/CoursesPage/laptop.png";
 import { AiFillHome, AiOutlineRight } from "react-icons/ai";
 import { BsBookmark } from "react-icons/bs";
 import { FiSend } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import BookmarkButton from "../../Pages/BookmarkButton";
 
 export default function HeroSection_C() {
   return (
@@ -198,9 +200,9 @@ export default function HeroSection_C() {
                 alt="Course Preview"
                 className="w-full h-auto object-cover rounded-xl"
               />
-              <button className="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/40 transition">
+              {/* <button className="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/40 transition">
                 <MdPlayCircle className="text-white text-[80px] opacity-90 hover:opacity-100 transition-opacity duration-300" />
-              </button>
+              </button> */}
             </div>
 
             <h3 className="text-[18px] text-black mb-6 mt-6">
@@ -243,7 +245,7 @@ export default function HeroSection_C() {
                     Add to Cart
                   </button>
                   <div className="flex items-center gap-4 ml-2 text-black">
-                    <BsBookmark className="w-[20px] h-[20px]" />
+                    <BookmarkButton/>
                     <FiSend className="w-[23px] h-[26px]" />
                   </div>
                 </div>

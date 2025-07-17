@@ -13,6 +13,7 @@ import { AiFillHome, AiOutlineRight } from "react-icons/ai";
 import { BsBookmark } from "react-icons/bs";
 import { FiSend } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import BookmarkButton from "../../Pages/BookmarkButton";
 
 export default function HeroSection_C() {
   return (
@@ -240,7 +241,7 @@ export default function HeroSection_C() {
                     Add to Cart
                   </button>
                   <div className="flex items-center gap-4 ml-2 text-black">
-                    <BsBookmark className="w-[20px] h-[20px]" />
+                    <BookmarkButton/>
                     <FiSend className="w-[23px] h-[26px]" />
                   </div>
                 </div>
