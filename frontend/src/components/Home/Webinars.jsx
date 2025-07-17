@@ -36,7 +36,7 @@ const Webinars = () => {
           </span>
         </h2>
 
-        <p className="max-w-3xl mx-auto text-black md:text-[24px] mb-6">
+        <p className="max-w-3xl mx-auto text-black md:text-[24px] mb-6 text-center">
           Join the webinar that makes learning unforgettable.
         </p>
 
