@@ -5,7 +5,8 @@ import { HiOutlineDownload } from "react-icons/hi";
 import { MdPlayCircle } from "react-icons/md";
 import avatar from "../../assets/CoursesLayout/CoursesPage/avatar.png";
 import Expert from "../../assets/CoursesLayout/CoursesPage/DS_Expert.png";
-import DS from "../../assets/CoursesLayout/CoursesPage/DS.png";
+
+import DM from "../../assets/CoursesLayout/CoursesPage/Digital_marketing.png";
 import globe from "../../assets/CoursesLayout/CoursesPage/globe.png";
 import laptop from "../../assets/CoursesLayout/CoursesPage/laptop.png";
 import { AiFillHome, AiOutlineRight } from "react-icons/ai";
@@ -192,13 +193,13 @@ export default function HeroSection_C() {
             {/* Video Preview with Play Button */}
             <div className="relative mb-4 rounded-xl overflow-hidden">
               <img
-                src={DS}
+                src={DM}
                 alt="Course Preview"
                 className="w-full h-auto object-cover rounded-xl"
               />
-              <button className="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/40 transition">
+              {/* <button className="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/40 transition">
                 <MdPlayCircle className="text-white text-[80px] opacity-90 hover:opacity-100 transition-opacity duration-300" />
-              </button>
+              </button> */}
             </div>
 
             <h3 className="text-[18px] text-black mb-6 mt-6">

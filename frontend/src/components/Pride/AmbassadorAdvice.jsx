@@ -1,5 +1,5 @@
 // import ambassadorImage from "../../assets/Pride/AmbassadorAdvice/ambassador.webp";
-import bonnay_video from "../../assets/Pride/AmbassadorAdvice/bonnay.mov";
+// import bonnay_video from "../../assets/Pride/AmbassadorAdvice/bonnay.mov";
 import HeadingImage from "../Lines/HeadingImages";
 import Group from "../../assets/Home/Lines/Group.webp";
 import ContactForm from "../../Pages/ContactForm";
@@ -111,7 +111,7 @@ const AmbassadorAdvice = () => {
                 <div className="relative w-[90%] max-w-4xl rounded-2xl overflow-hidden shadow-lg">
                   <video
                     ref={videoRef}
-                    src={bonnay_video}
+                    src="/bonnay.mov"
                     className="w-full h-auto object-cover cursor-pointer"
                     autoPlay
                     muted={isMuted}
