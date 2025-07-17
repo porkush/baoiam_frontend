@@ -165,7 +165,7 @@ export default function HeroSection_C() {
               </li>
               <li>
                 No prior Data Science Experience Needed - We'll start from the
-                basis!
+                basic!
               </li>
             </ul>
           </section>

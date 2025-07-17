@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 // import ambassadorImage from "../../assets/Pride/AmbassadorSection/ambassador.png"; // replace with your actual path
-import ambassadorImage from "../../assets/Pride/AmbassadorAdvice/ambassador.webp";
+
+import LandingPages from "../../assets/Home/Webinar/LandingPages.mp4";
 import ContactForm from "../../Pages/ContactForm";
 
 const Webinars = () => {
+  
   const [showModal, setShowModal] = useState(false);
   return (
     <section className="relative font-['Poppins'] overflow-hidden mb-16">
@@ -94,10 +96,13 @@ const Webinars = () => {
         {/* Image Overlapping Top and Bottom */}
         <div className="absolute inset-x-0 -top-[75px] md:-top-[100px] flex justify-center">
           <div className="relative w-[90%] max-w-4xl rounded-2xl overflow-hidden shadow-lg">
-            <img
-              src={ambassadorImage}
-              alt="Ambassador Advice"
+            <video
+              src={LandingPages}
               className="w-full h-auto object-cover mb-12"
+              autoPlay
+              muted
+              loop
+              playsInline
             />
           </div>
         </div>
