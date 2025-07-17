@@ -1,17 +1,29 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import LandingPages from "../../assets/Home/Webinar/LandingPages.mp4";
 import ContactForm from "../../Pages/ContactForm";
 
 const Webinars = () => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(true);
-  const [isMuted, setIsMuted] = useState(true);
+  const [isMuted, setIsMuted] = useState(false); // Autoplay with sound
   const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.muted = false; // Unmute by default
+      videoRef.current.play().catch((error) => {
+        // For browser autoplay restrictions
+        console.log("Autoplay failed:", error);
+      });
+    }
+  }, []);
 
   const togglePlay = () => {
     if (!videoRef.current) return;
     if (videoRef.current.paused) {
       videoRef.current.play();
+      videoRef.current.muted = true; // Mute on manual play
+      setIsMuted(true);
       setIsPlaying(true);
     } else {
       videoRef.current.pause();
@@ -90,7 +102,6 @@ const Webinars = () => {
               muted={isMuted}
               loop
               playsInline
-              controls
             />
 
             {/* Custom Controls */}
@@ -99,7 +110,7 @@ const Webinars = () => {
                 onClick={togglePlay}
                 className="text-white text-sm font-medium hover:text-orange-400"
               >
-                {isPlaying ? "Pause" : "Play"}
+                {isPlaying ? "Pause" : "Play (Muted)"}
               </button>
               <button
                 onClick={toggleMute}
