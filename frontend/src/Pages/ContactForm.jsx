@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-const ContactForm = ({onClose}) => {
-  
-  const [fullName, setFullName] = useState('');
-  const [email, setEmail] = useState('');
-  const [mobileNumber, setMobileNumber] = useState('');
-  const [category1, setCategory1] = useState('');
-  const [category2, setCategory2] = useState('');
+const ContactForm = ({ onClose }) => {
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [mobileNumber, setMobileNumber] = useState("");
+  const [category1, setCategory1] = useState("");
+  const [category2, setCategory2] = useState("");
   const [agreedToTerms, setAgreedToTerms] = useState(false);
 
   const handleSubmit = (e) => {
@@ -19,27 +18,40 @@ const ContactForm = ({onClose}) => {
       category2,
       agreedToTerms,
     });
-    alert('Form submitted! Check console for data.');
+    alert("Form submitted! Check console for data.");
+  };
+
+  // Place this above return, inside your component
+  const subCategories = {
+    "Pride Fusion": ["Data Science", "HRMS"],
+    "Success Fusion Program": [
+      "Data Science & Analytics",
+      "PRODUCT MANAGEMENT",
+      "Digital Marketing with AI Tools",
+      "UI/UX Design & Prototyping",
+      "AI basics for beginners",
+      "Entrepreneurship",
+    ],
+    "Udaan 90": [],
+    "Pay After Placement(Tech Bootcamp)": [],
   };
 
   return (
     <div className="flex  items-center justify-center h-[744px] ">
       <div className="bg-white max-w-xl p-4 md:p-6 rounded-[12px] shadow-lg w-full mx-2 my-4">
-        
-       
         <h2 className="text-[24px] md:text-[24px] font-bold text-center mb-1 leading-snug text-orange-500">
           Ready to enhance your skills?
-            
         </h2>
         <p className="text-[14px] md:text-[15px] text-center mb-4 text-[#545454]">
           Share your details and hear from us soon
         </p>
 
-
-
         <form onSubmit={handleSubmit} className="space-y-2 md:space-y-3">
           <div>
-            <label htmlFor="fullName" className="block text-[14px] font-medium text-[#333333] mb-1">
+            <label
+              htmlFor="fullName"
+              className="block text-[14px] font-medium text-[#333333] mb-1"
+            >
               Full name
             </label>
             <input
@@ -54,7 +66,10 @@ const ContactForm = ({onClose}) => {
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-[14px] font-medium text-[#333333] mb-1">
+            <label
+              htmlFor="email"
+              className="block text-[14px] font-medium text-[#333333] mb-1"
+            >
               Email
             </label>
             <input
@@ -69,7 +84,10 @@ const ContactForm = ({onClose}) => {
           </div>
 
           <div>
-            <label htmlFor="mobileNumber" className="block text-[14px] font-medium text-[#333333] mb-1">
+            <label
+              htmlFor="mobileNumber"
+              className="block text-[14px] font-medium text-[#333333] mb-1"
+            >
               Mobile Number
             </label>
             <input
@@ -84,7 +102,10 @@ const ContactForm = ({onClose}) => {
           </div>
 
           <div>
-            <label htmlFor="selectCategory1" className="block text-[14px] font-medium text-[#333333] mb-1">
+            <label
+              htmlFor="selectCategory1"
+              className="block text-[14px] font-medium text-[#333333] mb-1"
+            >
               Select Category
             </label>
             <div className="relative">
@@ -92,17 +113,31 @@ const ContactForm = ({onClose}) => {
                 id="selectCategory1"
                 className="block w-full bg-white border border-[#E0E0E0] text-[#333333] py-[6px] pl-4 pr-10 rounded-[8px] appearance-none focus:outline-none focus:ring-2 focus:ring-orange-500 text-[14px]"
                 value={category1}
-                onChange={(e) => setCategory1(e.target.value)}
+                onChange={(e) => {
+                  setCategory1(e.target.value);
+                  setCategory2(""); // reset sub-category when main changes
+                }}
                 required
               >
-                <option value="" disabled hidden>Select Category</option>
-                <option value="category2_option1">Success Fusion Program</option>
-                <option value="category2_option2">Udaan 90</option>
-                <option value="category2_option3">Tech Bootcamp</option>
-                <option value="category2_option3">Pride Fusion</option>
+                <option value="" disabled hidden>
+                  Select Category
+                </option>
+                <option value="Success Fusion Program">
+                  Success Fusion Program
+                </option>
+                <option value="Udaan 90">Udaan 90</option>
+                <option value="Pay After Placement(Tech Bootcamp)">
+                  Pay After Placement(Tech Bootcamp)
+                </option>
+                <option value="Pride Fusion">Pride Fusion</option>
               </select>
+
               <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-600">
-                <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
                   <path d="M7 7l3-3 3 3m0 6l-3 3-3-3" />
                 </svg>
               </div>
@@ -110,7 +145,10 @@ const ContactForm = ({onClose}) => {
           </div>
 
           <div>
-            <label htmlFor="selectCategory2" className="block text-[14px] font-medium text-[#333333] mb-1">
+            <label
+              htmlFor="selectCategory2"
+              className="block text-[14px] font-medium text-[#333333] mb-1"
+            >
               Please select a sub-category
             </label>
             <div className="relative">
@@ -120,15 +158,30 @@ const ContactForm = ({onClose}) => {
                 value={category2}
                 onChange={(e) => setCategory2(e.target.value)}
                 required
+                disabled={
+                  !subCategories[category1] ||
+                  subCategories[category1].length === 0
+                }
               >
-                <option value="" disabled hidden>Select a sub-category</option>
-                <option value="category2_option1">Success Fusion Program</option>
-                <option value="category2_option2">Udaan 90</option>
-                <option value="category2_option3">Tech Bootcamp</option>
-                <option value="category2_option3">Pride Fusion</option>
+                <option value="" disabled hidden>
+                  {subCategories[category1] &&
+                  subCategories[category1].length > 0
+                    ? "Select a sub-category"
+                    : "No sub-categories available"}
+                </option>
+                {subCategories[category1] &&
+                  subCategories[category1].map((sub, idx) => (
+                    <option key={idx} value={sub}>
+                      {sub}
+                    </option>
+                  ))}
               </select>
               <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-600">
-                <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
                   <path d="M7 7l3-3 3 3m0 6l-3 3-3-3" />
                 </svg>
               </div>
@@ -143,8 +196,13 @@ const ContactForm = ({onClose}) => {
               checked={agreedToTerms}
               onChange={(e) => setAgreedToTerms(e.target.checked)}
             />
-            <label htmlFor="termsAgreement" className="ml-2 text-[13px] md:text-[13px] font-medium text-gray-400 leading-snug cursor-pointer">
-              I confirm to receiving updates and notifications from Online Baoiam and its affiliates via email, SMS, WhatsApp, and voice call, overriding any DNC/NDNC preference.
+            <label
+              htmlFor="termsAgreement"
+              className="ml-2 text-[13px] md:text-[13px] font-medium text-gray-400 leading-snug cursor-pointer"
+            >
+              I agree to receive updates and notifications from Baoiam and its
+              affiliates via Email, SMS, WhatsApp, and Voice Calls, even if my
+              number is registered under DND/NDNC.
             </label>
           </div>
 
