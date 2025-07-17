@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaStar, FaUserGraduate, FaClock } from "react-icons/fa";
 // import HeadingImage from "../Lines/HeadingImages";
 import Group from "../../assets/Home/Lines/Group.webp";
@@ -8,6 +8,7 @@ import DM from "../../assets/Home/FeaturedCourses/DM.png";
 import SD from "../../assets/Home/FeaturedCourses/SD.png";
 import { FiBarChart } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import ContactForm from "../../Pages/ContactForm";
 
 const courses = [
   {
@@ -53,6 +54,8 @@ const courses = [
 ];
 
 const FeaturedCourses = () => {
+    const [showModal, setShowModal] = useState(false);
+  
   return (
     <section
       className="bg-white rounded-[20px] font-['Poppins'] mx-auto max-w-[calc(100%-40px)] lg:max-w-[1350px]"
@@ -182,8 +185,11 @@ const FeaturedCourses = () => {
 
         {/* Explore More Button */}
         <div className="mt-[30px] mb-[30px]">
-          <button
+          <div>
+            {/* The Button */}
+            <button
             className="text-white bg-black hover:bg-[#7B7B7B] transition duration-300 flex items-center justify-center text-[24px]"
+            onClick={() => setShowModal(true)}
             style={{
               width: "208px",
               height: "46px",
@@ -195,6 +201,31 @@ const FeaturedCourses = () => {
           >
             Explore more →
           </button>
+
+            {/* The Modal */}
+
+            {showModal && (
+              <div
+                className="fixed inset-0 z-50 flex items-center justify-center bg-opacity-50"
+                onClick={() => setShowModal(false)}
+              >
+                <div
+                  className="relative max-w-xl w-full  "
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {/* Cross Button */}
+                  <button
+                    onClick={() => setShowModal(false)}
+                    className="absolute top-20 right-6 text-2xl text-gray-600 hover:text-black"
+                  >
+                    &times;
+                  </button>
+
+                  <ContactForm onClose={() => setShowModal(false)} />
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </section>

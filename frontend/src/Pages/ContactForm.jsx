@@ -72,7 +72,7 @@ const ContactForm = ({ onClose }) => {
 
   return (
     <div className="flex  items-center justify-center h-[744px] ">
-      <div className="bg-white max-w-xl p-4 md:p-6 rounded-[12px] shadow-lg w-full mx-2 my-4">
+      <div className="bg-white max-w-xl p-4 md:p-6 rounded-[12px] shadow-lg w-full mx-2 my-4 border-orange-200 border-[2px]  shadow-orange-500">
         <h2 className="text-[24px] md:text-[24px] font-bold text-center mb-1 leading-snug text-orange-500">
           Ready to enhance your skills?
         </h2>
