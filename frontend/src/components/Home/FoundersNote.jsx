@@ -121,11 +121,11 @@ const FoundersNote = () => {
                 <span className="font-semibold">launchpad</span>.
               </p>
             </div>
-            <div className="text-right mt-1 absolute bottom-6 right-6">
+            <div className="text-right mt-1 absolute bottom-2 right-6">
               <p className="font-semibold text-[18px]">Siddharth Tomar</p>
               <p className="text-[15px] font-semibold">– Founder, Baoiam</p>
             </div>
-            <FaQuoteRight className="text-3xl text-black absolute bottom-32 right-0 m--1" />
+            <FaQuoteRight className="text-3xl text-black absolute bottom-15 right-0 m-1" />
           </div>
 
           {/* Right Section - Mobile Short Content */}
