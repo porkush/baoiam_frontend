@@ -35,7 +35,7 @@ const FoundersNote = () => {
             className="text-white flex flex-col items-center justify-center"
             style={{
               background:
-                "linear-gradient(270deg, #FF6501 18.58%, #FFC6A2 98.25%)",
+                "linear-gradient(360deg, #FF6501 26.44%, #FFC6A2 100%)",
               width: "100%",
               maxWidth: "600px",
               height: "750",
@@ -49,7 +49,9 @@ const FoundersNote = () => {
                 className="w-[240px] h-[240px] md:w-[342px] md:h-[342px] object-cover"
               />
             </div>
-            <h2 className="text-[22px] md:text-[28px] font-bold">Siddharth Tomar</h2>
+            <h2 className="text-[22px] md:text-[28px] font-bold">
+              Siddharth Tomar
+            </h2>
             <p className="text-[18px] md:text-[22px] text-center px-4 leading-tight mt-2">
               Founder and CEO – BAOIAM <br />
               <span className="text-[16px] md:text-[20px]">
@@ -60,7 +62,7 @@ const FoundersNote = () => {
 
           {/* Right Section - Desktop Full Content */}
           <div
-            className="relative text-black border-t-[15px] border-r-[15px] border-b-[15px] border-orange-500 px-6 overflow-y-auto text-[14px] hidden md:flex"
+            className="relative text-black px-6 overflow-y-auto text-[14px] hidden md:flex shadow-lg shadow-gray-400 border-t-3 border-gray-50"
             style={{
               width: "640px",
               height: "670px",
@@ -135,19 +137,21 @@ const FoundersNote = () => {
             </h3>
             <p>Education shouldn’t cost you your dreams.</p>
             <p>
-              In today’s world, you’re asked to pay ₹70,000 to ₹1,00,000+ just to learn
-              trending skills like Data Science or Marketing—and still, there’s no real
-              outcome.
+              In today’s world, you’re asked to pay ₹70,000 to ₹1,00,000+ just
+              to learn trending skills like Data Science or Marketing—and still,
+              there’s no real outcome.
             </p>
             <p>That’s why I started Baoiam.</p>
             <p>
-              We offer the same (or better) industry-ready training—at just ₹4,999.
-              No compromises. No false promises. Just pure skill-building that gets you
-              ready for real jobs.
+              We offer the same (or better) industry-ready training—at just
+              ₹4,999. No compromises. No false promises. Just pure
+              skill-building that gets you ready for real jobs.
             </p>
             <p>I’m not here to sell dreams. I’m here to build futures.</p>
             <p>Let Baoiam be your turning point.</p>
-            <p className="text-right font-semibold">– Siddharth Tomar, Founder</p>
+            <p className="text-right font-semibold">
+              – Siddharth Tomar, Founder
+            </p>
           </div>
         </div>
       </div>
