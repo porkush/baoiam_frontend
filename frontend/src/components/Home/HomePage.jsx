@@ -13,6 +13,7 @@ import OurProgram from './OurProgram';
 import DataScienceBanner from './DataScienceBanner';
 import Footer from '../Footer/Footer';
 import Webinars from './Webinars';
+import FoundersNote from './FoundersNote';
 
 export default function HomePage() {
   return (
@@ -27,6 +28,7 @@ export default function HomePage() {
       <StandOut/>
       <Partner/>
       <TeamSection/>
+      <FoundersNote/>
       <Prestige/>
       <Testimonial/>
       <FAQSection/>
