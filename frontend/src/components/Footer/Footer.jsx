@@ -55,7 +55,7 @@ const Footer = () => {
     {
       heading: "SUPPORT",
       items: [
-        { label: "Help Center", href: "#" },
+        { label: "Refund Policy", href: "/refundPolicy" },
         { label: "FAQS", href: "#" },
         { label: "Terms & Condition", href: "/terms&conditions" },
         { label: "Privacy  Policy", href: "/Privacy&Policy" },

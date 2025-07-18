@@ -65,7 +65,7 @@ const BoughtTogether = () => {
         Your{" "} <span className="text-orange-500">Software Development</span>{" "}Growth Path
       </h2>
       <h3 className="text-base max-w-2xl  md:text-[20px] font-medium mb-8 md:mb-10 text-center">
-        Learn from Industry Titans Master skills from seasoned professionals who’ve worked at top tech companies.
+        Bundle up the best skillsets for faster career growth & higher ROI.
       </h3>
       <div className="flex flex-col md:flex-row items-center md:justify-center gap-4">
         {courses.slice(0, 3).map((course, index, arr) => (

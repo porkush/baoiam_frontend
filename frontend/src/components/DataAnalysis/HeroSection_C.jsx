@@ -173,7 +173,7 @@ export default function HeroSection_C() {
               </p>
               <p className="text-[11px] mx-2">
                 Start your journey to a high-paying job with Baoiam's expert-led
-                training
+                training.
               </p>
             </div>
 
