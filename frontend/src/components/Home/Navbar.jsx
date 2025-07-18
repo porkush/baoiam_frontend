@@ -85,12 +85,12 @@ const Navbar = ({ onSignUpClick }) => {
 
                 {/* Accordion Style Dropdown */}
                 {isHovered && (
-                  <div className="absolute  text-black mt-2 py-2 w-64 rounded shadow-lg z-20 border border-gray-100 bg-gray-50">
+                  <div className="absolute  text-black mt-2 py-2 w-66 rounded shadow-lg z-20 border border-gray-100 bg-gray-50">
                     {Object.entries(kickstarterCourses).map(
                       ([category, subcategories]) => (
                         <div key={category} className="border-b border-gray-200">
                           <button
-                            className="flex justify-between items-center w-full px-4 py-2 hover:bg-gray-100"
+                            className="flex justify-between items-center w-full px-2 py-2 hover:bg-gray-100"
                             onClick={() =>
                               setSelectedCategory(
                                 selectedCategory === category ? null : category

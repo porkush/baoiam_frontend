@@ -1,6 +1,6 @@
 // import React from 'react';
-import udaanImg from "../../assets/Home/OurProgram/Udaan.webp";
-import fusionImg from "../../assets/Home/OurProgram/spf.webp";
+import udaanImg from "../../assets/Home/OurProgram/Udaan2.png";
+import fusionImg from "../../assets/Home/OurProgram/SFP_02.png";
 import Head from "../../assets/Home/OurProgram/head.webp";
 import HeadingImage from "../Lines/HeadingImages";
 import SubHeadImg from "../Lines/SubHeading";
@@ -28,7 +28,7 @@ const OurProgram = () => {
           <img
             src={udaanImg}
             alt="Udaan 90"
-            className="w-[360px] h-[360px] object-cover rounded-3xl" // ✅ Fully rounded image
+            className="w-[355px] h-[360px] object-cover rounded-3xl" // ✅ Fully rounded image
           />
 
           {/* Overlapping Stats Bar */}
