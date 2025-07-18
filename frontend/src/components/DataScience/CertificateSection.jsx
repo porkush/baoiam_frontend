@@ -20,7 +20,7 @@ export default function CertificateSection() {
           <img
             src={certificateImage}
             alt="Certificate"
-            className="w-[1100px] h-[550px] object-contain rounded-[10px]"
+            className="w-[780px] h-[550px] object-contain rounded-[10px] border-t-2 border-r-2"
           />
         </div>
       </div>
