@@ -2,47 +2,47 @@ import React, { useState } from "react";
 
 const modules = [
   {
-    title: "Module 1: Introduction to Data Science",
-    items: ["Overview of Data Science", "Importance of Data Science"],
+    title: "Module 1: Core Learning – Foundations & Tools",
+    items: [
+      "Python for Data Science",
+      "Data Manipulation & Visualization",
+      "Statistics & Probability for Data Science",
+      "SQL & Databases",
+      "Mini-Projects: YouTube Data Analysis, Sales Dashboard, SQL-Based Customer Segmentation"
+    ],
   },
   {
-    title: "Module 2: Data Collection and Preprocessing",
-    items: ["Overview of Data Science", "Importance of Data Science"],
+    title: "Module 2: Machine Learning & Real-World Applications",
+    items: [
+      "Machine Learning Basics",
+      "Intermediate ML + Sklearn",
+      "Deep Learning & Neural Networks",
+      "Real Industry Data Projects: Churn Prediction, Recommendation System, Fraud Detection, etc.",
+      "Capstone Project #1"
+    ],
   },
   {
-    title: "Module 3: Exploratory Data Analysis (EDA)",
-    items: ["Overview of Data Science", "Importance of Data Science"],
+    title: "Module 3: Resume, Portfolio & Career Readiness",
+    items: [
+      "Resume & LinkedIn Optimization",
+      "GitHub + Portfolio Website Building",
+      "Effective Project Documentation",
+      "Mock Assessments & Soft Skills Training",
+      "Real-world Project Showcase & Feedback"
+    ],
   },
   {
-    title: "Module 4: Machine Learning Basics",
-    items: ["Overview of Data Science", "Importance of Data Science"],
-  },
-  {
-    title: "Module 5: Advanced Machine Learning",
-    items: ["Overview of Data Science", "Importance of Data Science"],
-  },
-  {
-    title: "Module 6: Data Visualization",
-    items: ["Overview of Data Science", "Importance of Data Science"],
-  },
-
-  {
-    title: "Module 7: Predictive Analytics",
-    items: ["Overview of Data Science", "Importance of Data Science"],
-  },
-  {
-    title: "Module 8: Real-World Applications of Data Science",
-    items: ["Overview of Data Science", "Importance of Data Science"],
-  },
-  {
-    title: "Module 9: Ethical and Legal Considerations in Data Science",
-    items: ["Overview of Data Science", "Importance of Data Science"],
-  },
-  {
-    title: "Module 10: Capstone Project",
-    items: ["Overview of Data Science", "Importance of Data Science"],
+    title: "Module 4: Placement & Interview Preparation",
+    items: [
+      "Technical Mock Interviews (DSA + ML + Python)",
+      "HR Interview Practice",
+      "Common Interview Questions (ML, Stats, Projects)",
+      "1-on-1 Mentorship & Company Referrals",
+      "Placement Drives & Final Preparation"
+    ],
   },
 ];
+
 
 const LearningJourney = () => {
   const [openIndex, setOpenIndex] = useState(null);
