@@ -15,25 +15,25 @@ export default function HeroSection() {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <section className="bg-white text-gray-800 px-2 pt-13 sm:px-4 font-['Poppins'] w-full max-w-[1290px] mx-auto">
+    <section className="bg-white text-gray-800 px-2 pt-5 sm:pt-13 sm:px-4 font-['Poppins'] w-full max-w-[1290px] mx-auto">
       <div className="flex flex-col md:flex-row items-center justify-between gap-8 mt-4">
         {/* Content Section */}
         <div className="flex flex-col w-full md:w-[650px] ">
           {/* Headline */}
-          <h3 className="w-full text-[40px] md:text-[52px] font-semibold leading-[100%] font-poppins">
+          <h3 className="w-full text-[26px] sm:text-[40px] md:text-[52px] font-semibold leading-[100%] font-poppins">
             <span className="text-black">Learn. Build. </span>
             <span className="text-orange-500">Get Hired.</span>
           </h3>
 
           {/* Subheading */}
-          <p className="w-full text-[18px] font-medium leading-normal text-[#222222] mt-4">
+          <p className="w-full text-[14px] sm:text-[18px] font-medium leading-normal text-[#222222] mt-4">
             Where talent meets training and dreams take off. Backed by mentors,
             bootcamps & outcomes.
           </p>
 
           {/* "What brings you to Baoiam" section */}
           <div className="flex flex-col w-full gap-5 mt-8">
-            <h2 className="w-full text-[22px] font-semibold leading-[100%] text-[#222222]">
+            <h2 className="w-full text-[16px] sm:text-[22px] font-semibold leading-[100%] text-[#222222]">
               What brings you to Baoiam today?
             </h2>
 
@@ -46,7 +46,7 @@ export default function HeroSection() {
               ].map((text, idx) => (
                 <li
                   key={idx}
-                  className="cursor-default flex items-center w-full px-3 py-2 rounded-[5px] bg-[#F8F8F8] gap-3 font-medium text-base md:text-lg transition-all hover:bg-gray-200"
+                  className="cursor-default flex items-center w-full px-3 py-2 rounded-[5px] bg-[#F8F8F8] gap-3 font-medium text-[14px] md:text-lg transition-all hover:bg-gray-200"
                 >
                   <input
                     type="radio"
@@ -58,16 +58,16 @@ export default function HeroSection() {
               ))}
             </ul>
 
-            <div className="mt-4 flex flex-col sm:flex-row gap-8">
+            <div className="mt-4 flex sm:flex-row gap-3 sm:gap-8">
               <Link to="/DataScience">
-                <button className="bg-[#FF6501]  rounded-lg text-white flex items-center justify-center gap-2 py-2 px-4 font-medium text-xl hover:bg-[#FF650133] hover:text-orange-500">
+                <button className="bg-[#FF6501]  rounded-lg text-white flex items-center justify-center gap-2 py-1 sm:py-2 px-1 sm:px-4 font-medium  text-[14px] sm:text-xl hover:bg-[#FF650133] hover:text-orange-500">
                   Apply Now →
                 </button>
               </Link>
               <div>
                 {/* The Button */}
                 <button
-                  className="bg-black text-white border rounded-lg py-2 px-4 text-xl hover:bg-[#7B7B7B]"
+                  className="bg-black text-white border rounded-lg py-1 sm:py-2  px-1 sm:px-4 text-[14px] sm:text-xl hover:bg-[#7B7B7B]"
                   onClick={() => setShowModal(true)}
                 >
                   Talk to our Counsellor
@@ -102,9 +102,9 @@ export default function HeroSection() {
         </div>
 
         {/* Image Scrollers */}
-        <div className="flex justify-center gap-8 ml-0 mb-8 mt-8 md:mt-0 w-full md:w-auto">
+        <div className="flex justify-center sm:gap-8 ml-0 mb-8 mt-8 md:mt-0 w-full md:w-auto">
           {/* LEFT SCROLLER */}
-          <div className="relative h-[460px] w-[240px] overflow-hidden">
+          <div className="relative h-[300px] sm:h-[460px] sm:w-[240px] overflow-hidden">
             <motion.div
               className="flex flex-col items-center space-y-6 gap-[40px]"
               animate={{ y: ["0%", "-50%"] }}
@@ -118,7 +118,7 @@ export default function HeroSection() {
                 <img
                   key={idx}
                   src={src}
-                  className="h-[250px] w-[200px] object-cover rounded-lg"
+                  className="sm:h-[250px] sm:w-[200px] object-cover rounded-lg"
                 />
               ))}
             </motion.div>
@@ -127,7 +127,7 @@ export default function HeroSection() {
           </div>
 
           {/* RIGHT SCROLLER */}
-          <div className="relative h-[460px] w-[240px] overflow-hidden">
+          <div className="relative h-[300px] sm:h-[460px] sm:w-[240px] overflow-hidden">
             <motion.div
               className="flex flex-col items-center space-y-6 gap-[40px]"
               animate={{ y: ["0%", "-50%"] }}
@@ -142,7 +142,7 @@ export default function HeroSection() {
                 <img
                   key={idx}
                   src={src}
-                  className="h-[250px] w-[200px] object-cover rounded-lg"
+                  className="sm:h-[250px] sm:w-[200px] object-cover rounded-lg"
                 />
               ))}
             </motion.div>
