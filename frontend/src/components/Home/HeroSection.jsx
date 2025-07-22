@@ -20,7 +20,7 @@ export default function HeroSection() {
         {/* Content Section */}
         <div className="flex flex-col w-full md:w-[650px] ">
           {/* Headline */}
-          <h3 className="w-full text-[26px] sm:text-[40px] md:text-[52px] font-semibold leading-[100%] font-poppins">
+          <h3 className="w-full text-[34px] sm:text-[40px] md:text-[52px] font-semibold leading-[100%] font-poppins">
             <span className="text-black">Learn. Build. </span>
             <span className="text-orange-500">Get Hired.</span>
           </h3>
@@ -58,51 +58,40 @@ export default function HeroSection() {
               ))}
             </ul>
 
-            <div className="mt-4 flex sm:flex-row gap-3 sm:gap-8">
-              <Link to="/DataScience">
-                <button className="bg-[#FF6501]  rounded-lg text-white flex items-center justify-center gap-2 py-1 sm:py-2 px-1 sm:px-4 font-medium  text-[14px] sm:text-xl hover:bg-[#FF650133] hover:text-orange-500">
-                  Apply Now →
-                </button>
-              </Link>
-              <div>
-                {/* The Button */}
-                <button
-                  className="bg-black text-white border rounded-lg py-1 sm:py-2  px-1 sm:px-4 text-[14px] sm:text-xl hover:bg-[#7B7B7B]"
-                  onClick={() => setShowModal(true)}
-                >
-                  Talk to our Counsellor
-                </button>
+            <div className="mt-4 flex flex-col sm:flex-row items-center gap-3 sm:gap-8">
+  <Link to="/DataScience" className="w-[80%] sm:w-auto">
+    <button className="bg-[#FF6501] rounded-lg text-white flex items-center justify-center gap-2 py-1.5 sm:py-2 px-3 sm:px-4 font-medium text-[12px] sm:text-xl hover:bg-[#FF650133] hover:text-orange-500 w-full">
+      Apply Now →
+    </button>
+  </Link>
+  <div className="w-[80%] sm:w-auto">
+    <button
+      className="bg-black text-white border rounded-lg py-1.5 sm:py-2 px-3 sm:px-4 text-[12px] sm:text-xl hover:bg-[#7B7B7B] w-full"
+      onClick={() => setShowModal(true)}
+    >
+      Talk to our Counsellor
+    </button>
 
-                {/* The Modal */}
-
-                {showModal && (
-                  <div
-                    className="fixed inset-0 z-50 flex items-center justify-center bg-opacity-50"
-                    onClick={() => setShowModal(false)}
-                  >
-                    <div
-                      className="relative max-w-xl w-full  "
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      {/* Cross Button */}
-                      <button
-                        onClick={() => setShowModal(false)}
-                        className="absolute top-20 right-6 text-2xl text-gray-600 hover:text-black"
-                      >
-                        &times;
-                      </button>
-
-                      <ContactForm onClose={() => setShowModal(false)} />
-                    </div>
-                  </div>
-                )}
-              </div>
-            </div>
+    {showModal && (
+      <div
+        className="fixed inset-0 z-50 flex items-center justify-center bg-opacity-50"
+        onClick={() => setShowModal(false)}
+      >
+        <div
+          className="relative max-w-xl w-full"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <ContactForm onClose={() => setShowModal(false)} />
+        </div>
+      </div>
+    )}
+  </div>
+</div>
           </div>
         </div>
 
         {/* Image Scrollers */}
-        <div className="flex justify-center sm:gap-8 ml-0 mb-8 mt-8 md:mt-0 w-full md:w-auto">
+        <div className="flex justify-center sm:gap-8 ml-0 sm:mb-8 sm:mt-8 md:mt-0 w-full md:w-auto">
           {/* LEFT SCROLLER */}
           <div className="relative h-[300px] sm:h-[460px] sm:w-[240px] overflow-hidden">
             <motion.div

@@ -108,62 +108,61 @@ const TeamSection = () => {
     }
   ];
 
-  // Render a member card
-  // Render a member card
-const renderMemberCard = (member, index) => (
-  <div
-    key={`${member.name}-${index}`}
-    className={`flex-shrink-0 w-64 mx-4 flex flex-col items-center p-6 ${
-      gradients[index % gradients.length]
-    } rounded-lg`}
-  >
-    {/* Text Content - Moved to top */}
-    <div className="text-center w-full mb-6">
-      <h1 className="font-bold text-xl text-gray-200">{member.name}</h1>
-      <p className="text-gray-200 mt-1">{member.position}</p>
-      {member.linkedin && (
-        <a
-          href={member.linkedin}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-2 inline-block text-blue-600 hover:text-blue-800"
-        >
-          <FaLinkedin size={24} />
-        </a>
-      )}
-    </div>
 
-    {/* Image Container - Moved to bottom */}
+
+  const renderMemberCard = (member, index) => (
     <div
-      className={`w-[230px] h-[280px] overflow-hidden rounded-full ${
-        solidColors[index % solidColors.length]
-      } flex items-start justify-center pt-4`}
+      key={`${member.name}-${index}`}
+      className={`flex-shrink-0 w-48 sm:w-56 md:w-64 mx-2 sm:mx-3 md:mx-4 flex flex-col items-center p-4 sm:p-5 md:p-6 ${
+        gradients[index % gradients.length]
+      } rounded-lg`}
     >
-      <img
-        className="w-[230px] h-[300px] mt-3 overflow-hidden object-cover rounded-full"
-        src={member.image}
-        alt={member.name}
-      />
-    </div>
-  </div>
-);
+      <div className="text-center w-full mb-4 sm:mb-5 md:mb-6">
+        <h1 className="font-bold text-sm sm:text-base md:text-xl text-gray-200">
+          {member.name}
+        </h1>
+        <p className="text-gray-200 mt-1 text-xs sm:text-sm md:text-base">
+          {member.position}
+        </p>
+        {member.linkedin && (
+          <a
+            href={member.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-1 sm:mt-2 inline-block text-blue-600 hover:text-blue-800"
+          >
+            <FaLinkedin className="text-lg sm:text-xl md:text-2xl" />
+          </a>
+        )}
+      </div>
 
+      <div
+        className={`w-[150px] h-[180px] sm:w-[180px] sm:h-[220px] md:w-[230px] md:h-[280px] overflow-hidden rounded-full ${
+          solidColors[index % solidColors.length]
+        } flex items-start justify-center pt-2 sm:pt-3 md:pt-4`}
+      >
+        <img
+          className="w-[150px] h-[180px] sm:w-[180px] sm:h-[220px] md:w-[230px] md:h-[300px] mt-2 sm:mt-3 overflow-hidden object-cover rounded-full"
+          src={member.image}
+          alt={member.name}
+        />
+      </div>
+    </div>
+  );
 
   return (
-    <div className="bg-white py-10 pb-14 px-4 sm:px-6 lg:px-8 font-['Poppins']">
+    <div className="bg-white py-6 sm:py-8 md:py-10 pb-10 sm:pb-12 md:pb-14 px-4 sm:px-6 lg:px-8 font-['Poppins']">
       {/* Header */}
-       <div className="max-w-7xl mx-auto text-center mb-16">
-               
-                <HeadingImage title="Our" highlight="Team"/>
-                <p className="text-[24px] text-black  mx-auto">
-                    Experts who guide, Mentors who matter. We teach what you own.
-                </p>
-            </div>
+      <div className="max-w-7xl mx-auto text-center mb-10 sm:mb-12 md:mb-16">
+        <HeadingImage title="Our" highlight="Team"/>
+        <p className="text-base sm:text-xl md:text-[24px] text-black mx-auto">
+          Experts who guide, Mentors who matter. We teach what you own.
+        </p>
+      </div>
 
-      {/* Marquee - Increased height to accommodate h-74 images */}
-      <div className="relative w-full overflow-hidden h-[450px]">
+      {/* Marquee */}
+      <div className="relative w-full overflow-hidden h-[300px] sm:h-[350px] md:h-[450px]">
         <div className="absolute flex">
-          {/* First row */}
           <motion.div
             initial={{ x: 0 }}
             animate={{ x: "-100%" }}
@@ -177,7 +176,6 @@ const renderMemberCard = (member, index) => (
             {members.map((member, index) => renderMemberCard(member, index))}
           </motion.div>
 
-          {/* Second identical row for seamless looping */}
           <motion.div
             initial={{ x: 0 }}
             animate={{ x: "-100%" }}

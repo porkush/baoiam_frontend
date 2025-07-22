@@ -56,82 +56,85 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="max-w-6xl mx-auto px-4 py-12 md:flex md:gap-12 font-['Poppins']">
-      {/* Left side */}
-      <div className="md:w-1/2 mb-10 md:mb-0 flex flex-col items-center md:items-start">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-          Frequently Asked Questions
-        </h2>
-        <p className="text-center md:text-left mb-2">
-          Still you have any questions? Contact our Team via
-          <br />
-          <a href="mailto:support@baoiam.com">support@baoiam.com</a>
-        </p>
-        <button className="mt-4 px-5 py-2 border rounded-md bg-gray-200 border-gray-300 hover:bg-gray-100 transition">
-          See All FAQ’s
-        </button>
-        <div className="relative w-[409px] h-[409px] overflow-hidden mt-10">
-          <img
-            src={FAQ_Img}
-            alt="FAQ Illustration"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute bottom-0 left-0 w-full h-[35px] bg-gradient-to-t from-white to-transparent" />
-        </div>
-      </div>
+   <section className="max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row md:gap-12 font-['Poppins']">
+  {/* Left side */}
+  <div className="w-full md:w-1/2 mb-10 md:mb-0 flex flex-col items-center md:items-start">
+    <h2 className="text-[24px] sm:text-[28px] md:text-[32px] lg:text-4xl font-bold text-gray-900 mb-3 text-center md:text-left">
+      Frequently Asked Questions
+    </h2>
+    <p className="text-[14px] sm:text-[16px] text-center md:text-left mb-2">
+      Still you have any questions? Contact our Team via
+      <br />
+      <a href="mailto:support@baoiam.com">support@baoiam.com</a>
+    </p>
+    <button className="mt-4 px-5 py-2 border rounded-md bg-gray-200 border-gray-300 hover:bg-gray-100 transition text-sm">
+      See All FAQ’s
+    </button>
 
-      {/* Right side */}
-      <div className="md:w-3/4 ">
-        <div className="space-y-4">
-          {faqData.map((item, index) => (
-            <div
-              key={index}
-              className={` rounded-lg text-[18px] font-med overflow-hidden shadow-sm transition-all duration-300 ml-6 p-2 ${
-                openIndex === index ? "bg-white shadow" : "bg-white"
-              }`}
-            >
-              <button
-                onClick={() => toggleIndex(index)}
-                className="w-full flex justify-between items-center px-5 py-4 text-left text-gray-900 font-medium focus:outline-none transition"
-              >
-                <span>{item.question}</span>
-                {openIndex === index ? (
-                  <span className="w-[44px] h-[44px] p-[10px] rounded-[6px] bg-[#FFF4E5] flex items-center justify-center">
-                    <FaTimes className="text-gray-600 text-xl" />
-                  </span>
-                ) : (
-                  <span className="w-[44px] h-[44px] p-[10px] rounded-[6px] bg-[#FFF4E5] flex items-center justify-center">
-                    <FaPlus className="text-gray-600 text-xl" />
-                  </span>
-                )}
-              </button>
-              {openIndex === index && (
-                <div className="px-5 pb-4 text-gray-700 text-sm border-t border-gray-300 ">
-                  <p className="mb-3 mt-10 text-[16px] ">{item.answer}</p>
-                  <div className="bg-gray-100 mt-3 border-gray-200 p-4 rounded-lg flex items-center justify-between">
-                    <p className="text-[16px] font-medium">
-                      Enrollment Process for the Program
-                    </p>
-                    <button className="flex items-center justify-center rounded-full bg-white p-4">
-                      <FaArrowRight className="text-[16px]" />
-                    </button>
-                  </div>
+    <div className="relative w-[90%] sm:w-[350px] md:w-[409px] h-[325px] sm:h-[350px] md:h-[409px] overflow-hidden mt-10">
+      <img
+        src={FAQ_Img}
+        alt="FAQ Illustration"
+        className="w-full h-full object-cover"
+      />
+      <div className="absolute bottom-0 left-0 w-full h-[35px] bg-gradient-to-t from-white to-transparent" />
+    </div>
+  </div>
 
-                  {item.button && (
-                    <a
-                      href={item.button.link}
-                      className="inline-flex items-center text-blue-600 hover:underline text-sm font-medium"
-                    >
-                      {item.button.text}
-                      <span className="ml-2">→</span>
-                    </a>
-                  )}
-                </div>
+  {/* Right side */}
+  <div className="w-full md:w-3/4">
+    <div className="space-y-4">
+      {faqData.map((item, index) => (
+        <div
+          key={index}
+          className={`rounded-lg text-[16px] sm:text-[17px] md:text-[18px] font-medium overflow-hidden shadow-sm transition-all duration-300 ml-0 md:ml-6 p-2 ${
+            openIndex === index ? "bg-white shadow" : "bg-white"
+          }`}
+        >
+          <button
+            onClick={() => toggleIndex(index)}
+            className="w-full flex justify-between items-center px-4 sm:px-5 py-4 text-left text-gray-900 font-medium focus:outline-none transition"
+          >
+            <span>{item.question}</span>
+            <span className="w-[38px] sm:w-[44px] h-[38px] sm:h-[44px] p-[8px] sm:p-[10px] rounded-[6px] bg-[#FFF4E5] flex items-center justify-center">
+              {openIndex === index ? (
+                <FaTimes className="text-gray-600 text-lg sm:text-xl" />
+              ) : (
+                <FaPlus className="text-gray-600 text-lg sm:text-xl" />
+              )}
+            </span>
+          </button>
+
+          {openIndex === index && (
+            <div className="px-4 sm:px-5 pb-4 text-gray-700 text-sm border-t border-gray-300">
+              <p className="mb-3 mt-4 text-[15px] sm:text-[16px]">
+                {item.answer}
+              </p>
+              <div className="bg-gray-100 mt-3 border border-gray-200 p-4 rounded-lg flex items-center justify-between">
+                <p className="text-[14px] sm:text-[16px] font-medium">
+                  Enrollment Process for the Program
+                </p>
+                <button className="flex items-center justify-center rounded-full bg-white p-3 sm:p-4">
+                  <FaArrowRight className="text-[14px] sm:text-[16px]" />
+                </button>
+              </div>
+
+              {item.button && (
+                <a
+                  href={item.button.link}
+                  className="inline-flex items-center text-blue-600 hover:underline text-sm font-medium"
+                >
+                  {item.button.text}
+                  <span className="ml-2">→</span>
+                </a>
               )}
             </div>
-          ))}
+          )}
         </div>
-      </div>
-    </section>
+      ))}
+    </div>
+  </div>
+</section>
+
   );
 }

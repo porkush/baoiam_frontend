@@ -2,15 +2,4 @@
 
 
 
-
-
-/*
-.hide-scrollbar {
-  scrollbar-width: none; 
-  -ms-overflow-style: none; 
-}
-
-.hide-scrollbar::-webkit-scrollbar {
-  display: none; 
-  }
-*/
+/* body{overflow-x: hidden} */

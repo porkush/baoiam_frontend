@@ -110,12 +110,12 @@ const PrideBanner = () => {
                   onClick={(e) => e.stopPropagation()}
                 >
                   {/* Cross Button */}
-                  <button
+                  {/* <button
                     onClick={() => setShowModal(false)}
                     className="absolute top-20 right-6 text-2xl text-gray-600 hover:text-black"
                   >
                     &times;
-                  </button>
+                  </button> */}
 
                   <ContactForm onClose={() => setShowModal(false)} />
                 </div>
