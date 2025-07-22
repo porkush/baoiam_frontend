@@ -203,21 +203,6 @@
 
 // export default Webinars;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React, { useState, useRef, useEffect } from "react";
 import LandingPages from "../../assets/Home/Webinar/LandingPages.mp4";
 import ContactForm from "../../Pages/ContactForm";
@@ -280,9 +265,9 @@ const Webinars = () => {
           Join the webinar that makes learning unforgettable.
         </p>
 
-        <div className="flex flex-wrap justify-center gap-4 px-2">
+        <div className="flex justify-center items-center gap-4 px-2 flex-nowrap flex-row">
           <button
-            className="bg-[#FF6501] hover:bg-[#FF6501CC] text-white px-5 py-2 rounded-md text-[15px] sm:text-[17px] md:text-xl font-medium transition"
+            className="bg-[#FF6501] hover:bg-[#FF6501CC] text-white px-4 py-2 rounded-md text-[15px] sm:text-[17px] md:text-xl font-medium transition"
             onClick={() => setShowModal(true)}
           >
             Register for Webinar
@@ -296,20 +281,19 @@ const Webinars = () => {
           </button>
         </div>
 
-        {/* Modal */}
         {showModal && (
-          <div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 px-4 sm:px-6"
-            onClick={() => setShowModal(false)}
-          >
-            <div
-              className="relative w-full max-w-xl"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <ContactForm onClose={() => setShowModal(false)} />
-            </div>
-          </div>
-        )}
+      <div
+        className="fixed inset-0 z-50 flex items-center justify-center bg-opacity-50"
+        onClick={() => setShowModal(false)}
+      >
+        <div
+          className="relative max-w-xl w-full"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <ContactForm onClose={() => setShowModal(false)} />
+        </div>
+      </div>
+    )}
       </div>
 
       {/* Bottom Section with Video */}

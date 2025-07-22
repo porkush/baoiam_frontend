@@ -39,7 +39,7 @@ const Contact = () => {
             Enter your number and let our counselor clear the path.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center w-full max-w-sm">
+          <div className="flex  items-stretch sm:items-center w-full max-w-sm">
             <div className="flex items-center border-l border-t border-b border-gray-400 rounded-l-lg overflow-hidden flex-grow">
               <select className="bg-white text-black px-3 py-1 focus:outline-none border-r border-gray-400">
                 <option>+91</option>

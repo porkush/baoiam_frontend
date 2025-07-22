@@ -8,25 +8,25 @@ export default function StatsSection() {
   return (
     <section className="w-full flex flex-col items-center bg-white pt-5 font-['Poppins'] px-4 mt-14">
       {/* Top Black Bar */}
-      <div className="w-full max-w-[1070px] min-h-[118px] rounded-[20px] bg-black text-white px-6 md:px-[60px] lg:px-[80px] py-5 md:py-[20px] flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
-        <div className="text-center">
-          <p className="text-xl md:text-3xl font-bold flex items-center justify-center">
-            4.8 <FaStar className="ml-1 text-yellow-400 text-xl" />
-          </p>
-          <p className="text-sm text-gray-300">
-            <span className="md:text-xl font-medium">Ratings</span> from 10k+
-            students
-          </p>
-        </div>
-        <div className="text-center">
-          <p className="text-xl md:text-3xl font-bold">200 +</p>
-          <p className="md:text-xl text-gray-300 font-medium">Hiring Partners</p>
-        </div>
-        <div className="text-center">
-          <p className="text-xl md:text-3xl font-bold">50 LPA</p>
-          <p className="md:text-xl text-gray-300 font-medium">Highest Package</p>
-        </div>
+        <div className="w-full max-w-[1070px] min-h-[118px] rounded-[20px] bg-black text-white px-6 lg:px-[80px] py-5 lg:py-[20px] flex flex-row justify-between items-center gap-4">
+      <div className="text-center flex-1">
+        <p className="text-xl lg:text-3xl font-bold flex items-center justify-center">
+          4.8 <FaStar className="ml-1 text-yellow-400 text-xl" />
+        </p>
+        <p className="text-sm lg:text-base text-gray-300">
+          <span className="lg:text-xl font-medium">Ratings</span> from 10k+
+          students
+        </p>
       </div>
+      <div className="text-center flex-1">
+        <p className="text-xl lg:text-3xl font-bold">200 +</p>
+        <p className="text-sm lg:text-xl text-gray-300 font-medium">Hiring Partners</p>
+      </div>
+      <div className="text-center flex-1">
+        <p className="text-xl lg:text-3xl font-bold">50 LPA</p>
+        <p className="text-sm lg:text-xl text-gray-300 font-medium">Highest Package</p>
+      </div>
+    </div>
 
       {/* Spacer */}
       <div className="h-8 md:h-12"></div>
