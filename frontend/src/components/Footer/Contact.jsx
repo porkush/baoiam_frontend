@@ -55,7 +55,7 @@ const Contact = () => {
             <div>
               <button
                 onClick={openModal}
-                className="bg-orange-500 text-white px-2 sm:px-4 py-1 rounded-none rounded-r-lg hover:bg-orange-600 transition-colors duration-300 whitespace-nowrap border border-orange-500 w-full sm:w-auto"
+                className="bg-orange-500 text-white px-2 sm:px-4 py-1 rounded-none rounded-r-lg hover:bg-orange-600 transition-colors duration-300 whitespace-nowrap border border-orange-500 w-full sm:w-auto text-[15px]"
               >
                 Get Callback
               </button>
