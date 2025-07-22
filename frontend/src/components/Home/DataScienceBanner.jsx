@@ -313,8 +313,8 @@ const DataScienceBanner = () => {
   return (
     <div
       className="
-        w-full max-w-[1200px]
-        rounded-[20px] shadow-md
+        w-full max-w-[1200px] rounded-[10px]
+        sm:rounded-[20px] shadow-md
         flex flex-row
         justify-between items-center
         mx-auto my-10 px-4 py-6

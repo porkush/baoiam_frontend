@@ -14,8 +14,8 @@ import googlelogo from "../../assets/Footer/Footer2/google.png"; // Assuming you
 const FooterLinksSection = ({ heading, items }) => {
   return (
     <div className="text-sm font-['Poppins']">
-      <h5 className="text-white mb-6">{heading}</h5>
-      <ul className="space-y-4 text-gray-500">
+      <h5 className="text-white mb-2 sm:mb-6">{heading}</h5>
+      <ul className= " space-y-2 sm:space-y-4 text-gray-500">
         {items.map((item, index) => (
           <li key={index}>
             <a
@@ -78,7 +78,7 @@ const Footer = () => {
             Follow us for the latest updates, career insights, and program
             launches.
           </p>
-          <div className="flex space-x-3">
+          <div className="flex space-x-10 sm:space-x-3">
             <a
               href="https://www.facebook.com/p/%F0%9D%98%BD%F0%9D%98%BC%F0%9D%99%8A-%F0%9D%99%84%F0%9D%98%BC%F0%9D%99%88-%F0%9D%98%89%F0%9D%98%A6-%F0%9D%98%88-%F0%9D%98%96%F0%9D%98%AF%F0%9D%98%A6-%F0%9D%98%90%F0%9D%98%AF-%F0%9D%98%88-%F0%9D%98%94%F0%9D%98%AA%F0%9D%98%AD%F0%9D%98%AD%F0%9D%98%AA%F0%9D%98%B0%F0%9D%98%AF-100064896061625/"
               target="_blank"
@@ -133,16 +133,16 @@ const Footer = () => {
 
         {/* App Download */}
         <div className="text-sm">
-          <h5 className="text-white mb-6">DOWNLOAD OUR APP</h5>
+          <h5 className="text-white mb-2 sm:mb-6">DOWNLOAD OUR APP</h5>
 
           <a href="https://play.google.com/store" target="_blank">
-            <img src={applelogo} alt="App Store" className="h-[58px] w-40" />
+            <img src={applelogo} alt="App Store" className="h-[50px] sm:h-[58px] w-40" />
           </a>
           <a href="https://play.google.com/store" target="_blank">
             <img
               src={googlelogo}
               alt="Google Play"
-              className="h-[58px] w-40 mt-4"
+              className="h-[50px] sm:h-[58px] w-40 mt-4"
             />
           </a>
         </div>
