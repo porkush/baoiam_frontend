@@ -267,14 +267,14 @@ const Webinars = () => {
 
         <div className="flex justify-center items-center gap-4 px-2 flex-nowrap flex-row">
           <button
-            className="bg-[#FF6501] hover:bg-[#FF6501CC] text-white px-4 py-2 rounded-md text-[15px] sm:text-[17px] md:text-xl font-medium transition"
+            className="bg-[#FF6501] hover:bg-[#FF6501CC] text-white px-1 sm:px-4 py-2 rounded-md text-[13px] sm:text-[17px] md:text-xl font-medium transition"
             onClick={() => setShowModal(true)}
           >
             Register for Webinar
           </button>
 
           <button
-            className="bg-black text-white border rounded-lg py-2 px-4 text-[15px] sm:text-[17px] md:text-xl hover:bg-[#7B7B7B]"
+            className="bg-black text-white border rounded-lg py-2 px-1 sm:px-4 text-[13px] sm:text-[17px] md:text-xl hover:bg-[#7B7B7B]"
             onClick={() => setShowModal(true)}
           >
             Talk to our Counsellor

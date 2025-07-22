@@ -49,13 +49,13 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="Enter mobile number"
-                className="bg-white px-3 py-1 flex-grow focus:outline-none text-black text-sm"
+                className="bg-white px-1 sm:px-3 py-1 flex-grow focus:outline-none text-black text-[12px] sm:text-sm"
               />
             </div>
             <div>
               <button
                 onClick={openModal}
-                className="bg-orange-500 text-white px-4 py-1 rounded-none sm:rounded-r-lg hover:bg-orange-600 transition-colors duration-300 whitespace-nowrap border border-orange-500 w-full sm:w-auto"
+                className="bg-orange-500 text-white px-4 py-1 rounded-none rounded-r-lg hover:bg-orange-600 transition-colors duration-300 whitespace-nowrap border border-orange-500 w-full sm:w-auto"
               >
                 Get Callback
               </button>

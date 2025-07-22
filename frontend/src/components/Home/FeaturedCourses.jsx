@@ -389,7 +389,7 @@ const FeaturedCourses = () => {
         </div>
       ) : (
         /* Mobile/Tablet View - Carousel */
-        <div className="max-w-[calc(100%-40px)] mx-auto">
+        <div className="max-w-[calc(100%-10px)] mx-auto">
           <Slider {...sliderSettings}>
             {courses.map((course) => (
               <div key={course.id} className="px-2">
@@ -475,13 +475,11 @@ const FeaturedCourses = () => {
       {/* Explore More Button */}
       <div className="mt-10 flex justify-center">
         <button
-          className="text-white bg-black hover:bg-[#7B7B7B] transition duration-300 text-lg sm:text-xl"
+          className="text-white bg-black hover:bg-[#7B7B7B] transition duration-300 text-[18px] sm:text-xl md:w-[208px] md:h-[46px]"
           onClick={() => setShowModal(true)}
           style={{
-            width: "208px",
-            height: "46px",
             borderRadius: "5px",
-            padding: "5px 10px",
+            padding: "5px 5px",
             boxShadow: "0px 4px 6px 0px #0000001A",
           }}
         >
