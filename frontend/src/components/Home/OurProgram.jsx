@@ -254,7 +254,7 @@ const OurProgram = () => {
       {/* Grid 1 */}
       <div className="max-w-[973px] mx-auto bg-[#FFF0E6] rounded-2xl shadow-md border border-orange-100 overflow-hidden flex flex-col md:flex-row font-['Poppins']">
         {/* Left: Image with stats bar */}
-        <div className="relative md:w-1/2 w-full flex justify-center items-center mb-8 sm:mb-15 sm:mt-3 sm:ml-7 px-4 sm:px-0">
+        <div className="relative md:w-1/2 w-full flex justify-center items-center mb-8 sm:mb-15 mt-3 sm:ml-7 px-4 sm:px-0">
           <img
             src={udaanImg}
             alt="Udaan 90"
@@ -379,7 +379,7 @@ const OurProgram = () => {
         </div>
 
         {/* Right: Image with stats bar */}
-        <div className="relative md:w-1/2 w-full flex justify-center items-center mb-8 sm:mb-15 sm:mt-3 sm:mr-7 px-4 sm:px-0 order-1 md:order-2">
+        <div className="relative md:w-1/2 w-full flex justify-center items-center mb-8 sm:mb-15 mt-3 sm:mr-7 px-4 sm:px-0 order-1 md:order-2">
           <img
             src={fusionImg}
             alt="Success Fusion"
