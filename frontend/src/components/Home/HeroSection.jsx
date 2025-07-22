@@ -20,7 +20,7 @@ export default function HeroSection() {
         {/* Content Section */}
         <div className="flex flex-col w-full md:w-[650px] ">
           {/* Headline */}
-          <h3 className="w-full text-[30px] sm:text-[40px] md:text-[52px] font-semibold leading-[100%] font-poppins">
+          <h3 className="w-full text-[28px] sm:text-[40px] md:text-[52px] font-semibold leading-[100%] font-poppins">
             <span className="text-black">Learn. Build. </span>
             <span className="text-orange-500">Get Hired.</span>
           </h3>

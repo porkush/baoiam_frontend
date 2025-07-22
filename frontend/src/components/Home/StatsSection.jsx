@@ -6,9 +6,9 @@ import img3 from "../../assets/Home/StatsSection/3.webp";
 
 export default function StatsSection() {
   return (
-    <section className="w-full flex flex-col items-center bg-white pt-5 font-['Poppins'] px-4 mt-14">
+    <section className="w-full flex flex-col items-center bg-white pt-5 font-['Poppins'] px-2 sm:px-4 mt-14">
       {/* Top Black Bar */}
-        <div className="w-full max-w-[1070px] min-h-[118px] rounded-[20px] bg-black text-white sm:px-6 lg:px-[80px] py-5 lg:py-[20px] flex flex-row justify-between items-center gap-4">
+        <div className="w-full max-w-[1070px] min-h-[118px] rounded-[20px] bg-black text-white px-1 sm:px-6 lg:px-[80px] py-5 lg:py-[20px] flex flex-row justify-between items-center gap-4">
       <div className="text-center flex-1">
         <p className="text-xl lg:text-3xl font-bold flex items-center justify-center">
           4.8 <FaStar className="ml-1 text-yellow-400 text-xl" />
