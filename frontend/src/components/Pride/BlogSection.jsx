@@ -5,21 +5,20 @@ import blog3 from "../../assets/Pride/BlogSection/blog3.png";
 import blog4 from "../../assets/Pride/BlogSection/blog4.png";
 import Group from "../../assets/Home/Lines/Group.webp";
 
-
 const BlogSection = () => {
   return (
     <section className="max-w-7xl mx-auto px-4 py-12 font-['Poppins']">
       {/* Heading */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
         <div>
-          <div className="flex w-full mb-2">
-                  <h2 className="text-3xl md:text-[48px]  font-semibold mb-2">
-                    Voices That<span className="text-orange-500"> Matter </span>
-                  </h2>
-                  <img src={Group} alt="" className="w-9 mb-4" />
-                </div>
-          <p className="text-black max-w-2xl text-[24px]">
-           Exploring the intersections of education, identity, and empathy.
+          <div className="flex w-full md:mb-2">
+            <h2 className="text-3xl md:text-[48px]  font-semibold mb-2">
+              Voices That<span className="text-orange-500"> Matter </span>
+            </h2>
+            <img src={Group} alt="" className="w-9 mb-4" />
+          </div>
+          <p className="text-black max-w-2xl text-[18px] md:text-[24px]">
+            Exploring the intersections of education, identity, and empathy.
           </p>
         </div>
       </div>
@@ -29,7 +28,7 @@ const BlogSection = () => {
         {/* Featured Large Card */}
         <div className="md:col-span-2 w-full">
           <div className="relative overflow-hidden bg-white transition flex justify-end items-start mb-3 md:mb-0">
-            <button className="bg-orange-500 hover:bg-orange-600 text-white font-medium px-5 py-1 mb-2 rounded-lg text-[20px]">
+            <button className="bg-orange-500 hover:bg-orange-600 text-white font-medium px-2 md:px-5 py-1 mb-2 rounded-lg  md:text-[20px]">
               View More
             </button>
           </div>
@@ -49,19 +48,21 @@ const BlogSection = () => {
             </div>
 
             {/* Bottom Overlay Box */}
-            <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur rounded-xl p-4 max-w-[80%] md:max-w-[40%]">
-              <h3 className="font-semibold mb-1 text-[16px]">Making Room:</h3>
-              <p className="text-[14px] mb-2">
+            <div className="absolute bottom-4 left-1 md:left-4 bg-white/90 backdrop-blur rounded-xl p-4 max-w-[74%] md:max-w-[40%]">
+              <h3 className="font-semibold mb-1 md:text-[16px]">
+                Making Room:
+              </h3>
+              <p className="text-[12px] md:text-[14px] mb-2">
                 How Schools and Colleges can Better Support Non-Binary Students
               </p>
-              <p className="text-[10px] text-black mb-3">
+              <p className="text-[10px] text-black md:mb-3">
                 More people are finally talking about gender identity in schools
                 and colleges...
               </p>
             </div>
 
             {/* Bottom Overlay Button */}
-            <button className="absolute bottom-4 right-4 bg-black text-white text-[24px] font-medium px-6 py-2 rounded-full text-sm hover:bg-white hover:text-black">
+            <button className="absolute bottom-4 right-0 md:right-4 bg-black text-white md:text-[24px] font-medium px-2 md:px-6 py-1 md:py-2 rounded-full text-sm hover:bg-white hover:text-black">
               Read More
             </button>
           </div>
@@ -89,7 +90,7 @@ const BlogSection = () => {
               9 July, 2025
             </button>
 
-            <button className="absolute bottom-4 right-4 bg-black text-white text-[16px] px-4 py-1 rounded-full hover:bg-white hover:text-black transition z-10">
+            <button className="absolute bottom-4 right-4 bg-black text-white text-[14px] md:text-[16px] px-4 py-1 rounded-full hover:bg-white hover:text-black transition z-10">
               Read More
             </button>
           </div>
@@ -106,7 +107,7 @@ const BlogSection = () => {
               <span className="bg-orange-500 text-white text-xs px-3 py-1 rounded-full">
                 9 July, 2025
               </span>
-              <button className="text-white bg-black text-[16px] px-4 py-1 rounded-full hover:bg-white hover:text-black">
+              <button className="text-white bg-black text-[14px] md:text-[16px] px-4 py-1 rounded-full hover:bg-white hover:text-black">
                 Read More
               </button>
             </div>
@@ -126,7 +127,3 @@ const BlogSection = () => {
 };
 
 export default BlogSection;
-
-
-
-
