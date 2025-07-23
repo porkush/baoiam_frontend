@@ -27,8 +27,7 @@ const PrideBanner = () => {
         px-6
         md:px-10
         lg:px-[68px]
-        py-2
-        sm:py-6
+         sm:py-6
         md:py-8
         lg:py-[25px]
       "
@@ -92,7 +91,7 @@ const PrideBanner = () => {
           <div>
             {/* The Button */}
             <button
-              className="bg-white text-black border border-gray-300 px-2 py-1 sm:px-6 sm:py-2 rounded-md font-semibold text-[13px] sm:text-[18px]"
+              className="bg-white text-black border border-gray-300 px-1 py-1 sm:px-6 sm:py-2 rounded-md font-semibold text-[13px] sm:text-[18px]"
               onClick={() => setShowModal(true)}
             >
               Talk to our Counsellor
@@ -131,7 +130,7 @@ const PrideBanner = () => {
           src={bannerImage}
           alt="Pride Hand"
           className="
-            w-[150px]
+            w-[130px]
             md:w-[180px]
             lg:w-[205px]
             h-auto
