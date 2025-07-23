@@ -12,7 +12,6 @@ import img10 from "../../assets/Pride/OurEvents/img10.webp";
 import img11 from "../../assets/Pride/OurEvents/img11.webp";
 import Group from "../../assets/Home/Lines/Group.webp";
 
-
 const images = [
   { src: img1, w: "200px", h: "200px" },
   { src: img2, w: "530px", h: "200px" },
@@ -45,19 +44,21 @@ const OurEvent = () => (
       {/* <h2 className="text-center text-[32px] sm:text-[40px] lg:text-[48px] font-semibold mb-2">
         About <span className="text-orange-500">Bonnya</span>
       </h2> */}
-      <div className="flex items-center justify-center w-full mb-4">
-        <h2 className="text-3xl md:text-[48px]  font-semibold mb-2">
+      <div className="flex  items-center justify-center w-full mb-4 text-center">
+        <h2 className="text-3xl md:text-[48px] font-semibold mb-2">
           A face of <span className="text-orange-500">hope,</span>{" "}
           <span className="text-black"> a voice of </span>
           <span className="text-orange-500">equality</span>
         </h2>
-        <img src={Group} alt="" className="w-9 mb-4" />
+        <img src={Group} alt="" className="w-9 mb-4 hidden sm:block" />
       </div>
+
       <p className="text-center text-[16px] sm:text-[20px] lg:text-[24px] text-black mb-10">
         Bonya represents resilience, purpose, and the power of inclusion.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[3fr_1fr] gap-3 sm:gap-4 md:gap-5 lg:gap-6 bg-white p-4 sm:p-5 md:p-6 rounded-xl shadow-md lg:ml-10">
+      {/* Desktop / Laptop Layout (unchanged) */}
+      <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[3fr_1fr] gap-3 sm:gap-4 md:gap-5 lg:gap-6 bg-white p-4 sm:p-5 md:p-6 rounded-xl shadow-md lg:ml-10">
         {/* Left side */}
         <div className="flex flex-col gap-3 sm:gap-4 md:gap-5 lg:gap-6">
           {/* Top row */}
@@ -85,12 +86,21 @@ const OurEvent = () => (
           <Photo index={7} />
         </div>
 
-        {/* Bottom row (spanning) */}
+        {/* Bottom row */}
         <div className="md:col-span-2 lg:col-span-2 flex flex-wrap md:flex-nowrap gap-3 sm:gap-4 md:gap-5 lg:gap-6">
           <Photo index={8} className="flex-1" />
           <Photo index={9} className="flex-1" />
           <Photo index={10} className="hidden md:block" />
         </div>
+      </div>
+
+      {/* Mobile & Tablet Layout (simplified) */}
+      <div className="md:hidden grid grid-cols-2 gap-3 bg-white p-4 rounded-xl shadow-md">
+        <Photo index={0} />
+        <Photo index={1} />
+        <Photo index={3} />
+        <Photo index={4} />
+        {/* <Photo index={5} /> */}
       </div>
     </div>
   </div>
