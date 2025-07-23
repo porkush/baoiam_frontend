@@ -84,7 +84,7 @@ const PrideBanner = () => {
 
 
           <Link to="/DataScience">
-          <button className="bg-black hover:bg-[#7B7B7B] text-white px-2 py-1 sm:px-6 sm:py-2 rounded-md font-semibold text-[14px] sm:text-[18px]">
+          <button className="bg-black hover:bg-[#7B7B7B] text-white px-2 py-1 sm:px-6 sm:py-2 rounded-md font-semibold text-[13px] sm:text-[18px]">
             Enroll Now
           </button>
           </Link>
@@ -92,7 +92,7 @@ const PrideBanner = () => {
           <div>
             {/* The Button */}
             <button
-              className="bg-white text-black border border-gray-300 px-2 py-1 sm:px-6 sm:py-2 rounded-md font-semibold text-[14px] sm:text-[18px]"
+              className="bg-white text-black border border-gray-300 px-2 py-1 sm:px-6 sm:py-2 rounded-md font-semibold text-[13px] sm:text-[18px]"
               onClick={() => setShowModal(true)}
             >
               Talk to our Counsellor
