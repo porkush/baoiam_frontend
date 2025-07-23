@@ -24,9 +24,10 @@ const PrideBanner = () => {
         my-4
         md:my-10
         lg:my-20
-        px-6
+        px-2
         md:px-10
         lg:px-[68px]
+        py-1
          sm:py-6
         md:py-8
         lg:py-[25px]
