@@ -5,9 +5,9 @@ import coinsBag from "../../assets/CoursesLayout/CoursesPage/CoinBag.png";
 
 const DiscountBanner = () => {
   return (
-    <div className="w-full py-6 flex justify-center px-4 mt-18 mb-18">
+    <div className="w-full py-6 flex justify-center mb-8 sm:mt-18 sm:mb-18">
       {/* Inner orange container */}
-      <div className="w-[1200px] h-[184px] bg-[#FF6501] rounded-xl flex md:flex-row items-center justify-between overflow-hidden">
+      <div className="w-[1200px] h-[186px] bg-[#FF6501] rounded-xl flex md:flex-row items-center justify-between overflow-hidden p-1">
         {/* Left side text and form */}
         <div className="w-full md:w-2/3 p-6 md:py-4 md:px-12">
           <h2 className="text-white text-[19px] md:text-[32px] font-semibold my-1">
