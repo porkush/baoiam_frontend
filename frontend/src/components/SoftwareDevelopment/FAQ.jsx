@@ -44,32 +44,32 @@ const FAQ = () => {
   const leftFaqs = faqData.slice(0, 3);
   const rightFaqs = faqData.slice(3);
 
-  const renderFAQItem = (item, index) => (
+    const renderFAQItem = (item, index) => (
     <div
       key={index}
-      className={`rounded-lg text-[18px] font-medium overflow-hidden shadow-sm transition-all duration-300 p-2 mb-4 ${
+      className={`rounded-lg text-[18px] font-med overflow-hidden shadow-sm transition-all duration-300 p-2 mb-4 ${
         openIndex === index ? "bg-white shadow" : "bg-white"
       }`}
       style={{ minHeight: openIndex === index ? "auto" : "80px" }}
     >
       <button
         onClick={() => toggleIndex(index)}
-        className="w-full flex justify-between items-center px-5 py-4 text-left text-gray-900 font-medium focus:outline-none transition text-[20px]"
+        className="w-full flex justify-between items-center px-5 py-4 text-left text-gray-900 font-medium focus:outline-none transition sm:text-[20px]"
       >
         <span>{item.question}</span>
         {openIndex === index ? (
           <span className="w-[44px] h-[44px] p-[10px] rounded-[6px] bg-[#FFF4E5] flex items-center justify-center">
-            <FaTimes className="text-gray-600 text-xl" />
+            <FaTimes className="text-gray-600 sm:text-xl" />
           </span>
         ) : (
           <span className="w-[44px] h-[44px] p-[10px] rounded-[6px] bg-[#FFF4E5] flex items-center justify-center">
-            <FaPlus className="text-gray-600 text-xl" />
+            <FaPlus className="text-gray-600 sm:text-xl" />
           </span>
         )}
       </button>
       {openIndex === index && (
         <div className="px-5 pb-4 text-gray-700 text-sm border-t border-gray-300">
-          <p className="mb-3 mt-4 text-[18px]">{item.answer}</p>
+          <p className="mb-3 mt-4 sm:text-[18px]">{item.answer}</p>
           <div className="bg-gray-100 mt-3 border-gray-200 p-4 rounded-lg flex items-center justify-between">
             <p className="text-[16px] font-medium">
               Enrollment Process for the Program
@@ -78,18 +78,27 @@ const FAQ = () => {
               <FaArrowRight className="text-[16px]" />
             </button>
           </div>
+          {item.button && (
+            <a
+              href={item.button.link}
+              className="inline-flex items-center text-blue-600 hover:underline text-sm font-medium mt-3"
+            >
+              {item.button.text}
+              <span className="ml-2">→</span>
+            </a>
+          )}
         </div>
       )}
     </div>
   );
 
   return (
-    <div className="w-full lg:mb-16 p-8 font-['Poppins']">
+    <div className="w-full lg:mb-16 p-8 font-['Poppins'] ">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3 text-center">
+        <h2 className="text-[24px] md:text-4xl font-bold text-gray-900 mb-3 text-center">
           Frequently Asked Questions
         </h2>
-        <p className="text-center mb-8 text-[18px]">
+        <p className="text-center mb-8 text-[12px] sm:text-[18px]">
           Still you have any questions? Contact our Team via
           <br />
           <a href="mailto:support@baoiam.com">support@baoiam.com</a>
@@ -116,4 +125,4 @@ const FAQ = () => {
   );
 };
 
-export default FAQ;
+export default FAQ_C;

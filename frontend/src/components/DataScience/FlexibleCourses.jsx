@@ -47,7 +47,7 @@ const CourseCard = ({ title, subtitle, lessons, time, rating, image }) => {
   const formattedRating = Number(rating).toFixed(1);
 
   return (
-    <div className="w-[260px] h-[326px] bg-white rounded-xl shadow p-3 flex flex-col justify-between hover:shadow-lg  ttransition-shadow duration-300 font-['Poppins'] ">
+    <div className="w-[260px] h-[326px] bg-white rounded-xl shadow p-3 flex flex-col justify-between hover:shadow-lg transition-all duration-300 mx-auto">
       <div className="relative">
         <img
           src={image}
@@ -97,21 +97,91 @@ const CourseCard = ({ title, subtitle, lessons, time, rating, image }) => {
 };
 
 const FlexibleCourses = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768); // md breakpoint
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === courses.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === 0 ? courses.length - 1 : prevIndex - 1
+    );
+  };
+
   return (
-    <div className="bg-white py-10 text-center">
-      <h1 className="text-[40px] font-semibold mb-2 font-['Poppins']">
+    <div className="bg-white py-10 text-center overflow-hidden">
+      <h1 className="text-[26px] sm:text-[40px] font-semibold mb-2 font-['Poppins']">
         Courses That {" "}
         <span className="text-orange-500">Transform Careers</span>
       </h1>
       <h3 className="text-base md:text-[18px] font-medium mb-8 md:mb-10 max-w-2xl mx-auto">
         Handpicked programs designed to take you from beginner to job-ready, on your schedule.
       </h3>
-
-      <div className="flex flex-wrap justify-center gap-8 px-4">
+      
+      {/* Desktop view - all courses */}
+      <div className="hidden md:flex flex-wrap justify-center gap-8 px-4">
         {courses.map((course, index) => (
           <CourseCard key={index} {...course} />
         ))}
       </div>
+      
+      {/* Mobile view - carousel */}
+      <div className="md:hidden relative">
+        <div className="overflow-hidden">
+          <div className="flex transition-transform duration-500 ease-in-out"
+              style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+            {courses.map((course, index) => (
+              <div key={index} className="w-full flex-shrink-0">
+                <CourseCard {...course} />
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        {/* Navigation arrows - positioned outside the card */}
+        <div className="flex justify-between items-center w-full max-w-[300px] mx-auto mt-4 px-2">
+          <button 
+            onClick={prevSlide}
+            className="bg-white rounded-full p-2 shadow-md hover:bg-gray-100 transition-colors"
+          >
+            <ChevronLeft className="text-orange-500" size={24} />
+          </button>
+          
+          {/* Indicators */}
+          <div className="flex gap-2">
+            {courses.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+                className={`w-2 h-2 rounded-full ${currentIndex === index ? 'bg-orange-500' : 'bg-gray-300'}`}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
+          
+          <button 
+            onClick={nextSlide}
+            className="bg-white rounded-full p-2 shadow-md hover:bg-gray-100 transition-colors"
+          >
+            <ChevronRight className="text-orange-500" size={24} />
+          </button>
+        </div>
+      </div>
+      
       <hr className="w-full border-t-[2px] border-gray-100 mt-10 md:mt-14" />
     </div>
   );
