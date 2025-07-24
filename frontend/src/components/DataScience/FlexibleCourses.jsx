@@ -1,6 +1,9 @@
-import React, { useState } from "react";
-import { Bookmark, Clock, Star } from "lucide-react";
+import React, { useState, useEffect } from "react";
+import { Bookmark, Clock, Star, ChevronLeft, ChevronRight } from "lucide-react";
 import Img1 from "../../assets/CoursesLayout/CoursesPage/Courses.png";
+
+
+
 
 const courses = [
   {
