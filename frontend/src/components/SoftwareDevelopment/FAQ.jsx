@@ -125,4 +125,4 @@ const FAQ = () => {
   );
 };
 
-export default FAQ_C;
+export default FAQ;
