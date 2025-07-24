@@ -365,7 +365,7 @@ export default function HeroSection_C() {
               </div>
 
               {/* Learners */}
-              <div className="text-center flex-1 min-w-[100px]">
+              <div className="text-center flex-1 min-w-[100px] pr-2">
                 <div className="flex items-center justify-center">
                   <p className="text-[13px] sm:text-[18px] font-semibold">
                     10,000+
