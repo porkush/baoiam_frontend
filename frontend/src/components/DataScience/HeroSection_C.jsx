@@ -279,7 +279,7 @@ export default function HeroSection_C() {
   return (
     <div className="bg-white font-['Poppins']">
       {/* Breadcrumbs */}
-      <div className="max-w-10/11 mx-auto p-4 flex flex-col md:flex-row md:space-x-12 mt-10">
+      <div className="max-w-10/11 mx-auto p-1 sm:p-4 flex flex-col md:flex-row md:space-x-12 mt-3  sm:mt-10">
         {/* Left Side */}
         <div className="flex-1 text-[18px]">
           <nav className="flex items-center text-black sm:text-lg md:text-[18px] mb-6 sm:mb-10 ml-2 sm:ml-4">
