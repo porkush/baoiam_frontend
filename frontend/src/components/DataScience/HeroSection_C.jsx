@@ -310,7 +310,7 @@ export default function HeroSection_C() {
           </div>
 
           {/* Instructor Info */}
-          <div className="flex flex-wrap gap-4 items-center justify-center md:justify-start mb-6 mt-4">
+          <div className="flex flex-wrap gap-4 items-center justify-start text-center sm:text-left ml-14 sm:ml-0 mb-6 mt-4">
             <img
               src={Expert}
               alt="Instructor"
