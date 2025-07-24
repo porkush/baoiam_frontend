@@ -480,7 +480,7 @@ export default function HeroSection_C() {
               </div>
 
               {/* Features */}
-              <ul className="list-disc list-inside text-black text-[12px] sm:text-lg font-poppins space-y-1 p-4">
+              <ul className="list-disc list-inside text-black text-[14px] sm:text-lg font-poppins space-y-1 p-4">
                 <li>Lifetime course access</li>
                 <li>Cancel within 2 days for a full refund</li>
                 <li>Hands-on projects & expert mentorship</li>
@@ -490,10 +490,10 @@ export default function HeroSection_C() {
 
               {/* Buttons */}
               <div className="flex flex-col sm:flex-row justify-center items-center gap-4 p-2">
-                <button className="w-full sm:w-[127px] text-lg bg-orange-500 text-white py-2 rounded-lg font-medium hover:bg-orange-600 transition">
+                <button className="w-full sm:w-[127px] text-[16px] bg-orange-500 text-white py-1 sm:py-2 rounded-lg font-medium hover:bg-orange-600 transition">
                   Buy Now
                 </button>
-                <button className="w-full sm:w-[137px] text-lg bg-black text-white py-2 rounded-lg font-medium hover:bg-gray-900 transition">
+                <button className="w-full sm:w-[137px] text-[16px] bg-black text-white py-1 sm:py-2 rounded-lg font-medium hover:bg-gray-900 transition">
                   Add to Cart
                 </button>
                 <div className="flex items-center gap-4 text-black">

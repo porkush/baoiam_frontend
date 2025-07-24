@@ -17,17 +17,17 @@ const DiscountBanner = () => {
             Refer students. Earn rewards.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-5 max-w-sm">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-5 max-w-sm ">
             <div className="relative flex-1">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full pr-10 pl-4 py-2 rounded-md text-[9px] md:text-[16px] placeholder-white bg-[#FF914D] text-white focus:outline-none focus:ring-2 focus:ring-white"
+                className="w-full pr-10 pl-4 py-2 rounded-md text-[11px] md:text-[16px] placeholder-white bg-[#FF914D] text-white focus:outline-none focus:ring-2 focus:ring-white"
               />
               <FiSearch className="absolute right-3 top-1/2 transform -translate-y-1/2 text-white text-lg" />
             </div>
 
-            <button className="bg-black text-white px-4 py-2 rounded-md text-[14px] md:text-[16px] hover:bg-gray-900 transition">
+            <button className="bg-black text-white px-4 py-2 mb-1 rounded-md text-[13px] md:text-[16px] hover:bg-gray-900 transition">
               Refer Now
             </button>
           </div>
