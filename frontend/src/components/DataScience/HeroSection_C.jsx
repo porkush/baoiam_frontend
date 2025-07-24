@@ -373,7 +373,7 @@ export default function HeroSection_C() {
                   <img
                     src={avatar}
                     alt="Learners Icon"
-                    className="w-[45px] h-[25px] object-cover rounded-full ml-1"
+                    className="hidden sm:block w-[45px] h-[25px] object-cover rounded-full ml-1"
                   />
                 </div>
                 <p className="text-[10px] sm:text-[14px] text-gray-300 font-medium mt-1">

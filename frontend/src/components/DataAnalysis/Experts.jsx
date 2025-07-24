@@ -214,14 +214,14 @@ const TrainerCard = ({ image, name, role, experience, rating, student }) => {
 
   return (
     <div className="h-[264px] w-[280px] sm:w-[375px] relative overflow-visible flex items-center justify-center flex-shrink-0">
-      <div className="relative w-full h-[156px] bg-[#FF6501] rounded-[10px] flex items-end px-2 sm:px-3 pt-10 pb-3 sm:pb-4">
+      <div className="relative w-full h-[156px] bg-[#FF6501] rounded-[10px] flex items-end px-2 sm:px-3 sm:pt-10 pb-3 sm:pb-4">
         <img
           src={image}
           alt={name}
-          className="absolute w-[130px] h-[165px] sm:w-[165px] sm:h-[206px] -top-[8px] sm:-top-[50px] left-0 object-contain"
+          className="absolute w-[120px] h-[165px] sm:w-[165px] sm:h-[206px] -top-[8px] sm:-top-[50px] left-0 object-contain"
         />
-        <div className="ml-[135px] sm:ml-[155px] mb-2 sm:mb-3 text-left text-white">
-          <h3 className="text-[18px] sm:text-[22px] font-medium mb-0 sm:mb-1">
+        <div className="ml-[120px] sm:ml-[155px] mb-2 sm:mb-3 text-left text-white">
+          <h3 className="text-[14px] sm:text-[22px] font-medium mb-0 sm:mb-1">
             {name}
           </h3>
           <p className="text-[10px] sm:text-[12px] font-medium mt-0 sm:-mt-2">
@@ -297,11 +297,11 @@ const Experts = () => {
   };
 
   return (
-    <div className="w-full max-w-[1370px] border-b-2 border-gray-200 mx-auto flex flex-col items-center justify-center relative px-4 sm:px-8 py-4">
+    <div className="w-full max-w-[1370px] border-b-2 border-gray-200 mx-auto flex flex-col items-center justify-center relative px-1 sm:px-8 py-4">
       <h2 className="text-2xl sm:text-[32px] lg:text-[40px] mb-3 text-center font-semibold lg:text-left font-['Poppins'] text-black">
         Learn from <span className="text-orange-500">Industry Titans</span>
       </h2>
-      <p className="max-w-3xl text-center text-[14px] sm:text-[18px] font-medium font-['Poppins'] text-black mb-8">
+      <p className="max-w-3xl text-center text-[14px] sm:text-[18px] font-medium font-['Poppins'] text-black sm:mb-8 px-4">
         Master skills from seasoned professionals who've worked at top tech
         companies.
       </p>
@@ -309,7 +309,7 @@ const Experts = () => {
       <div className="flex items-center justify-center w-full">
         <button
           onClick={() => handleScroll("left")}
-          className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-white shadow-md disabled:opacity-30 flex-shrink-0 mr-2 sm:mr-4"
+          className="w-6 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-white shadow-md disabled:opacity-30 flex-shrink-0 mr-1 sm:mr-4"
           disabled={currentIndex === 0}
         >
           <FaArrowLeft />
@@ -317,7 +317,7 @@ const Experts = () => {
 
         <div className="overflow-hidden" style={{ width: getContainerWidth() }}>
           <div
-            className="flex flex-nowrap gap-4 sm:gap-6 justify-start"
+            className="flex flex-nowrap gap-2 sm:gap-6 justify-start"
             style={{
               transform: getTransformValue(),
               transition: transition,
@@ -331,7 +331,7 @@ const Experts = () => {
 
         <button
           onClick={() => handleScroll("right")}
-          className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-white shadow-md disabled:opacity-30 flex-shrink-0 ml-2 sm:ml-4"
+          className="w-6 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-white shadow-md disabled:opacity-30 flex-shrink-0 ml-1 sm:ml-4"
           disabled={currentIndex >= trainers.length - cardsPerPage}
         >
           <FaArrowRight />

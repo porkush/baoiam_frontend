@@ -100,7 +100,7 @@ const LearningJourney = () => {
                 {module.items.map((item, idx) => (
                   <div
                     key={idx}
-                    className="border border-gray-200 rounded px-4 py-2 text-orange-500 font-medium hover:bg-orange-50 transition"
+                    className="border border-gray-200 rounded px-4 py-2 text-orange-500 sm:font-medium hover:bg-orange-50 transition text-[14px] md:text-[18px]"
                   >
                     • {item}
                   </div>
