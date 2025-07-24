@@ -53,33 +53,34 @@
 
 //           {/* Instructor Info */}
 //           <div className="flex items-center space-x-4 mb-6 mt-4">
-//             <img
-//               src={Expert}
-//               alt="Instructor"
-//               className="rounded-full w-[36px] h-[36px] object-cover"
-//             />
+            
 
-//             <div className="text-center">
-//               <p className="text-[15px] text-[#1B1B1B99]">
+//             <div className="flex flex-col sm:flex-row items-center justify-center">
+//               <img
+//                 src={Expert}
+//                 alt="Learners Icon"
+//                 className="w-[28px] h-[28px] object-cover rounded-full ml-2 mr-1"
+//               />
+//               <p className="text-[10px] text-[#1B1B1B99] mt-2">
 //                 Digital Marketing Expert
 //               </p>
 //             </div>
 
-//             <div className="flex items-center justify-center">
+//             <div className="flex flex-col sm:flex-row items-center justify-center">
 //               <img
 //                 src={globe}
 //                 alt="Learners Icon"
 //                 className="w-[28px] h-[28px] object-cover rounded-full ml-2 mr-1"
 //               />
-//               <p className="text-[15px] text-[#1B1B1B99]">Hindi, English</p>
+//               <p className="text-[10px] text-[#1B1B1B99] mt-2">Hindi, English</p>
 //             </div>
-//             <div className="flex items-center justify-center">
+//             <div className="flex flex-col sm:flex-row items-center justify-center">
 //               <img
 //                 src={laptop}
 //                 alt="Learners Icon"
 //                 className="w-[28px] h-[28px] object-cover rounded-full ml-2 mr-1"
 //               />
-//               <p className="text-[15px] text-[#1B1B1B99]">
+//               <p className="text-[10px] text-[#1B1B1B99] mt-2">
 //                 Last updated - June 2025
 //               </p>
 //             </div>
@@ -336,31 +337,35 @@ export default function HeroSection_C() {
           </div>
 
           {/* Instructor Info */}
-          <div className="flex flex-wrap gap-4 items-center justify-start text-center sm:text-left ml-14 sm:ml-0 mb-6 mt-4">
-            <img
-              src={Expert}
-              alt="Instructor"
-              className="rounded-full w-[36px] h-[36px] object-cover"
-            />
+          <div className="flex items-center space-x-6 mb-6 mt-4">
+            
 
-            <p className="text-[16px] text-[#1B1B1B99]">Digital Marketing Expert</p>
-
-            <div className="flex items-center">
+            <div className="flex flex-col sm:flex-row items-center justify-center">
               <img
-                src={globe}
-                alt="Languages"
+                src={Expert}
+                alt="Learners Icon"
                 className="w-[28px] h-[28px] object-cover rounded-full ml-2 mr-1"
               />
-              <p className="text-[16px] text-[#1B1B1B99]">Hindi, English</p>
+              <p className="text-[10px] sm:text-[14px] text-[#1B1B1B99] mt-2">
+                Digital Marketing Expert
+              </p>
             </div>
 
-            <div className="flex items-center">
+            <div className="flex flex-col sm:flex-row items-center justify-center">
               <img
-                src={laptop}
-                alt="Updated"
+                src={globe}
+                alt="Learners Icon"
                 className="w-[28px] h-[28px] object-cover rounded-full ml-2 mr-1"
               />
-              <p className="text-[16px] text-[#1B1B1B99]">
+              <p className="text-[10px] sm:text-[14px] text-[#1B1B1B99] mt-2">Hindi, English</p>
+            </div>
+            <div className="flex flex-col sm:flex-row items-center justify-center">
+              <img
+                src={laptop}
+                alt="Learners Icon"
+                className="w-[28px] h-[28px] object-cover rounded-full ml-2 mr-1"
+              />
+              <p className="text-[10px] sm:text-[14px] text-[#1B1B1B99] mt-2">
                 Last updated - June 2025
               </p>
             </div>

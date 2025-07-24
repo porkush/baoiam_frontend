@@ -33,8 +33,8 @@ export default function HeroSection_C() {
           </h1>
 
           <p className="w-full text-center md:text-left text-[16px] sm:text-[18px] md:text-[28px] mb-4 font-semibold">
-            From <span className="text-orange-500">Data to Decisions</span> That
-            {" "}<span className="text-orange-500">Matter</span>
+            From <span className="text-orange-500">Data to Decisions</span> That{" "}
+            <span className="text-orange-500">Matter</span>
           </p>
 
           <div className="flex md:justify-start justify-center">
@@ -48,31 +48,35 @@ export default function HeroSection_C() {
           </div>
 
           {/* Instructor Info */}
-          <div className="flex flex-wrap gap-4 items-center justify-start text-center sm:text-left ml-14 sm:ml-0 mb-6 mt-4">
-            <img
-              src={Expert}
-              alt="Instructor"
-              className="rounded-full w-[36px] h-[36px] object-cover"
-            />
-
-            <p className="text-[16px] text-[#1B1B1B99]">Data Analysis Expert</p>
-
-            <div className="flex items-center">
+          <div className="flex items-center space-x-6 mb-6 mt-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center">
               <img
-                src={globe}
-                alt="Languages"
+                src={Expert}
+                alt="Learners Icon"
                 className="w-[28px] h-[28px] object-cover rounded-full ml-2 mr-1"
               />
-              <p className="text-[16px] text-[#1B1B1B99]">Hindi, English</p>
+              <p className="text-[10px] sm:text-[14px] text-[#1B1B1B99] mt-2">
+                Data Analysis Expert
+              </p>
             </div>
 
-            <div className="flex items-center">
+            <div className="flex flex-col sm:flex-row items-center justify-center">
               <img
-                src={laptop}
-                alt="Updated"
+                src={globe}
+                alt="Learners Icon"
                 className="w-[28px] h-[28px] object-cover rounded-full ml-2 mr-1"
               />
-              <p className="text-[16px] text-[#1B1B1B99]">
+              <p className="text-[10px] sm:text-[14px] text-[#1B1B1B99] mt-2">
+                Hindi, English
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row items-center justify-center">
+              <img
+                src={laptop}
+                alt="Learners Icon"
+                className="w-[28px] h-[28px] object-cover rounded-full ml-2 mr-1"
+              />
+              <p className="text-[10px] sm:text-[14px] text-[#1B1B1B99] mt-2">
                 Last updated - June 2025
               </p>
             </div>
