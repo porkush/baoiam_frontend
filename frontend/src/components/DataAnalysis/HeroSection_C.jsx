@@ -33,8 +33,8 @@ export default function HeroSection_C() {
           </h1>
 
           <p className="w-full text-center md:text-left text-[16px] sm:text-[18px] md:text-[28px] mb-4 font-semibold">
-            From <span className="text-orange-500">Zero to Data Hero</span> – In
-            just <span className="text-orange-500">12 Months!</span>
+            From <span className="text-orange-500">Data to Decisions</span> That
+            {" "}<span className="text-orange-500">Matter</span>
           </p>
 
           <div className="flex md:justify-start justify-center">
