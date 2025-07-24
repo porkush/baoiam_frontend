@@ -10,10 +10,10 @@ const DiscountBanner = () => {
       <div className="w-[1200px] h-[184px] bg-[#FF6501] rounded-xl flex md:flex-row items-center justify-between overflow-hidden">
         {/* Left side text and form */}
         <div className="w-full md:w-2/3 p-6 md:py-4 md:px-12">
-          <h2 className="text-white text-[20px] md:text-[32px] font-semibold mb-1">
+          <h2 className="text-white text-[19px] md:text-[32px] font-semibold my-1">
             Your Network = Your Net Worth!
           </h2>
-          <p className="text-white text-[14px] md:text-[22px] mb-4">
+          <p className="text-white text-[14px] md:text-[22px] mb-1 sm:mb-4">
             Refer students. Earn rewards.
           </p>
 

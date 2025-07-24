@@ -437,7 +437,7 @@ export default function HeroSection_C() {
         </div>
 
         {/* Right Side */}
-        <aside className="mt-10 md:mt-0 w-full md:w-[400px]">
+        <aside className="mt-10 md:mt-0 w-full md:w-[550px]">
           <div className="rounded-lg p-4 border-[2px] border-[#99999966]">
             <div className="bg-[#FF6501] text-white rounded-lg sm:px-4 py-2 mb-3 sm:mb-8 text-center">
               <p className="text-[14px] sm:text-[16px]">
