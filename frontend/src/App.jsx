@@ -16,6 +16,7 @@ import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import DM_Page from "./components/DigitalMarketing/DM_Page";
 import SD_Page from "./components/SoftwareDevelopment/SD_Page";
 import RefundPolicy from "./Pages/RefundPolicy";
+import BlogSectionPage from "./components/Blogs/BlogSectionPage";
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
         <ScrollToTop />
       <div>
         <Routes>
+          <Route path="/blogs" element={<BlogSectionPage/>} />
           <Route path="/DataAnalysis" element={<DataAnalysisPage />} />
           <Route path="/DigitalMarketing" element={<DM_Page />} />
           <Route path="/SoftwareDevelopment" element={<SD_Page />} />
@@ -51,6 +53,7 @@ function App() {
                 <Route path="/terms&conditions" element={<TermsAndConditions/>} />
                 <Route path="/Privacy&Policy" element={<PrivacyPolicy/>} />
                 <Route path="/refundPolicy" element={<RefundPolicy/>} />
+                
               </Routes>
             </>
           } />

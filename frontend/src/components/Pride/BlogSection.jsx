@@ -4,6 +4,7 @@ import blog2 from "../../assets/Pride/BlogSection/blog2.png";
 import blog3 from "../../assets/Pride/BlogSection/blog3.png";
 import blog4 from "../../assets/Pride/BlogSection/blog4.png";
 import Group from "../../assets/Home/Lines/Group.webp";
+import { Link } from "react-router-dom";
 
 const BlogSection = () => {
   return (
@@ -62,9 +63,11 @@ const BlogSection = () => {
             </div>
 
             {/* Bottom Overlay Button */}
+            <Link to="/blogs">
             <button className="absolute bottom-4 right-0 md:right-4 bg-black text-white md:text-[24px] font-medium px-2 md:px-6 py-1 md:py-2 rounded-full text-sm hover:bg-white hover:text-black">
               Read More
             </button>
+            </Link>
           </div>
         </div>
 
