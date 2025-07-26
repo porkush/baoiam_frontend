@@ -46,7 +46,6 @@
 //   ],
 // };
 
-
 //   return (
 //     <>
 //       <nav className="sticky top-[20px] z-50 mx-auto mt-[20px] max-w-[1340px] h-[80px] bg-[#FFFAF7] rounded-[50px] shadow-md flex items-center justify-between pr-[40px] pl-[40px] font-['Poppins']">
@@ -266,28 +265,16 @@
 
 // export default Navbar;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React, { useState } from "react";
 import { IoMoon } from "react-icons/io5";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import lightLogo from "../../assets/Home/Navbar/logoLight.webp";
 import giftbox from "../../assets/Home/Navbar/gift.gif";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, Links } from "react-router-dom";
 
 const Navbar = ({ onSignUpClick }) => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isKickstarterHovered, setIsKickstarterHovered] = useState(false);
+  const [isCompanyHovered, setIsCompanyHovered] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [mobileKickstarterOpen, setMobileKickstarterOpen] = useState(false);
@@ -348,69 +335,62 @@ const Navbar = ({ onSignUpClick }) => {
           <ul className="flex space-x-[33px] text-black text-[18px] ml-4">
             <li className="hover:text-orange-500">PAP</li>
 
-            <li className="relative group cursor-pointer">
-              <div
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => {
-                  setIsHovered(false);
-                  setSelectedCategory(null);
-                }}
-              >
-                <span className="flex items-center hover:text-orange-500">
-                  Kickstarter courses
-                  {isHovered ? (
-                    <FaChevronUp className="ml-2 text-black" size={14} />
-                  ) : (
-                    <FaChevronDown className="ml-2 text-black" size={14} />
-                  )}
-                </span>
-
-                {/* Accordion Style Dropdown */}
-                {isHovered && (
-                  <div className="absolute  text-black  py-2 w-66 rounded shadow-lg z-20 border border-gray-100 bg-gray-50">
-                    {Object.entries(kickstarterCourses).map(
-                      ([category, subcategories]) => (
-                        <div
-                          key={category}
-                          className="border-b border-gray-200"
-                        >
-                          <button
-                            className="flex justify-between items-center w-full px-2 py-2 hover:bg-gray-100"
-                            onClick={() =>
-                              setSelectedCategory(
-                                selectedCategory === category ? null : category
-                              )
-                            }
-                          >
-                            {category}
-                            <span>
-                              {selectedCategory === category ? (
-                                <FaChevronUp size={14} />
-                              ) : (
-                                <FaChevronDown size={14} />
-                              )}
-                            </span>
-                          </button>
-
-                          {/* Subcategory List */}
-                          {selectedCategory === category && (
-                            <ul className="px-4 py-1">
-                              {subcategories.map((sub, index) => (
-                                <li
-                                  key={index}
-                                  className="py-1 pl-2 hover:bg-orange-500 hover:text-white cursor-pointer rounded"
-                                >
-                                  {sub}
-                                </li>
-                              ))}
-                            </ul>
-                          )}
-                        </div>
-                      )
-                    )}
-                  </div>
+            <li
+              className="relative group cursor-pointer"
+              onMouseEnter={() => setIsKickstarterHovered(true)}
+              onMouseLeave={() => {
+                setIsKickstarterHovered(false);
+                setSelectedCategory(null);
+              }}
+            >
+              <span className="flex items-center hover:text-orange-500">
+                Kickstarter courses
+                {isKickstarterHovered ? (
+                  <FaChevronUp className="ml-2 text-black" size={14} />
+                ) : (
+                  <FaChevronDown className="ml-2 text-black" size={14} />
                 )}
-              </div>
+              </span>
+
+              {isKickstarterHovered && (
+                <div className="absolute text-black py-2 w-66 rounded shadow-lg z-20 border border-gray-100 bg-white">
+                  {Object.entries(kickstarterCourses).map(
+                    ([category, subcategories]) => (
+                      <div key={category} className="border-b border-gray-200">
+                        <button
+                          className="flex justify-between items-center w-full px-2 py-2 hover:bg-gray-100 text-[16px]"
+                          onClick={() =>
+                            setSelectedCategory(
+                              selectedCategory === category ? null : category
+                            )
+                          }
+                        >
+                          {category}
+                          <span>
+                            {selectedCategory === category ? (
+                              <FaChevronUp size={14} />
+                            ) : (
+                              <FaChevronDown size={14} />
+                            )}
+                          </span>
+                        </button>
+                        {selectedCategory === category && (
+                          <ul className="px-4 py-1">
+                            {subcategories.map((sub, index) => (
+                              <li
+                                key={index}
+                                className="py-1 pl-2 hover:bg-orange-500 hover:text-white cursor-pointer rounded text-[14px]"
+                              >
+                                {sub}
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
+                    )
+                  )}
+                </div>
+              )}
             </li>
 
             <li className="relative inline-block">
@@ -439,30 +419,35 @@ const Navbar = ({ onSignUpClick }) => {
 
             <li className="hover:text-orange-500">Success Stories</li>
 
-            <li className="relative group cursor-pointer">
-              <span
-                className="flex items-center hover:text-orange-500"
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-              >
+            <li
+              className="relative cursor-pointer"
+              onMouseEnter={() => setIsCompanyHovered(true)}
+              onMouseLeave={() => setIsCompanyHovered(false)}
+            >
+              <span className="flex items-center hover:text-orange-500">
                 Company
-                {isHovered ? (
+                {isCompanyHovered ? (
                   <FaChevronUp className="ml-2 text-black" size={14} />
                 ) : (
                   <FaChevronDown className="ml-2 text-black" size={14} />
                 )}
               </span>
-              <ul className="absolute hidden group-hover:block bg-[#1D2026] text-gray-400 mt-2 py-2 w-48 rounded shadow-lg z-10">
-                <li className="px-4 py-2 hover:bg-orange-500 hover:text-white">
-                  About Us
-                </li>
-                <li className="px-4 py-2 hover:bg-orange-500 hover:text-white">
-                  Careers
-                </li>
-                <li className="px-4 py-2 hover:bg-orange-500 hover:text-white">
-                  Press
-                </li>
-              </ul>
+
+              {isCompanyHovered && (
+                <ul className="absolute bg-white text-black py-2 w-48 rounded shadow-lg z-10 text-[16px]">
+                  <Link to="/aboutUs">
+                  <li className="px-4 py-2 hover:bg-orange-500 hover:text-white">
+                    About Us
+                  </li>
+                  </Link>
+                  <li className="px-4 py-2 hover:bg-orange-500 hover:text-white">
+                    Careers
+                  </li>
+                  <li className="px-4 py-2 hover:bg-orange-500 hover:text-white">
+                    Press
+                  </li>
+                </ul>
+              )}
             </li>
           </ul>
         </div>

@@ -17,6 +17,9 @@ import DM_Page from "./components/DigitalMarketing/DM_Page";
 import SD_Page from "./components/SoftwareDevelopment/SD_Page";
 import RefundPolicy from "./Pages/RefundPolicy";
 import BlogSectionPage from "./components/Blogs/BlogSectionPage";
+import AboutUSPage from "./components/AboutUs/AboutUSPage";
+import { ContactRoundIcon } from "lucide-react";
+import ContactUs from "./Pages/ContactUs";
 
 
 function App() {
@@ -53,6 +56,8 @@ function App() {
                 <Route path="/terms&conditions" element={<TermsAndConditions/>} />
                 <Route path="/Privacy&Policy" element={<PrivacyPolicy/>} />
                 <Route path="/refundPolicy" element={<RefundPolicy/>} />
+                <Route path="/aboutUs" element={<AboutUSPage/>} />
+                <Route path="/contact_us" element={<ContactUs/>} />
                 
               </Routes>
             </>
