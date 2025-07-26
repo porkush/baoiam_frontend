@@ -42,6 +42,7 @@ function App() {
       <div>
         <Routes>
           <Route path="/blogs" element={<BlogSectionPage/>} />
+          <Route path="/aboutUs" element={<AboutUSPage/>} />
           <Route path="/DataAnalysis" element={<DataAnalysisPage />} />
           <Route path="/DigitalMarketing" element={<DM_Page />} />
           <Route path="/SoftwareDevelopment" element={<SD_Page />} />
@@ -56,7 +57,6 @@ function App() {
                 <Route path="/terms&conditions" element={<TermsAndConditions/>} />
                 <Route path="/Privacy&Policy" element={<PrivacyPolicy/>} />
                 <Route path="/refundPolicy" element={<RefundPolicy/>} />
-                <Route path="/aboutUs" element={<AboutUSPage/>} />
                 <Route path="/contact_us" element={<ContactUs/>} />
                 
               </Routes>
