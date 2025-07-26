@@ -10,32 +10,32 @@ const FAQ = () => {
 
   const faqData = [
     {
-      question: "1. What is the Software Development Course (SDC)?",
+      question: "What is the Software Development Course (SDC)?",
       answer:
         "A Software Development course, in simple words, teaches you how to design and build applications using programming languages like Java, Python, and frameworks like React or Node.js. You’ll gain hands-on experience in writing clean code, debugging, and deploying software solutions. This course is ideal for beginners and professionals looking to upskill and start a career in software development."
     },
     {
-      question: "2. Is this a certified course?",
+      question: "Is this a certified course?",
       answer:
         "Yes, after successful completion, you’ll receive a certification that demonstrates your proficiency in software development and is recognized by leading tech companies."
     },
     {
-      question: "3. Does this course require prior coding experience?",
+      question: "Does this course require prior coding experience?",
       answer:
         "No prior coding knowledge is required. The course starts with the fundamentals of programming and gradually covers advanced concepts, making it suitable for absolute beginners."
     },
     {
-      question: "4. Does this course have real-time projects too?",
+      question: "Does this course have real-time projects too?",
       answer:
         "Yes, you’ll work on real-world projects like developing websites, building mobile apps, and creating APIs. These projects will help you build a strong portfolio to showcase your skills to potential employers."
     },
     {
-      question: "5. Does this course provide placement assistance?",
+      question: "Does this course provide placement assistance?",
       answer:
         "Yes, placement support is included with guidance on resume building, technical interviews, and connecting you with hiring partners in the software industry."
     },
     {
-      question: "6. How long is the course duration?",
+      question: "How long is the course duration?",
       answer:
         "The course duration typically ranges from 6 to 9 months, depending on the track and intensity you choose."
     }

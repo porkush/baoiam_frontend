@@ -10,27 +10,27 @@ const FAQ_C = () => {
 
  const faqData = [
   {
-    question: "1. What is this Data Science course all about?",
+    question: "What is this Data Science course all about?",
     answer: `This course takes you from the basics to advanced concepts of working with data. You’ll learn how to collect, clean, and analyze data, uncover patterns, and solve real-world problems using tools like Python, SQL, and machine learning—all in a practical, beginner-friendly way.`,
   },
   {
-    question: "2. Who should take this course?",
+    question: "Who should take this course?",
     answer: `Anyone curious about data or looking to start a tech career. No prior experience in coding or data is needed—we start from scratch and guide you step by step.`,
   },
   {
-    question: "3. Will I get help finding a job after the course?",
+    question: "Will I get help finding a job after the course?",
     answer: `Yes! We’ll support you with resume building, mock interviews, and help you connect with companies looking for data-savvy professionals.`,
   },
   {
-    question: "4. How long does it take to finish?",
+    question: "How long does it take to finish?",
     answer: `Most learners complete it in 3 to 6 months, depending on how much time you can commit. It’s flexible enough to fit alongside work or studies.`,
   },
   {
-    question: "5. Do I get a certificate?",
+    question: "Do I get a certificate?",
     answer: `Absolutely. On successful completion, you’ll receive a certificate that proves you have job-ready skills employers value.`,
   },
   {
-    question: "6. Will I work on real projects?",
+    question: "Will I work on real projects?",
     answer: `Yes, you’ll work on real-world datasets and projects to gain hands-on experience. These projects will make your resume and portfolio stand out.`,
   },
 ];

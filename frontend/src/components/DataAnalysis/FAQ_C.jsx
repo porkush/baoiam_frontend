@@ -10,27 +10,27 @@ const FAQ_C = () => {
 
  const faqData = [
   {
-    question: "1. What will I actually learn in this course?",
+    question: "What will I actually learn in this course?",
     answer: `You’ll learn how to take messy or confusing data and turn it into something useful. Imagine playing detective – spotting patterns in sales, customer feedback, or social media trends. We’ll guide you through practical steps like cleaning data (fixing mistakes or gaps), analyzing it using simple tools, and presenting your findings in clear, visual reports.`,
   },
   {
-    question: "2. I’m not great at math – is this still for me?",
+    question: "I’m not great at math – is this still for me?",
     answer: `Yes, 100%. You only need basic math like calculating averages or percentages. The tools we use will do all the heavy lifting. What matters more is curiosity and asking the right questions – not solving complex equations.`,
   },
   {
-    question: "3. What tools will we use? Do I need to buy anything?",
+    question: "What tools will we use? Do I need to buy anything?",
     answer: `We’ll begin with tools like Excel (which you probably already have), then move on to free platforms like Google Sheets and SQL. If we introduce Python, we’ll teach it from scratch. You don’t need to buy any expensive software.`,
   },
   {
-    question: "4. Will there be real projects?",
+    question: "Will there be real projects?",
     answer: `Absolutely. You’ll work on real-world datasets and answer questions like:\n\n- Which products sell best at different times?\n- What trends show up in customer feedback?\n- How do I build a dashboard to track key numbers?\n\nThese projects are not only practical but also great for your resume or portfolio.`,
   },
   {
-    question: "5. How is this better than just watching YouTube tutorials?",
+    question: "How is this better than just watching YouTube tutorials?",
     answer: `Great question. Instead of jumping around from video to video, you’ll follow a clear learning path. You’ll get hands-on projects, feedback when you need it, support if you get stuck, and a certificate that shows you’ve actually done the work.`,
   },
   {
-    question: "6. How will this help me in my career?",
+    question: "How will this help me in my career?",
     answer: `Data skills are in demand everywhere. Whether you’re aiming for a promotion, switching careers, or just want to feel more confident working with numbers, this course gives you the practical skills to get there. Plus, the projects you complete can be shown to potential employers.`,
   },
 ];

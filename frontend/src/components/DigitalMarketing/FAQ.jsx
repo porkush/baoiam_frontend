@@ -10,28 +10,28 @@ const FAQ = () => {
 
  const faqData = [
   {
-    question: "1. What is the Digital Marketing Course (DMC)?",
+    question: "What is the Digital Marketing Course (DMC)?",
     answer: "A Digital Marketing course, in simple terms, is a journey that teaches you how to grow brands online using tools like SEO, social media, content creation, and paid advertising. You’ll learn how to connect with the right audience, build engaging campaigns, and analyze data to make smarter decisions.",
   },
   {
-    question: "2. Is this a certified course?",
+    question: "Is this a certified course?",
     answer: "Yes, this course provides a professional certification upon successful completion. It is designed to add value to your resume and demonstrate your expertise in digital marketing tools and techniques, making you job-ready."
 ,
   },
   {
-    question: "3. Does this course require prior marketing knowledge?",
+    question: "Does this course require prior marketing knowledge?",
     answer: "No, you don’t need any prior marketing experience. The course starts from the basics and builds up to advanced strategies, making it beginner-friendly and ideal for professionals from non-marketing backgrounds.",
   },
   {
-    question: "4. Does this course have real-time projects too?",
+    question: "Does this course have real-time projects too?",
     answer:" Yes, you’ll work on live projects such as creating SEO-optimized websites, running ad campaigns, and building a full-fledged digital marketing strategy. These practical assignments will help you apply your learning effectively.",
   },
   {
-    question: "5. Does this course provide placement assistance?",
+    question: "Does this course provide placement assistance?",
     answer: "Absolutely! The course includes dedicated placement support, resume building, and interview preparation to help you secure roles in digital marketing agencies or in-house marketing teams.",
   },
   {
-    question: "6. How long is the course duration?",
+    question: "How long is the course duration?",
     answer: "The course can typically be completed in 4-6 months, depending on the pace you choose.",
   },
 ];
