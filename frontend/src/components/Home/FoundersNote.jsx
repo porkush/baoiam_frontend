@@ -32,12 +32,11 @@ const FoundersNote = () => {
         >
           {/* Left Section - Image and Info */}
           <div
-            className="text-white flex flex-col items-center justify-center"
+            className="text-white flex flex-col items-center justify-center lg:max-w-[600px] pb-6"
             style={{
               background:
                 "linear-gradient(360deg, #FF6501 26.44%, #FFC6A2 100%)",
               width: "100%",
-              maxWidth: "600px",
               height: "750",
               opacity: 1,
             }}
@@ -131,7 +130,7 @@ const FoundersNote = () => {
           </div>
 
           {/* Right Section - Mobile Short Content */}
-          <div className="block md:hidden p-6 text-black text-[16px] space-y-3">
+          <div className="block md:hidden p-6 text-black text-[16px] space-y-3 text-justify">
             <h3 className="text-[20px] font-semibold text-orange-500">
               A Note from the Founder
             </h3>
