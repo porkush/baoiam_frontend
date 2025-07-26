@@ -169,7 +169,7 @@ const ContactUs = () => {
         {/* Category 1 */}
         <div>
           <label htmlFor="selectCategory1" className="block text-sm font-medium text-[#333] mb-1">
-            Education
+            Education Qualification
           </label>
           <div className="relative">
             <select
@@ -182,11 +182,11 @@ const ContactUs = () => {
               }}
               required
             >
-              <option value="" disabled hidden>Stream</option>
-              <option value="Success Fusion Program">Success Fusion Program</option>
-              <option value="Udaan 90">Udaan 90</option>
-              <option value="Pay After Placement(Tech Bootcamp)">Pay After Placement(Tech Bootcamp)</option>
-              <option value="Pride Fusion">Pride Fusion</option>
+              <option value="" disabled hidden>Select Program</option>
+              <option value="Success Fusion Program">Xth standard</option>
+              <option value="Udaan 90">XIIth standard</option>
+              <option value="Pay After Placement(Tech Bootcamp)">Under-Graduate</option>
+              <option value="Pride Fusion">Post-Graduate</option>
             </select>
             <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-600">
               <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
@@ -199,7 +199,7 @@ const ContactUs = () => {
         {/* Sub-category */}
         <div>
           <label htmlFor="selectCategory2" className="block text-sm font-medium text-[#333] mb-1">
-            Please select a sub-category
+            Stream
           </label>
           <div className="relative">
             <select
@@ -214,8 +214,8 @@ const ContactUs = () => {
             >
               <option value="" disabled hidden>
                 {subCategories[category1]?.length > 0
-                  ? "Select a sub-category"
-                  : "No sub-categories available"}
+                  ? "Please select a course"
+                  : "No course available"}
               </option>
               {subCategories[category1]?.map((sub, idx) => (
                 <option key={idx} value={sub}>
