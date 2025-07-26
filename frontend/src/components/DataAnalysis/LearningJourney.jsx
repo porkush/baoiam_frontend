@@ -53,11 +53,11 @@ const LearningJourney = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-start bg-white pt-10 px-4 font-['Poppins']">
+     <div className="flex flex-col items-center justify-start bg-white pt-10 px-4 font-['Poppins']">
       {/* Header */}
       <div className="text-center mb-8">
         <h1 className="text-[32px] md:text-[36px] lg:text-[40px] font-semibold"> {/* Responsive text size for h1 */}
-          Your{" "}<span className="text-orange-500">Data Analysis{" "}</span>Growth Path
+          Your{" "}<span className="text-orange-500">Data Science{" "}</span>Growth Path
         </h1>
         <p className="text-[14px] md:text-[18px] mt-2 max-w-[900px] font-medium px-4 xl:ml-8"> {/* Responsive text size for p and added horizontal padding */}
           Follow an expertly curated roadmap to gain industry-ready skills — one step at a time.
@@ -101,7 +101,7 @@ const LearningJourney = () => {
                 {module.items.map((item, idx) => (
                   <div
                     key={idx}
-                    className="border border-gray-200 rounded px-4 py-2 text-orange-500 font-medium hover:bg-orange-50 transition"
+                    className="border border-gray-200 rounded px-4 py-2 text-orange-500 sm:font-medium hover:bg-orange-50 transition text-[14px] md:text-[18px]"
                   >
                     • {item}
                   </div>
