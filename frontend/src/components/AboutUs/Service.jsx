@@ -32,20 +32,20 @@ const ServicesSection = () => {
       </p>
 
       {/* Service Cards */}
-      <div className="space-y-6 max-w-5xl mx-auto">
+      <div className="space-y-6 max-w-5xl mx-auto ">
         {/* Cards data*/}
-      <div className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-4 gap-20 max-w-[1104px] h-[320px] mb-20  mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-20 max-w-[1104px] h-[320px] mb-20  mx-auto ">
         {services.map((service, index) => (
           <div key={index} className="relative flex flex-col items-center">
  
   {/* Image */}
-  <div className="absolute -top-10 w-[150px] h-[150px] rounded-full border-4 border-orange-500 bg-white p-1 z-10">
+  <div className="absolute -top-10 w-[150px] h-[150px] rounded-full border-4 border-orange-500 bg-white p-1 z-10 ">
     <img src={service.image} alt="Service" className="w-full h-full object-cover rounded-full" />
   </div>
 
   {/* Card */}
   <div
-    className=" relative bg-gray-100 text-center px-6 pt-16 pb-16 w-full"
+    className=" relative bg-white text-center px-6 pt-16 pb-16 w-full shadow-xl shadow-gray-500 border-gray-200 border-[2px]"
      
     style={{
       clipPath: 'polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%)',
