@@ -11,12 +11,12 @@ import EventsSection from "./Events.jsx";
 const AboutUSPage = () => {
   return (
     <div>
-        {/* <OurJourney/> */}
-        <Header/>
-        <JourneySection/>
-        <WhyUsSection/>
-        <ServicesSection/>
-        <EventsSection/>
+      {/* <OurJourney/> */}
+      <Header />
+      <JourneySection />
+      <WhyUsSection />
+      <ServicesSection />
+      <EventsSection />
       <TeamSection />
       <Contact />
       <Footer />

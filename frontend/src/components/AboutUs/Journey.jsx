@@ -1,69 +1,47 @@
 import React from 'react';
-import img2 from "../../assets/Home/InsightsSection/7.webp";
 
 const JourneySection = () => {
   return (
-    <div className=" bg-white px-4 pt-8 md:px-12">
+    <div className="py-12 px-4 md:px-10 bg-white">
       {/* Heading */}
-      <div className="text-center mb-4">
-        <h2 className="text-3xl md:text-4xl font-bold">
-          Our <span className="text-orange-500">Journey</span>
-        </h2>
-        <p className="mt-8 mb-16  max-w-2xl mx-auto text-gray-600">
-          jdu dkjd dhdji djdji shjdher jhdf ajhjduis kjhduif adjhfjhiuf
-        </p>
-      </div>
+      <h2 className="text-[48px] font-bold text-center mb-2">
+        Our <span className="text-orange-500">Journey</span>
+      </h2>
+      <p className="text-center text-black text-[24px] mx-auto mb-10">
+        jdu dkjd dhdjhi djdij shjdher jhdf ajhjhduis kjhduif adjhfjhiuf
+      </p>
 
-      {/* Content */}
-<div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto items-center">
-        {/* Left Images */}
-       <div className="grid grid-cols-2 gap-4">
-  {/* First row: two equal images */}
-  <img
-    src={img2}
-    alt="1"
-    className="w-full h-48 object-cover rounded-xl shadow-md"
-  />
-  <img
-    src={img2}
-    alt="2"
-    className="w-full h-48 object-cover rounded-xl shadow-md"
-  />
+      {/* Grid Structure */}
+      <div className="grid grid-cols-3 max-w-5xl mx-auto ">
+        {/* Left Side */}
+        <div className="flex flex-col -mr-20 items-center font-poppins justify-center space-y-32 h-[467px]">
+          <div className=" bg-white shadow border-r-4 border-orange-500 p-4 text-justify text-[24px]">
+            <p>Over 4,000 students have interned with us and actually learned something useful.</p>
+          </div>
+        </div>
 
-  {/* Second row: one image that matches height of first two combined */}
-  <img
-    src={img2}
-    alt="3"
-    className="col-span-2 w-full h-[192px] md:h-[208px] object-cover rounded-xl shadow-md"
-  />
-</div>
+        {/* Center Road */}
+        <div className="relative flex justify-center h-[467px]">
+          <div className="w-8 bg-gray-400  relative">
+            {/* White dashed stripes */}
+            <div className="absolute inset-0 flex flex-col justify-between items-center">
+              {Array.from({ length: 4 }).map((_, i) => (
+                <div key={i} className="w-1 h-14 bg-white"></div>
+              ))}
+            </div>
+          </div>
+        </div>
 
+        {/* Right Side */}
+        <div className="flex flex-col -ml-20 items-center justify-between font-poppins space-y-32 h-[467px]">
+          <div className="bg-white shadow border-l-4 border-orange-500 p-4 text-justify text-[24px]">
+            <p>We've been at this for 4+ years, and we still get excited about every project.</p>
+          </div>
 
-
-        {/* Right - Bullet Points */}
-       <div className="flex flex-col gap-10">
-  {/* 1st card: Right aligned */}
-  <div className="flex justify-start">
-    <div className="bg-white p-8 rounded-md shadow text-gray-700 max-w-[405px]">
-      • We’ve been at this for 4+ years, and we still get excited about every project.
-    </div>
-  </div>
-
-  {/* 2nd card: Left aligned */}
-  <div className="flex justify-end">
-    <div className="bg-white p-8 rounded-md shadow text-gray-700 max-w-[405px]">
-      • Over <span className="font-semibold">4,000 students</span> have interned with us and actually learned something useful.
-    </div>
-  </div>
-
-  {/* 3rd card: Right aligned again */}
-  <div className="flex justify-start">
-    <div className="bg-white p-8 rounded-md shadow text-gray-700 max-w-[405px]">
-      • Many of them landed solid jobs after working with us—and that’s what matters.
-    </div>
-  </div>
-</div>
-
+          <div className="bg-white shadow border-l-4 border-orange-500 p-4  text-justify text-[24px]">
+            <p>Many of them landed solid jobs after working with us—and that's what matters.</p>
+          </div>
+        </div>
       </div>
     </div>
   );

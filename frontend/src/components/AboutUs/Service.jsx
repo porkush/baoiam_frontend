@@ -1,40 +1,69 @@
 import React from "react";
 import img3 from "../../assets/AboutUs/im3.jpg"; // Use your actual image paths
 
+const services = [
+  {
+    title: 'Nexnott Dating App – for people who want real, not random.',
+    image: img3, // replace with actual path or URL
+  },
+  {
+    title: 'Courses that will worth your time—training and job-ready.',
+    image: img3,
+  },
+  {
+    title: 'Live classes where you can learn, and actually interact.',
+   image: img3,
+  },
+  {
+    title: 'Real-time projects for your resume & critical thinking skills',
+    image: img3
+  },
+]; 
+
 const ServicesSection = () => {
   return (
-    <div className="bg-white py-16 px-4 md:px-8">
-      {/* Section Heading */}
-      <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold">
-          Our <span className="text-orange-500">Services</span>
-        </h2>
-      </div>
+    <div className="py-12 px-4 md:px-10 bg-white text-center">
+      {/* Heading */}
+      <h2 className="text-[48px] font-semibold mb-4">
+        Our <span className="text-orange-500">Services</span>
+      </h2>
+      <p className="text-black text-[24px] mb-20">
+        Designed to Support, Guide, and Inspire Your Growth.
+      </p>
 
       {/* Service Cards */}
-      <div className="space-y-6 max-w-2xl mx-auto">
-        {/* Card 1 */}
-        <div className="bg-white shadow-md rounded-xl px-2 py-2 flex items-center space-x-4 ">
-          <div className="w-[100px] h-[100px] bg-gray-200 rounded-full shrink-0" />
-          <p className="text-gray-800 font-medium">
-            Nexnott Dating App – for people who want real, not random.
-          </p>
-        </div>
+      <div className="space-y-6 max-w-5xl mx-auto">
+        {/* Cards data*/}
+      <div className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-4 gap-20 max-w-[1104px] h-[320px] mb-20  mx-auto">
+        {services.map((service, index) => (
+          <div key={index} className="relative flex flex-col items-center">
+ 
+  {/* Image */}
+  <div className="absolute -top-10 w-[150px] h-[150px] rounded-full border-4 border-orange-500 bg-white p-1 z-10">
+    <img src={service.image} alt="Service" className="w-full h-full object-cover rounded-full" />
+  </div>
 
-        {/* Card 2 */}
-        <div className="bg-white shadow-md rounded-xl px-2 py-2  flex items-center space-x-4 ml-20">
-          <div className="w-[100px] h-[100px] bg-gray-200 rounded-full shrink-0" />
-          <p className="text-gray-800 font-medium">
-            Courses that don’t waste your time—just what you need to know.
-          </p>
-        </div>
+  {/* Card */}
+  <div
+    className=" relative bg-gray-100 text-center px-6 pt-16 pb-16 w-full"
+     
+    style={{
+      clipPath: 'polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%)',
+      height:'100%'
+   
+    }}
+  >
 
-        {/* Card 3 */}
-        <div className="bg-white shadow-md px-2 py-2 rounded-xl  flex items-center space-x-4">
-          <div className="w-[100px] h-[100px] bg-gray-200 rounded-full shrink-0" />
-          <p className="text-gray-800 font-medium">
-            Live classes where you can ask, learn, and actually interact.
-          </p>
+    {/* Text */}
+    <p className="text-[20px] text-gray-800 mt-16">{service.title}</p>
+     
+
+    <div className="absolute bottom-6 left-1/2  transform -translate-x-1/2 translate-y-1/2 w-0 h-0 border-l-[70px] border-r-[70px] border-t-[20px] border-l-transparent border-r-transparent border-t-orange-500"></div>
+
+  </div>
+</div>
+
+        ))}
         </div>
       </div>
 
