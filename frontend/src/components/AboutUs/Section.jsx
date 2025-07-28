@@ -19,10 +19,10 @@ const WhyUsSection = () => {
       {/* Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
         {/* Card 1 */}
-        <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center">
-          <div className=" w-[100px] h-[100px] bg-white-50  p-4 rounded-full border-2 border-orange-500 hover:border-transparent mb-10">
+        <div className="group bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-xl transition duration-300 ">
+          <div className=" w-[100px] h-[100px] bg-white-50  p-4 rounded-full border-2 border-orange-500 group-hover:border-transparent mb-10">
            <FaGraduationCap
-             className="w-[60px] h-[60px] text-black transition-transform duration-300 hover:scale-175"
+             className="w-[60px] h-[60px] text-black transition-transform duration-300 group-hover:scale-175"
                />
 
           </div>
@@ -30,25 +30,25 @@ const WhyUsSection = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="bg-white rounded-xl shadow-sm p-6 flex flex-col items-center text-center">
-          <div className="w-[100px] h-[100px] bg-white-50 p-4 rounded-full border-2 border-orange-500 hover:border-transparent mb-10">
-            <FaLightbulb className="w-[60px] h-[60px] text-yellow-300 transition-transform duration-300 hover:scale-175" />
+        <div className="group bg-white rounded-xl shadow-sm p-6 flex flex-col items-center text-center hover:shadow-xl transition duration-300">
+          <div className="w-[100px] h-[100px] bg-white-50 p-4 rounded-full border-2 border-orange-500 group-hover:border-transparent mb-10">
+            <FaLightbulb className="w-[60px] h-[60px] text-yellow-300 transition-transform duration-300 group-hover:scale-175" />
           </div>
           <p className="text-gray-800 font-medium text-[22px]">Innovative Projects for Real-Life Impact</p>
         </div>
 
         {/* Card 3 */}
-        <div className="bg-white rounded-xl shadow-sm p-6 flex flex-col items-center text-center">
-          <div className="w-[100px] h-[100px] bg-white-50 p-4 rounded-full border-2 border-orange-500 hover:border-transparent mb-10">
-            <FaHandshake className="w-[60px] h-[60px] text-yellow-300  transition-transform duration-300 hover:scale-175" />
+        <div className="group bg-white rounded-xl shadow-sm p-6 flex flex-col items-center text-center hover:shadow-xl transition duration-300">
+          <div className="w-[100px] h-[100px] bg-white-50 p-4 rounded-full border-2 border-orange-500 group-hover:border-transparent mb-10">
+            <FaHandshake className="w-[60px] h-[60px] text-yellow-300  transition-transform duration-300 group-hover:scale-175" />
           </div>
           <p className="text-gray-800 font-medium text-[22px]">Building Community via Events & Collaboration</p>
         </div>
 
         {/* Card 4 */}
-        <div className="bg-white rounded-xl shadow-sm p-8 flex flex-col items-center text-center">
-          <div className="w-[100px] h-[100px] bg-white-50 p-4 rounded-full border-2 border-orange-500 hover:border-transparent  mb-10">
-            <FaStar className="w-[60px] h-[60px] text-yellow-300 transition-transform duration-300 hover:scale-175" />
+        <div className="group bg-white rounded-xl shadow-sm p-8 flex flex-col items-center text-center hover:shadow-xl transition duration-300">
+          <div className="w-[100px] h-[100px] bg-white-50 p-4 rounded-full border-2 border-orange-500 group-hover:border-transparent  mb-10">
+            <FaStar className="w-[60px] h-[60px] text-yellow-300 transition-transform duration-300 group-hover:scale-175" />
           </div>
           <p className="text-gray-800 font-medium text-[22px]">Passionate, Experienced Team of Experts</p>
         </div>

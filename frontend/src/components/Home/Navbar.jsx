@@ -594,7 +594,9 @@ const Navbar = ({ onSignUpClick }) => {
               </div>
               {mobileCompanyOpen && (
                 <ul className="ml-4 mt-2 space-y-2">
+                  <Link to="/aboutUs">
                   <li className="hover:text-orange-500">About Us</li>
+                  </Link>
                   <li className="hover:text-orange-500">Careers</li>
                   <li className="hover:text-orange-500">Press</li>
                 </ul>

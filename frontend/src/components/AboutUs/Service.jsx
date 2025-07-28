@@ -50,7 +50,6 @@ const ServicesSection = () => {
     style={{
       clipPath: 'polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%)',
       height:'100%'
-   
     }}
   >
 
