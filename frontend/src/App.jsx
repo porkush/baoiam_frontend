@@ -17,7 +17,7 @@ import DM_Page from "./components/DigitalMarketing/DM_Page";
 import SD_Page from "./components/SoftwareDevelopment/SD_Page";
 import RefundPolicy from "./Pages/RefundPolicy";
 import BlogSectionPage from "./components/Blogs/BlogSectionPage";
-import AboutUSPage from "./components/AboutUs/AboutUSPage";
+import AboutUSPage from "./Pages/AboutUs/AboutUSPage";
 import { ContactRoundIcon } from "lucide-react";
 import ContactUs from "./Pages/ContactUs";
 

@@ -10,7 +10,7 @@ const EventsSection = () => {
   return (
     <div className="py-10 px-4 md:px-10 bg-[#FAFAFA] text-center">
       {/* Heading */}
-      <h2 className="text-[48px] font-bold mb-2">
+      <h2 className="text-[26px] md:text-[48px] font-bold mb-2">
         Beyond the Screen: <span className="text-orange-500">Our Events</span>
       </h2>
       <p className="text-black text-[24px] mb-8">
