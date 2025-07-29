@@ -20,6 +20,7 @@ import BlogSectionPage from "./components/Blogs/BlogSectionPage";
 import AboutUSPage from "./Pages/AboutUs/AboutUSPage";
 import { ContactRoundIcon } from "lucide-react";
 import ContactUs from "./Pages/ContactUs";
+import ReferEarnPage from "./Pages/Refer&Earn/ReferEarnPage";
 
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
                 <Route path="/Privacy&Policy" element={<PrivacyPolicy/>} />
                 <Route path="/refundPolicy" element={<RefundPolicy/>} />
                 <Route path="/contact_us" element={<ContactUs/>} />
+                <Route path="/refer&earn" element={<ReferEarnPage/>} />
                 
               </Routes>
             </>
