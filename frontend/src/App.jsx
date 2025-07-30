@@ -28,6 +28,7 @@ import Pap_Page from "./Pages/PAP/Pap_Page";
 
 function App() {
   const [isSignupOpen, setIsSignupOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
     const hasShown = localStorage.getItem("signupModalShown");
@@ -39,6 +40,18 @@ function App() {
       return () => clearTimeout(timer);
     }
   }, []);
+
+  //success callback for signup
+  const handleAuthSuccess = () => {
+    setIsLoggedIn(true);
+    setIsSignupOpen(false);
+  };
+
+  //logout function
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    setIsSignupOpen(true); 
+  };
 
   return (
     <Router>

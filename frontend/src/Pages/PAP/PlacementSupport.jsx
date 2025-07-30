@@ -4,7 +4,7 @@ import { FaBuilding, FaUserTie, FaUsers, FaBrain } from "react-icons/fa";
 const PlacementSupport = () => {
   return (
     <div className="bg-white py-10 px-4 flex justify-center font-['Poppins']">
-      <div className="max-w-6xl w-full flex justify-between gap-10">
+      <div className="max-w-6xl w-full flex flex-col sm:flex-row justify-between gap-10">
         {/* Heading */}
         <div className="max-w-xl">
         <h2 className="text-2xl md:text-[48px] font-bold text-gray-900 leading-snug mb-6">
@@ -15,9 +15,9 @@ const PlacementSupport = () => {
         </div>
 
         {/* Features */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 ml-12 sm:ml-0">
           {/* Feature 1 */}
-          <div className="flex items-start gap-3">
+          <div className="flex items-start gap-3 ">
             <FaBuilding className="text-blue-600 text-2xl mt-1" />
             <p className="text-gray-700 text-lg">
               Exclusive access to our <br />partner companies
