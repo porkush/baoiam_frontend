@@ -1,17 +1,21 @@
 import React from "react";
 import gIcon from "../../assets/GCEP/maillogo.png";
+import { number } from "framer-motion";
 
 const JoinGCEP = () => {
   const steps = [
     {
+      number: "1",
       title: "Submit an Inquiry",
       desc: "Submit an inquiry via our partnership form at bottom.",
     },
     {
+      number: "2",
       title: "Review & Discuss",
       desc: "We will review your institution's goals & proceed for discussion.",
     },
     {
+      number: "3",
       title: "Tailored Partnership",
       desc: "Once approved, plan a tailored partnership to meet your educational needs.",
     },
@@ -26,7 +30,7 @@ const JoinGCEP = () => {
         Follow these steps to become a partner and collaborate with us.
       </p>
 
-      <div className="w-full relative flex flex-col md:flex-row justify-center items-center gap-8 md:gap-4 lg:gap-16 xl:gap-20">
+      <div className="w-full relative flex flex-col md:flex-row justify-center items-center gap-8 md:gap-4 lg:gap-16 xl:gap-16">
         {steps.map((step, index) => (
           <div
             key={index}
@@ -75,11 +79,7 @@ const JoinGCEP = () => {
             <div className="bg-white rounded-xl shadow-md p-6 w-full text-center relative z-10 mb-12 md:mb-0">
               <div className="flex justify-center -mt-16 mb-6 md:mb-10">
                 <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-[100px] md:h-[100px] rounded-full bg-white shadow-md flex items-center justify-center">
-                  <img
-                    src={gIcon}
-                    alt="Step icon"
-                    className="w-8 h-8 sm:w-10 sm:h-10 md:w-[50px] md:h-[50px]"
-                  />
+                  <h1 className="text-orange-500 font-bold text-[48px]">{step.number}</h1>
                 </div>
               </div>
 
