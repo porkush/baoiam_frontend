@@ -49,7 +49,7 @@ const Footer = () => {
         { label: "About", href: "#" },
         { label: "Become Instructor", href: "#" },
         { label: "Contact", href: "/contact_us" },
-        { label: "GCEP", href: "#" },
+        { label: "GCEP", href: "/GCEP" },
       ],
     },
     {

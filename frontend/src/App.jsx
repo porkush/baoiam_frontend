@@ -21,6 +21,7 @@ import AboutUSPage from "./Pages/AboutUs/AboutUSPage";
 import { ContactRoundIcon } from "lucide-react";
 import ContactUs from "./Pages/ContactUs";
 import ReferEarnPage from "./Pages/Refer&Earn/ReferEarnPage";
+import GcepPage from "./Pages/GCEP/GcepPage";
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
         <ScrollToTop />
       <div>
         <Routes>
+          <Route path="/GCEP" element={<GcepPage/>} />
           <Route path="/blogs" element={<BlogSectionPage/>} />
           <Route path="/aboutUs" element={<AboutUSPage/>} />
           <Route path="/DataAnalysis" element={<DataAnalysisPage />} />
@@ -60,6 +62,7 @@ function App() {
                 <Route path="/refundPolicy" element={<RefundPolicy/>} />
                 <Route path="/contact_us" element={<ContactUs/>} />
                 <Route path="/refer&earn" element={<ReferEarnPage/>} />
+           
                 
               </Routes>
             </>

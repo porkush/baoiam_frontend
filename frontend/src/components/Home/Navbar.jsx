@@ -412,10 +412,12 @@ const Navbar = ({ onSignUpClick }) => {
               </NavLink>
             </li>
 
+            <Link to="/refer&earn">
             <li className="flex items-center gap-2 hover:text-orange-500">
               <img src={giftbox} alt="Referral Animation" className="w-5 h-6" />
               <span>Refer & Earn</span>
             </li>
+            </Link>
 
             <li className="hover:text-orange-500">Success Stories</li>
 
