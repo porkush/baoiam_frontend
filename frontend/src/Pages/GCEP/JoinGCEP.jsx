@@ -5,11 +5,11 @@ const JoinGCEP = () => {
   const steps = [
     {
       title: "Submit an Inquiry",
-      desc: "submit an inquiry via our partnership form at bottom.",
+      desc: "Submit an inquiry via our partnership form at bottom.",
     },
     {
       title: "Review & Discuss",
-      desc: "we will review your institution's goals & proceed for discussion.",
+      desc: "We will review your institution's goals & proceed for discussion.",
     },
     {
       title: "Tailored Partnership",

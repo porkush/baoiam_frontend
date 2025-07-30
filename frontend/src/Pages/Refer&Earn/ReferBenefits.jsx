@@ -1,5 +1,5 @@
 import React from "react";
-import MoneyImage from "../../assets/Refer&Earn/Paise.png"; 
+import MoneyImage from "../../assets/Refer&Earn/Paise.png";
 
 const ReferBenefits = () => {
   return (
@@ -9,17 +9,20 @@ const ReferBenefits = () => {
         Benefits of being a <span className="text-orange-500">a Referrer</span>
       </h2>
       <p className="text-gray-600 text-base sm:text-lg mb-12">
-        Refer your friends to our courses and earn exclusive rewards and benefits.
+        Refer your friends to our courses and earn exclusive rewards and
+        benefits.
       </p>
 
       {/* Card Section */}
       <div className="flex flex-col lg:flex-row items-center justify-center bg-white rounded-xl shadow-md p-6 lg:p-10 gap-8 max-w-6xl mx-auto">
         {/* Left: Form */}
         <div className="bg-orange-500 text-white rounded-xl p-6 lg:p-10 w-full lg:w-1/2 lg:mx-8">
-          <h3 className="text-xl font-bold mb-6 text-center">Start Referring</h3>
+          <h3 className="text-xl font-bold mb-6 text-center">
+            Start Referring
+          </h3>
           <form className="space-y-4">
             <div>
-                <h4 className="text-start text-white">Full Name *</h4>
+              <h4 className="text-start text-white">Full Name *</h4>
               <input
                 type="text"
                 placeholder="Full Name *"
@@ -35,7 +38,7 @@ const ReferBenefits = () => {
               />
             </div>
             <div>
-               <h4 className="text-start text-white">Contact Number *</h4>
+              <h4 className="text-start text-white">Contact Number *</h4>
               <input
                 type="text"
                 placeholder="Full Name *"
@@ -61,13 +64,13 @@ const ReferBenefits = () => {
 
           {/* Benefit Tags */}
           <div className="absolute top-4 left-4 bg-white border border-orange-500 text-sm px-4 py-1 rounded-full text-black">
-            • kudji skdjeif dlakjf kjadfi
+            assured discounts on our courses
           </div>
           <div className="absolute top-[50%] right-0 bg-white border border-orange-500 text-sm px-4 py-1 rounded-full text-black">
-            • kudji skdjeif dlakjf kjadfi
+            chance to win an android phone
           </div>
           <div className="absolute bottom-4 left-4 bg-white border border-orange-500 text-sm px-4 py-1 rounded-full text-black">
-            • kudji skdjeif dlakjf kjadfi
+            chance to win a brand new Laptop
           </div>
         </div>
       </div>

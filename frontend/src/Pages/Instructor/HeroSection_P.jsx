@@ -38,9 +38,15 @@ const HeroSection_P = () => {
               Join a growing network of passionate educators, and get paid to
               share your knowledge.
             </p>
-            <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold text-[20px] md:text-[25px] px-4 md:px-8 py-2 rounded-md mb-8">
-              Apply Now
-            </button>
+            <a
+              href="https://forms.gle/WA4dCNUeGSzWsrpF7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold text-[20px] md:text-[25px] px-4 md:px-8 py-2 rounded-md mb-8">
+                Apply Now
+              </button>
+            </a>
 
             {/* Benefits Card */}
             <div className="bg-white bg-opacity-90 text-black p-4 rounded-xl shadow-lg w-full max-w-sm mx-auto text-center mt-8">

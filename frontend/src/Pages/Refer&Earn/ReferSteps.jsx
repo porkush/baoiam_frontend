@@ -3,17 +3,17 @@ import { FaCheck, FaShareAlt, FaHeart } from "react-icons/fa";
 
 const steps = [
   {
-    icon: <FaCheck className="text-orange-500 text-3xl" />,
+    icon: <FaCheck className="text-orange-500 text-[20px] md:text-3xl" />,
     title: "Sign up",
     desc: "sign up to our refer and earn program program.",
   },
   {
-    icon: <FaShareAlt className="text-orange-500 text-3xl" />,
+    icon: <FaShareAlt className="text-orange-500 text-[20px] md:text-3xl" />,
     title: "Share",
     desc: "share your unique referral code with your friends and they'll get a discount on our courses.",
   },
   {
-    icon: <FaHeart className="text-orange-500 text-3xl" />,
+    icon: <FaHeart className="text-orange-500 text-[20px] md:text-3xl" />,
     title: "Receive",
     desc: "at every course purchase by your friend you will receive the benefits and rewards.",
   },
@@ -33,8 +33,8 @@ const ReferSteps = () => {
         {steps.map((step, idx) => (
           <div key={idx} className="relative z-10">
             <div className="bg-white shadow-md rounded-full w-[120px] h-[120px] md:w-[220px] md:h-[220px] flex flex-col items-center justify-center text-center mx-auto">
-              <div className="mb-3 text-[12px] md:text-[48px]">{step.icon}</div>
-              <h3 className="text-[10px] md:text-lg font-bold text-black mb-1">
+              <div className="mb-1 sm:mb-3">{step.icon}</div>
+              <h3 className="text-[9px] md:text-lg font-bold text-black mb-1">
                 {step.title}
               </h3>
               <p className="text-[7px] md:text-sm text-black px-4">{step.desc}</p>

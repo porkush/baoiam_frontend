@@ -413,10 +413,14 @@ const Navbar = ({ onSignUpClick }) => {
             </li>
 
             <Link to="/refer&earn">
-            <li className="flex items-center gap-2 hover:text-orange-500">
-              <img src={giftbox} alt="Referral Animation" className="w-5 h-6" />
-              <span>Refer & Earn</span>
-            </li>
+              <li className="flex items-center gap-2 hover:text-orange-500">
+                <img
+                  src={giftbox}
+                  alt="Referral Animation"
+                  className="w-5 h-6"
+                />
+                <span>Refer & Earn</span>
+              </li>
             </Link>
 
             <li className="hover:text-orange-500">Success Stories</li>
@@ -438,9 +442,9 @@ const Navbar = ({ onSignUpClick }) => {
               {isCompanyHovered && (
                 <ul className="absolute bg-white text-black py-2 w-48 rounded shadow-lg z-10 text-[16px]">
                   <Link to="/aboutUs">
-                  <li className="px-4 py-2 hover:bg-orange-500 hover:text-white">
-                    About Us
-                  </li>
+                    <li className="px-4 py-2 hover:bg-orange-500 hover:text-white">
+                      About Us
+                    </li>
                   </Link>
                   <li className="px-4 py-2 hover:bg-orange-500 hover:text-white">
                     Careers
@@ -574,10 +578,20 @@ const Navbar = ({ onSignUpClick }) => {
               </NavLink>
             </li>
 
-            <li className="flex items-center gap-2 hover:text-orange-500">
-              <img src={giftbox} alt="Referral Animation" className="w-5 h-6" />
-              <span>Refer & Earn</span>
-            </li>
+            <NavLink
+              to="/refer&earn"
+              className="flex items-center gap-2 hover:text-orange-500"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <li className="flex items-center gap-2">
+                <img
+                  src={giftbox}
+                  alt="Referral Animation"
+                  className="w-5 h-6"
+                />
+                <span>Refer & Earn</span>
+              </li>
+            </NavLink>
 
             <li className="hover:text-orange-500">Success Stories</li>
 
@@ -597,7 +611,7 @@ const Navbar = ({ onSignUpClick }) => {
               {mobileCompanyOpen && (
                 <ul className="ml-4 mt-2 space-y-2">
                   <Link to="/aboutUs">
-                  <li className="hover:text-orange-500">About Us</li>
+                    <li className="hover:text-orange-500">About Us</li>
                   </Link>
                   <li className="hover:text-orange-500">Careers</li>
                   <li className="hover:text-orange-500">Press</li>
