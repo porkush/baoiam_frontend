@@ -23,6 +23,7 @@ import ContactUs from "./Pages/ContactUs";
 import ReferEarnPage from "./Pages/Refer&Earn/ReferEarnPage";
 import GcepPage from "./Pages/GCEP/GcepPage";
 import Instructor from "./Pages/Instructor/Instructor";
+import Pap_Page from "./Pages/PAP/Pap_Page";
 
 
 function App() {
@@ -64,6 +65,7 @@ function App() {
                 <Route path="/refundPolicy" element={<RefundPolicy/>} />
                 <Route path="/contact_us" element={<ContactUs/>} />
                 <Route path="/refer&earn" element={<ReferEarnPage/>} />
+                <Route path="/PAP" element={<Pap_Page/>} />
            
                 
               </Routes>

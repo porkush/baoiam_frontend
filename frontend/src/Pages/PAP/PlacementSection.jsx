@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { motion } from 'framer-motion';
 import '../../index.css'; 
 import Accenture from "../../assets/Home/Prestige/accenture.webp";
@@ -9,25 +9,35 @@ import EY from "../../assets/Home/Prestige/Ey.webp";
 import Mentorsity from "../../assets/Home/Prestige/Mentosity.webp";
 import languify from "../../assets/Home/Prestige/Languify.webp";
 import learnyst from "../../assets/Home/Prestige/Learnyst.webp";
+import Head from "../../assets/Home/OurProgram/head.webp";
 
-const Prestige = () => {
-  const network = [
-    Accenture, Cognizant, TCS, Greyt, EY, Mentorsity, languify, learnyst
-  ];
 
+const PlacementSection = () => {
+      const network = [
+        Accenture, Cognizant, TCS, Greyt, EY, Mentorsity, languify, learnyst
+      ];
   return (
-    <section className="bg-gray-100 py-10 mt-7 px-4 sm:px-6 lg:px-8 font-['Poppins']">
-      {/* Header */}
-      <div className="max-w-7xl mx-auto text-center mb-12">
-        <h1 className="text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] font-semibold text-gray-900 mb-3">
-          Our <span className="text-orange-500">Prestige</span> Network
-        </h1>
-        <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] text-black max-w-3xl mx-auto">
-          Alliances with bold startups and global leaders, spanning top-tier industries and purpose-driven ventures.
-        </p>
-      </div>
+    <div className="bg-white py-10 px-4 flex justify-center font-['Poppins']">
+      <div className="bg-[#FF7A24] text-white rounded-xl w-full max-w-6xl shadow-lg text-center relative py-10">
+        {/* Header Row with Head Images */}
+        <div className="flex justify-between items-center md:px-16  ">
+          <img src={Head} alt="left head" className="h-8 w-8 md:h-20 md:w-20" />
 
-      <div className="w-full overflow-hidden bg-gray-100">
+          <div className="flex-1 text-center px-2">
+            <h2 className="text-xl md:text-2xl font-bold mb-1">
+              Placements at Baoiam
+            </h2>
+            <p className="text-sm md:text-base leading-snug max-w-xl mx-auto">
+              kdsfj akfhj aksfj oadfsjflaksj afjkaf ksdafjdfaksfj akfhj aksfj
+              oadfsjflaksj afjkaf ksdafjdafjoiaji
+            </p>
+          </div>
+
+          <img src={Head} alt="right head" className="h-8 w-8 md:h-20 md:w-20" />
+        </div>
+
+        {/* Company Logos */}
+         <div className="w-full overflow-hidden bg-gray-100 mt-6">
         <div className="container mx-auto">
           <div className="flex">
             {/* Motion 1 */}
@@ -82,8 +92,9 @@ const Prestige = () => {
           </div>
         </div>
       </div>
-    </section>
+      </div>
+    </div>
   );
 };
 
-export default Prestige;
+export default PlacementSection;

@@ -1,11 +1,18 @@
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
-import Google from "../../assets/google.png";
 import { useState } from "react";
+import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
 
-const AuthModal = ({ isOpen, onClose }) => {
+
+const AuthModal = ({ isOpen ,onClose, onAuthSuccess }) => {
   const [isLogin, setIsLogin] = useState(false);
   const [showOtp, setShowOtp] = useState(false);
+  const [email, setEmail] = useState("");
+   const [otp, setOtp] = useState("");
+  const [isOtpSent, setIsOtpSent] = useState(false);
+  const [agreeTerms, setAgreeTerms] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   if (!isOpen) return null;
 
@@ -13,6 +20,105 @@ const AuthModal = ({ isOpen, onClose }) => {
     setIsLogin(!isLogin);
     setShowOtp(false);
   };
+
+  const handleSendOtp = async () => {
+    setLoading(true);
+    const endpoint = isLogin
+  ? "http://127.0.0.1:8000/api/login/"
+  : "http://127.0.0.1:8000/api/signup/";
+    console.log("Sending OTP to:", email); // 👈 ye line add karo
+
+
+    try {
+      const response = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+      if (response.ok) {
+        alert(data.message);
+        setIsOtpSent(true);
+      } else {
+        alert(data.error || "Failed to send OTP.");
+      }
+    } catch (err) {
+      alert("Something went wrong. Please try again.");
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleVerifyOtp = async () => {
+    setLoading(true);
+    const endpoint = isLogin
+  ? "http://127.0.0.1:8000/api/verify_login/"
+  : "http://127.0.0.1:8000/api/verify_signup/";
+
+    try {
+      const response = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, otp }),
+      });
+
+      const data = await response.json();
+      if (response.ok) {
+        alert(data.message);
+
+        if (onAuthSuccess) onAuthSuccess(); // update here 
+
+        onClose && onClose(); // Close modal or redirect
+      } else {
+        alert(data.error || "Invalid OTP");
+      }
+    } catch (err) {
+      alert("Something went wrong. Please try again.");
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+
+const handleGoogleLogin = async (credentialResponse) => {
+  const credential = credentialResponse.credential;
+
+  try {
+    const res = await fetch('http://localhost:8000/api/google-login/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ id_token: credential }),
+    });
+
+    const data = await res.json();
+
+    if (res.ok) {
+      const isNewUser = data.created;
+
+      //  Store token/user
+      localStorage.setItem('token', data.token);
+
+      // Conditional message
+      if (isNewUser) {
+        alert(' Welcome! Your account has been created using Google.');
+      } else {
+        alert(' Welcome back! You have successfully logged in.');
+      }
+
+      if (onAuthSuccess) onAuthSuccess();
+      onClose && onClose();
+    } else {
+      console.error('Google login failed:', data);
+    }
+  } catch (err) {
+    console.error('Google login error:', err);
+  }
+};
 
   return (
     <div className="fixed inset-0 z-[999] flex items-center justify-center font-['Poppins'] overflow-y-auto p-2 sm:p-4">
@@ -32,6 +138,7 @@ const AuthModal = ({ isOpen, onClose }) => {
       overflow-hidden
     "
       >
+
         {/* Close button */}
         <button
           className="absolute top-2 right-2 text-gray-500 hover:text-orange-500 text-xl sm:text-2xl"
@@ -49,6 +156,9 @@ const AuthModal = ({ isOpen, onClose }) => {
           {isLogin ? "Log In" : "Sign Up"}
         </h1>
 
+
+
+
         {/* Email / Mobile */}
         <div className="mb-3">
           <label className="block text-[14px] sm:text-[15px] font-normal mb-2">
@@ -56,10 +166,13 @@ const AuthModal = ({ isOpen, onClose }) => {
           </label>
           <input
             type="text"
+             value={email}
+            onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter Email ID or Mobile number"
             className="w-full px-4 py-2.5 text-[14px] text-[#808080] border border-gray-400 rounded-full focus:outline-none focus:border-orange-400"
           />
         </div>
+
 
         {/* OTP */}
         <div className="mb-3">
@@ -67,34 +180,49 @@ const AuthModal = ({ isOpen, onClose }) => {
             <label className="text-[14px] sm:text-[15px] font-normal">
               OTP Verification
             </label>
-            <button className="text-xs px-3 py-1 sm:px-3.5 sm:py-1.5 bg-orange-100 text-orange-500 rounded-full hover:bg-orange-200 transition-all">
-              Send OTP
+            <button
+            onClick={handleSendOtp}
+            disabled={loading || !email}
+            className="text-xs px-3 py-1 sm:px-3.5 sm:py-1.5 bg-orange-100 text-orange-500 rounded-full hover:bg-orange-200 transition-all">
+              {loading ? "Sending..." : isOtpSent ? "Resend OTP" : "Send OTP"}
             </button>
           </div>
+
           <div className="relative">
             <input
               type={showOtp ? "text" : "password"}
+               value={otp}
+                onChange={(e) => setOtp(e.target.value)}
               placeholder="Enter OTP"
+              disabled={!isOtpSent}
               className="w-full pr-10 pl-4 py-2.5 text-[14px] text-[#808080] border border-gray-400 rounded-full focus:outline-none focus:border-orange-400"
             />
+      
+
             <button
               type="button"
               onClick={() => setShowOtp(!showOtp)}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-orange-500"
+              disabled={!isOtpSent}
+              className={`absolute right-4 top-1/2 transform -translate-y-1/2  ${
+               isOtpSent ? "text-gray-500 hover:text-orange-500 cursor-pointer" : "text-gray-300 "}`}
             >
               {showOtp ? <FaEyeSlash /> : <FaEye />}
             </button>
           </div>
         </div>
 
-        {/* Terms Checkbox */}
+
+
         <div className="flex items-center justify-between mb-3 text-[13px] sm:text-[14px]">
           <div className="flex items-center">
-            <input
+             <input
               type="checkbox"
               id="remember"
               className="w-4 h-4 sm:w-5 sm:h-5 accent-orange-500 mr-2"
+              checked={agreeTerms}
+               onChange={(e) => setAgreeTerms(e.target.checked)}
             />
+            
             <label htmlFor="remember" className="text-[#8D8D8D]">
               I Agree to{" "}
               <a
@@ -109,10 +237,19 @@ const AuthModal = ({ isOpen, onClose }) => {
           </div>
         </div>
 
+
+
+
+
+
         {/* Submit Button */}
-        <button className="bg-orange-500 hover:bg-orange-600 text-white w-full py-2.5 sm:py-3 rounded-full font-semibold transition duration-300 shadow-md mt-3">
-          {isLogin ? "Log In" : "Sign Up"}
+        <button 
+        onClick={handleVerifyOtp}
+        disabled={loading || !otp || !agreeTerms}
+        className="bg-orange-500 hover:bg-orange-600 text-white w-full py-2.5 sm:py-3 rounded-full font-semibold transition duration-300 shadow-md mt-3">
+          {loading ? "Verifying..." : isLogin ? "Log In" : "Sign Up"}
         </button>
+
 
         {/* Switch Link */}
         <div className="text-center mt-3 text-[14px] sm:text-[15px] text-[#8D8D8D]">
@@ -150,24 +287,19 @@ const AuthModal = ({ isOpen, onClose }) => {
 
         {/* Google Login */}
         <div className="flex justify-center mt-4">
-          <a
-            href="https://your-google-auth-url.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={Google}
-              alt="Google"
-              className="w-[50px] sm:w-[58px] h-[50px] sm:h-[58px]"
-            />
-          </a>
-        </div>
+  <GoogleOAuthProvider clientId="539413491318-nja0bbltjl99e8pvrk47mjfkj47q3dpq.apps.googleusercontent.com">
+    <GoogleLogin
+      onSuccess={handleGoogleLogin}
+      onError={() => {
+        console.log("Google Login Failed");
+      }}
+    />
+  </GoogleOAuthProvider>
+</div>
+
       </div>
     </div>
   );
 };
 
 export default AuthModal;
-
-
-

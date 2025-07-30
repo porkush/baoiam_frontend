@@ -333,8 +333,9 @@ const Navbar = ({ onSignUpClick }) => {
         {/* Center Desktop Menu */}
         <div className="hidden md:flex justify-center items-center">
           <ul className="flex space-x-[33px] text-black text-[18px] ml-4">
+            <Link to="/PAP">
             <li className="hover:text-orange-500">PAP</li>
-
+            </Link>
             <li
               className="relative group cursor-pointer"
               onMouseEnter={() => setIsKickstarterHovered(true)}

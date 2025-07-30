@@ -1,65 +1,45 @@
 import { useState } from "react";
 import { FaPlus, FaTimes, FaArrowRight } from "react-icons/fa";
 
-const FAQ_R = () => {
+const FAQ_Pap = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleIndex = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-const faqData = [
-  {
-    question: "How do I start referring people?",
-    answer:
-      "Log into your account, look for “Refer & Earn,” and turn it on. That’s all it takes.",
-  },
-  {
-    question: "Will I get a code to send to others?",
-    answer:
-      "Yes. As soon as you activate the feature, your personal referral code will show up on your screen.",
-  },
-  {
-    question: "Can I share my code with anyone?",
-    answer:
-      "You can send it to anyone who hasn’t signed up yet. It won’t work for someone who already has an account.",
-  },
-  {
-    question: "What does the person I refer receive?",
-    answer:
-      "When they sign up and buy a course using your code, they’ll get a discount right away.",
-  },
-  {
-    question: "What do I get in return?",
-    answer:
-      "You’ll earn a reward every time someone makes a purchase through your code. It goes straight to your account.",
-  },
-  {
-    question: "How many people can I refer?",
-    answer: "There’s no limit. Share it with as many people as you’d like.",
-  },
-  // {
-  //   question: "Where do I check what I’ve earned?",
-  //   answer:
-  //     "Your referral earnings show up in your dashboard. You can check anytime.",
-  // },
-  // {
-  //   question: "Can I see who used my referral code?",
-  //   answer:
-  //     "Yes. Your dashboard keeps track of how many people signed up using your link and what you’ve earned from them.",
-  // },
-  // {
-  //   question: "Do the rewards disappear if I don’t use them?",
-  //   answer:
-  //     "No. They stay in your account until you decide to use them. There’s no time limit.",
-  // },
-  // {
-  //   question: "What if someone forgets to enter my code?",
-  //   answer:
-  //     "If the code isn’t used during sign-up or checkout, it can’t be applied afterward. Make sure they add it right away.",
-  // },
-];
-
+  const faqData = [
+    {
+      question: "What is the Software Development Course (SDC)?",
+      answer:
+        "A Software Development course, in simple words, teaches you how to design and build applications using programming languages like Java, Python, and frameworks like React or Node.js. You’ll gain hands-on experience in writing clean code, debugging, and deploying software solutions. This course is ideal for beginners and professionals looking to upskill and start a career in software development."
+    },
+    {
+      question: "Is this a certified course?",
+      answer:
+        "Yes, after successful completion, you’ll receive a certification that demonstrates your proficiency in software development and is recognized by leading tech companies."
+    },
+    {
+      question: "Does this course require prior coding experience?",
+      answer:
+        "No prior coding knowledge is required. The course starts with the fundamentals of programming and gradually covers advanced concepts, making it suitable for absolute beginners."
+    },
+    {
+      question: "Does this course have real-time projects too?",
+      answer:
+        "Yes, you’ll work on real-world projects like developing websites, building mobile apps, and creating APIs. These projects will help you build a strong portfolio to showcase your skills to potential employers."
+    },
+    {
+      question: "Does this course provide placement assistance?",
+      answer:
+        "Yes, placement support is included with guidance on resume building, technical interviews, and connecting you with hiring partners in the software industry."
+    },
+    {
+      question: "How long is the course duration?",
+      answer:
+        "The course duration typically ranges from 6 to 9 months, depending on the track and intensity you choose."
+    }
+  ];
 
   const leftFaqs = faqData.slice(0, 3);
   const rightFaqs = faqData.slice(3);
@@ -114,13 +94,15 @@ const faqData = [
 
   return (
     <div className="w-full lg:mb-16 p-8 font-['Poppins'] ">
+         <hr className="w-full  border-t-[2px] border-gray-100 mb-6" />
       <div className="max-w-7xl mx-auto">
         <h2 className="text-[24px] md:text-4xl font-bold text-gray-900 mb-3 text-center">
-          Still have of being  {" "}
-          <span className="text-orange-500">a Doubts?</span>
+          Frequently Asked Questions
         </h2>
         <p className="text-center mb-8 text-[12px] sm:text-[18px]">
-         We have answered some of the frequently asked questions for you!
+          Still you have any questions? Contact our Team via
+          <br />
+          <a href="mailto:support@baoiam.com">support@baoiam.com</a>
         </p>
         <div className="flex flex-col md:flex-row gap-8">
           {/* Left Column */}
@@ -144,4 +126,4 @@ const faqData = [
   );
 };
 
-export default FAQ_R;
+export default FAQ_Pap;
