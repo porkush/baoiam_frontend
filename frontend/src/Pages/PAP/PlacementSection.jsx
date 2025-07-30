@@ -28,8 +28,7 @@ const PlacementSection = () => {
               Placements at Baoiam
             </h2>
             <p className="text-sm md:text-base leading-snug max-w-xl mx-auto">
-              kdsfj akfhj aksfj oadfsjflaksj afjkaf ksdafjdfaksfj akfhj aksfj
-              oadfsjflaksj afjkaf ksdafjdafjoiaji
+              Our programs are designed in collaboration with recruiters to ensure you're 100% job-ready.
             </p>
           </div>
 

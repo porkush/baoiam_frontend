@@ -8,14 +8,14 @@ const CertificateSection = () => {
         {/* Left Text Section */}
         <div className="flex-1 text-center md:text-left">
           <h2 className="text-xl md:text-[32px] font-bold leading-snug mb-4">
-            National Sill Development<br />
-            Corporation <span className="text-red-500">(NSDC)</span><br />
-            Accredited Certofocate
+            Department for Promotion of Industry and Internal Trade    <br />
+            Corporation <span className="text-red-500">(DPIIT)</span><br />
+            Accredited Certificate
           </h2>
           <p className="text-black text-sm md:text-[24px] leading-relaxed max-w-md">
-            kljdio kjdsiofr klajd dkjiadsur kljduje<br />
-            mkldioe m,kluje joie klsierjj dkljfio ue kfiejk<br />
-            jkdujifte klsfkukjm
+            Learn Now. Get Certified with our top <br />
+            accredited government recognised <br />
+            certificate . Pay Only After You're Placed
           </p>
         </div>
 

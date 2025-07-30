@@ -14,7 +14,7 @@ const CourseCard = () => {
         "Up skill on the most in demand skills in the market – Python, Excel, Power BI, SQL.",
     },
     {
-      title: "Data Science Course",
+      title: "Data Analysis Course",
       rating: 5.0,
       description:
         "Up skill on the most in demand skills in the market – Python, Excel, Power BI, SQL.",

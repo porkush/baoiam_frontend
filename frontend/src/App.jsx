@@ -58,6 +58,7 @@ function App() {
         <ScrollToTop />
       <div>
         <Routes>
+          <Route path="/PAP" element={<Pap_Page/>} />
           <Route path="/GCEP" element={<GcepPage/>} />
           <Route path="/instructor" element={<Instructor/>} />
           <Route path="/blogs" element={<BlogSectionPage/>} />
@@ -78,7 +79,7 @@ function App() {
                 <Route path="/refundPolicy" element={<RefundPolicy/>} />
                 <Route path="/contact_us" element={<ContactUs/>} />
                 <Route path="/refer&earn" element={<ReferEarnPage/>} />
-                <Route path="/PAP" element={<Pap_Page/>} />
+                
            
                 
               </Routes>
