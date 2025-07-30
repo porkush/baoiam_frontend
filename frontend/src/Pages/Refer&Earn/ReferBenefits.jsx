@@ -6,7 +6,7 @@ const ReferBenefits = () => {
     <section className="w-full bg-[#f9f9f9] py-16 px-6 md:px-12 lg:px-24 text-center font-['Poppins']">
       {/* Title */}
       <h2 className="text-3xl sm:text-4xl font-bold mb-2">
-        Benefits of being a <span className="text-orange-500">a Referrer</span>
+        Benefits of being  <span className="text-orange-500">a Referrer</span>
       </h2>
       <p className="text-gray-600 text-base sm:text-lg mb-12">
         Refer your friends to our courses and earn exclusive rewards and

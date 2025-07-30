@@ -18,7 +18,7 @@ const WhyJoinGCEP = () => {
       </div>
 
       {/* Right Content (gradient)  */}
-      <div className=" w-full lg:w-[calc(100%-350px)] min-h-[450px] bg-gradient-to-r from-black via-[#2b0f00] to-orange-500 text-white flex flex-col justify-center items-center relative lg:left-[200px] px-4 md:px-16 py-10">
+      <div className=" w-full lg:w-[calc(100%-350px)] md:min-h-[650px] bg-gradient-to-r from-black via-[#2b0f00] to-orange-500 text-white flex flex-col justify-center items-center relative lg:left-[200px] px-4 md:px-16 py-10">
         <div className="flex flex-col justify-center items-start max-pl-[300px] md:pl-8 lg:pl-[100px] ">
           <h2 className="text-[32px] md:text-[40px] lg:text-[48px] font-bold mb-4">
             Why join GCEP ?

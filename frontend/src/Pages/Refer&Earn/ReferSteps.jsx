@@ -29,15 +29,15 @@ const ReferSteps = () => {
       </p>
 
       {/* Step Cards + Dashed Waves */}
-      <div className="relative flex md:flex-row items-center justify-between gap-4 md:gap-20">
+      <div className="relative flex  flex-col md:flex-row items-center justify-between gap-4 md:gap-20">
         {steps.map((step, idx) => (
           <div key={idx} className="relative z-10">
-            <div className="bg-white shadow-md rounded-full w-[120px] h-[120px] md:w-[220px] md:h-[220px] flex flex-col items-center justify-center text-center mx-auto">
+            <div className="bg-white shadow-md rounded-full w-[160px] h-[160px] md:w-[220px] md:h-[220px] flex flex-col items-center justify-center text-center mx-auto">
               <div className="mb-1 sm:mb-3">{step.icon}</div>
-              <h3 className="text-[9px] md:text-lg font-bold text-black mb-1">
+              <h3 className="text-[11px] md:text-lg font-bold text-black mb-1">
                 {step.title}
               </h3>
-              <p className="text-[7px] md:text-sm text-black px-4">{step.desc}</p>
+              <p className="text-[10px] md:text-sm text-black px-4">{step.desc}</p>
             </div>
 
             {/* Wave Line to Next Step (only for 1st and 2nd) */}
