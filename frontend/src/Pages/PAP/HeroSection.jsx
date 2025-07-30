@@ -21,7 +21,7 @@ const HeroSection = () => {
             <span className="text-orange-500">Data Science Course</span> <br />
             and <span className="text-orange-500">Pay After Placement</span>
           </h1>
-          <p className="mt-4 text-gray-600 text-sm sm:text-base max-w-xl">
+          <p className=" text-gray-600 text-[22px] sm:text-base max-w-xl mt-6">
             Curriculum designed and taught by our best mentors to prepare you and upskill your resume.
           </p>
           </div>

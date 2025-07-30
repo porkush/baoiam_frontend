@@ -46,7 +46,7 @@ const Footer = () => {
     {
       heading: "QUICK LINKS",
       items: [
-        { label: "About", href: "#" },
+        { label: "About", href: "/aboutUs" },
         { label: "Become Instructor", href: "/instructor" },
         { label: "Contact", href: "/contact_us" },
         { label: "GCEP", href: "/GCEP" },
