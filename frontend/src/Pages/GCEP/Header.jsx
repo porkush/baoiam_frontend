@@ -28,7 +28,7 @@ const Header = () => {
         {/* Content  */}
         <div className="relative z-30 flex flex-col items-center justify-center h-full px-4 sm:px-6 md:px-8 text-center text-white">
           <div className="w-full transform translate-y-[-5%]">
-            <h1 className=" text-[80px] xs:text-[100px] sm:text-[150px] md:text-[200px] lg:text-[250px] xl:text-[280px] font-semibold leading-[0.9] font-Poltawski Nowy mb-2 sm:mb-4">
+            <h1 className=" text-[80px] xs:text-[100px] sm:text-[150px] md:text-[200px] lg:text-[250px] xl:text-[280px] font-semibold leading-[0.9] font-poltawski Nowy mb-2 sm:mb-4">
               GCEP
             </h1>
 
