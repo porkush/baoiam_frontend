@@ -4,7 +4,7 @@ import ReferAvatars from "../../assets/Refer&Earn/avatar.png";
 
 const HeroSection_R = () => {
   return (
-    <section className="w-full bg-white px-6 py-8 md:py-12 md:px-16 lg:px-48 flex flex-col md:flex-row items-center justify-between">
+    <section className="w-full bg-white px-6 py-8 md:py-12 md:px-16 lg:px-48 flex flex-col md:flex-row items-center justify-between font-['Poppins']">
       {/* Left Side Text Content */}
       <div className="w-full md:w-1/2 mt-8 md:mt-0 text-center md:text-left">
         <h2 className="text-3xl sm:text-4xl md:text-[40px] lg:text-[48px] font-bold text-black leading-tight mb-4">

@@ -3,7 +3,7 @@ import MoneyImage from "../../assets/Refer&Earn/Paise.png";
 
 const ReferBenefits = () => {
   return (
-    <section className="w-full bg-[#f9f9f9] py-16 px-6 md:px-12 lg:px-24 text-center">
+    <section className="w-full bg-[#f9f9f9] py-16 px-6 md:px-12 lg:px-24 text-center font-['Poppins']">
       {/* Title */}
       <h2 className="text-3xl sm:text-4xl font-bold mb-2">
         Benefits of being a <span className="text-orange-500">a Referrer</span>

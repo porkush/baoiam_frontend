@@ -181,7 +181,7 @@ const Contact_Gcep = () => {
 
 
 
-    <div className="min-h-screen flex flex-col items-center justify-center bg-[#f8f8f8] px-4 py-10 md:px-10">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-[#f8f8f8] px-4 py-10 md:px-10 font-['Poppins']">
   {/* Heading */}
   <div className="text-center mb-8">
     <h1 className="text-3xl md:text-5xl font-semibold">

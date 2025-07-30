@@ -22,6 +22,7 @@ import { ContactRoundIcon } from "lucide-react";
 import ContactUs from "./Pages/ContactUs";
 import ReferEarnPage from "./Pages/Refer&Earn/ReferEarnPage";
 import GcepPage from "./Pages/GCEP/GcepPage";
+import Instructor from "./Pages/Instructor/Instructor";
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
       <div>
         <Routes>
           <Route path="/GCEP" element={<GcepPage/>} />
+          <Route path="/instructor" element={<Instructor/>} />
           <Route path="/blogs" element={<BlogSectionPage/>} />
           <Route path="/aboutUs" element={<AboutUSPage/>} />
           <Route path="/DataAnalysis" element={<DataAnalysisPage />} />

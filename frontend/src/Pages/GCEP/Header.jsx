@@ -4,7 +4,7 @@ import img1 from "../../assets/GCEP/img1.jpg";
 
 const Header = () => {
   return (
-    <div className="bg-white text-[#333] mb-4">
+    <div className="bg-white text-[#333] mb-4 font-['Poppins']">
       {/* Navbar */}
       <div className="fixed top-0 left-0 w-full z-50">
         <Navbar />
@@ -23,7 +23,7 @@ const Header = () => {
         </div>
 
         {/* Black Gradient Overlay */}
-        <div className="absolute inset-0 bg-black opacity-30 z-20"></div>
+        <div className="absolute inset-0 bg-black opacity-60 z-20"></div>
 
         {/* Content  */}
         <div className="relative z-30 flex flex-col items-center justify-center h-full px-4 sm:px-6 md:px-8 text-center text-white">
