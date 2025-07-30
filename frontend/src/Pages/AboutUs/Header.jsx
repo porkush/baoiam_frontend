@@ -116,13 +116,13 @@ const Header = () => {
           {/* Centered Content */}
           <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-white text-center px-4 mt-12">
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-tight">
-              Heading Tagline lorem psumlorem <br className="hidden sm:block" />
-              lorem ipsum lorem ipsum
+              Giving Students Opportunities,  <br className="hidden sm:block" />
+              Experience and Skills
             </h1>
 
             <p className="mt-4 sm:mt-6 max-w-md sm:max-w-xl text-sm sm:text-base md:text-lg">
-              jdu dkjd dhdji djdji sjhdsher jhdf ajhnduis kjhduif <br className="hidden sm:block" />
-              adjhfhiuf hdskjhdhfjuhd fhjdhiuhadjh ddiiuj
+              We emphasize hands-on learning that promotes genuine <br className="hidden sm:block" />
+              developement and professional success.
             </p>
 
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-6 sm:px-0">

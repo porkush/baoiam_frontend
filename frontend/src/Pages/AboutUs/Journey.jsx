@@ -74,7 +74,7 @@ const JourneySection = () => {
         Our <span className="text-orange-500">Journey</span>
       </h2>
       <p className="text-center text-black text-base md:text-[24px] mx-auto mb-6 md:mb-10 max-w-2xl">
-        jdu dkjd dhdjhi djdij shjdher jhdf ajhjhduis kjhduif adjhfjhiuf
+        What our side of journey looks like to reach you
       </p>
 
       {/* Grid Structure */}
@@ -82,7 +82,7 @@ const JourneySection = () => {
         {/* Left Side - Mobile: hidden, Desktop: shown */}
         <div className="hidden md:flex flex-col -mr-20 items-center font-poppins justify-center space-y-32 h-[467px]">
           <div className="bg-white shadow border-r-4 border-orange-500 p-4 text-justify text-lg md:text-[24px]">
-            <p>Over 4,000 students have interned with us and actually learned something useful.</p>
+            <p>More than 4+ years of practical experience developing professionals who are prepared for future.</p>
           </div>
         </div>
 
@@ -102,7 +102,7 @@ const JourneySection = () => {
         <div className="flex flex-col md:-ml-20 items-center md:justify-between font-poppins space-y-8 md:space-y-32 h-auto md:h-[467px]">
           {/* Mobile: Show left side content first */}
           <div className="md:hidden bg-white shadow border-l-4 border-orange-500 p-4 text-justify text-lg w-full">
-            <p>Over 4,000 students have interned with us and actually learned something useful.</p>
+            <p>Equipped more than 4000+ students with practical experience and employable skills.</p>
           </div>
           
           <div className="bg-white shadow border-l-4 md:border-l-4 border-orange-500 p-4 text-justify text-lg md:text-[24px] w-full">
@@ -110,7 +110,7 @@ const JourneySection = () => {
           </div>
 
           <div className="bg-white shadow border-l-4 md:border-l-4 border-orange-500 p-4 text-justify text-lg md:text-[24px] w-full">
-            <p>Many of them landed solid jobs after working with us—and that's what matters.</p>
+            <p>Hundreds of placements were made possible by our focused training and mentoring.</p>
           </div>
         </div>
       </div>
