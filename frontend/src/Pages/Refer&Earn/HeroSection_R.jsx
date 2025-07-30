@@ -17,29 +17,31 @@ const HeroSection_R = () => {
           courses.
         </p>
 
-        {/* Avatars + Text */}
-        <div className="flex items-center gap-2  mb-6 justify-center md:justify-start">
-          <img
-            src={ReferAvatars}
-            alt="Refer Avatars"
-            className="h-6 w-auto object-contain"
-          />
-          <div className="text-sm text-black">
-            <strong className="font-semibold">8,000+</strong>
-            <h6>Referrer's</h6>
+        <div className="flex flex-row md:flex-col md:items-start items-center justify-between  md:gap-6">
+          {/* Avatar + Text */}
+          <div className="flex flex-row  items-center gap-2 md:gap-1">
+            <img
+              src={ReferAvatars}
+              alt="Refer Avatars"
+              className="h-6 w-auto object-contain"
+            />
+            <div className="text-sm text-black text-center md:text-left">
+              <strong className="font-semibold block">8,000+</strong>
+              <h6>Referrer's</h6>
+            </div>
           </div>
-        </div>
 
-        {/* Button */}
-        <div className="flex justify-center md:justify-start">
-          <button className="bg-orange-500 hover:bg-orange-600 text-white text-base sm:text-lg font-medium px-8 py-2 rounded-md transition duration-200">
-            Refer now
-          </button>
+          {/* Button */}
+          <div>
+            <button className="bg-orange-500 hover:bg-orange-600 text-white text-base sm:text-lg font-medium px-8 py-2 rounded-md transition duration-200">
+              Refer now
+            </button>
+          </div>
         </div>
       </div>
 
       {/* Right Side Image */}
-      <div className="w-full md:w-1/2 flex justify-center md:justify-end mt-4">
+      <div className="w-full md:w-1/2 flex justify-center md:justify-end mt-8">
         <img
           src={ReferImage}
           alt="Earn Money"
