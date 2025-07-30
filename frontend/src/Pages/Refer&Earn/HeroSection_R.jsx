@@ -9,7 +9,7 @@ const HeroSection_R = () => {
       <div className="w-full md:w-1/2 mt-8 md:mt-0 text-center md:text-left">
         <h2 className="text-3xl sm:text-4xl md:text-[40px] lg:text-[48px] font-bold text-black leading-tight mb-4">
           Refer To Your <br className="hidden md:block" />
-          Friends and Earn
+          <span className="text-orange-500"> {" "}Friends {" "}</span> and <span className="text-orange-500"> {" "}Earn {" "}</span>
         </h2>
         <p className="text-black text-base sm:text-lg leading-relaxed mb-6 md:max-w-md mx-auto md:mx-0 text-justify">
           Turn your friends and network into value. Refer learners to our
