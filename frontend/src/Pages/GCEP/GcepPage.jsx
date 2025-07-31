@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "./Header.jsx";
-import Footer from '../../components/Footer/Footer'
 import Contact from "../../components/Footer/Contact.jsx";
 import Partner from "../../components/Home/Partner"
 import WhyJoinGCEP from "./WhyJoinGCEP.jsx";
