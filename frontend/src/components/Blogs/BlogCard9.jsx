@@ -1,7 +1,7 @@
 import React from "react";
-import img1 from "../../assets/Pride/Blogs/img8.png";
-import img2 from "../../assets/Pride/Blogs/img9.png";
-import img3 from "../../assets/Pride/Blogs/img10.png";
+import img1 from "../../assets/Pride/Blogs/img16.jpg";
+import img2 from "../../assets/Pride/Blogs/img17.jpg";
+import img3 from "../../assets/Pride/Blogs/img19.jpg";
 
 const BlogCard9 = () => {
   return (

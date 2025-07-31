@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../../assets/Pride/Blogs/img7.png"; 
+import img1 from "../../assets/Pride/Blogs/img18.jpg"; 
  
 
 const BlogCard7 = () => {
