@@ -69,7 +69,15 @@ function App() {
           <Route path="/DataScience" element={<DataSciencePage />} />
           <Route path="*" element={
             <>
-              <Navbar onSignUpClick={() => setIsSignupOpen(true)} />
+              {/* <Navbar onSignUpClick={() => setIsSignupOpen(true)} /> */}
+              <Navbar onSignUpClick={() => setIsSignupOpen(true)} 
+
+                isLoggedIn={isLoggedIn}  //update these two lines
+                onLogout={handleLogout}
+                />
+              <AuthModal isOpen={isSignupOpen} onClose={() => setIsSignupOpen(false)}
+                onAuthSuccess={handleAuthSuccess}  // update
+              />
               <AuthModal isOpen={isSignupOpen} onClose={() => setIsSignupOpen(false)} />
               <Routes>
                 <Route path="/" element={<HomePage />} />

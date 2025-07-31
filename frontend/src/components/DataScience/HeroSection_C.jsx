@@ -13,6 +13,7 @@ import { FiSend } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import BookmarkButton from "../../Pages/BookmarkButton";
 
+
 export default function HeroSection_C() {
   return (
     <div className="bg-white font-['Poppins']">
