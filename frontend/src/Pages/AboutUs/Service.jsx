@@ -60,7 +60,7 @@ const ServicesSection = () => {
         <div className="lg:hidden relative h-[420px] mb-10 mt-20">
           <div className="relative flex flex-col items-center h-full">
             {/* Image */}
-            <div className="absolute -top-16 w-[150px] h-[150px] rounded-full border-4 border-orange-500 bg-white p-1 z-10">
+            <div className="absolute -top-12 w-[150px] h-[150px] rounded-full border-4 border-orange-500 bg-white p-1 z-10">
               <img
                 src={services[currentIndex].image}
                 alt="Service"
@@ -74,7 +74,7 @@ const ServicesSection = () => {
               style={cardStyle}
             >
               {/* Text */}
-              <p className="text-[18px] text-gray-800 mt-6">
+              <p className="text-[22px] text-gray-800 mt-3">
                 {services[currentIndex].title}
               </p>
 

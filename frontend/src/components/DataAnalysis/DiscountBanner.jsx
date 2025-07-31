@@ -27,7 +27,7 @@ const DiscountBanner = () => {
               <FiSearch className="absolute right-3 top-1/2 transform -translate-y-1/2 text-white text-lg" />
             </div>
 
-            <button className="bg-black text-white px-4 py-2 mb-1 rounded-md text-[13px] md:text-[16px] hover:bg-gray-900 transition">
+            <button className="bg-black text-white px-4 py-2 mb-1 rounded-md text-[13px] md:text-[16px] hover:bg-gray-700 transition">
               Refer Now
             </button>
           </div>

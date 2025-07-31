@@ -194,9 +194,9 @@ export default function Navbar_C() {
               <div className="mt-2 w-full bg-white rounded-md py-1">
                 <ul className="space-y-2">
                   <li className="px-4 py-2 hover:bg-orange-50 rounded">
-                    Option 1
+                    None
                   </li>
-                  <li className="px-4 py-2 hover:bg-orange-50 rounded">
+                  {/* <li className="px-4 py-2 hover:bg-orange-50 rounded">
                     Option 2
                   </li>
                   <li className="px-4 py-2 hover:bg-orange-50 rounded">
@@ -207,7 +207,7 @@ export default function Navbar_C() {
                   </li>
                   <li className="px-4 py-2 hover:bg-orange-50 rounded">
                     Option 5
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             )}
@@ -278,9 +278,9 @@ export default function Navbar_C() {
                 <div className="mt-2 w-full bg-white rounded-md py-1">
                   <ul className="space-y-2">
                     <li className="px-4 py-2 hover:bg-orange-50 rounded">
-                      Option 1
+                      None
                     </li>
-                    <li className="px-4 py-2 hover:bg-orange-50 rounded">
+                    {/* <li className="px-4 py-2 hover:bg-orange-50 rounded">
                       Option 2
                     </li>
                     <li className="px-4 py-2 hover:bg-orange-50 rounded">
@@ -291,7 +291,7 @@ export default function Navbar_C() {
                     </li>
                     <li className="px-4 py-2 hover:bg-orange-50 rounded">
                       Option 5
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               )}

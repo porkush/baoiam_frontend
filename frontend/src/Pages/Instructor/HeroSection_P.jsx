@@ -163,7 +163,7 @@ const HeroSection_P = () => {
 
           {/* Centered Content from Screenshot */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 md:px-8 z-20 mt-16">
-            <h1 className="text-3xl md:text-6xl font-bold leading-tight mb-4">
+            <h1 className="text-3xl md:text-6xl font-bold leading-tight mb-8 mt-6">
               Share Your <span className="text-orange-500">Expertise.</span>{" "}
               Inspire <span className="text-orange-500">Learners.</span>
             </h1>
@@ -176,13 +176,13 @@ const HeroSection_P = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold text-[20px] md:text-[25px] px-4 md:px-8 py-2 rounded-md mb-8">
+              <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold text-[20px] md:text-[25px] px-4 md:px-8 py-2 rounded-md mb-8 hover:bg-amber-400">
                 Apply Now
               </button>
             </a>
 
             {/* Benefits Card */}
-            <div className="bg-white bg-opacity-90 text-black p-4 rounded-xl shadow-lg w-full max-w-sm mx-auto text-center mt-8">
+            <div className="bg-white bg-opacity-90 text-black p-4 rounded-xl shadow-lg w-full max-w-sm mx-auto text-center mt-4">
               <h2 className="text-[24px] font-semibold mb-4">Benefits:</h2>
               <ul className="list-none space-y-2 text-md font-medium text-left">
                 <li className="flex items-start gap-2">

@@ -218,7 +218,7 @@ const Header = () => {
             </p>
 
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-6 sm:px-0">
-              <button className="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-transparent hover:text-orange-500 border-2 border-orange-500 transition duration-200 w-full sm:w-auto">
+              <button className="bg-orange-500 text-white px-6 py-2 rounded-full  hover:text-orange-500 hover:bg-amber-100 border-orange-500 transition duration-200 w-full sm:w-auto">
                 Apply Now →
               </button>
               <button className="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-600 transition duration-200 w-full sm:w-auto">

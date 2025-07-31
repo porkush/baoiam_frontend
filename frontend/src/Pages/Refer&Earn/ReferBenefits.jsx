@@ -16,7 +16,7 @@ const ReferBenefits = () => {
       {/* Card Section */}
       <div className="flex flex-col lg:flex-row items-center justify-center bg-white rounded-xl shadow-md p-6 lg:p-10 gap-8 max-w-6xl mx-auto">
         {/* Left: Form */}
-        <div className="bg-orange-500 text-white rounded-xl p-6 lg:p-10 w-full lg:w-1/2 lg:mx-8">
+        <div className="bg-[#FF7D29] text-white rounded-xl p-6 lg:p-10 w-full lg:w-1/2 lg:mx-8">
           <h3 className="text-xl font-bold mb-6 text-center">
             Start Referring
           </h3>

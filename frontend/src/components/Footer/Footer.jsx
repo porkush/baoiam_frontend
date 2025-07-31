@@ -15,7 +15,7 @@ const FooterLinksSection = ({ heading, items }) => {
   return (
     <div className="text-sm font-['Poppins']">
       <h5 className="text-white mb-2 sm:mb-6">{heading}</h5>
-      <ul className= " space-y-2 sm:space-y-4 text-gray-500">
+      <ul className=" space-y-2 sm:space-y-4 text-gray-500">
         {items.map((item, index) => (
           <li key={index}>
             <a
@@ -39,7 +39,7 @@ const Footer = () => {
       items: [
         { label: "Udaan 90", href: "#" },
         { label: "Success Fusion Program", href: "#" },
-        { label: "Pay after Placement", href: "#" },
+        { label: "Pay after Placement", href: "/PAP" },
         { label: "Pride Fusion", href: "/pride" },
       ],
     },
@@ -136,7 +136,11 @@ const Footer = () => {
           <h5 className="text-white mb-2 sm:mb-6">DOWNLOAD OUR APP</h5>
 
           <a href="https://play.google.com/store" target="_blank">
-            <img src={applelogo} alt="App Store" className="h-[50px] sm:h-[58px] w-40" />
+            <img
+              src={applelogo}
+              alt="App Store"
+              className="h-[50px] sm:h-[58px] w-40"
+            />
           </a>
           <a href="https://play.google.com/store" target="_blank">
             <img
@@ -166,9 +170,9 @@ const Footer = () => {
             className="bg-[#1D2026] py-2 border-[#363B47] border-[1px] flex justify-between w-[140px] p-2 text-gray-500"
           >
             <option>English</option>
-            <option>Hindi</option>
-            <option>Marathi</option>
-            <option>Bengali</option>
+            <option>हिन्दी</option> {/* Hindi */}
+            <option>मराठी</option> {/* Marathi */}
+            <option>বাংলা</option> {/* Bengali */}
           </select>
         </div>
       </div>

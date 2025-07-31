@@ -147,7 +147,7 @@ const faqData = [
         </div>
 
         <div className="flex justify-center mt-5">
-          <button className="mt-4 px-5 py-2 border rounded-md bg-gray-200 border-gray-300 hover:bg-gray-100 transition">
+          <button className="mt-4 px-5 py-2 border rounded-md bg-gray-200 border-gray-300 hover:bg-gray-100 transition hover:font-medium">
             See All FAQ’s
           </button>
         </div>

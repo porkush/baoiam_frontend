@@ -23,7 +23,7 @@ export default function HeroSection_C() {
         <div className="flex-1 text-[18px]">
           <nav className="flex items-center text-black sm:text-lg md:text-[18px] mb-6 sm:mb-10 ml-2 sm:ml-4">
             <Link to="/">
-              <AiFillHome className="w-5 h-5" />
+              <AiFillHome className="w-5 h-5 hover:text-orange-600" />
             </Link>
             <AiOutlineRight className="w-4 h-4 mx-2" />
             <span>Master Data Science</span>
@@ -244,12 +244,12 @@ export default function HeroSection_C() {
                    "noopener,noreferrer"
                         )
                     }
-              className="w-[127px] text-xl bg-orange-500 text-white py-1 rounded-lg font-medium hover:bg-orange-600 transition"
+              className="w-[127px] text-xl bg-orange-500 text-white py-1 rounded-lg font-medium hover:bg-orange-700 transition"
                >
                   Buy Now
              </button>
              </div>
-                <button className="w-full sm:w-[137px] text-[16px] bg-black text-white py-1 sm:py-2 rounded-lg font-medium hover:bg-gray-900 transition">
+                <button className="w-full sm:w-[137px] text-[16px] bg-black text-white py-1 sm:py-2 rounded-lg font-medium hover:bg-gray-700 transition">
                   Add to Cart
                 </button>
                 <div className="flex items-center gap-4 text-black">

@@ -13,6 +13,7 @@ const AuthModal = ({ isOpen, onClose, onAuthSuccess }) => {
   const [loading, setLoading] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const emailInputRef = useRef(null);
+  const [warning, setWarning] = useState("");
 
   useEffect(() => {
     if (isOpen && emailInputRef.current) {
@@ -28,6 +29,12 @@ const AuthModal = ({ isOpen, onClose, onAuthSuccess }) => {
   };
 
   const handleSendOtp = async () => {
+    if (!email.trim()) {
+      setWarning("Email or Mobile Number is required.");
+      return;
+    } else {
+      setWarning(""); // Clear warning
+    }
     setLoading(true);
     const endpoint = isLogin
       ? "http://127.0.0.1:8000/api/login/"
@@ -172,6 +179,9 @@ const AuthModal = ({ isOpen, onClose, onAuthSuccess }) => {
             placeholder="Enter Email ID or Mobile number"
             className="w-full px-4 py-2.5 text-[14px] text-[#808080] border border-gray-400 rounded-full focus:outline-none focus:border-orange-400"
           />
+          {warning && (
+            <p className="text-red-500 text-sm mt-1 text-center">{warning}</p>
+          )}
         </div>
 
         {/* OTP */}
@@ -182,7 +192,7 @@ const AuthModal = ({ isOpen, onClose, onAuthSuccess }) => {
             </label>
             <button
               onClick={handleSendOtp}
-              disabled={loading || !email}
+              disabled={loading}
               className="text-xs px-3 py-1 sm:px-3.5 sm:py-1.5 bg-orange-100 text-orange-500 rounded-full hover:bg-orange-200 transition-all"
             >
               {loading ? "Sending..." : isOtpSent ? "Resend OTP" : "Send OTP"}

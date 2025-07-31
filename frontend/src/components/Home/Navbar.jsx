@@ -113,9 +113,18 @@ const [profileImage] = useState(() => {
         {/* Center Desktop Menu */}
         <div className="hidden md:flex justify-center items-center">
           <ul className="flex space-x-[33px] text-black text-[18px] ml-4">
-            <Link to="/PAP">
-              <li className="hover:text-orange-500">PAP</li>
-            </Link>
+             <li className="relative inline-block">
+              <NavLink
+                to="/PAP"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-orange-500 underline decoration-orange-500 underline-offset-4"
+                    : "hover:text-orange-500"
+                }
+              >
+                PAP
+              </NavLink>
+            </li>
             <li
               className="relative group cursor-pointer"
               onMouseEnter={() => setIsKickstarterHovered(true)}
@@ -193,16 +202,23 @@ const [profileImage] = useState(() => {
               </NavLink>
             </li>
 
-            <Link to="/refer&earn">
-              <li className="flex items-center gap-2 hover:text-orange-500">
+            <li className="relative inline-block">
+              <NavLink
+                to="/refer&earn"
+                className={({ isActive }) =>
+                  isActive
+                    ? "flex items-center gap-2 text-orange-500 underline decoration-orange-500 underline-offset-4"
+                    : "flex items-center gap-2 hover:text-orange-500"
+                }
+              >
                 <img
                   src={giftbox}
                   alt="Referral Animation"
                   className="w-5 h-6"
                 />
                 <span>Refer & Earn</span>
-              </li>
-            </Link>
+              </NavLink>
+            </li>
 
             <li className="hover:text-orange-500">Success Stories</li>
 
