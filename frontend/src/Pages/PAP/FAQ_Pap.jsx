@@ -39,36 +39,36 @@ const faqData = [
     answer:
       "Enroll in the programme and pay only an upfront training fee of ₹4999. In PAP we offer resume reviews, interview preparation, mock sessions, and guaranteed interview opportunities where you have to pay the full price of ₹30,000 after getting placement from our programme. The programme includes assessments, assignments, attendance, mock interviews, progress, and module completion. After completion of the programme, we will assist you with placement."
   },
-  {
-    question: "How much do I pay after placement?",
-    answer:
-      "Pay after Placement is a programme where you have to pay an upfront training fee of ₹4999. After being placed through our programme, you have to pay a total of ₹30,000."
-  },
-  {
-    question: "What if I don't get placed?",
-    answer:
-      "If you don't get placed from our programme, you don't have to pay us any fee except the initial training fee of ₹4999."
-  },
-  {
-    question: "Do I need to pay anything before starting?",
-    answer:
-      "Yes, You have to pay an upfront fee for training, which is just ₹4999."
-  },
-  {
-    question: "Do I need to have prior experience or technical knowledge?",
-    answer:
-      "No, it's not mandatory to have any prior experience or technical knowledge. Our programme is designed to assist you from basic to professional level. Just have some enthusiasm and keen mindset to learn."
-  },
-  {
-    question: "How long is the course duration?",
-    answer:
-      "The course duration typically ranges from 6 to 9 months, depending on the track and intensity you choose."
-  },
-  {
-    question: "Does this course provide placement assistance?",
-    answer:
-      "Yes, placement support is included with guidance on resume building, technical interviews, and connecting you with hiring partners in the software industry."
-  }
+  // {
+  //   question: "How much do I pay after placement?",
+  //   answer:
+  //     "Pay after Placement is a programme where you have to pay an upfront training fee of ₹4999. After being placed through our programme, you have to pay a total of ₹30,000."
+  // },
+  // {
+  //   question: "What if I don't get placed?",
+  //   answer:
+  //     "If you don't get placed from our programme, you don't have to pay us any fee except the initial training fee of ₹4999."
+  // },
+  // {
+  //   question: "Do I need to pay anything before starting?",
+  //   answer:
+  //     "Yes, You have to pay an upfront fee for training, which is just ₹4999."
+  // },
+  // {
+  //   question: "Do I need to have prior experience or technical knowledge?",
+  //   answer:
+  //     "No, it's not mandatory to have any prior experience or technical knowledge. Our programme is designed to assist you from basic to professional level. Just have some enthusiasm and keen mindset to learn."
+  // },
+  // {
+  //   question: "How long is the course duration?",
+  //   answer:
+  //     "The course duration typically ranges from 6 to 9 months, depending on the track and intensity you choose."
+  // },
+  // {
+  //   question: "Does this course provide placement assistance?",
+  //   answer:
+  //     "Yes, placement support is included with guidance on resume building, technical interviews, and connecting you with hiring partners in the software industry."
+  // }
 ];
 
   const leftFaqs = faqData.slice(0, 3);

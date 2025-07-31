@@ -16,9 +16,9 @@ const HeroSection = () => {
         {/* Left Content */}
         <div className="flex-1">
             <div>
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-black leading-snug">
-            Launch your career with our <br />
-            <span className="text-orange-500">Data Science Course</span> <br />
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black leading-snug">
+            Launch your career with our
+            <span className="text-orange-500">{" "}Data Science Course {" "}</span> 
             and <span className="text-orange-500">Pay After Placement</span>
           </h1>
           <p className=" text-gray-600 text-[22px] sm:text-base max-w-xl mt-6">
