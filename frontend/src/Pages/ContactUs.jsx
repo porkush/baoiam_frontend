@@ -25,48 +25,28 @@ const ContactUs = () => {
   };
 
   const subCategories = {
-    "Pride Fusion": ["Data Science", "HRMS"],
-    "Success Fusion Program": [
-      "Data Science & Analytics",
-      "PRODUCT MANAGEMENT",
-      "Digital Marketing with AI Tools",
-      "UI/UX Design & Prototyping",
-      "AI basics for beginners",
-      "Entrepreneurship",
+    "Xth standard": ["Maths", "Computer science"],
+    "XIIth standard": [
+      "Science",
+      "Commerce",
+      "Arts",
+      "Others",
     ],
-    "Udaan 90": [
-      "SEO",
-      "Graphic Designing",
-      "Video Editing & Content Creation",
-      "Social Media Marketing",
-      "Front-End Development",
-      "Java",
-      "Data Analytics & Excel",
-      "Python for Data Science",
-      "Cyber Security",
-      "Marketing & Sales",
-      "Soft Skills & Interview Preparation",
-      "UI/UX & Product Design",
-      "AI & Machine Learning Basics",
-      "Startup & Entrepreneurship",
-      "Public Speaking & LinkedIn Mastery",
+    "Under-Graduate": [
+      "Bachelor's of Technology",
+      "Bachelor's of Arts",
+      "Bachelor's of Designing",
+      "Bachelor's in Buisness Administration",
+      "Bachelor's of Commerce",
+      "Bachelor's of Communication",
+      "Others",
     ],
-    "Pay After Placement(Tech Bootcamp)": [
-      "SEO",
-      "Graphic Designing",
-      "Video Editing & Content Creation",
-      "Social Media Marketing",
-      "Front-End Development",
-      "Java",
-      "Data Analytics & Excel",
-      "Python for Data Science",
-      "Cyber Security",
-      "Marketing & Sales",
-      "Soft Skills & Interview Preparation",
-      "UI/UX & Product Design",
-      "AI & Machine Learning Basics",
-      "Startup & Entrepreneurship",
-      "Public Speaking & LinkedIn Mastery",
+    "Post-Graduate": [
+      "Masters in Business Administration",
+      "Master's in Communication",
+      "Master's in Technology",
+      "Master's in Business Management",
+      "Others",
     ],
   };
 
@@ -203,12 +183,12 @@ const ContactUs = () => {
                     <option value="" disabled hidden>
                       Select Program
                     </option>
-                    <option value="Success Fusion Program">Xth standard</option>
-                    <option value="Udaan 90">XIIth standard</option>
-                    <option value="Pay After Placement(Tech Bootcamp)">
+                    <option value="Xth standard">Xth standard</option>
+                    <option value="XIIth standard">XIIth standard</option>
+                    <option value="Under-Graduate">
                       Under-Graduate
                     </option>
-                    <option value="Pride Fusion">Post-Graduate</option>
+                    <option value="Post-Graduate">Post-Graduate</option>
                   </select>
                   <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-600">
                     <svg

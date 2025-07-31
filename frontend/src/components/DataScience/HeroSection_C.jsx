@@ -232,9 +232,22 @@ export default function HeroSection_C() {
 
               {/* Buttons */}
               <div className="flex flex-col sm:flex-row justify-center items-center gap-4 p-2">
-                <button className="w-full sm:w-[127px] text-[16px] bg-orange-500 text-white py-1 sm:py-2 rounded-lg font-medium hover:bg-orange-600 transition">
+                {/* Buttons */}
+              {/* <div className="flex justify-center p-2"> */}
+                <div className="flex items-center gap-3">
+                <button
+                  onClick={() =>
+                      window.open(
+                    "https://pages.razorpay.com/pl_QzDfPkHIHxIWcY/view",
+                        "_blank",
+                   "noopener,noreferrer"
+                        )
+                    }
+              className="w-[127px] text-xl bg-orange-500 text-white py-1 rounded-lg font-medium hover:bg-orange-600 transition"
+               >
                   Buy Now
-                </button>
+             </button>
+             </div>
                 <button className="w-full sm:w-[137px] text-[16px] bg-black text-white py-1 sm:py-2 rounded-lg font-medium hover:bg-gray-900 transition">
                   Add to Cart
                 </button>
