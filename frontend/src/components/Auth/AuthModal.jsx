@@ -2,6 +2,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { useEffect, useRef, useState } from "react";
 import { GoogleOAuthProvider, GoogleLogin } from "@react-oauth/google";
+import { API_ENDPOINTS } from "../../config/api";
 
 const AuthModal = ({ isOpen, onClose, onAuthSuccess }) => {
   const [isLogin, setIsLogin] = useState(false);
@@ -37,8 +38,8 @@ const AuthModal = ({ isOpen, onClose, onAuthSuccess }) => {
     }
     setLoading(true);
     const endpoint = isLogin
-      ? "http://127.0.0.1:8000/api/login/"
-      : "http://127.0.0.1:8000/api/signup/";
+      ? API_ENDPOINTS.LOGIN
+      : API_ENDPOINTS.SIGNUP;
     console.log("Sending OTP to:", email); // 👈 ye line add karo
 
     try {
@@ -66,8 +67,8 @@ const AuthModal = ({ isOpen, onClose, onAuthSuccess }) => {
   const handleVerifyOtp = async () => {
     setLoading(true);
     const endpoint = isLogin
-      ? "http://127.0.0.1:8000/api/verify_login/"
-      : "http://127.0.0.1:8000/api/verify_signup/";
+      ? API_ENDPOINTS.VERIFY_LOGIN
+      : API_ENDPOINTS.VERIFY_SIGNUP;
 
     try {
       const response = await fetch(endpoint, {
@@ -98,7 +99,7 @@ const AuthModal = ({ isOpen, onClose, onAuthSuccess }) => {
     const credential = credentialResponse.credential;
 
     try {
-      const res = await fetch("http://localhost:8000/api/google-login/", {
+      const res = await fetch(API_ENDPOINTS.GOOGLE_LOGIN, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -24,7 +24,7 @@
 //   };
 
 //   try {
-//     const response = await fetch("http://127.0.0.1:8000/api/contact/submit/", {
+//     const response = await fetch(API_ENDPOINTS.CONTACT_SUBMIT, {
 //   method: "POST",
 //   headers: {
 //     "Content-Type": "application/json",
@@ -314,6 +314,7 @@
 
 
 import React, { useState } from "react";
+import { API_ENDPOINTS } from "../config/api";
 
 const ContactForm = ({ onClose }) => {
   const [fullName, setFullName] = useState("");
@@ -336,7 +337,7 @@ const ContactForm = ({ onClose }) => {
     };
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/contact/submit/", {
+      const response = await fetch(API_ENDPOINTS.CONTACT_SUBMIT, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
