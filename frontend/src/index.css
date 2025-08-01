@@ -57,5 +57,120 @@
 
 body{overflow-x: hidden}
 
+/* WhatsApp Widget Color Customization - More Comprehensive */
+/* Target all possible Aisensy widget elements */
+#aisensy-wa-widget,
+[data-aisensy-widget],
+.aisensy-widget,
+.wa-widget,
+[class*="aisensy"],
+[class*="wa-widget"],
+[class*="whatsapp"],
+[class*="chat-widget"] {
+  background-color: #25D366 !important;
+  border-color: #25D366 !important;
+  color: #25D366 !important;
+}
+
+/* Target all buttons within the widget */
+#aisensy-wa-widget button,
+[data-aisensy-widget] button,
+.aisensy-widget button,
+.wa-widget button,
+[class*="aisensy"] button,
+[class*="wa-widget"] button,
+[class*="whatsapp"] button,
+[class*="chat-widget"] button {
+  background-color: #25D366 !important;
+  border-color: #25D366 !important;
+  color: white !important;
+}
+
+/* Target header elements */
+#aisensy-wa-widget header,
+[data-aisensy-widget] header,
+.aisensy-widget header,
+.wa-widget header,
+[class*="aisensy"] header,
+[class*="wa-widget"] header,
+[class*="whatsapp"] header,
+[class*="chat-widget"] header {
+  background-color: #25D366 !important;
+}
+
+/* Target any div elements that might be the main widget */
+#aisensy-wa-widget div,
+[data-aisensy-widget] div,
+.aisensy-widget div,
+.wa-widget div,
+[class*="aisensy"] div,
+[class*="wa-widget"] div,
+[class*="whatsapp"] div,
+[class*="chat-widget"] div {
+  background-color: #25D366 !important;
+}
+
+/* Target hover states */
+#aisensy-wa-widget:hover,
+[data-aisensy-widget]:hover,
+.aisensy-widget:hover,
+.wa-widget:hover,
+[class*="aisensy"]:hover,
+[class*="wa-widget"]:hover,
+[class*="whatsapp"]:hover,
+[class*="chat-widget"]:hover {
+  background-color: #128C7E !important;
+}
+
+/* Target any SVG icons or images */
+#aisensy-wa-widget svg,
+[data-aisensy-widget] svg,
+.aisensy-widget svg,
+.wa-widget svg,
+[class*="aisensy"] svg,
+[class*="wa-widget"] svg,
+[class*="whatsapp"] svg,
+[class*="chat-widget"] svg {
+  fill: #25D366 !important;
+}
+
+/* Target any text elements */
+#aisensy-wa-widget span,
+[data-aisensy-widget] span,
+.aisensy-widget span,
+.wa-widget span,
+[class*="aisensy"] span,
+[class*="wa-widget"] span,
+[class*="whatsapp"] span,
+[class*="chat-widget"] span {
+  color: #25D366 !important;
+}
+
+/* Target any elements with background colors */
+[style*="background-color: brown"],
+[style*="background-color: #8B4513"],
+[style*="background-color: #A0522D"],
+[style*="background-color: #CD853F"] {
+  background-color: #25D366 !important;
+}
+
+/* Target any elements with border colors */
+[style*="border-color: brown"],
+[style*="border-color: #8B4513"],
+[style*="border-color: #A0522D"],
+[style*="border-color: #CD853F"] {
+  border-color: #25D366 !important;
+}
+
+/* Force override for any inline styles */
+*[style*="brown"],
+*[style*="#8B4513"],
+*[style*="#A0522D"],
+*[style*="#CD853F"] {
+  background-color: #25D366 !important;
+  border-color: #25D366 !important;
+  color: #25D366 !important;
+}
+
 
 

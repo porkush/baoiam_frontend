@@ -10,5 +10,100 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script 
+      type="text/javascript"
+      src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
+      id="aisensy-wa-widget"
+      widget-id="aaa36s"
+    >
+    </script>
+    <script>
+      // Function to change WhatsApp widget colors to green
+      function changeWidgetColors() {
+        // Wait for widget to load
+        setTimeout(() => {
+          // Target all possible widget elements
+          const selectors = [
+            '[id*="aisensy"]',
+            '[class*="aisensy"]',
+            '[class*="wa-widget"]',
+            '[class*="whatsapp"]',
+            '[class*="chat-widget"]',
+            '[data-aisensy-widget]',
+            '#aisensy-wa-widget',
+            '.aisensy-widget',
+            '.wa-widget'
+          ];
+          
+          selectors.forEach(selector => {
+            const elements = document.querySelectorAll(selector);
+            elements.forEach(element => {
+              // Change background colors
+              if (element.style.backgroundColor && 
+                  (element.style.backgroundColor.includes('brown') || 
+                   element.style.backgroundColor.includes('#8B4513') ||
+                   element.style.backgroundColor.includes('#A0522D') ||
+                   element.style.backgroundColor.includes('#CD853F'))) {
+                element.style.backgroundColor = '#25D366';
+              }
+              
+              // Change border colors
+              if (element.style.borderColor && 
+                  (element.style.borderColor.includes('brown') || 
+                   element.style.borderColor.includes('#8B4513') ||
+                   element.style.borderColor.includes('#A0522D') ||
+                   element.style.borderColor.includes('#CD853F'))) {
+                element.style.borderColor = '#25D366';
+              }
+              
+              // Change text colors
+              if (element.style.color && 
+                  (element.style.color.includes('brown') || 
+                   element.style.color.includes('#8B4513') ||
+                   element.style.color.includes('#A0522D') ||
+                   element.style.color.includes('#CD853F'))) {
+                element.style.color = '#25D366';
+              }
+            });
+          });
+          
+          // Also check for any elements with brown colors in their computed styles
+          const allElements = document.querySelectorAll('*');
+          allElements.forEach(element => {
+            const computedStyle = window.getComputedStyle(element);
+            const bgColor = computedStyle.backgroundColor;
+            const borderColor = computedStyle.borderColor;
+            
+            if (bgColor && (bgColor.includes('165, 42, 42') || bgColor.includes('139, 69, 19'))) {
+              element.style.backgroundColor = '#25D366';
+            }
+            
+            if (borderColor && (borderColor.includes('165, 42, 42') || borderColor.includes('139, 69, 19'))) {
+              element.style.borderColor = '#25D366';
+            }
+          });
+        }, 2000); // Wait 2 seconds for widget to load
+        
+        // Also run periodically to catch dynamically added elements
+        setInterval(() => {
+          const brownElements = document.querySelectorAll('[style*="brown"], [style*="#8B4513"], [style*="#A0522D"], [style*="#CD853F"]');
+          brownElements.forEach(element => {
+            element.style.backgroundColor = '#25D366';
+            element.style.borderColor = '#25D366';
+            element.style.color = '#25D366';
+          });
+        }, 1000);
+      }
+      
+      // Run when DOM is loaded
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', changeWidgetColors);
+      } else {
+        changeWidgetColors();
+      }
+      
+      // Also run when window loads
+      window.addEventListener('load', changeWidgetColors);
+    </script>
   </body>
 </html>
